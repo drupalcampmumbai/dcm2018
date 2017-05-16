@@ -1,0 +1,28 @@
+uuid: da79dbeb-b6bb-4674-8b85-bf3da972517b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.wall_image.field_wall_image
+    - node.type.wall_image
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: Ip_f3kO40vB5qbSNm6lGIxX6gBWueQeGh59jv2esgyo
+id: node.wall_image.default
+targetEntityType: node
+bundle: wall_image
+mode: default
+content:
+  field_wall_image:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 100
+hidden: {  }

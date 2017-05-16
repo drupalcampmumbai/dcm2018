@@ -1,0 +1,34 @@
+uuid: 8edf04a1-94ea-486f-bf76-9176a613763b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsors
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - dcm2017
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__sponsors_gold_sponsor_slideshow
+theme: dcm2017
+region: sidebar_second
+weight: -15
+provider: null
+plugin: 'views_block:sponsors-gold_sponsor_slideshow'
+settings:
+  id: 'views_block:sponsors-gold_sponsor_slideshow'
+  label: 'Gold Sponsors'
+  provider: views
+  label_display: visible
+  views_label: 'Gold Sponsors'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

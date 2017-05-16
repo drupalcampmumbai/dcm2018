@@ -1,0 +1,20 @@
+uuid: b3a85a3c-a0e7-41e4-b684-ac4bf067663a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_organisation
+  module:
+    - user
+id: user.user.field_organisation
+field_name: field_organisation
+entity_type: user
+bundle: user
+label: 'Organization / College name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

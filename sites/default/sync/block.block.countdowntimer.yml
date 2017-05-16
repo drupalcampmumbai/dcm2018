@@ -1,0 +1,30 @@
+uuid: b7f06aeb-4bd1-42f2-9b68-34c93c8d025a
+langcode: en
+status: true
+dependencies:
+  module:
+    - jquery_countdown_timer
+    - system
+  theme:
+    - dcm17
+_core:
+  default_config_hash: AfSyED4QtQOeTIkQdB1DGd3oPCzPMwglJNDSV4gu1rE
+id: countdowntimer
+theme: dcm17
+region: footer
+weight: -9
+provider: null
+plugin: jquery_countdown_timer
+settings:
+  id: jquery_countdown_timer
+  label: 'Countdown Timer'
+  provider: jquery_countdown_timer
+  label_display: '0'
+  countdown_datetime: '2016-11-10 00:00:00'
+  font_size: '28'
+visibility:
+  request_path:
+    id: request_path
+    pages: /landing-page
+    negate: false
+    context_mapping: {  }

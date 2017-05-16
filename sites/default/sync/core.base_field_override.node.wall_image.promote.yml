@@ -1,0 +1,24 @@
+uuid: 454ac0b5-1f3b-4d52-a2d8-acd8810538a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wall_image
+_core:
+  default_config_hash: H9bly3OECuww-tA5VdjuTEx1N1fsZpErsQflKhxxtc8
+id: node.wall_image.promote
+field_name: promote
+entity_type: node
+bundle: wall_image
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

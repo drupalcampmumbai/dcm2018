@@ -1,0 +1,7 @@
+uuid: 4ff36186-2ea3-4ed1-ad5b-e3f9809aefe2
+langcode: en
+status: true
+dependencies: {  }
+name: user_image
+label: 'User Image'
+effects: {  }

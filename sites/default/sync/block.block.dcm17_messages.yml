@@ -1,0 +1,22 @@
+uuid: b85af4ba-a7a2-45b2-b90c-68106d609819
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - dcm17
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: dcm17_messages
+theme: dcm17
+region: '-1'
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

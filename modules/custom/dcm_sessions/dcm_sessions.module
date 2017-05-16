@@ -1,0 +1,98 @@
+<?php
+
+/**
+ * @file
+ * This file contains logic to alter views field data.
+ */
+
+/**
+ * Implements hook_preprocess_views_view_field().
+ */
+function dcm_sessions_preprocess_views_view_field(&$variables) {
+  // Set the user fullname for speakers instead of username.
+  if (($variables['view']->current_display == 'sessions_listing' || $variables['view']->current_display == 'rest_export_1') && $variables['field']->field == 'field_speakers') {
+    // Check if the field is set.
+    if (method_exists($variables['output'], '__toString')) {
+      $uids = $variables['output']->__toString();
+      if (isset($uids)) {
+        // Split the uids.
+        $speaker_ids = array_map('trim', explode(',', $uids));
+        foreach ($speaker_ids as $each_speaker_id) {
+          // Get the user fullname.
+          $fullname_result = _dcm_sessions_get_full_name($each_speaker_id);
+          $user_data[] = array(
+            'name' => $fullname_result['field_first_name_value'] . ' ' . $fullname_result['field_last_name_value'],
+            'uid' => $each_speaker_id,
+          );
+        }
+        $render = \Drupal::service('dcm_sessions.speaker_data_display')->setUserLink($user_data);
+        $variables['output'] = $render;
+      }
+    }
+  }
+}
+
+/**
+ * Get user fullname.
+ *
+ * @param int $uid
+ *   User uid.
+ *
+ * @return array
+ *   Return the user fullname.
+ */
+function _dcm_sessions_get_full_name($uid) {
+  if (!empty($uid) && $uid > 0) {
+    $user_fullname_query = db_select('user__field_first_name', 'fn');
+    $user_fullname_query->join('user__field_last_name', 'ln', 'fn.entity_id = ln.entity_id');
+    $user_fullname_query->fields('fn', array('field_first_name_value'));
+    $user_fullname_query->fields('ln', array('field_last_name_value'));
+    $user_fullname_query->condition('fn.entity_id', $uid);
+    $user_fullname = $user_fullname_query->execute()->fetchAssoc();
+  }
+  return $user_fullname;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dcm_sessions_theme($existing, $type, $theme, $path) {
+  return [
+    'session_speakers' => [
+      'render element' => 'elements',
+      'template' => 'session-speakers',
+      'variables' => [
+        'session_speakers_data' => [],
+      ],
+      'path' => drupal_get_path('module', 'dcm_sessions') . '/templates',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function dcm_sessions_page_attachments(array &$attachments) {
+
+  // JS library attachment for Sessions page title.
+  $attachments['#attached']['library'][] = 'dcm_sessions/session-title-js';
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function dcm_sessions_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+  if ($form_id == 'user_register_form' || $form_id == 'user_form') {
+
+    // Fetch current user roles.
+    $current_user_roles = \Drupal::currentUser()->getRoles();
+
+    // Restrict access to DCM Departments field from User Registration form to
+    // only admin user.
+    if (!in_array('administrator', $current_user_roles)) {
+      $form['field_dcm_departments']['#access'] = FALSE;
+    }
+
+  }
+}

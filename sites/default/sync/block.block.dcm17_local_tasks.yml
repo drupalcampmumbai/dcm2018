@@ -1,0 +1,22 @@
+uuid: 9d1a8745-260d-48b8-b4b2-17f4ce83df85
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dcm17
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: dcm17_local_tasks
+theme: dcm17
+region: content
+weight: -11
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
