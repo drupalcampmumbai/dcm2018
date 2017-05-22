@@ -1,0 +1,35 @@
+uuid: 6c349716-55fc-458e-b391-6144c8cbbf51
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:762ff43f-b0c8-445b-9442-156ec8640743'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - dcm2017
+third_party_settings:
+  block_class:
+    classes: ''
+id: tempblock
+theme: dcm2017
+region: navigation
+weight: -26
+provider: null
+plugin: 'block_content:762ff43f-b0c8-445b-9442-156ec8640743'
+settings:
+  id: 'block_content:762ff43f-b0c8-445b-9442-156ec8640743'
+  label: 'Temp Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /user/register
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,18 @@
+uuid: feb5ea93-54d8-4f89-b49b-a95b45b4d909
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - dcm2017
+    parent: 'dcm2017:'
+name: 'Travel Guide'
+type: travel_guide
+description: 'Travel Guide'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

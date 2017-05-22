@@ -1,0 +1,36 @@
+uuid: 9ffd1e48-2be9-4dc8-a4af-128b65365c93
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsors_block
+  module:
+    - block_class
+    - node
+    - views
+  theme:
+    - dcm2017
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__sponsors_block_block_1
+theme: dcm2017
+region: content
+weight: -19
+provider: null
+plugin: 'views_block:sponsors_block-block_1'
+settings:
+  id: 'views_block:sponsors_block-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      sponsor: sponsor
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

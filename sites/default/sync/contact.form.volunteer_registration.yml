@@ -6,5 +6,6 @@ id: volunteer_registration
 label: 'Volunteer Registration'
 recipients:
   - ashish.vitthal.dalvi@gmail.com
+  - info@drupalmumbai.org
 reply: "Thank you for getting in touch! We appreciate you contacting us for volunteer your time in Drupal Camp Mumbai 2017.\r\n\r\nWe will contact you for further details.\r\n\r\nThanks,\r\nTeam Drupal Mumbai"
 weight: 0

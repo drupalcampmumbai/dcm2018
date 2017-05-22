@@ -1,0 +1,27 @@
+uuid: 41269cc3-5d46-4c5a-b5b8-d6bdd81975b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_travel_guide
+    - node.type.travel_guide
+  module:
+    - file
+id: node.travel_guide.field_travel_guide
+field_name: field_travel_guide
+entity_type: node
+bundle: travel_guide
+label: 'Travel Guide'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: xls
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

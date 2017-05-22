@@ -1,0 +1,22 @@
+uuid: 2167eb06-2820-465a-bff1-9197fcef0c1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.travel_guide
+  module:
+    - text
+id: node.travel_guide.body
+field_name: body
+entity_type: node
+bundle: travel_guide
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

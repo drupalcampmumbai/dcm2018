@@ -5,14 +5,18 @@ dependencies:
   content:
     - 'block_content:basic:176e46c8-53b5-48b2-ae84-432cc8505a50'
   module:
+    - block_class
     - block_content
     - system
   theme:
     - dcm2017
+third_party_settings:
+  block_class:
+    classes: ''
 id: sessioncategory
 theme: dcm2017
-region: sidebar_second
-weight: -21
+region: content
+weight: -17
 provider: null
 plugin: 'block_content:176e46c8-53b5-48b2-ae84-432cc8505a50'
 settings:
@@ -26,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /node/add/sessions
+    pages: "/node/add/sessions\r\n/session/tracks"
     negate: false
     context_mapping: {  }

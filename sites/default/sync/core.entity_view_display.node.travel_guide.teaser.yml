@@ -1,0 +1,28 @@
+uuid: 00fbfc0e-b07b-4f4b-a012-07a2c0b8c246
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.travel_guide.body
+    - field.field.node.travel_guide.field_travel_guide
+    - node.type.travel_guide
+  module:
+    - text
+    - user
+id: node.travel_guide.teaser
+targetEntityType: node
+bundle: travel_guide
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_travel_guide: true

@@ -5,8 +5,8 @@ dependencies: {  }
 name: community_profile_image
 label: 'community user image'
 effects:
-  beeea208-997d-4932-a3b9-3d446e0cc645:
-    uuid: beeea208-997d-4932-a3b9-3d446e0cc645
+  8a492311-2c4b-42ed-84f3-c3fcffe017f2:
+    uuid: 8a492311-2c4b-42ed-84f3-c3fcffe017f2
     id: image_scale_and_crop
     weight: 1
     data:

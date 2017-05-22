@@ -8,6 +8,7 @@ dependencies:
     - field.field.user.user.field_code_sprint
     - field.field.user.user.field_dcm_departments
     - field.field.user.user.field_drupal_skill
+    - field.field.user.user.field_drupal_url
     - field.field.user.user.field_facebook_url
     - field.field.user.user.field_first_drupalcamp
     - field.field.user.user.field_first_name
@@ -117,6 +118,7 @@ hidden:
   field_carrying_my_laptop: true
   field_code_sprint: true
   field_drupal_skill: true
+  field_drupal_url: true
   field_first_drupalcamp: true
   field_food_preference: true
   field_gender: true

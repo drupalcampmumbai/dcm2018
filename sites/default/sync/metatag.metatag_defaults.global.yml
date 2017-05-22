@@ -8,3 +8,6 @@ id: global
 label: Global
 tags:
   title: '[current-page:title] | [site:name]'
+  robots: 'index, follow'
+  og_image_url: 'http://2017.drupalmumbai.org/sites/default/files/dcm-logo-new.png'
+  og_image_secure_url: 'http://2017.drupalmumbai.org/sites/default/files/dcm-logo-new.png'

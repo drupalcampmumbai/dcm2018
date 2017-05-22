@@ -1,0 +1,22 @@
+uuid: 72a08a78-d3d0-4f1f-ba67-1e20cf26795c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.travel_guide
+id: node.travel_guide.promote
+field_name: promote
+entity_type: node
+bundle: travel_guide
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

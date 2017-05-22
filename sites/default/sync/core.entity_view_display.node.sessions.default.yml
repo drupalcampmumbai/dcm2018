@@ -14,7 +14,6 @@ dependencies:
     - field.field.node.sessions.field_status
     - node.type.sessions
   module:
-    - file
     - text
     - user
 id: node.sessions.default
@@ -25,15 +24,9 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-  field_slides:
     weight: 1
-    label: above
     settings: {  }
     third_party_settings: {  }
-    type: file_default
   links:
     weight: 0
     settings: {  }
@@ -44,5 +37,6 @@ hidden:
   field_seminar_room: true
   field_session_time: true
   field_session_track: true
+  field_slides: true
   field_speakers: true
   field_status: true

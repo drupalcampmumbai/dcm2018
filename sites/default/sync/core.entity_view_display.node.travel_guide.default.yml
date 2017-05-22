@@ -1,0 +1,34 @@
+uuid: 198518a3-f634-4fc6-93d2-ee4b6b8c5458
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.travel_guide.body
+    - field.field.node.travel_guide.field_travel_guide
+    - node.type.travel_guide
+  module:
+    - file
+    - text
+    - user
+id: node.travel_guide.default
+targetEntityType: node
+bundle: travel_guide
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_travel_guide:
+    weight: 102
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

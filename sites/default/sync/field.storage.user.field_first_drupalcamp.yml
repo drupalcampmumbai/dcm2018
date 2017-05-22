@@ -8,7 +8,7 @@ dependencies:
     - user
 third_party_settings:
   field_permissions:
-    permission_type: public
+    permission_type: private
 id: user.field_first_drupalcamp
 field_name: field_first_drupalcamp
 entity_type: user

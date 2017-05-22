@@ -60,14 +60,14 @@ content:
     weight: 16
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
   field_drupal_skill:
     weight: 18
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
   field_drupal_url:
@@ -105,7 +105,7 @@ content:
     weight: 22
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
   field_gender:
@@ -174,14 +174,14 @@ content:
     weight: 17
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
   field_t_shirt_size:
     weight: 21
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
   field_twitter_url:

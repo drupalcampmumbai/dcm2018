@@ -1,0 +1,35 @@
+uuid: 3030f5a6-70cf-4ff2-9b47-23199aa61fa7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f0206856-d877-4598-a015-28bcace090c5'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - dcm2017
+third_party_settings:
+  block_class:
+    classes: ''
+id: drupalapprenctices
+theme: dcm2017
+region: footer
+weight: -26
+provider: null
+plugin: 'block_content:f0206856-d877-4598-a015-28bcace090c5'
+settings:
+  id: 'block_content:f0206856-d877-4598-a015-28bcace090c5'
+  label: 'Drupal Apprenctices'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
