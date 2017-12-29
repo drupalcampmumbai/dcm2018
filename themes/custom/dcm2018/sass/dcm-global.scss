@@ -1,0 +1,1458 @@
+@import "component/dcm-variables";
+@import "component/dcm-mixins";
+
+// Note: !important used to override other css file.
+
+// Generic css
+
+// Body & Other general elements
+body {
+  border: 0 none;
+  color: $base-color;
+  font-family: $muli;
+  font-size: $basefont-size;
+  -webkit-font-smoothing: antialiased;
+  line-height: $baseline-height;
+  margin: 0;
+  padding: 0;
+  transition: all .35s linear 0s;
+
+  @media screen and (max-width: 960px) {
+    font-size: $basefont-size - 1;
+    line-height: $baseline-height - 2;
+  }
+
+  @media screen and (max-width: 320px) {
+    min-width: 319px;
+  }
+
+  div * {
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+
+h1,
+.h1 {
+  font-size: 30px;
+  line-height: 32px;
+
+  @media screen and (max-width: 960px) {
+    font-size: 25px;
+    line-height: 32px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 27px;
+  line-height: 30px;
+
+  @media screen and (max-width: 960px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 25px;
+  line-height: 28px;
+
+  @media screen and (max-width: 960px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 22px;
+  line-height: 25px;
+
+  @media screen and (max-width: 960px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 20px;
+  line-height: 22px;
+
+  @media screen and (max-width: 960px) {
+    font-size: $small-font-size;
+    line-height: 16px;
+  }
+}
+
+h6,
+.h6 {
+  font-size: $small-font-size;
+  line-height: 16px;
+}
+
+p {
+  margin: 0 0 20px;
+  word-wrap: break-word;
+
+  @media screen and (max-width: 768px) {
+    margin: 0 0 10px;
+  }
+}
+
+a:hover,
+a:focus {
+  color: $hover-color;
+  outline: 0;
+  text-decoration: none;
+  transition: all .5s linear 0s;
+}
+
+img {
+  @media screen and (max-width: 960px) {
+    max-width: 100%;
+  }
+}
+
+a {
+  color: $link-color;
+  cursor: pointer;
+  outline: 0;
+  text-decoration: underline;
+  transition: all .5s linear 0s;
+
+  img {
+    border: 0;
+    outline: 0;
+  }
+}
+
+div.warning,
+table tr.warning {
+  white-space: normal;
+}
+
+.element-invisible {
+  display: none;
+}
+
+ul,
+.block ul,
+ol {
+  margin: .5em 0 1em;
+  padding: 0 0 0 1.0em;
+
+  li,
+  li.leaf {
+    display: list-item;
+    list-style-image: none;
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 0 5px;
+  }
+}
+
+ul.list-inline {
+  margin: .5em 0 1em;
+  padding: 0 0 0 1.0em;
+
+  li {
+    display: inline-block;
+    list-style-image: none;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.pagination > li {
+  display: inline !important;
+
+  a {
+    color: $gray-color2 !important;
+    text-decoration: none !important;
+  }
+
+  &.active {
+    a {
+      color: $white-color !important;
+    }
+  }
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: transparent;
+}
+
+ul.contextual-links,
+.block ul.contextual-links,
+ol.contextual-links {
+  margin: 0;
+  padding: 0;
+
+  li,
+  li.leaf {
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+ul.tabs.primary {
+  white-space: normal;
+}
+
+.tabs--primary.nav.nav-tabs {
+  margin: 0 0 15px;
+
+  li {
+    padding: 0;
+
+    a {
+      padding: 5px 10px;
+    }
+  }
+}
+
+table {
+  border: 0;
+
+  tbody {
+    border: 0;
+
+    tr {
+      th {
+        background-color: $table-th;
+        border: 0;
+        border-right: 1px solid $border-color;
+        color: #white-color;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 8px;
+        vertical-align: top;
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+
+      td {
+        border: 1px solid $border-color;
+        font-weight: normal;
+        padding: 8px;
+        vertical-align: top;
+
+        &:first-child {
+          border-left: 0;
+        }
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+
+      &:last-child {
+        td {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.label {
+  padding: 0;
+  text-align: left;
+}
+
+.search-block-form {
+  #search-block-form {
+    .form-search {
+      width: 100%;
+    }
+
+    .form-submit {
+      margin: 0;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.tabbable {
+  &.tabs-left {
+    ul.nav {
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+.alert {
+  .placeholder {
+    font-style: normal;
+  }
+}
+// End Body & Other general elements
+
+// Header
+.navbar.container {
+  background-color: $blue-color;
+  border: 0;
+  margin: 0 auto;
+  max-width: inherit;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  &:before {
+    @include cross;
+    right: 0;
+    transform: rotate(1.2deg);
+  }
+  .header-inner {
+    margin: 0 auto;
+    max-width: $page-width;
+  }
+  // Logo
+  .navbar-header {
+    margin: 0 15px 0 0;
+    padding: 0;
+    .logo {
+      @include no-margin-padding;
+      position: absolute;
+      z-index: 1;
+      img {
+        height: 150px;
+        max-width: inherit;
+      }
+    }
+  }
+  // Menu
+  .navbar-collapse {
+    float: right;
+    padding: 0;
+    width: 80%;
+    #dcm-sticky-menu {
+      padding: 0;
+      .menu.nav {
+        margin: 0;
+        padding: 0;
+        transition: all .5s linear 0s;
+        li {
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          &:last-child {
+            float: right;
+          }
+
+          &.open {
+            a {
+              color: $link-color;
+            }
+          }
+
+          @media screen and (max-width: 960px) {
+            display: block;
+          }
+
+          a {
+            color: $white-color;
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 20px 11px 5px;
+            position: relative;
+            text-decoration: none;
+            transition: all .3s linear 0s;
+
+            &:hover {
+              color: $link-color;
+            }
+
+            .caret {
+              @media screen and (max-width: 960px) {
+                float: right;
+                margin-top: 6px;
+              }
+            }
+
+            .caret-up {
+              border-bottom: 4px solid;
+              border-left: 4px solid rgba(0, 0, 0, 0);
+              border-right: 4px solid rgba(0, 0, 0, 0);
+              display: inline-block;
+              height: 0;
+              margin-left: 2px;
+              vertical-align: middle;
+              width: 0;
+
+              @media screen and (max-width: 960px) {
+                float: right;
+                margin-top: 6px;
+              }
+            }
+          }
+
+          .menu.dropdown-menu {
+            background-color: rgba(129, 115, 131, .79);
+            border-radius: 0;
+            text-align: left;
+            width: auto;
+
+            @media screen and (max-width: 960px) {
+              background-color: rgb(255, 255, 255);
+              border: 0;
+              box-shadow: none;
+              float: none;
+              margin: 0;
+              position: static;
+              width: 100%;
+            }
+
+            li {
+              display: block;
+
+              &:last-child {
+                float: none;
+                a {
+                  border-bottom: 0;
+                }
+              }
+
+              a {
+                border-bottom: 1px dashed #eee;
+                color: $white-color;
+                padding: 10px 15px;
+
+                @media screen and (max-width: 960px) {
+                  color: $base-color;
+                  padding: 10px 20px;
+                }
+
+                &:hover,
+                &.is-active {
+                  background-color: transparent;
+                  color: #fef5cc;
+
+                  @media screen and (max-width: 960px) {
+                    color: $link-color;
+                  }
+
+                  &:before {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// End Header
+
+// Main content
+.breadcrum {
+  position: relative;
+}
+
+.table-responsive {
+  overflow: visible;
+
+  @media screen and (max-width: 767px) {
+    overflow: auto;
+  }
+
+  .table,
+  table {
+    tbody {
+      th,
+      td {
+        @media screen and (max-width: 767px) {
+          white-space: normal !important;
+        }
+      }
+    }
+  }
+}
+
+.main-container {
+  clear: both;
+  min-height: 550px;
+  padding: 110px 0 20px !important;
+
+  .col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media screen and (min-width: 1099px) {
+    .col-sm-3 {
+      padding-left: 0;
+    }
+    .col-sm-9 {
+      padding-right: 0;
+    }
+  }
+  .region-content {
+    .page-header {
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 15px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.main-container,
+.container {
+  max-width: $page-width;
+  padding: 20px 0;
+  width: 100%;
+  @media screen and (max-width: 1099px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.margin-padding-border-top-bottom {
+  border-bottom: 1px solid $light-gray-color;
+  border-top: 1px solid $light-gray-color;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.margin-padding-border-bottom {
+  border-bottom: 1px solid $light-gray-color;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+}
+
+.margin-padding-border-top {
+  border-top: 1px solid $light-gray-color;
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+}
+
+.margin-bottom {
+  margin: 0 0 40px;
+
+  @media screen and (max-width: 960px) {
+    margin: 0 0 25px;
+  }
+}
+
+// End Main content
+
+// sidebars
+aside,
+.sidebar {
+  margin: 0;
+  padding: 0;
+
+  @media screen and (max-width: 960px) {
+    float: none;
+    margin: 0 0 20px;
+  }
+
+  h2.block-title {
+    background: transparent none repeat scroll 0 0;
+    font-size: 21px;
+    letter-spacing: 2px;
+    line-height: $baseline-height - 1;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  .block {
+    margin: 0 0 40px;
+  }
+}
+
+.well {
+  background-color: transparent;
+  border: 0 none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+// end sidebars
+
+// Node
+.node {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  .content,
+  .comment .content {
+    margin: 0;
+  }
+}
+
+.field .field-label,
+label {
+  font-weight: 500;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// End Node
+
+// Buttons & message
+.btn,
+.btn-default {
+  background: none repeat scroll 0 0 $btn-color;
+  border: 0 none;
+  box-shadow: none;
+  color: $white-color;
+  display: inline-block;
+  font-weight: bold;
+  @include border-radius(0);
+  margin: 10px 20px 10px 0;
+  min-width: 140px;
+  padding: 7px 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: all .5s linear 0s;
+  z-index: 1;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle.btn-default {
+    background-color: $btn-hover-color;
+    color: $white-color;
+  }
+}
+
+.btn-default:focus,
+.btn-default.focus {
+  background: $btn-hover-color;
+  transition: all .5s linear 0s;
+}
+
+a.btn {
+  color: $white-color !important;
+  text-decoration: none !important;
+}
+
+a.btn:focus,
+a.btn:hover {
+  background: $btn-hover-color;
+  transition: all .5s linear 0s;
+}
+
+div.error,
+table tr.error {
+  background-color: transparent;
+  color: #a94442;
+}
+
+.alert {
+  padding: 8px;
+}
+
+// End Buttons & message
+
+// Form
+.main-container,
+#drupal-modal {
+  form {
+    padding: 0;
+
+    div.error.messages {
+      font-size: 13px;
+      line-height: 16px;
+      margin: 0 0 20px 31%;
+      width: 65%;
+
+      @media screen and (max-width: 360px) {
+        margin: 0 0 20px 0;
+        width: 100%;
+      }
+    }
+
+    // Field group
+    .fieldgroup {
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+
+      .panel-heading {
+        display: none;
+      }
+
+      .panel-body {
+        background-color: transparent;
+        padding: 0;
+
+        .form-item {
+          margin-bottom: 0;
+
+          .select-wrapper {
+            display: inline-block;
+            max-width: inherit;
+            vertical-align: top;
+            width: 65%;
+
+            input,
+            select,
+            .form-textarea-wrapper {
+              width: 100%;
+
+              textarea {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Tel field
+    .intl-tel-input.allow-dropdown {
+      display: inline-block;
+      max-width: inherit;
+      vertical-align: top;
+      width: 65%;
+
+      .country-list {
+        max-width: 369px;
+      }
+
+      input,
+      select,
+      .form-textarea-wrapper {
+        width: 100%;
+
+        textarea {
+          width: 100%;
+        }
+      }
+    }
+
+    a {
+      color: link-color;
+      text-decoration: underline;
+    }
+
+    // Form items
+    .form-item {
+      margin: 0 0 15px;
+      padding: 0 !important;
+      width: 100% !important;
+
+      label {
+        display: inline-block;
+        @include no-margin-padding;
+        vertical-align: middle;
+        width: 30%;
+
+        &.form-required {
+          &:after {
+            background: none;
+            color: $red-color;
+            content: "*";
+            font-size: 12px;
+            margin: 0 0 0 5px;
+          }
+        }
+
+        @media screen and (max-width: 360px) {
+          font-weight: bold;
+          margin: 0 0 5px;
+          width: 100%;
+        }
+      }
+
+      input,
+      select,
+      .form-textarea-wrapper {
+        border-radius: 0;
+        box-shadow: none;
+        display: inline-block;
+        max-width: inherit;
+        vertical-align: top;
+        width: 65%;
+
+        textarea {
+          border-radius: 0;
+          box-shadow: none;
+          width: 100%;
+        }
+
+        @media screen and (max-width: 360px) {
+          width: 100%;
+        }
+      }
+
+      // Radio btns
+      .form-radios {
+        display: inline-block;
+        vertical-align: top;
+        width: 65%;
+
+        .form-item {
+          display: inline-block;
+          padding-left: 32px !important;
+          vertical-align: top;
+          width: 48% !important;
+
+          @media screen and (max-width: 960px) {
+            width: 100% !important;
+          }
+
+          label {
+            display: block;
+            padding-left: 0;
+            padding-top: 0;
+            width: auto;
+
+            &:before {
+              background: $white-color;
+              border: none;
+              -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .6) inset;
+              -moz-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .6) inset;
+              -o-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .6) inset;
+              box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .6) inset;
+              content: "";
+              display: block;
+              height: 22px;
+              @include border-radius(50%);
+              left: 0;
+              position: absolute;
+              top: 2px;
+              width: 22px;
+
+              @media screen and (max-width: 960px) {
+                top: 0;
+              }
+            }
+
+            @media screen and (max-width: 960px) {
+              font-size: $small-font-size;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+
+          .form-radio {
+            left: 5px;
+            position: absolute;
+            top: 3px;
+            width: auto;
+            z-index: -1;
+
+            &:checked + label:after {
+              background: $link-color;
+              border: none;
+              content: "";
+              display: block;
+              height: 14px;
+              @include border-radius(50%);
+              left: 4px;
+              position: absolute;
+              top: 6px;
+              width: 14px;
+
+              @media screen and (max-width: 960px) {
+                top: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      // Checkboxes
+      .form-checkboxes {
+        display: inline-block;
+        vertical-align: top;
+        width: 65%;
+
+        .form-item {
+          display: inline-block;
+          padding-left: 32px !important;
+          vertical-align: top;
+          width: 48% !important;
+
+          @media screen and (max-width: 960px) {
+            width: 100% !important;
+          }
+
+          label {
+            display: block;
+            padding-left: 0;
+            padding-top: 0;
+            width: auto;
+
+            &:before {
+              background: $white-color;
+              border: none;
+              border-radius: 0;
+              -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .6) inset;
+              -moz-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .6) inset;
+              -o-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .6) inset;
+              box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .6) inset;
+              content: "";
+              display: block;
+              height: 20px;
+              left: 0;
+              position: absolute;
+              top: 2px;
+              width: 20px;
+
+              @media screen and (max-width: 960px) {
+                top: 0;
+              }
+            }
+
+            @media screen and (max-width: 960px) {
+              font-size: $small-font-size;
+              font-weight: normal;
+              margin: 0;
+            }
+          }
+
+          .form-checkbox {
+            display: none;
+            width: auto;
+
+            &:checked + label:after {
+              background: none;
+              border: none;
+              border-bottom: 2px solid $link-color;
+              border-left: 2px solid $link-color;
+              content: "";
+              display: block;
+              height: 8px;
+              @include rotate(-45);
+              left: 4px;
+              position: absolute;
+              top: 6px;
+              width: 14px;
+
+              @media screen and (max-width: 960px) {
+                top: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      // Date Selectbox
+      .webform-datepicker {
+        display: inline-block;
+        vertical-align: top;
+        width: 65%;
+
+        .form-item {
+          display: inline-block;
+          vertical-align: top;
+          width: 30% !important;
+
+          @media screen and (max-width: 960px) {
+            margin-bottom: 5px;
+            width: 100% !important;
+          }
+
+          label {
+            display: none;
+          }
+
+          .form-select {
+            display: inline-block;
+            width: 95%;
+          }
+        }
+
+        .webform-calendar {
+          display: inline-block;
+          margin: 7px 0;
+          vertical-align: middle;
+          width: auto !important;
+        }
+      }
+
+      // Time Selectbox
+      .webform-container-inline {
+        display: inline-block;
+        vertical-align: top;
+        width: 65%;
+
+        @media screen and (max-width: 360px) {
+          width: 100%;
+        }
+
+        .form-item {
+          display: inline-block;
+          margin: 0 0 5px;
+          vertical-align: top;
+          width: 30% !important;
+
+          @media screen and (max-width: 960px) {
+            margin-bottom: 5px;
+            width: 45% !important;
+          }
+
+          label {
+            display: none;
+          }
+
+          .form-select {
+            display: inline-block;
+            padding: 0 2px;
+            width: 95%;
+          }
+        }
+
+        .form-radios {
+          width: 100%;
+
+          label {
+            display: inline-block;
+          }
+        }
+      }
+
+      // Upload file
+      .form-managed-file {
+        display: inline-block;
+        vertical-align: top;
+        width: 65%;
+
+        .form-file {
+          height: 36px;
+          margin-right: 10px;
+        }
+
+        .form-submit {
+          margin: 1px 0;
+        }
+      }
+    }
+  }
+}
+
+input {
+  &[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #e7e7e7;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9;
+    cursor: pointer;
+    height: 18px;
+    transition: .2s;
+    width: 18px;
+
+    &:hover,
+    &:checked {
+      background: $base-color;
+      box-shadow: inset 0 0 0 .4em #fefefe,
+      0 0 0 .1em;
+    }
+
+    &:checked {
+      background: $base-color;
+      box-shadow: inset 0 0 0 .4em #fefefe,
+      0 0 0 .1em #a9aaa9;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+// End Form
+
+// Modal popup
+#modalContent,
+.modal-content {
+  background: #f9f9f9;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .5);
+  @include border-radius(4px);
+
+  .modal-header {
+    background-color: transparent;
+    background-image: none;
+    border-bottom: 1px solid $gray-color;
+    height: auto;
+    margin: 0 0 20px;
+    padding: 15px;
+
+    .close {
+      background-color: $base-color;
+      border: 2px solid $white-color;
+      color: $white-color;
+      height: 25px;
+      @include border-radius(50%);
+      opacity: 1;
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      width: 25px;
+    }
+
+    .modal-title {
+      color: $red-color;
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 30px;
+      margin: 0;
+      text-align: center;
+
+      @media screen and (max-width: 960px) {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .modal-body {
+    font-size: $small-font-size;
+    height: auto;
+    max-height: inherit;
+    overflow-y: auto;
+    padding: 0 20px 20px;
+    position: static;
+    width: 100%;
+
+    h3 {
+      color: $base-color;
+      font-weight: bold;
+    }
+  }
+
+  .modal-footer {
+    display: none;
+  }
+}
+
+#modalBackdrop {
+  background-color: #666;
+}
+
+.modal-open {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#freeze-height {
+  height: 100%;
+}
+
+// End Modal popup
+
+// maintainace page
+body.maintenance-page {
+  background-position: 0 0;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  width: 650px;
+
+  header {
+    padding: 0;
+
+    h1 {
+      display: none;
+    }
+  }
+
+  main {
+    h1 {
+      margin: 20px 0;
+    }
+  }
+}
+
+// end maintainace page
+
+// Social media
+#block-dcm2018-socialblock {
+  position: fixed;
+  right: 0;
+  top: 30%;
+  width: 5%;
+  z-index: 999;
+
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
+
+  .social-media-list {
+    > span {
+      color: $white-color;
+      display: block;
+      margin: 0 0 1px;
+      text-align: right;
+
+      .stButton {
+        margin: 0;
+
+        .stButton_gradient {
+          border: 0;
+          border-radius: 0;
+          height: auto;
+          padding: 0;
+        }
+
+        .stMainServices,
+        .chicklets {
+          background-color: #000;
+          /*Added important: to override default css which is added by module using js*/
+          background-image: none !important;
+          color: $white-color;
+          float: none;
+          font-size: 0;
+          height: auto;
+          @include base-fa;
+          padding: 8px;
+          text-align: center;
+          text-indent: 0;
+          transition: all .5s linear 0s;
+          width: 40px;
+
+          @media screen and (max-width: 960px) {
+            width: 30px;
+          }
+
+          &:hover {
+            background-color: $link-color;
+            opacity: 1;
+            text-align: left;
+            width: 50px;
+
+            @media screen and (max-width: 960px) {
+              width: 40px;
+            }
+          }
+
+          &.st-facebook-counter {
+            &:before {
+              content: "\f09a";
+              font-size: 19px;
+
+              @media screen and (max-width: 960px) {
+                font-size: 15px;
+              }
+            }
+          }
+
+          &.googleplus {
+            width: 56px;
+
+            &:before {
+              content: "\f0d5";
+              font-size: 19px;
+
+              @media screen and (max-width: 960px) {
+                font-size: 15px;
+              }
+            }
+
+            &:hover {
+              width: 66px;
+            }
+          }
+
+          &.st-linkedin-counter {
+            &:before {
+              content: "\f0e1";
+              font-size: 19px;
+
+              @media screen and (max-width: 960px) {
+                font-size: 15px;
+              }
+            }
+          }
+
+          &.st-twitter-counter {
+            &:before {
+              content: "\f099";
+              font-size: 19px;
+
+              @media screen and (max-width: 960px) {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+
+        .stArrow {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+.footer.container {
+  border: 0;
+  clear: both;
+  margin: 0;
+  max-width: inherit;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+
+  .region-footer {
+    border-top: 0;
+    clear: both;
+    margin: 0;
+    padding: 0;
+
+    // Location info
+    .location-info {
+      .footer-copy {
+        background-color: rgba(246, 246, 242, .8);
+        color: $base-color;
+        font-size: 16px;
+        height: 100%;
+        line-height: 22px;
+        padding: 20px;
+        position: absolute;
+        right: 5%;
+        top: 0;
+        width: 25%;
+        z-index: 1;
+
+        @media screen and (max-width: 960px) {
+          bottom: 0;
+          font-size: 14px;
+          height: 50%;
+          line-height: 16px;
+          padding: 15px;
+          position: absolute;
+          right: inherit;
+          top: inherit;
+          width: 100%;
+        }
+
+        a {
+          color: $base-color;
+          text-decoration: underline;
+          transition: all .3s linear 0s;
+
+          &:hover {
+            color: $base-color;
+          }
+        }
+        h2 {
+          color: $base-color;
+          font-family: $raleway-extrabold;
+          font-size: 50px;
+          line-height: 55px;
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+        .underline {
+          background-color: $blue-color;
+        }
+        .paragraph-box {
+          margin-bottom: 15px;
+        }
+        .venue-details-item {
+          .more-info-box {
+            margin-bottom: 15px;
+            margin-top: 10px;
+          }
+        }
+      }
+      .google-maps {
+        padding: 0;
+      }
+    }
+
+    // Footer copyright
+    .footer-copyright {
+      height: 200px;
+    }
+    .dcm2017-footer {
+      background: $footer-bg;
+      bottom: 0;
+      color: $white-color;
+      left: 0;
+      line-height: 22px;
+      margin-bottom: 0;
+      padding: 20px 0;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      z-index: 1;
+      &:before {
+        @include cross;
+        z-index: -1;
+      }
+      .container {
+        max-width: inherit;
+        padding: 0;
+      }
+      a {
+        color: $white-color;
+        text-decoration: none;
+      }
+      .dcm2017-footer-author-name {
+        letter-spacing: 3.3px;
+        text-transform: uppercase;
+      }
+      .powered-by {
+        bottom: 50%;
+        position: absolute;
+        right: 10px;
+
+        @media screen and (max-width: 960px) {
+          position: static;
+          text-align: center;
+        }
+
+        img {
+          @media screen and (max-width: 960px) {
+            width: 120px;
+          }
+        }
+      }
+      p {
+        margin: 0 0 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// End Footer
