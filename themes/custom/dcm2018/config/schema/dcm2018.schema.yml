@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the THEMETITLE theme.
+
+dcm2018.settings:
+  type: theme_settings
+  label: 'DCM 2018 settings'
