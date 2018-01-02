@@ -1,0 +1,32 @@
+uuid: 3635c89e-c1b7-461f-9106-a4cdefece25e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.session_info
+  module:
+    - node
+    - views
+  theme:
+    - dcm2018
+id: dcm2018_views_block__session_info_block_3
+theme: dcm2018
+region: sidebar_second
+weight: -17
+provider: null
+plugin: 'views_block:session_info-block_3'
+settings:
+  id: 'views_block:session_info-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      sessions: sessions
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

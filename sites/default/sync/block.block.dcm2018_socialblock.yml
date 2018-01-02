@@ -1,0 +1,38 @@
+uuid: a9022985-7292-49e3-9ff2-11d840d70799
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d70a1401-8b49-4d1f-be28-2050d8b2a944'
+  module:
+    - block_class
+    - block_content
+    - user
+  theme:
+    - dcm2018
+third_party_settings:
+  block_class:
+    classes: ''
+id: dcm2018_socialblock
+theme: dcm2018
+region: content
+weight: -26
+provider: null
+plugin: 'block_content:d70a1401-8b49-4d1f-be28-2050d8b2a944'
+settings:
+  id: 'block_content:d70a1401-8b49-4d1f-be28-2050d8b2a944'
+  label: 'Social Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

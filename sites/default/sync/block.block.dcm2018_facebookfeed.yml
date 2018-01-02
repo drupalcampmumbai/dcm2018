@@ -1,0 +1,31 @@
+uuid: f0ff60b1-1d78-4239-8192-0d616c6ff47c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b36d3df4-1e1f-4dbc-a72f-695a700cf6e7'
+  module:
+    - block_content
+    - system
+  theme:
+    - dcm2018
+id: dcm2018_facebookfeed
+theme: dcm2018
+region: content_bottom
+weight: -23
+provider: null
+plugin: 'block_content:b36d3df4-1e1f-4dbc-a72f-695a700cf6e7'
+settings:
+  id: 'block_content:b36d3df4-1e1f-4dbc-a72f-695a700cf6e7'
+  label: 'Facebook Feed'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,6 +1,6 @@
 uuid: 8edf04a1-94ea-486f-bf76-9176a613763b
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.sponsors
@@ -15,8 +15,8 @@ third_party_settings:
     classes: ''
 id: views_block__sponsors_gold_sponsor_slideshow
 theme: dcm2017
-region: '-1'
-weight: -19
+region: sidebar_second
+weight: -15
 provider: null
 plugin: 'views_block:sponsors-gold_sponsor_slideshow'
 settings:

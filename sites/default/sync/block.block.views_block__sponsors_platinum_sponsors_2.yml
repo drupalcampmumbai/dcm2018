@@ -1,6 +1,6 @@
 uuid: c3e4b95a-1ebc-46d9-becc-4c8c867360aa
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.sponsors
@@ -15,8 +15,8 @@ third_party_settings:
     classes: ''
 id: views_block__sponsors_platinum_sponsors_2
 theme: dcm2017
-region: '-1'
-weight: -12
+region: header
+weight: -22
 provider: null
 plugin: 'views_block:sponsors-platinum_sponsors'
 settings:

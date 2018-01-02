@@ -1,0 +1,20 @@
+uuid: 113bc50d-a01e-4ea5-81bc-914ab9a6fd17
+langcode: en
+status: false
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - dcm2018
+id: dcm2018_responsivemenumobileicon
+theme: dcm2018
+region: '-1'
+weight: -13
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  provider: responsive_menu
+  label_display: '0'
+visibility: {  }

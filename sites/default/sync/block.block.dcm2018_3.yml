@@ -1,0 +1,24 @@
+uuid: 586c6286-b3ae-4925-8122-36354deef574
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.dcm2017
+  module:
+    - system
+  theme:
+    - dcm2018
+id: dcm2018_3
+theme: dcm2018
+region: navigation_collapsible
+weight: -19
+provider: null
+plugin: 'system_menu_block:dcm2017'
+settings:
+  id: 'system_menu_block:dcm2017'
+  label: DCM2017
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

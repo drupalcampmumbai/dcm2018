@@ -1,0 +1,35 @@
+uuid: 294b4695-3f6a-49d7-b1bf-931eddb7f131
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c75d6bbb-5fe1-4dff-b92a-7237c4d96f9f'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - dcm2018
+third_party_settings:
+  block_class:
+    classes: ''
+id: dcm2018_connectwithus
+theme: dcm2018
+region: sidebar_second
+weight: -23
+provider: null
+plugin: 'block_content:c75d6bbb-5fe1-4dff-b92a-7237c4d96f9f'
+settings:
+  id: 'block_content:c75d6bbb-5fe1-4dff-b92a-7237c4d96f9f'
+  label: 'Connect With Us'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/contact/*"
+    negate: false
+    context_mapping: {  }

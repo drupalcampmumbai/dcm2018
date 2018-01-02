@@ -1,0 +1,22 @@
+uuid: 9507fa42-0ac2-4718-952d-cf8b0a3e339d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dcm2018
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: dcm2018_content
+theme: dcm2018
+region: content
+weight: -19
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

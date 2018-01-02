@@ -1,0 +1,24 @@
+uuid: e0dfff79-2070-4c19-bd59-7824bc7c3850
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.dcm2017
+  module:
+    - system
+  theme:
+    - dcm2018
+id: dcm2018_dcm2018
+theme: dcm2018
+region: '-1'
+weight: -24
+provider: null
+plugin: 'system_menu_block:dcm2017'
+settings:
+  id: 'system_menu_block:dcm2017'
+  label: DCM2017
+  provider: system
+  label_display: visible
+  level: 3
+  depth: 3
+visibility: {  }

@@ -15,8 +15,8 @@ third_party_settings:
     classes: ''
 id: connectwithus
 theme: dcm2017
-region: content
-weight: -25
+region: sidebar_second
+weight: -23
 provider: null
 plugin: 'block_content:c75d6bbb-5fe1-4dff-b92a-7237c4d96f9f'
 settings:

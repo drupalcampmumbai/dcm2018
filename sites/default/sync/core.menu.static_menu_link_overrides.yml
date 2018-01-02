@@ -6,17 +6,17 @@ definitions:
     weight: 0
     expanded: false
   user__logout:
-    enabled: false
-    menu_name: dcm2017
-    parent: ''
     weight: -42
-    expanded: false
-  user__page:
-    enabled: false
     menu_name: dcm2017
     parent: ''
-    weight: -43
     expanded: false
+    enabled: true
+  user__page:
+    weight: -43
+    menu_name: dcm2017
+    parent: ''
+    expanded: false
+    enabled: true
   admin_toolbar_tools__help:
     weight: 1
     menu_name: admin

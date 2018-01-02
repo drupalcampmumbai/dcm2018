@@ -1,0 +1,30 @@
+uuid: 1b7a60ea-f322-4abc-93e6-0d0c660b1471
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.sponsors
+  module:
+    - system
+    - views
+  theme:
+    - dcm2018
+id: dcm2018_views_block__sponsors_silver_sponsor
+theme: dcm2018
+region: '-1'
+weight: -11
+provider: null
+plugin: 'views_block:sponsors-silver_sponsor'
+settings:
+  id: 'views_block:sponsors-silver_sponsor'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

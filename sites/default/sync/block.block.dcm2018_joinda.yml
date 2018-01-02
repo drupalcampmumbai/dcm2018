@@ -1,0 +1,35 @@
+uuid: 85baea4a-e270-4125-9c53-22974a8f693c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:26d8fa36-9268-45d7-9c97-5e21162c87f0'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - dcm2018
+third_party_settings:
+  block_class:
+    classes: ''
+id: dcm2018_joinda
+theme: dcm2018
+region: footer
+weight: -25
+provider: null
+plugin: 'block_content:26d8fa36-9268-45d7-9c97-5e21162c87f0'
+settings:
+  id: 'block_content:26d8fa36-9268-45d7-9c97-5e21162c87f0'
+  label: 'Join DA'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

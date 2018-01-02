@@ -9,7 +9,7 @@ _core:
 id: dcm2017_page_title
 theme: dcm2017
 region: content
-weight: -23
+weight: -24
 provider: null
 plugin: page_title_block
 settings:

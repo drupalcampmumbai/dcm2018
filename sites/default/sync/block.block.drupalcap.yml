@@ -16,7 +16,7 @@ third_party_settings:
 id: drupalcap
 theme: dcm2017
 region: '-1'
-weight: 0
+weight: -23
 provider: null
 plugin: 'block_content:7379c822-0bd9-401d-b37b-1510f624450d'
 settings:

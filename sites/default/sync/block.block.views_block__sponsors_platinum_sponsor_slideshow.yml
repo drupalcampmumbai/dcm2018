@@ -1,6 +1,6 @@
 uuid: de34c8e0-ce26-4b5f-8c46-34691f40aa8a
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.sponsors
@@ -12,8 +12,8 @@ dependencies:
     - dcm2017
 id: views_block__sponsors_platinum_sponsor_slideshow
 theme: dcm2017
-region: '-1'
-weight: -1
+region: content
+weight: -25
 provider: null
 plugin: 'views_block:sponsors-platinum_sponsor_slideshow'
 settings:

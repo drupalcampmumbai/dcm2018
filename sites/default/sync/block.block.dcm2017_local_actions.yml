@@ -9,7 +9,7 @@ _core:
 id: dcm2017_local_actions
 theme: dcm2017
 region: content
-weight: -22
+weight: -23
 provider: null
 plugin: local_actions_block
 settings:

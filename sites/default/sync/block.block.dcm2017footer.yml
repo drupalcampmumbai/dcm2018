@@ -5,13 +5,9 @@ dependencies:
   content:
     - 'block_content:basic:a8e61364-e2af-4118-8cee-49b567936fd7'
   module:
-    - block_class
     - block_content
   theme:
     - dcm2017
-third_party_settings:
-  block_class:
-    classes: ''
 id: dcm2017footer
 theme: dcm2017
 region: footer
@@ -20,7 +16,7 @@ provider: null
 plugin: 'block_content:a8e61364-e2af-4118-8cee-49b567936fd7'
 settings:
   id: 'block_content:a8e61364-e2af-4118-8cee-49b567936fd7'
-  label: 'Dcm-2018 Footer'
+  label: 'Dcm-2017 Footer'
   provider: block_content
   label_display: '0'
   status: true

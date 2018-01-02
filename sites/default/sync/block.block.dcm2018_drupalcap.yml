@@ -1,0 +1,35 @@
+uuid: ead6a141-cbce-47a4-93f1-a52942f1d66b
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:7379c822-0bd9-401d-b37b-1510f624450d'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - dcm2018
+third_party_settings:
+  block_class:
+    classes: ''
+id: dcm2018_drupalcap
+theme: dcm2018
+region: '-1'
+weight: -23
+provider: null
+plugin: 'block_content:7379c822-0bd9-401d-b37b-1510f624450d'
+settings:
+  id: 'block_content:7379c822-0bd9-401d-b37b-1510f624450d'
+  label: 'Drupal CAP'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

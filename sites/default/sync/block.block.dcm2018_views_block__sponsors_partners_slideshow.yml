@@ -1,0 +1,34 @@
+uuid: 1977e6a7-13c3-4fe8-b22a-7e85ad27521b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsors
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - dcm2018
+third_party_settings:
+  block_class:
+    classes: ''
+id: dcm2018_views_block__sponsors_partners_slideshow
+theme: dcm2018
+region: content_bottom
+weight: -20
+provider: null
+plugin: 'views_block:sponsors-partners_slideshow'
+settings:
+  id: 'views_block:sponsors-partners_slideshow'
+  label: Partners
+  provider: views
+  label_display: visible
+  views_label: Partners
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
