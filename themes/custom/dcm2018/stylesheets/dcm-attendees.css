@@ -1,57 +1,34 @@
-// Variables
-$basefont-size: 16px;
-$small-font-size: 14px;
-$baseline-height: 25px;
-$base-color: #333;
-$link-color: #0676c0;
-$hover-color: $base-color;
-$page-width: 1200px;
-$border-color: #635f5f;
-$header-bg: #61cae7;
-$table-th: #626d83;
-$btn-color: $link-color;
-$btn-hover-color: $base-color;
-$footer-bg: #337ab7;
-$white-color: #fff;
-$blue-color: #337ab7;
-$blue-color1: #bce8f1;
-$gray-color: #ccc;
-$red-color: #f00;
-$light-gray-color: #eee;
-$gray-color1: #ddd;
-$gray-color2: #666;
-$gray-color3: #999;
-$gray-color4: #333;
-$gray-color5: #f6f6f2;
-
-
-// End Variables
-
-// Fonts
 @font-face {
   font-family: "Muli";
   src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.woff");
-}
-
-$muli: "Muli", tahoma, Sans-Serif;
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
   src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff");
-}
-
-$raleway-regular: "Raleway-Regular", tahoma, Sans-Serif;
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
   src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff");
-}
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
-$raleway-extrabold: "Raleway-ExtraBold", tahoma, Sans-Serif;
-// End Fonts
+.page-container .page-container-inner .form-group .view .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap row;
+  flex-flow: wrap row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
+  .page-container .page-container-inner .form-group .view .view-content .slideanim {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    margin-bottom: 32px; }
+
+/*# sourceMappingURL=css-maps/dcm-attendees.css.map */

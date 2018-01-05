@@ -1,0 +1,31 @@
+@import "component/dcm-variables";
+@import "component/dcm-mixins";
+
+// Note: !important used to override other css file.
+
+//attendees
+
+.page-container {
+	.page-container-inner {
+		.form-group {
+			.view {
+				.view-content {
+					display: -ms-flexbox;
+					display: flex;
+					-ms-flex-flow: wrap row;
+					flex-flow: wrap row;
+					-ms-flex-pack: start;
+					justify-content: flex-start;
+					-ms-flex-align: stretch;
+					align-items: stretch;
+					.slideanim {
+				    display: inline-block;
+				    width: 33%;
+				    vertical-align: top;
+				    margin-bottom: 32px;
+					}
+				}
+			}
+		}
+	}
+}

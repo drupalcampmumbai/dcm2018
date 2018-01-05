@@ -232,31 +232,56 @@
 }
 
 // Recent News
-.block-views-blockdrupal-camp-news-news-listing-block {
+.drupal-recent-news {
+  background-color: $blue-color1;
+    padding: 50px 0 50px;
+  position: relative;
+  &:before {
+    @include cross;
+  }
+  .block-title {
+    color: $blue-color;
+    font-family: $raleway-extrabold;
+    font-size: 35px;
+  }
   .view {
+    max-width: $page-width;
+    margin: 0 auto;
+    position: relative;
     .views-row {
+      border-bottom: 1px solid $gray-color;
       margin: 0 0 15px;
       padding: 0 0 15px 0;
-
-
-
-      .views-field-field-news-category {
+      &:last-child {
+        border-bottom: 0;
+        margin-bottom: 20px;
+      }
+      .views-field {
         margin: 5px 0 0;
+        .homepage-new {
+          .news-title {
+            a {
+              display: inline-block;
+              font-size: 27px;
+              line-height: 32px;
+              margin-bottom: 10px;
+              margin-top: 0;
+              text-decoration: initial;
+            }
+          }
+        }
+      }
+
+      .views-more-link {
+        margin: 10px 12px;
+        text-align: right;
 
         a {
           border-left: 2px solid $link-color;
           padding-left: 5px;
-        }
-      }
-    }
-
-    .more-link {
-      margin: 10px 12px;
-      text-align: right;
-
-      a {
-        &:after {
-          content: " >>";
+          &:after {
+            content: " >>";
+          }
         }
       }
     }
@@ -267,7 +292,7 @@
 
 // Apprentice and Join DA
 #block-dcm2018-drupalapprenctices {
-  background-color: #bce8f1;
+  background-color: $blue-color1;
   padding: 50px 0 50px;
   position: relative;
   &:before {
