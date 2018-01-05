@@ -5,27 +5,84 @@
 
 //attendees
 
-.page-container {
-	.page-container-inner {
-		.form-group {
-			.view {
-				.view-content {
+
+.view-attendees {
+	.view-content {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-flow: wrap row;
+		flex-flow: wrap row;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		-ms-flex-align: stretch;
+		align-items: stretch;
+		.slideanim {
+	    display: inline-block;
+	    width: 33%;
+	    vertical-align: top;
+	    margin-bottom: 32px;
+	    .attendees-page {
+	    	.team-attendees {
+					position: relative;
+					max-width: 360px;
+					padding: 40px 32px 37px;
+					transition: box-shadow .3s ease;
+					-webkit-transition: box-shadow .3s ease;
 					display: -ms-flexbox;
 					display: flex;
-					-ms-flex-flow: wrap row;
-					flex-flow: wrap row;
-					-ms-flex-pack: start;
-					justify-content: flex-start;
-					-ms-flex-align: stretch;
-					align-items: stretch;
-					.slideanim {
-				    display: inline-block;
-				    width: 33%;
-				    vertical-align: top;
-				    margin-bottom: 32px;
+					-ms-flex-pack: justify;
+					justify-content: space-between;
+					-ms-flex-align: start;
+					align-items: flex-start;
+					background-color: #337ab7;
+					&:hover {
+				    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+					}
+					.user-image{
+						a {
+							width: 121px;
+					    height: 121px;
+					    display: -ms-flexbox;
+					    display: flex;
+					    -ms-flex-pack: center;
+					    justify-content: center;
+					    -ms-flex-align: center;
+					    align-items: center;
+					    border-radius: 50%;
+					    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+					    overflow: hidden;
+				  	}
+					}
+					.user-name {
+						color: #fff;
+						width: 153px;
+						padding-right: 0;
+						font-size: 16px;
+						line-height: 22px;
+						.attendees-name {
+							font-size: 24px;
+					    margin-bottom: 5px;
+    					line-height: 27px;
+							a {
+						    color: #fff;
+				        text-decoration: none;
+							}
+						}
+						h3 {
+					    font-size: 16px;
+			        margin-bottom: 0;
+	            line-height: 20px;
+						}
+						.user-profession {
+							a {
+								color: #fff;
+								text-decoration: none;
+								font-size: 12px;
+							}
+						}
 					}
 				}
-			}
-		}
+    	}
+    }
 	}
 }
