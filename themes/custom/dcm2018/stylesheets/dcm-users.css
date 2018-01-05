@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+
+.main-container .page-container .user-register-form .form-item .form-managed-file .preview {
+  padding: 0; }
+
+.main-container .page-container .user-register-form .fieldgroup .panel-body .form-item, .main-container .page-container .user-register-form .form-group .panel-body .form-item {
+  width: 30% !important;
+  display: inline-block;
+  margin-bottom: 3px; }
+  .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item label input[type="radio"], .main-container .page-container .user-register-form .form-group .panel-body .form-item label input[type="radio"] {
+    margin-left: -27px; }
+
+.main-container .page-container .user-register-form .captcha .img-responsive {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-left: 30.4%;
+  margin-bottom: 5px; }
+
+/*# sourceMappingURL=css-maps/dcm-users.css.map */

@@ -1,0 +1,44 @@
+@import "component/dcm-variables";
+@import "component/dcm-mixins";
+
+// Note: !important used to override other css file.
+
+// Register form page
+.main-container {
+  .page-container {
+    .user-register-form {
+      .form-item {
+        .form-managed-file {
+          .preview {
+            padding: 0;
+          }
+        }
+      }
+      .fieldgroup,
+      .form-group {
+        .panel-body {
+          .form-item {
+            display: inline-block;
+            margin-bottom: 3px;
+            width: 30% !important;
+            label {
+              input {
+                &[type="radio"] {
+                  margin-left: -27px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .captcha {
+        .img-responsive {
+          border: 1px solid #ccc;
+          margin-bottom: 5px;
+          margin-left: 30.4%;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

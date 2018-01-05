@@ -222,20 +222,37 @@
     #block-connectwithus .social-icon.icon-drupalorg a:before {
       content: "\f1a9"; }
 
-.block-views-blockdrupal-camp-news-news-listing-block .view .views-row {
-  margin: 0 0 15px;
-  padding: 0 0 15px 0; }
-  .block-views-blockdrupal-camp-news-news-listing-block .view .views-row .views-field-field-news-category {
-    margin: 5px 0 0; }
-    .block-views-blockdrupal-camp-news-news-listing-block .view .views-row .views-field-field-news-category a {
-      border-left: 2px solid #0676c0;
-      padding-left: 5px; }
-
-.block-views-blockdrupal-camp-news-news-listing-block .view .more-link {
-  margin: 10px 12px;
-  text-align: right; }
-  .block-views-blockdrupal-camp-news-news-listing-block .view .more-link a:after {
-    content: " >>"; }
+.drupal-recent-news {
+  margin: 0 auto;
+  width: 1200px; }
+  .drupal-recent-news .block-title {
+    font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
+    font-size: 35px;
+    color: #337ab7; }
+  .drupal-recent-news .view .views-row {
+    margin: 0 0 15px;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #ccc; }
+    .drupal-recent-news .view .views-row:last-child {
+      border-bottom: 0;
+      margin-bottom: 20px; }
+    .drupal-recent-news .view .views-row .views-field {
+      margin: 5px 0 0; }
+      .drupal-recent-news .view .views-row .views-field .homepage-new .news-title a {
+        font-size: 27px;
+        line-height: 32px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        text-decoration: initial;
+        display: inline-block; }
+    .drupal-recent-news .view .views-row .views-more-link {
+      margin: 10px 12px;
+      text-align: right; }
+      .drupal-recent-news .view .views-row .views-more-link a {
+        border-left: 2px solid #0676c0;
+        padding-left: 5px; }
+        .drupal-recent-news .view .views-row .views-more-link a:after {
+          content: " >>"; }
 
 /*End Recent News*/
 #block-dcm2018-drupalapprenctices {

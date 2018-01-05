@@ -397,7 +397,7 @@ img {
   .main-container .region-content .page-header {
     border-bottom: 1px solid #635f5f;
     padding-bottom: 15px;
-    text-transform: uppercase; }
+    text-transform: capitalize; }
 
 .main-container,
 .container {
@@ -549,11 +549,24 @@ table tr.error {
     box-shadow: none; }
     .main-container form .fieldgroup .panel-heading,
     #drupal-modal form .fieldgroup .panel-heading {
-      display: none; }
+      display: inline-block;
+      float: none;
+      padding: 0;
+      margin: 5px 0 0;
+      vertical-align: middle;
+      width: 30%;
+      border: 0; }
     .main-container form .fieldgroup .panel-body,
     #drupal-modal form .fieldgroup .panel-body {
       background-color: transparent;
-      padding: 0; }
+      padding: 0;
+      border-radius: 0;
+      box-shadow: none;
+      display: inline-block;
+      float: none;
+      max-width: inherit;
+      vertical-align: top;
+      width: 65%; }
       .main-container form .fieldgroup .panel-body .form-item,
       #drupal-modal form .fieldgroup .panel-body .form-item {
         margin-bottom: 0; }
@@ -569,6 +582,8 @@ table tr.error {
           #drupal-modal form .fieldgroup .panel-body .form-item .select-wrapper input,
           #drupal-modal form .fieldgroup .panel-body .form-item .select-wrapper select,
           #drupal-modal form .fieldgroup .panel-body .form-item .select-wrapper .form-textarea-wrapper {
+            float: none;
+            padding: 8px 20px;
             width: 100%; }
             .main-container form .fieldgroup .panel-body .form-item .select-wrapper input textarea,
             .main-container form .fieldgroup .panel-body .form-item .select-wrapper select textarea,
@@ -576,10 +591,12 @@ table tr.error {
             #drupal-modal form .fieldgroup .panel-body .form-item .select-wrapper input textarea,
             #drupal-modal form .fieldgroup .panel-body .form-item .select-wrapper select textarea,
             #drupal-modal form .fieldgroup .panel-body .form-item .select-wrapper .form-textarea-wrapper textarea {
+              padding: 8px 20px;
               width: 100%; }
   .main-container form .intl-tel-input.allow-dropdown,
   #drupal-modal form .intl-tel-input.allow-dropdown {
     display: inline-block;
+    float: none;
     max-width: inherit;
     vertical-align: top;
     width: 65%; }
@@ -592,6 +609,8 @@ table tr.error {
     #drupal-modal form .intl-tel-input.allow-dropdown input,
     #drupal-modal form .intl-tel-input.allow-dropdown select,
     #drupal-modal form .intl-tel-input.allow-dropdown .form-textarea-wrapper {
+      float: none;
+      padding: 8px 20px;
       width: 100%; }
       .main-container form .intl-tel-input.allow-dropdown input textarea,
       .main-container form .intl-tel-input.allow-dropdown select textarea,
@@ -599,6 +618,8 @@ table tr.error {
       #drupal-modal form .intl-tel-input.allow-dropdown input textarea,
       #drupal-modal form .intl-tel-input.allow-dropdown select textarea,
       #drupal-modal form .intl-tel-input.allow-dropdown .form-textarea-wrapper textarea {
+        float: none;
+        padding: 8px 20px;
         width: 100%; }
   .main-container form a,
   #drupal-modal form a {
@@ -606,14 +627,16 @@ table tr.error {
     text-decoration: underline; }
   .main-container form .form-item,
   #drupal-modal form .form-item {
-    margin: 0 0 15px;
+    margin: 0 0 20px;
     padding: 0 !important;
     width: 100% !important; }
     .main-container form .form-item label,
     #drupal-modal form .form-item label {
       display: inline-block;
+      float: none;
       margin: 0;
       padding: 0;
+      margin: 5px 0 0;
       vertical-align: middle;
       width: 30%; }
       .main-container form .form-item label.form-required:after,
@@ -629,170 +652,188 @@ table tr.error {
           font-weight: bold;
           margin: 0 0 5px;
           width: 100%; } }
+    .main-container form .form-item select,
+    .main-container form .form-item input,
+    #drupal-modal form .form-item select,
+    #drupal-modal form .form-item input {
+      color: #333;
+      padding: 8px 20px; }
     .main-container form .form-item input,
     .main-container form .form-item select,
     .main-container form .form-item .form-textarea-wrapper,
+    .main-container form .form-item .select-wrapper,
     #drupal-modal form .form-item input,
     #drupal-modal form .form-item select,
-    #drupal-modal form .form-item .form-textarea-wrapper {
+    #drupal-modal form .form-item .form-textarea-wrapper,
+    #drupal-modal form .form-item .select-wrapper {
       border-radius: 0;
       box-shadow: none;
       display: inline-block;
+      float: none;
       max-width: inherit;
       vertical-align: top;
       width: 65%; }
       .main-container form .form-item input textarea,
       .main-container form .form-item select textarea,
       .main-container form .form-item .form-textarea-wrapper textarea,
+      .main-container form .form-item .select-wrapper textarea,
       #drupal-modal form .form-item input textarea,
       #drupal-modal form .form-item select textarea,
-      #drupal-modal form .form-item .form-textarea-wrapper textarea {
+      #drupal-modal form .form-item .form-textarea-wrapper textarea,
+      #drupal-modal form .form-item .select-wrapper textarea {
         border-radius: 0;
         box-shadow: none;
+        float: none;
+        padding: 8px 20px;
+        width: 100%; }
+      .main-container form .form-item input select,
+      .main-container form .form-item input input,
+      .main-container form .form-item select select,
+      .main-container form .form-item select input,
+      .main-container form .form-item .form-textarea-wrapper select,
+      .main-container form .form-item .form-textarea-wrapper input,
+      .main-container form .form-item .select-wrapper select,
+      .main-container form .form-item .select-wrapper input,
+      #drupal-modal form .form-item input select,
+      #drupal-modal form .form-item input input,
+      #drupal-modal form .form-item select select,
+      #drupal-modal form .form-item select input,
+      #drupal-modal form .form-item .form-textarea-wrapper select,
+      #drupal-modal form .form-item .form-textarea-wrapper input,
+      #drupal-modal form .form-item .select-wrapper select,
+      #drupal-modal form .form-item .select-wrapper input {
+        padding: 8px 20px;
         width: 100%; }
       @media screen and (max-width: 360px) {
         .main-container form .form-item input,
         .main-container form .form-item select,
         .main-container form .form-item .form-textarea-wrapper,
+        .main-container form .form-item .select-wrapper,
         #drupal-modal form .form-item input,
         #drupal-modal form .form-item select,
-        #drupal-modal form .form-item .form-textarea-wrapper {
+        #drupal-modal form .form-item .form-textarea-wrapper,
+        #drupal-modal form .form-item .select-wrapper {
           width: 100%; } }
-    .main-container form .form-item .form-radios,
-    #drupal-modal form .form-item .form-radios {
+    .main-container form .form-item .input-group,
+    #drupal-modal form .form-item .input-group {
+      border-radius: 0;
+      box-shadow: none;
       display: inline-block;
+      float: none;
+      max-width: inherit;
       vertical-align: top;
       width: 65%; }
-      .main-container form .form-item .form-radios .form-item,
-      #drupal-modal form .form-item .form-radios .form-item {
+      .main-container form .form-item .input-group textarea,
+      #drupal-modal form .form-item .input-group textarea {
+        border-radius: 0;
+        box-shadow: none;
+        float: none;
+        padding: 8px 20px;
+        width: 100%; }
+      .main-container form .form-item .input-group select,
+      .main-container form .form-item .input-group input,
+      #drupal-modal form .form-item .input-group select,
+      #drupal-modal form .form-item .input-group input {
+        padding: 8px 20px;
+        width: 95%; }
+      .main-container form .form-item .input-group .input-group-addon,
+      #drupal-modal form .form-item .input-group .input-group-addon {
         display: inline-block;
-        padding-left: 32px !important;
-        vertical-align: top;
-        width: 48% !important; }
-        @media screen and (max-width: 960px) {
-          .main-container form .form-item .form-radios .form-item,
-          #drupal-modal form .form-item .form-radios .form-item {
-            width: 100% !important; } }
-        .main-container form .form-item .form-radios .form-item label,
-        #drupal-modal form .form-item .form-radios .form-item label {
-          display: block;
-          padding-left: 0;
-          padding-top: 0;
-          width: auto; }
-          .main-container form .form-item .form-radios .form-item label:before,
-          #drupal-modal form .form-item .form-radios .form-item label:before {
-            background: #fff;
-            border: none;
-            -o-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.6) inset;
-            box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.6) inset;
-            content: "";
-            display: block;
-            height: 22px;
-            border-radius: 50%;
-            left: 0;
-            position: absolute;
-            top: 2px;
-            width: 22px; }
-            @media screen and (max-width: 960px) {
-              .main-container form .form-item .form-radios .form-item label:before,
-              #drupal-modal form .form-item .form-radios .form-item label:before {
-                top: 0; } }
-          @media screen and (max-width: 960px) {
-            .main-container form .form-item .form-radios .form-item label,
-            #drupal-modal form .form-item .form-radios .form-item label {
-              font-size: 14px;
-              font-weight: normal;
-              margin: 0; } }
-        .main-container form .form-item .form-radios .form-item .form-radio,
-        #drupal-modal form .form-item .form-radios .form-item .form-radio {
-          left: 5px;
-          position: absolute;
-          top: 3px;
-          width: auto;
-          z-index: -1; }
-          .main-container form .form-item .form-radios .form-item .form-radio:checked + label:after,
-          #drupal-modal form .form-item .form-radios .form-item .form-radio:checked + label:after {
-            background: #0676c0;
-            border: none;
-            content: "";
-            display: block;
-            height: 14px;
-            border-radius: 50%;
-            left: 4px;
-            position: absolute;
-            top: 6px;
-            width: 14px; }
-            @media screen and (max-width: 960px) {
-              .main-container form .form-item .form-radios .form-item .form-radio:checked + label:after,
-              #drupal-modal form .form-item .form-radios .form-item .form-radio:checked + label:after {
-                top: 4px; } }
-    .main-container form .form-item .form-checkboxes,
-    #drupal-modal form .form-item .form-checkboxes {
-      display: inline-block;
-      vertical-align: top;
-      width: 65%; }
-      .main-container form .form-item .form-checkboxes .form-item,
-      #drupal-modal form .form-item .form-checkboxes .form-item {
+        float: none;
+        padding: 8px 12px;
+        text-align: center;
+        width: auto; }
+      @media screen and (max-width: 360px) {
+        .main-container form .form-item .input-group,
+        #drupal-modal form .form-item .input-group {
+          width: 100%; } }
+    .main-container form .form-item.form-type-radio label,
+    #drupal-modal form .form-item.form-type-radio label {
+      padding: 0 0 0 28px;
+      width: 100%; }
+    .main-container form .form-item.form-type-radio input[type="radio"],
+    #drupal-modal form .form-item.form-type-radio input[type="radio"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: #e7e7e7;
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9;
+      cursor: pointer;
+      height: 18px !important;
+      padding: 0;
+      transition: .2s;
+      width: 18px !important; }
+      .main-container form .form-item.form-type-radio input[type="radio"]:hover, .main-container form .form-item.form-type-radio input[type="radio"]:checked,
+      #drupal-modal form .form-item.form-type-radio input[type="radio"]:hover,
+      #drupal-modal form .form-item.form-type-radio input[type="radio"]:checked {
+        background: #337ab7;
+        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
+      .main-container form .form-item.form-type-radio input[type="radio"]:checked,
+      #drupal-modal form .form-item.form-type-radio input[type="radio"]:checked {
+        background: #337ab7;
+        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
+      .main-container form .form-item.form-type-radio input[type="radio"]:focus,
+      #drupal-modal form .form-item.form-type-radio input[type="radio"]:focus {
+        outline: 0; }
+    .main-container form .form-item.form-type-checkbox label,
+    #drupal-modal form .form-item.form-type-checkbox label {
+      display: block;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: auto; }
+      .main-container form .form-item.form-type-checkbox label:before,
+      #drupal-modal form .form-item.form-type-checkbox label:before {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        background: #e7e7e7;
+        border-radius: 50%;
+        box-shadow: inset 0 0 0 2.4em #fefefe, 0 0 0 .1em #a9aaa9;
+        content: "";
+        cursor: pointer;
         display: inline-block;
-        padding-left: 32px !important;
-        vertical-align: top;
-        width: 48% !important; }
+        height: 18px !important;
+        margin: -2px 10px 0 0;
+        padding: 0;
+        position: relative;
+        transition: .2s;
+        vertical-align: middle;
+        width: 18px !important; }
         @media screen and (max-width: 960px) {
-          .main-container form .form-item .form-checkboxes .form-item,
-          #drupal-modal form .form-item .form-checkboxes .form-item {
-            width: 100% !important; } }
-        .main-container form .form-item .form-checkboxes .form-item label,
-        #drupal-modal form .form-item .form-checkboxes .form-item label {
-          display: block;
-          padding-left: 0;
-          padding-top: 0;
-          width: auto; }
-          .main-container form .form-item .form-checkboxes .form-item label:before,
-          #drupal-modal form .form-item .form-checkboxes .form-item label:before {
-            background: #fff;
-            border: none;
-            border-radius: 0;
-            -o-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.6) inset;
-            box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.6) inset;
-            content: "";
-            display: block;
-            height: 20px;
-            left: 0;
-            position: absolute;
-            top: 2px;
-            width: 20px; }
-            @media screen and (max-width: 960px) {
-              .main-container form .form-item .form-checkboxes .form-item label:before,
-              #drupal-modal form .form-item .form-checkboxes .form-item label:before {
-                top: 0; } }
-          @media screen and (max-width: 960px) {
-            .main-container form .form-item .form-checkboxes .form-item label,
-            #drupal-modal form .form-item .form-checkboxes .form-item label {
-              font-size: 14px;
-              font-weight: normal;
-              margin: 0; } }
-        .main-container form .form-item .form-checkboxes .form-item .form-checkbox,
-        #drupal-modal form .form-item .form-checkboxes .form-item .form-checkbox {
-          display: none;
-          width: auto; }
-          .main-container form .form-item .form-checkboxes .form-item .form-checkbox:checked + label:after,
-          #drupal-modal form .form-item .form-checkboxes .form-item .form-checkbox:checked + label:after {
-            background: none;
-            border: none;
-            border-bottom: 2px solid #0676c0;
-            border-left: 2px solid #0676c0;
-            content: "";
-            display: block;
-            height: 8px;
-            transform: rotate(-45deg);
-            left: 4px;
-            position: absolute;
-            top: 6px;
-            width: 14px; }
-            @media screen and (max-width: 960px) {
-              .main-container form .form-item .form-checkboxes .form-item .form-checkbox:checked + label:after,
-              #drupal-modal form .form-item .form-checkboxes .form-item .form-checkbox:checked + label:after {
-                top: 4px; } }
+          .main-container form .form-item.form-type-checkbox label:before,
+          #drupal-modal form .form-item.form-type-checkbox label:before {
+            top: 0; } }
+      @media screen and (max-width: 960px) {
+        .main-container form .form-item.form-type-checkbox label,
+        #drupal-modal form .form-item.form-type-checkbox label {
+          font-size: 14px;
+          font-weight: normal;
+          margin: 0; } }
+    .main-container form .form-item.form-type-checkbox input[type="checkbox"],
+    #drupal-modal form .form-item.form-type-checkbox input[type="checkbox"] {
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      display: none;
+      position: relative; }
+      .main-container form .form-item.form-type-checkbox input[type="checkbox"]:checked,
+      #drupal-modal form .form-item.form-type-checkbox input[type="checkbox"]:checked {
+        border: solid #337ab7;
+        border-width: 0 0 3px 3px;
+        display: block;
+        height: 7px;
+        left: 3px;
+        margin: 0 !important;
+        padding: 0;
+        position: absolute;
+        top: 9px;
+        transform: rotate(-45deg);
+        width: 12px !important; }
+      .main-container form .form-item.form-type-checkbox input[type="checkbox"]:focus,
+      #drupal-modal form .form-item.form-type-checkbox input[type="checkbox"]:focus {
+        outline: 0; }
     .main-container form .form-item .webform-datepicker,
     #drupal-modal form .form-item .webform-datepicker {
       display: inline-block;
@@ -814,6 +855,7 @@ table tr.error {
         .main-container form .form-item .webform-datepicker .form-item .form-select,
         #drupal-modal form .form-item .webform-datepicker .form-item .form-select {
           display: inline-block;
+          padding: 8px 20px;
           width: 95%; }
       .main-container form .form-item .webform-datepicker .webform-calendar,
       #drupal-modal form .form-item .webform-datepicker .webform-calendar {
@@ -847,7 +889,7 @@ table tr.error {
         .main-container form .form-item .webform-container-inline .form-item .form-select,
         #drupal-modal form .form-item .webform-container-inline .form-item .form-select {
           display: inline-block;
-          padding: 0 2px;
+          padding: 8px 20px;
           width: 95%; }
       .main-container form .form-item .webform-container-inline .form-radios,
       #drupal-modal form .form-item .webform-container-inline .form-radios {
@@ -863,10 +905,25 @@ table tr.error {
       .main-container form .form-item .form-managed-file .form-file,
       #drupal-modal form .form-item .form-managed-file .form-file {
         height: 36px;
-        margin-right: 10px; }
+        margin-right: 10px;
+        width: 100%; }
       .main-container form .form-item .form-managed-file .form-submit,
       #drupal-modal form .form-item .form-managed-file .form-submit {
         margin: 1px 0; }
+  .main-container form .dropdown-menu,
+  #drupal-modal form .dropdown-menu {
+    margin: 0;
+    padding: 0; }
+    .main-container form .dropdown-menu li,
+    #drupal-modal form .dropdown-menu li {
+      list-style-type: none;
+      margin: 0 0 0;
+      padding: 0; }
+      .main-container form .dropdown-menu li a,
+      #drupal-modal form .dropdown-menu li a {
+        border-bottom: 1px solid #635f5f;
+        padding: 7px 15px;
+        text-decoration: none; }
 
 input[type="radio"] {
   -webkit-appearance: none;
@@ -877,14 +934,15 @@ input[type="radio"] {
   box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9;
   cursor: pointer;
   height: 18px;
+  padding: 0;
   transition: .2s;
   width: 18px; }
   input[type="radio"]:hover, input[type="radio"]:checked {
-    background: #333;
-    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
+    background: #337ab7;
+    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
   input[type="radio"]:checked {
-    background: #333;
-    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
+    background: #337ab7;
+    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
   input[type="radio"]:focus {
     outline: 0; }
 
