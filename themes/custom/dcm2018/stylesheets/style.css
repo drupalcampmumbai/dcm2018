@@ -7874,4 +7874,85 @@ body.maintenance-page {
   margin-left: 30.4%;
   padding: 5px; }
 
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.eot");
+  src: url("../fonts/Muli.woff"); }
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.woff"); }
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
+
+.view-attendees .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap row;
+  flex-flow: wrap row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
+  .view-attendees .view-content .slideanim {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    margin-bottom: 32px; }
+    .view-attendees .view-content .slideanim .attendees-page .team-attendees {
+      position: relative;
+      max-width: 360px;
+      padding: 40px 32px 37px;
+      transition: box-shadow .3s ease;
+      -webkit-transition: box-shadow .3s ease;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      background-color: #337ab7; }
+      .view-attendees .view-content .slideanim .attendees-page .team-attendees:hover {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
+      .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
+        width: 121px;
+        height: 121px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+        overflow: hidden; }
+      .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name {
+        color: #fff;
+        width: 153px;
+        padding-right: 0;
+        font-size: 16px;
+        line-height: 22px; }
+        .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name {
+          font-size: 24px;
+          margin-bottom: 5px;
+          line-height: 27px; }
+          .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name a {
+            color: #fff;
+            text-decoration: none; }
+        .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
+          font-size: 16px;
+          margin-bottom: 0;
+          line-height: 20px; }
+        .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .user-profession a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 12px; }
+
 /*# sourceMappingURL=css-maps/style.css.map */
