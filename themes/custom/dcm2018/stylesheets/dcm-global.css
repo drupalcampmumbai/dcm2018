@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 body {
   border: 0 none;
@@ -25,7 +25,8 @@ body {
   line-height: 25px;
   margin: 0;
   padding: 0;
-  transition: all .35s linear 0s; }
+  transition: all .35s linear 0s;
+  overflow-x: hidden; }
   @media screen and (max-width: 960px) {
     body {
       font-size: 15px;
@@ -549,22 +550,22 @@ table tr.error {
     box-shadow: none; }
     .main-container form .fieldgroup .panel-heading,
     #drupal-modal form .fieldgroup .panel-heading {
+      border: 0;
       display: inline-block;
       float: none;
-      padding: 0;
       margin: 5px 0 0;
+      padding: 0;
       vertical-align: middle;
-      width: 30%;
-      border: 0; }
+      width: 30%; }
     .main-container form .fieldgroup .panel-body,
     #drupal-modal form .fieldgroup .panel-body {
       background-color: transparent;
-      padding: 0;
       border-radius: 0;
       box-shadow: none;
       display: inline-block;
       float: none;
       max-width: inherit;
+      padding: 0;
       vertical-align: top;
       width: 65%; }
       .main-container form .fieldgroup .panel-body .form-item,

@@ -6216,8 +6216,8 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed {
 .ui-autocomplete {
   background: #fff;
   background-clip: padding-box;
-  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   color: inherit;
@@ -6290,21 +6290,21 @@ p:last-child,
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 body {
   border: 0 none;
@@ -6315,7 +6315,8 @@ body {
   line-height: 25px;
   margin: 0;
   padding: 0;
-  transition: all .35s linear 0s; }
+  transition: all .35s linear 0s;
+  overflow-x: hidden; }
   @media screen and (max-width: 960px) {
     body {
       font-size: 15px;
@@ -6839,22 +6840,22 @@ table tr.error {
     box-shadow: none; }
     .main-container form .fieldgroup .panel-heading,
     #drupal-modal form .fieldgroup .panel-heading {
+      border: 0;
       display: inline-block;
       float: none;
-      padding: 0;
       margin: 5px 0 0;
+      padding: 0;
       vertical-align: middle;
-      width: 30%;
-      border: 0; }
+      width: 30%; }
     .main-container form .fieldgroup .panel-body,
     #drupal-modal form .fieldgroup .panel-body {
       background-color: transparent;
-      padding: 0;
       border-radius: 0;
       box-shadow: none;
       display: inline-block;
       float: none;
       max-width: inherit;
+      padding: 0;
       vertical-align: top;
       width: 65%; }
       .main-container form .fieldgroup .panel-body .form-item,
@@ -7524,21 +7525,21 @@ body.maintenance-page {
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 .path-frontpage .navbar.container {
   background-color: #337ab7; }
@@ -7747,36 +7748,52 @@ body.maintenance-page {
       content: "\f1a9"; }
 
 .drupal-recent-news {
-  margin: 0 auto;
-  width: 1200px; }
+  background-color: #bce8f1;
+  padding: 50px 0 50px;
+  position: relative; }
+  .drupal-recent-news:before {
+    background-color: inherit;
+    bottom: -18px;
+    content: "";
+    display: block;
+    left: -100px;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    transform: rotate(-1.2deg);
+    z-index: 0; }
   .drupal-recent-news .block-title {
+    color: #337ab7;
     font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
-    font-size: 35px;
-    color: #337ab7; }
-  .drupal-recent-news .view .views-row {
-    margin: 0 0 15px;
-    padding: 0 0 15px 0;
-    border-bottom: 1px solid #ccc; }
-    .drupal-recent-news .view .views-row:last-child {
-      border-bottom: 0;
-      margin-bottom: 20px; }
-    .drupal-recent-news .view .views-row .views-field {
-      margin: 5px 0 0; }
-      .drupal-recent-news .view .views-row .views-field .homepage-new .news-title a {
-        font-size: 27px;
-        line-height: 32px;
-        margin-bottom: 10px;
-        margin-top: 0;
-        text-decoration: initial;
-        display: inline-block; }
-    .drupal-recent-news .view .views-row .views-more-link {
-      margin: 10px 12px;
-      text-align: right; }
-      .drupal-recent-news .view .views-row .views-more-link a {
-        border-left: 2px solid #0676c0;
-        padding-left: 5px; }
-        .drupal-recent-news .view .views-row .views-more-link a:after {
-          content: " >>"; }
+    font-size: 35px; }
+  .drupal-recent-news .view {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; }
+    .drupal-recent-news .view .views-row {
+      border-bottom: 1px solid #ccc;
+      margin: 0 0 15px;
+      padding: 0 0 15px 0; }
+      .drupal-recent-news .view .views-row:last-child {
+        border-bottom: 0;
+        margin-bottom: 20px; }
+      .drupal-recent-news .view .views-row .views-field {
+        margin: 5px 0 0; }
+        .drupal-recent-news .view .views-row .views-field .homepage-new .news-title a {
+          display: inline-block;
+          font-size: 27px;
+          line-height: 32px;
+          margin-bottom: 10px;
+          margin-top: 0;
+          text-decoration: initial; }
+      .drupal-recent-news .view .views-row .views-more-link {
+        margin: 10px 12px;
+        text-align: right; }
+        .drupal-recent-news .view .views-row .views-more-link a {
+          border-left: 2px solid #0676c0;
+          padding-left: 5px; }
+          .drupal-recent-news .view .views-row .views-more-link a:after {
+            content: " >>"; }
 
 /*End Recent News*/
 #block-dcm2018-drupalapprenctices {
@@ -7823,36 +7840,38 @@ body.maintenance-page {
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 .main-container .page-container .user-register-form .form-item .form-managed-file .preview {
   padding: 0; }
 
-.main-container .page-container .user-register-form .fieldgroup .panel-body .form-item, .main-container .page-container .user-register-form .form-group .panel-body .form-item {
-  width: 30% !important;
+.main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
+.main-container .page-container .user-register-form .form-group .panel-body .form-item {
   display: inline-block;
-  margin-bottom: 3px; }
-  .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item label input[type="radio"], .main-container .page-container .user-register-form .form-group .panel-body .form-item label input[type="radio"] {
+  margin-bottom: 3px;
+  width: 30% !important; }
+  .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item label input[type="radio"],
+  .main-container .page-container .user-register-form .form-group .panel-body .form-item label input[type="radio"] {
     margin-left: -27px; }
 
 .main-container .page-container .user-register-form .captcha .img-responsive {
   border: 1px solid #ccc;
-  padding: 5px;
+  margin-bottom: 5px;
   margin-left: 30.4%;
-  margin-bottom: 5px; }
+  padding: 5px; }
 
 /*# sourceMappingURL=css-maps/style.css.map */

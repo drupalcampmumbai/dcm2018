@@ -233,14 +233,21 @@
 
 // Recent News
 .drupal-recent-news {
-  margin: 0 auto;
-  width: 1200px;
+  background-color: $blue-color1;
+    padding: 50px 0 50px;
+  position: relative;
+  &:before {
+    @include cross;
+  }
   .block-title {
     color: $blue-color;
     font-family: $raleway-extrabold;
     font-size: 35px;
   }
   .view {
+    max-width: $page-width;
+    margin: 0 auto;
+    position: relative;
     .views-row {
       border-bottom: 1px solid $gray-color;
       margin: 0 0 15px;
@@ -285,7 +292,7 @@
 
 // Apprentice and Join DA
 #block-dcm2018-drupalapprenctices {
-  background-color: #bce8f1;
+  background-color: $blue-color1;
   padding: 50px 0 50px;
   position: relative;
   &:before {
