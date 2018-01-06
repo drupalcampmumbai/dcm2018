@@ -14,9 +14,9 @@ body {
   -webkit-font-smoothing: antialiased;
   line-height: $baseline-height;
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
   transition: all .35s linear 0s;
-  overflow-x: hidden;
 
   @media screen and (max-width: 960px) {
     font-size: $basefont-size - 1;
@@ -359,7 +359,8 @@ img {
           display: inline-block;
           margin: 0;
           padding: 0;
-          &:last-child {
+          &:last-child,
+          &:nth-last-child(2) {
             float: right;
           }
 
@@ -381,6 +382,7 @@ img {
             padding: 20px 11px 5px;
             position: relative;
             text-decoration: none;
+            text-transform: capitalize !important;
             transition: all .3s linear 0s;
 
             &:hover {
@@ -435,6 +437,9 @@ img {
                 a {
                   border-bottom: 0;
                 }
+              }
+              &:nth-last-child(2) {
+                float: none;
               }
 
               a {
