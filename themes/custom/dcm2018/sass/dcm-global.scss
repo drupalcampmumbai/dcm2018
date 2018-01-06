@@ -382,8 +382,8 @@ img {
             padding: 20px 11px 5px;
             position: relative;
             text-decoration: none;
-            transition: all .3s linear 0s;
             text-transform: capitalize !important;
+            transition: all .3s linear 0s;
 
             &:hover {
               color: $link-color;

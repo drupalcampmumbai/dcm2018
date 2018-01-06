@@ -6601,8 +6601,8 @@ img {
             padding: 20px 11px 5px;
             position: relative;
             text-decoration: none;
-            transition: all .3s linear 0s;
-            text-transform: capitalize !important; }
+            text-transform: capitalize !important;
+            transition: all .3s linear 0s; }
             .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li a:hover {
               color: #0676c0; }
             @media screen and (max-width: 960px) {
@@ -7820,14 +7820,14 @@ body.maintenance-page {
           font-size: 18px;
           text-transform: uppercase !important; }
       .view-drupal-camp-news .views-row .views-field .homepage-new .news-title a {
+        color: #337ab7;
         display: inline-block;
         font-size: 27px;
+        font-weight: bold;
         line-height: 32px;
         margin-bottom: 10px;
         margin-top: 0;
-        text-decoration: initial;
-        color: #337ab7;
-        font-weight: bold; }
+        text-decoration: initial; }
     .view-drupal-camp-news .views-row .views-more-link {
       margin: 10px 12px;
       text-align: right; }
@@ -7935,8 +7935,8 @@ body.maintenance-page {
 
 .view-attendees .view-content {
   align-items: stretch;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-align: stretch;
   -ms-flex-flow: wrap row;
   flex-flow: wrap row;
@@ -7945,16 +7945,16 @@ body.maintenance-page {
   .view-attendees .view-content .slideanim {
     display: inline-block;
     margin-bottom: 55px;
+    margin-right: 40px;
     vertical-align: top;
-    width: 31%;
-    margin-right: 40px; }
+    width: 31%; }
     .view-attendees .view-content .slideanim:nth-child(3n) {
       margin-right: 0; }
     .view-attendees .view-content .slideanim .attendees-page .team-attendees {
       align-items: flex-start;
       background-color: #337ab7;
-      display: flex;
       display: -ms-flexbox;
+      display: flex;
       -ms-flex-align: start;
       -ms-flex-pack: justify;
       justify-content: space-between;
@@ -7963,6 +7963,7 @@ body.maintenance-page {
       position: relative;
       transition: box-shadow .3s ease; }
       .view-attendees .view-content .slideanim .attendees-page .team-attendees:before {
+        bottom: -1px;
         background-color: inherit;
         bottom: -18px;
         content: "";
@@ -7973,19 +7974,18 @@ body.maintenance-page {
         top: -20px;
         transform: rotate(-1.2deg);
         z-index: 0;
-        z-index: -1;
-        top: 0;
-        bottom: -1px;
         left: 0;
-        transform: rotate(-3.2deg); }
+        top: 0;
+        transform: rotate(-3.2deg);
+        z-index: -1; }
       .view-attendees .view-content .slideanim .attendees-page .team-attendees:hover {
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
       .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
         align-items: center;
         border-radius: 50%;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-        display: flex;
         display: -ms-flexbox;
+        display: flex;
         -ms-flex-align: center;
         -ms-flex-pack: center;
         height: 121px;
@@ -8017,8 +8017,8 @@ body.maintenance-page {
         margin-top: 10px; }
         .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link a {
           color: #bce8f1;
-          text-decoration: none;
           font-size: 20px;
-          margin-right: 5px; }
+          margin-right: 5px;
+          text-decoration: none; }
 
 /*# sourceMappingURL=css-maps/style.css.map */

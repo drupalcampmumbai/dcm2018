@@ -305,14 +305,14 @@
         }
         .news-title {
           a {
+            color: $blue-color;
             display: inline-block;
             font-size: 27px;
+            font-weight: bold;
             line-height: 32px;
             margin-bottom: 10px;
             margin-top: 0;
             text-decoration: initial;
-            color: $blue-color;
-            font-weight: bold;
           }
         }
       }

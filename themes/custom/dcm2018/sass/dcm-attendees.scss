@@ -9,8 +9,8 @@
 .view-attendees {
   .view-content {
     align-items: stretch;
-    display: flex;
     display: -ms-flexbox;
+    display: flex;
     -ms-flex-align: stretch;
     -ms-flex-flow: wrap row;
     flex-flow: wrap row;
@@ -19,18 +19,18 @@
     .slideanim {
       display: inline-block;
       margin-bottom: 55px;
+      margin-right: 40px;
       vertical-align: top;
       width: 31%;
-    margin-right: 40px;
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
       .attendees-page {
         .team-attendees {
           align-items: flex-start;
           background-color: $blue-color;
-          display: flex;
           display: -ms-flexbox;
+          display: flex;
           -ms-flex-align: start;
           -ms-flex-pack: justify;
           justify-content: space-between;
@@ -40,13 +40,13 @@
           -webkit-transition: box-shadow .3s ease;
           transition: box-shadow .3s ease;
           &:before {
-    @include cross;
-    z-index: -1;
-    top: 0;
-    bottom: -1px;
-    left: 0;
-        transform: rotate(-3.2deg);
-  }
+            bottom: -1px;
+            @include cross;
+            left: 0;
+            top: 0;
+            transform: rotate(-3.2deg);
+            z-index: -1;
+          }
           &:hover {
             box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
           }
@@ -55,8 +55,8 @@
               align-items: center;
               border-radius: 50%;
               box-shadow: 0 5px 20px rgba(0, 0, 0, .4);
-              display: flex;
               display: -ms-flexbox;
+              display: flex;
               -ms-flex-align: center;
               -ms-flex-pack: center;
               height: 121px;
@@ -97,9 +97,9 @@
             margin-top: 10px;
             a {
               color: $blue-color1;
-              text-decoration: none;
               font-size: 20px;
               margin-right: 5px;
+              text-decoration: none;
             }
           }
         }
