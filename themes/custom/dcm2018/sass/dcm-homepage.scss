@@ -63,6 +63,7 @@
           font-size: 24px;
           font-style: italic;
           line-height: 32px;
+          margin-bottom: 10px;
         }
       }
     }
@@ -234,7 +235,7 @@
 // Recent News
 .drupal-recent-news {
   background-color: $blue-color1;
-    padding: 50px 0 50px;
+  padding: 50px 0 50px;
   position: relative;
   &:before {
     @include cross;
@@ -243,52 +244,96 @@
     color: $blue-color;
     font-family: $raleway-extrabold;
     font-size: 35px;
+    margin-bottom: 40px;
   }
-  .view {
-    max-width: $page-width;
-    margin: 0 auto;
-    position: relative;
-    .views-row {
-      border-bottom: 1px solid $gray-color;
-      margin: 0 0 15px;
-      padding: 0 0 15px 0;
-      &:last-child {
-        border-bottom: 0;
-        margin-bottom: 20px;
-      }
-      .views-field {
-        margin: 5px 0 0;
-        .homepage-new {
-          .news-title {
-            a {
-              display: inline-block;
-              font-size: 27px;
-              line-height: 32px;
-              margin-bottom: 10px;
-              margin-top: 0;
-              text-decoration: initial;
+}
+
+.view-drupal-camp-news {
+  margin: 0 auto;
+  max-width: $page-width;
+  position: relative;
+  .views-row {
+    border-bottom: 0;
+    float: left;
+    margin: 0 0 40px;
+    padding: 0 0 5px 15px;
+    width: 100%;
+    .views-field {
+      margin: 5px 0 0;
+      .homepage-new {
+        .date-mnth {
+          .inner {
+            background-color: $blue-color;
+            float: left;
+            height: 78px;
+            position: relative;
+            text-align: center;
+            width: 78px;
+            &:before {
+              background-color: $white-color;
+              content: "";
+              height: 5px;
+              left: 10px;
+              position: absolute;
+              top: 0;
+              width: 5px;
+            }
+            &:after {
+              background-color: $white-color;
+              content: "";
+              height: 5px;
+              position: absolute;
+              right: 10px;
+              top: 0;
+              width: 5px;
+            }
+            h1 {
+              color: $white-color;
+              font-family: $raleway-extrabold;
+              font-size: 32px;
+              margin-bottom: 0;
+              padding-bottom: 5px !important;
+              padding-top: 5px !important;
+            }
+            h4 {
+              color: $white-color;
+              font-family: $raleway-extrabold;
+              font-size: 18px;
+              text-transform: uppercase !important;
             }
           }
         }
-      }
-
-      .views-more-link {
-        margin: 10px 12px;
-        text-align: right;
-
-        a {
-          border-left: 2px solid $link-color;
-          padding-left: 5px;
-          &:after {
-            content: " >>";
+        .news-title {
+          a {
+            display: inline-block;
+            font-size: 27px;
+            line-height: 32px;
+            margin-bottom: 10px;
+            margin-top: 0;
+            text-decoration: initial;
+            color: $blue-color;
+            font-weight: bold;
           }
+        }
+      }
+    }
+
+    .views-more-link {
+      margin: 10px 12px;
+      text-align: right;
+
+      a {
+        border-left: 2px solid $link-color;
+        padding-left: 5px;
+        &:after {
+          content: " >>";
         }
       }
     }
   }
 }
 
-/*End Recent News*/
+// End Recent News
 
 // Apprentice and Join DA
 #block-dcm2018-drupalapprenctices {

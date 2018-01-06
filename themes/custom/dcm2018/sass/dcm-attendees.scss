@@ -7,82 +7,103 @@
 
 
 .view-attendees {
-	.view-content {
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-flow: wrap row;
-		flex-flow: wrap row;
-		-ms-flex-pack: start;
-		justify-content: flex-start;
-		-ms-flex-align: stretch;
-		align-items: stretch;
-		.slideanim {
-	    display: inline-block;
-	    width: 33%;
-	    vertical-align: top;
-	    margin-bottom: 32px;
-	    .attendees-page {
-	    	.team-attendees {
-					position: relative;
-					max-width: 360px;
-					padding: 40px 32px 37px;
-					transition: box-shadow .3s ease;
-					-webkit-transition: box-shadow .3s ease;
-					display: -ms-flexbox;
-					display: flex;
-					-ms-flex-pack: justify;
-					justify-content: space-between;
-					-ms-flex-align: start;
-					align-items: flex-start;
-					background-color: #337ab7;
-					&:hover {
-				    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-					}
-					.user-image{
-						a {
-							width: 121px;
-					    height: 121px;
-					    display: -ms-flexbox;
-					    display: flex;
-					    -ms-flex-pack: center;
-					    justify-content: center;
-					    -ms-flex-align: center;
-					    align-items: center;
-					    border-radius: 50%;
-					    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-					    overflow: hidden;
-				  	}
-					}
-					.user-name {
-						color: #fff;
-						width: 153px;
-						padding-right: 0;
-						font-size: 16px;
-						line-height: 22px;
-						.attendees-name {
-							font-size: 24px;
-					    margin-bottom: 5px;
-    					line-height: 27px;
-							a {
-						    color: #fff;
-				        text-decoration: none;
-							}
-						}
-						h3 {
-					    font-size: 16px;
-			        margin-bottom: 0;
-	            line-height: 20px;
-						}
-						.user-profession {
-							a {
-								color: #fff;
-								text-decoration: none;
-								font-size: 12px;
-							}
-						}
-					}
-				}
-    	}
+  .view-content {
+    align-items: stretch;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-align: stretch;
+    -ms-flex-flow: wrap row;
+    flex-flow: wrap row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    .slideanim {
+      display: inline-block;
+      margin-bottom: 55px;
+      vertical-align: top;
+      width: 31%;
+    margin-right: 40px;
+    &:nth-child(3n) {
+      margin-right: 0;
     }
-	}
+      .attendees-page {
+        .team-attendees {
+          align-items: flex-start;
+          background-color: $blue-color;
+          display: flex;
+          display: -ms-flexbox;
+          -ms-flex-align: start;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          max-width: 100%;
+          padding: 40px 20px 37px;
+          position: relative;
+          -webkit-transition: box-shadow .3s ease;
+          transition: box-shadow .3s ease;
+          &:before {
+    @include cross;
+    z-index: -1;
+    top: 0;
+    bottom: -1px;
+    left: 0;
+        transform: rotate(-3.2deg);
+  }
+          &:hover {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+          }
+          .user-image {
+            a {
+              align-items: center;
+              border-radius: 50%;
+              box-shadow: 0 5px 20px rgba(0, 0, 0, .4);
+              display: flex;
+              display: -ms-flexbox;
+              -ms-flex-align: center;
+              -ms-flex-pack: center;
+              height: 121px;
+              justify-content: center;
+              overflow: hidden;
+              width: 121px;
+            }
+          }
+          .user-name {
+            color: $white-color;
+            font-size: 16px;
+            line-height: 22px;
+            padding-right: 0;
+            width: 185px;
+            .attendees-name {
+              font-size: 24px;
+              line-height: 27px;
+              margin-bottom: 5px;
+              a {
+                color: $white-color;
+                text-decoration: none;
+              }
+            }
+            h3 {
+              font-size: 16px;
+              line-height: 20px;
+              margin-bottom: 0;
+            }
+            .user-profession {
+              a {
+                color: $white-color;
+                font-size: 12px;
+                text-decoration: none;
+              }
+            }
+          }
+          .social-link {
+            margin-top: 10px;
+            a {
+              color: $blue-color1;
+              text-decoration: none;
+              font-size: 20px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

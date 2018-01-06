@@ -1,82 +1,107 @@
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.woff");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.woff"); }
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
 .view-attendees .view-content {
-  display: -ms-flexbox;
+  align-items: stretch;
   display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: stretch;
   -ms-flex-flow: wrap row;
   flex-flow: wrap row;
   -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-align: stretch;
-  align-items: stretch; }
+  justify-content: flex-start; }
   .view-attendees .view-content .slideanim {
     display: inline-block;
-    width: 33%;
+    margin-bottom: 55px;
     vertical-align: top;
-    margin-bottom: 32px; }
+    width: 31%;
+    margin-right: 40px; }
+    .view-attendees .view-content .slideanim:nth-child(3n) {
+      margin-right: 0; }
     .view-attendees .view-content .slideanim .attendees-page .team-attendees {
-      position: relative;
-      max-width: 360px;
-      padding: 40px 32px 37px;
-      transition: box-shadow .3s ease;
-      -webkit-transition: box-shadow .3s ease;
-      display: -ms-flexbox;
+      align-items: flex-start;
+      background-color: #337ab7;
       display: flex;
+      display: -ms-flexbox;
+      -ms-flex-align: start;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      -ms-flex-align: start;
-      align-items: flex-start;
-      background-color: #337ab7; }
+      max-width: 100%;
+      padding: 40px 20px 37px;
+      position: relative;
+      transition: box-shadow .3s ease; }
+      .view-attendees .view-content .slideanim .attendees-page .team-attendees:before {
+        background-color: inherit;
+        bottom: -18px;
+        content: "";
+        display: block;
+        left: -100px;
+        position: absolute;
+        right: 0;
+        top: -20px;
+        transform: rotate(-1.2deg);
+        z-index: 0;
+        z-index: -1;
+        top: 0;
+        bottom: -1px;
+        left: 0;
+        transform: rotate(-3.2deg); }
       .view-attendees .view-content .slideanim .attendees-page .team-attendees:hover {
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
       .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
-        width: 121px;
-        height: 121px;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -ms-flex-align: center;
         align-items: center;
         border-radius: 50%;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-        overflow: hidden; }
+        display: flex;
+        display: -ms-flexbox;
+        -ms-flex-align: center;
+        -ms-flex-pack: center;
+        height: 121px;
+        justify-content: center;
+        overflow: hidden;
+        width: 121px; }
       .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name {
         color: #fff;
-        width: 153px;
-        padding-right: 0;
         font-size: 16px;
-        line-height: 22px; }
+        line-height: 22px;
+        padding-right: 0;
+        width: 185px; }
         .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name {
           font-size: 24px;
-          margin-bottom: 5px;
-          line-height: 27px; }
+          line-height: 27px;
+          margin-bottom: 5px; }
           .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name a {
             color: #fff;
             text-decoration: none; }
         .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
           font-size: 16px;
-          margin-bottom: 0;
-          line-height: 20px; }
+          line-height: 20px;
+          margin-bottom: 0; }
         .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .user-profession a {
           color: #fff;
+          font-size: 12px;
+          text-decoration: none; }
+      .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link {
+        margin-top: 10px; }
+        .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link a {
+          color: #bce8f1;
           text-decoration: none;
-          font-size: 12px; }
+          font-size: 20px;
+          margin-right: 5px; }
 
 /*# sourceMappingURL=css-maps/dcm-attendees.css.map */

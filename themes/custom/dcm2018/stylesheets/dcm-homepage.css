@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.woff");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.woff"); }
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
 .path-frontpage .navbar.container {
   background-color: #337ab7; }
@@ -63,7 +63,8 @@
         font-family: Georgia;
         font-size: 24px;
         font-style: italic;
-        line-height: 32px; }
+        line-height: 32px;
+        margin-bottom: 10px; }
 
 .path-frontpage .content_bottom {
   background-color: #f6f6f2;
@@ -240,37 +241,74 @@
   .drupal-recent-news .block-title {
     color: #337ab7;
     font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
-    font-size: 35px; }
-  .drupal-recent-news .view {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative; }
-    .drupal-recent-news .view .views-row {
-      border-bottom: 1px solid #ccc;
-      margin: 0 0 15px;
-      padding: 0 0 15px 0; }
-      .drupal-recent-news .view .views-row:last-child {
-        border-bottom: 0;
-        margin-bottom: 20px; }
-      .drupal-recent-news .view .views-row .views-field {
-        margin: 5px 0 0; }
-        .drupal-recent-news .view .views-row .views-field .homepage-new .news-title a {
-          display: inline-block;
-          font-size: 27px;
-          line-height: 32px;
-          margin-bottom: 10px;
-          margin-top: 0;
-          text-decoration: initial; }
-      .drupal-recent-news .view .views-row .views-more-link {
-        margin: 10px 12px;
-        text-align: right; }
-        .drupal-recent-news .view .views-row .views-more-link a {
-          border-left: 2px solid #0676c0;
-          padding-left: 5px; }
-          .drupal-recent-news .view .views-row .views-more-link a:after {
-            content: " >>"; }
+    font-size: 35px;
+    margin-bottom: 40px; }
 
-/*End Recent News*/
+.view-drupal-camp-news {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative; }
+  .view-drupal-camp-news .views-row {
+    border-bottom: 0;
+    float: left;
+    margin: 0 0 40px;
+    padding: 0 0 5px 15px;
+    width: 100%; }
+    .view-drupal-camp-news .views-row .views-field {
+      margin: 5px 0 0; }
+      .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner {
+        background-color: #337ab7;
+        float: left;
+        height: 78px;
+        position: relative;
+        text-align: center;
+        width: 78px; }
+        .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:before {
+          background-color: #fff;
+          content: "";
+          height: 5px;
+          left: 10px;
+          position: absolute;
+          top: 0;
+          width: 5px; }
+        .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:after {
+          background-color: #fff;
+          content: "";
+          height: 5px;
+          position: absolute;
+          right: 10px;
+          top: 0;
+          width: 5px; }
+        .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h1 {
+          color: #fff;
+          font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
+          font-size: 32px;
+          margin-bottom: 0;
+          padding-bottom: 5px !important;
+          padding-top: 5px !important; }
+        .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h4 {
+          color: #fff;
+          font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
+          font-size: 18px;
+          text-transform: uppercase !important; }
+      .view-drupal-camp-news .views-row .views-field .homepage-new .news-title a {
+        display: inline-block;
+        font-size: 27px;
+        line-height: 32px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        text-decoration: initial;
+        color: #337ab7;
+        font-weight: bold; }
+    .view-drupal-camp-news .views-row .views-more-link {
+      margin: 10px 12px;
+      text-align: right; }
+      .view-drupal-camp-news .views-row .views-more-link a {
+        border-left: 2px solid #0676c0;
+        padding-left: 5px; }
+        .view-drupal-camp-news .views-row .views-more-link a:after {
+          content: " >>"; }
+
 #block-dcm2018-drupalapprenctices {
   background-color: #bce8f1;
   padding: 50px 0 50px;

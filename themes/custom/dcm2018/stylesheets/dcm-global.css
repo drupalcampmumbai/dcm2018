@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.woff");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.woff"); }
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
 body {
   border: 0 none;
@@ -24,9 +24,9 @@ body {
   -webkit-font-smoothing: antialiased;
   line-height: 25px;
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
-  transition: all .35s linear 0s;
-  overflow-x: hidden; }
+  transition: all .35s linear 0s; }
   @media screen and (max-width: 960px) {
     body {
       font-size: 15px;
@@ -296,7 +296,7 @@ img {
           display: inline-block;
           margin: 0;
           padding: 0; }
-          .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li:last-child {
+          .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li:last-child, .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li:nth-last-child(2) {
             float: right; }
           .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li.open a {
             color: #0676c0; }
@@ -311,7 +311,8 @@ img {
             padding: 20px 11px 5px;
             position: relative;
             text-decoration: none;
-            transition: all .3s linear 0s; }
+            transition: all .3s linear 0s;
+            text-transform: capitalize !important; }
             .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li a:hover {
               color: #0676c0; }
             @media screen and (max-width: 960px) {
@@ -351,6 +352,8 @@ img {
                 float: none; }
                 .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li .menu.dropdown-menu li:last-child a {
                   border-bottom: 0; }
+              .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li .menu.dropdown-menu li:nth-last-child(2) {
+                float: none; }
               .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li .menu.dropdown-menu li a {
                 border-bottom: 1px dashed #eee;
                 color: #fff;
@@ -769,11 +772,11 @@ table tr.error {
       #drupal-modal form .form-item.form-type-radio input[type="radio"]:hover,
       #drupal-modal form .form-item.form-type-radio input[type="radio"]:checked {
         background: #337ab7;
-        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
+        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
       .main-container form .form-item.form-type-radio input[type="radio"]:checked,
       #drupal-modal form .form-item.form-type-radio input[type="radio"]:checked {
         background: #337ab7;
-        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
+        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
       .main-container form .form-item.form-type-radio input[type="radio"]:focus,
       #drupal-modal form .form-item.form-type-radio input[type="radio"]:focus {
         outline: 0; }
@@ -940,10 +943,10 @@ input[type="radio"] {
   width: 18px; }
   input[type="radio"]:hover, input[type="radio"]:checked {
     background: #337ab7;
-    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
+    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
   input[type="radio"]:checked {
     background: #337ab7;
-    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
+    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
   input[type="radio"]:focus {
     outline: 0; }
 
