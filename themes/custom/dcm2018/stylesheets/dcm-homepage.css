@@ -20,9 +20,9 @@
   background-color: #337ab7; }
   .path-frontpage .navbar.container .navbar-header .logo img {
     height: 200px; }
-    @media (min-width: 320px) and (max-width: 767px) {
+    @media (min-width: 320px) and (max-width: 960px) {
       .path-frontpage .navbar.container .navbar-header .logo img {
-        height: 110px; } }
+        height: 105px; } }
 
 .path-frontpage .main-container,
 .path-frontpage .container {
