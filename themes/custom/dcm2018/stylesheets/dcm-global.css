@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 body {
   border: 0 none;
@@ -262,11 +262,11 @@ img {
     display: block;
     left: -100px;
     position: absolute;
-    right: 0;
+    right: -10px;
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0;
-    right: 0;
+    right: -10px;
     transform: rotate(1.2deg); }
   .navbar.container .header-inner {
     margin: 0 auto;
@@ -311,10 +311,10 @@ img {
             padding: 20px 11px 5px;
             position: relative;
             text-decoration: none;
-            transition: all .3s linear 0s;
-            text-transform: capitalize !important; }
+            text-transform: capitalize !important;
+            transition: all .3s linear 0s; }
             .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li a:hover {
-              color: #0676c0; }
+              color: #333; }
             @media screen and (max-width: 960px) {
               .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li a .caret {
                 float: right;
@@ -772,11 +772,11 @@ table tr.error {
       #drupal-modal form .form-item.form-type-radio input[type="radio"]:hover,
       #drupal-modal form .form-item.form-type-radio input[type="radio"]:checked {
         background: #337ab7;
-        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
+        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
       .main-container form .form-item.form-type-radio input[type="radio"]:checked,
       #drupal-modal form .form-item.form-type-radio input[type="radio"]:checked {
         background: #337ab7;
-        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
+        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
       .main-container form .form-item.form-type-radio input[type="radio"]:focus,
       #drupal-modal form .form-item.form-type-radio input[type="radio"]:focus {
         outline: 0; }
@@ -943,10 +943,10 @@ input[type="radio"] {
   width: 18px; }
   input[type="radio"]:hover, input[type="radio"]:checked {
     background: #337ab7;
-    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
+    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
   input[type="radio"]:checked {
     background: #337ab7;
-    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
+    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
   input[type="radio"]:focus {
     outline: 0; }
 
@@ -1206,7 +1206,7 @@ body.maintenance-page {
         display: block;
         left: -100px;
         position: absolute;
-        right: 0;
+        right: -10px;
         top: -20px;
         transform: rotate(-1.2deg);
         z-index: 0;

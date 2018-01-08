@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 .path-frontpage .navbar.container {
   background-color: #337ab7; }
@@ -56,6 +56,10 @@
         line-height: 100px;
         margin-bottom: 10px;
         margin-top: 10px; }
+        @media (min-width: 320px) and (max-width: 767px) {
+          .path-frontpage .banner .region-banner .slogan h1 {
+            font-size: 60px;
+            line-height: 70px; } }
       .path-frontpage .banner .region-banner .slogan .underline {
         background-color: #fff; }
       .path-frontpage .banner .region-banner .slogan .cursive-text {
@@ -65,6 +69,10 @@
         font-style: italic;
         line-height: 32px;
         margin-bottom: 10px; }
+        @media (min-width: 320px) and (max-width: 767px) {
+          .path-frontpage .banner .region-banner .slogan .cursive-text {
+            font-size: 21px;
+            line-height: 25px; } }
 
 .path-frontpage .content_bottom {
   background-color: #f6f6f2;
@@ -79,7 +87,7 @@
     display: block;
     left: -100px;
     position: absolute;
-    right: 0;
+    right: -10px;
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0; }
@@ -140,7 +148,7 @@
     display: block;
     left: -100px;
     position: absolute;
-    right: 0;
+    right: -10px;
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0;
@@ -234,7 +242,7 @@
     display: block;
     left: -100px;
     position: absolute;
-    right: 0;
+    right: -10px;
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0; }
@@ -292,14 +300,14 @@
           font-size: 18px;
           text-transform: uppercase !important; }
       .view-drupal-camp-news .views-row .views-field .homepage-new .news-title a {
+        color: #337ab7;
         display: inline-block;
         font-size: 27px;
+        font-weight: bold;
         line-height: 32px;
         margin-bottom: 10px;
         margin-top: 0;
-        text-decoration: initial;
-        color: #337ab7;
-        font-weight: bold; }
+        text-decoration: initial; }
     .view-drupal-camp-news .views-row .views-more-link {
       margin: 10px 12px;
       text-align: right; }
@@ -320,12 +328,14 @@
     display: block;
     left: -100px;
     position: absolute;
-    right: 0;
+    right: -10px;
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0; }
   #block-dcm2018-drupalapprenctices .drupal-apprentice {
     margin: 0 auto;
+    max-width: 100%;
+    min-width: 320px;
     width: 1200px; }
     #block-dcm2018-drupalapprenctices .drupal-apprentice .image-wrapper {
       text-align: right; }
@@ -341,12 +351,14 @@
     display: block;
     left: -100px;
     position: absolute;
-    right: 0;
+    right: -10px;
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0; }
   #block-dcm2018-joinda .join-drup-assoc {
     margin: 0 auto;
+    max-width: 100%;
+    min-width: 320px;
     width: 1200px; }
     #block-dcm2018-joinda .join-drup-assoc .image-wrapper {
       text-align: right; }

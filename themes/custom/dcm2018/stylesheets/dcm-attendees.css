@@ -1,25 +1,25 @@
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 .view-attendees .view-content {
   align-items: stretch;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-align: stretch;
   -ms-flex-flow: wrap row;
   flex-flow: wrap row;
@@ -27,17 +27,31 @@
   justify-content: flex-start; }
   .view-attendees .view-content .slideanim {
     display: inline-block;
-    margin-bottom: 55px;
+    margin: 0 auto 50px;
     vertical-align: top;
-    width: 31%;
-    margin-right: 40px; }
+    width: 31%; }
+    @media screen and (max-width: 1200px) {
+      .view-attendees .view-content .slideanim {
+        max-width: 340px;
+        width: 41%; } }
+    @media screen and (max-width: 767px) {
+      .view-attendees .view-content .slideanim {
+        margin: 0 auto 30px;
+        width: 100%; } }
+    @media screen and (max-width: 400px) {
+      .view-attendees .view-content .slideanim {
+        max-width: 240px;
+        min-width: 250px; } }
     .view-attendees .view-content .slideanim:nth-child(3n) {
       margin-right: 0; }
+      @media screen and (max-width: 1200px) {
+        .view-attendees .view-content .slideanim:nth-child(3n) {
+          margin-right: auto; } }
     .view-attendees .view-content .slideanim .attendees-page .team-attendees {
       align-items: flex-start;
       background-color: #337ab7;
-      display: flex;
       display: -ms-flexbox;
+      display: flex;
       -ms-flex-align: start;
       -ms-flex-pack: justify;
       justify-content: space-between;
@@ -45,36 +59,48 @@
       padding: 40px 20px 37px;
       position: relative;
       transition: box-shadow .3s ease; }
+      @media screen and (max-width: 400px) {
+        .view-attendees .view-content .slideanim .attendees-page .team-attendees {
+          padding: 40px 15px 37px; } }
       .view-attendees .view-content .slideanim .attendees-page .team-attendees:before {
+        bottom: -1px !important;
         background-color: inherit;
         bottom: -18px;
         content: "";
         display: block;
         left: -100px;
         position: absolute;
-        right: 0;
+        right: -10px;
         top: -20px;
         transform: rotate(-1.2deg);
         z-index: 0;
-        z-index: -1;
-        top: 0;
-        bottom: -1px;
         left: 0;
-        transform: rotate(-3.2deg); }
+        top: 0;
+        transform: rotate(-3.2deg);
+        z-index: -1; }
       .view-attendees .view-content .slideanim .attendees-page .team-attendees:hover {
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
       .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
         align-items: center;
         border-radius: 50%;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-        display: flex;
         display: -ms-flexbox;
+        display: flex;
         -ms-flex-align: center;
         -ms-flex-pack: center;
         height: 121px;
         justify-content: center;
+        margin-right: 10px;
         overflow: hidden;
         width: 121px; }
+        @media screen and (max-width: 1010px) {
+          .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
+            height: 100px;
+            width: 100px; } }
+        @media screen and (max-width: 400px) {
+          .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
+            height: 74px;
+            width: 74px; } }
       .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name {
         color: #fff;
         font-size: 16px;
@@ -85,6 +111,10 @@
           font-size: 24px;
           line-height: 27px;
           margin-bottom: 5px; }
+          @media screen and (max-width: 1010px) {
+            .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name {
+              font-size: 20px;
+              line-height: 24px; } }
           .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name a {
             color: #fff;
             text-decoration: none; }
@@ -92,6 +122,10 @@
           font-size: 16px;
           line-height: 20px;
           margin-bottom: 0; }
+          @media screen and (max-width: 1010px) {
+            .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
+              font-size: 15px;
+              line-height: 19px; } }
         .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .user-profession a {
           color: #fff;
           font-size: 12px;
@@ -100,8 +134,8 @@
         margin-top: 10px; }
         .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link a {
           color: #bce8f1;
-          text-decoration: none;
           font-size: 20px;
-          margin-right: 5px; }
+          margin-right: 5px;
+          text-decoration: none; }
 
 /*# sourceMappingURL=css-maps/dcm-attendees.css.map */

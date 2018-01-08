@@ -323,7 +323,7 @@ img {
   z-index: 2;
   &:before {
     @include cross;
-    right: 0;
+    right: -10px;
     transform: rotate(1.2deg);
   }
   .header-inner {
@@ -386,7 +386,7 @@ img {
             transition: all .3s linear 0s;
 
             &:hover {
-              color: $link-color;
+              color: $base-color;
             }
 
             .caret {

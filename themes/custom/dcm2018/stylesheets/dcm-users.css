@@ -1,37 +1,162 @@
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
-.main-container .page-container .user-register-form .form-item .form-managed-file .preview {
-  padding: 0; }
+.main-container .page-container .user-register-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px; }
+  @media (min-width: 320px) and (max-width: 460px) {
+    .main-container .page-container .user-register-form .form-item input,
+    .main-container .page-container .user-register-form .form-item label {
+      width: 100%;
+      margin-bottom: 5px; } }
+  @media (min-width: 320px) and (max-width: 460px) {
+    .main-container .page-container .user-register-form .form-item .form-managed-file {
+      width: 100%; } }
+  .main-container .page-container .user-register-form .form-item .form-managed-file .form-file {
+    height: 40px;
+    margin-right: 0; }
+  .main-container .page-container .user-register-form .form-item .form-managed-file .preview {
+    padding: 0; }
+  .main-container .page-container .user-register-form .form-item .form-managed-file .data {
+    padding: 0; }
+    @media (min-width: 960px) and (max-width: 1400px) {
+      .main-container .page-container .user-register-form .form-item .form-managed-file .data {
+        margin-left: 10px;
+        width: 81.6%; } }
+    @media (min-width: 320px) and (max-width: 959px) {
+      .main-container .page-container .user-register-form .form-item .form-managed-file .data {
+        margin-top: 10px; } }
+  .main-container .page-container .user-register-form .fieldgroup .panel-heading,
+  .main-container .page-container .user-register-form .form-group .panel-heading {
+    background-color: transparent; }
+    @media (min-width: 320px) and (max-width: 460px) {
+      .main-container .page-container .user-register-form .fieldgroup .panel-heading,
+      .main-container .page-container .user-register-form .form-group .panel-heading {
+        width: 100%;
+        margin-bottom: 5px; } }
+  @media (min-width: 320px) and (max-width: 460px) {
+    .main-container .page-container .user-register-form .fieldgroup .panel-body,
+    .main-container .page-container .user-register-form .form-group .panel-body {
+      width: 100%; } }
+  .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
+  .main-container .page-container .user-register-form .form-group .panel-body .form-item {
+    display: inline-block;
+    margin-bottom: 3px;
+    vertical-align: top;
+    width: 30% !important; }
+    @media (min-width: 541px) and (max-width: 840px) {
+      .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
+      .main-container .page-container .user-register-form .form-group .panel-body .form-item {
+        width: 49% !important; } }
+    @media (min-width: 461px) and (max-width: 540px) {
+      .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
+      .main-container .page-container .user-register-form .form-group .panel-body .form-item {
+        width: 100% !important; } }
+    @media (min-width: 320px) and (max-width: 460px) {
+      .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
+      .main-container .page-container .user-register-form .form-group .panel-body .form-item {
+        width: 49% !important; } }
+    .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item label input[type="radio"],
+    .main-container .page-container .user-register-form .form-group .panel-body .form-item label input[type="radio"] {
+      margin-left: -27px; }
+  @media (min-width: 320px) and (max-width: 460px) {
+    .main-container .page-container .user-register-form .fieldgroup .select-wrapper,
+    .main-container .page-container .user-register-form .form-group .select-wrapper {
+      width: 100%; } }
+  .main-container .page-container .user-register-form .captcha .img-responsive {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    margin-left: 30.4%;
+    padding: 5px; }
 
-.main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
-.main-container .page-container .user-register-form .form-group .panel-body .form-item {
-  display: inline-block;
-  margin-bottom: 3px;
-  width: 30% !important; }
-  .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item label input[type="radio"],
-  .main-container .page-container .user-register-form .form-group .panel-body .form-item label input[type="radio"] {
-    margin-left: -27px; }
+.path-user {
+  background-attachment: fixed;
+  background-image: url(../images/drupalman.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .path-user .main-container {
+    background-image: none; }
+    .path-user .main-container .region-content article {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px; }
+      .path-user .main-container .region-content article .field {
+        display: inline-block;
+        margin: 0 10px 15px 0;
+        vertical-align: top;
+        width: 48%; }
+        @media screen and (max-width: 640px) {
+          .path-user .main-container .region-content article .field {
+            display: block;
+            margin: 0 0 15px 0;
+            width: 100%; } }
+        .path-user .main-container .region-content article .field.field--name-user-picture {
+          display: block;
+          position: relative;
+          width: 100%; }
+          .path-user .main-container .region-content article .field.field--name-user-picture:before {
+            background-color: #0676c0;
+            bottom: 27px;
+            content: "";
+            height: 2px;
+            position: absolute;
+            width: 46.50%;
+            z-index: 1; }
+            @media screen and (max-width: 960px) {
+              .path-user .main-container .region-content article .field.field--name-user-picture:before {
+                display: none; } }
+          .path-user .main-container .region-content article .field.field--name-user-picture:after {
+            background-color: #0676c0;
+            bottom: 27px;
+            content: "";
+            height: 2px;
+            position: absolute;
+            right: 0;
+            width: 46%;
+            z-index: 1; }
+            @media screen and (max-width: 960px) {
+              .path-user .main-container .region-content article .field.field--name-user-picture:after {
+                display: none; } }
+          .path-user .main-container .region-content article .field.field--name-user-picture img {
+            border: 2px solid;
+            border-radius: 50%;
+            height: 100px;
+            margin: 0 0 0 46%;
+            padding: 2px;
+            width: 100px; }
+            @media screen and (max-width: 960px) {
+              .path-user .main-container .region-content article .field.field--name-user-picture img {
+                margin: 0 auto; } }
+        .path-user .main-container .region-content article .field .field--label {
+          border-bottom: 1px dashed #ddd;
+          margin: 0 0 5px;
+          padding: 0 0 2px; }
 
-.main-container .page-container .user-register-form .captcha .img-responsive {
-  border: 1px solid #ccc;
-  margin-bottom: 5px;
-  margin-left: 30.4%;
-  padding: 5px; }
+.tooltip.right {
+  margin-top: 0;
+  padding: 0 5px;
+  left: 10% !important; }
+  .tooltip.right .tooltip-arrow {
+    display: none; }
+  .tooltip.right .tooltip-inner {
+    max-width: 280px; }
+
+/*End Login*/
+/*End User page*/
 
 /*# sourceMappingURL=css-maps/dcm-users.css.map */
