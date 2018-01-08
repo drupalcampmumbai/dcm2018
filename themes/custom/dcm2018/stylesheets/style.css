@@ -7548,6 +7548,9 @@ body.maintenance-page {
   background-color: #337ab7; }
   .path-frontpage .navbar.container .navbar-header .logo img {
     height: 200px; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .path-frontpage .navbar.container .navbar-header .logo img {
+        height: 110px; } }
 
 .path-frontpage .main-container,
 .path-frontpage .container {
