@@ -6216,8 +6216,8 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed {
 .ui-autocomplete {
   background: #fff;
   background-clip: padding-box;
-  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   color: inherit;
@@ -6290,21 +6290,21 @@ p:last-child,
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 body {
   border: 0 none;
@@ -6552,11 +6552,11 @@ img {
     display: block;
     left: -100px;
     position: absolute;
-    right: 0;
+    right: -10px;
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0;
-    right: 0;
+    right: -10px;
     transform: rotate(1.2deg); }
   .navbar.container .header-inner {
     margin: 0 auto;
@@ -6604,7 +6604,7 @@ img {
             text-transform: capitalize !important;
             transition: all .3s linear 0s; }
             .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li a:hover {
-              color: #0676c0; }
+              color: #333; }
             @media screen and (max-width: 960px) {
               .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li a .caret {
                 float: right;
@@ -7062,11 +7062,11 @@ table tr.error {
       #drupal-modal form .form-item.form-type-radio input[type="radio"]:hover,
       #drupal-modal form .form-item.form-type-radio input[type="radio"]:checked {
         background: #337ab7;
-        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
+        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
       .main-container form .form-item.form-type-radio input[type="radio"]:checked,
       #drupal-modal form .form-item.form-type-radio input[type="radio"]:checked {
         background: #337ab7;
-        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
+        box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
       .main-container form .form-item.form-type-radio input[type="radio"]:focus,
       #drupal-modal form .form-item.form-type-radio input[type="radio"]:focus {
         outline: 0; }
@@ -7233,10 +7233,10 @@ input[type="radio"] {
   width: 18px; }
   input[type="radio"]:hover, input[type="radio"]:checked {
     background: #337ab7;
-    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
+    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em; }
   input[type="radio"]:checked {
     background: #337ab7;
-    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
+    box-shadow: inset 0 0 0 .4em #fefefe, 0 0 0 .1em #a9aaa9; }
   input[type="radio"]:focus {
     outline: 0; }
 
@@ -7496,7 +7496,7 @@ body.maintenance-page {
         display: block;
         left: -100px;
         position: absolute;
-        right: 0;
+        right: -10px;
         top: -20px;
         transform: rotate(-1.2deg);
         z-index: 0;
@@ -7528,21 +7528,21 @@ body.maintenance-page {
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 .path-frontpage .navbar.container {
   background-color: #337ab7; }
@@ -7584,6 +7584,10 @@ body.maintenance-page {
         line-height: 100px;
         margin-bottom: 10px;
         margin-top: 10px; }
+        @media (min-width: 320px) and (max-width: 767px) {
+          .path-frontpage .banner .region-banner .slogan h1 {
+            font-size: 60px;
+            line-height: 70px; } }
       .path-frontpage .banner .region-banner .slogan .underline {
         background-color: #fff; }
       .path-frontpage .banner .region-banner .slogan .cursive-text {
@@ -7593,6 +7597,10 @@ body.maintenance-page {
         font-style: italic;
         line-height: 32px;
         margin-bottom: 10px; }
+        @media (min-width: 320px) and (max-width: 767px) {
+          .path-frontpage .banner .region-banner .slogan .cursive-text {
+            font-size: 21px;
+            line-height: 25px; } }
 
 .path-frontpage .content_bottom {
   background-color: #f6f6f2;
@@ -7607,7 +7615,7 @@ body.maintenance-page {
     display: block;
     left: -100px;
     position: absolute;
-    right: 0;
+    right: -10px;
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0; }
@@ -7668,7 +7676,7 @@ body.maintenance-page {
     display: block;
     left: -100px;
     position: absolute;
-    right: 0;
+    right: -10px;
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0;
@@ -7762,7 +7770,7 @@ body.maintenance-page {
     display: block;
     left: -100px;
     position: absolute;
-    right: 0;
+    right: -10px;
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0; }
@@ -7848,12 +7856,14 @@ body.maintenance-page {
     display: block;
     left: -100px;
     position: absolute;
-    right: 0;
+    right: -10px;
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0; }
   #block-dcm2018-drupalapprenctices .drupal-apprentice {
     margin: 0 auto;
+    max-width: 100%;
+    min-width: 320px;
     width: 1200px; }
     #block-dcm2018-drupalapprenctices .drupal-apprentice .image-wrapper {
       text-align: right; }
@@ -7869,69 +7879,195 @@ body.maintenance-page {
     display: block;
     left: -100px;
     position: absolute;
-    right: 0;
+    right: -10px;
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0; }
   #block-dcm2018-joinda .join-drup-assoc {
     margin: 0 auto;
+    max-width: 100%;
+    min-width: 320px;
     width: 1200px; }
     #block-dcm2018-joinda .join-drup-assoc .image-wrapper {
       text-align: right; }
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
-.main-container .page-container .user-register-form .form-item .form-managed-file .preview {
-  padding: 0; }
+.main-container .page-container .user-register-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px; }
+  @media (min-width: 320px) and (max-width: 460px) {
+    .main-container .page-container .user-register-form .form-item input,
+    .main-container .page-container .user-register-form .form-item label {
+      width: 100%;
+      margin-bottom: 5px; } }
+  @media (min-width: 320px) and (max-width: 460px) {
+    .main-container .page-container .user-register-form .form-item .form-managed-file {
+      width: 100%; } }
+  .main-container .page-container .user-register-form .form-item .form-managed-file .form-file {
+    height: 40px;
+    margin-right: 0; }
+  .main-container .page-container .user-register-form .form-item .form-managed-file .preview {
+    padding: 0; }
+  .main-container .page-container .user-register-form .form-item .form-managed-file .data {
+    padding: 0; }
+    @media (min-width: 960px) and (max-width: 1400px) {
+      .main-container .page-container .user-register-form .form-item .form-managed-file .data {
+        margin-left: 10px;
+        width: 81.6%; } }
+    @media (min-width: 320px) and (max-width: 959px) {
+      .main-container .page-container .user-register-form .form-item .form-managed-file .data {
+        margin-top: 10px; } }
+  .main-container .page-container .user-register-form .fieldgroup .panel-heading,
+  .main-container .page-container .user-register-form .form-group .panel-heading {
+    background-color: transparent; }
+    @media (min-width: 320px) and (max-width: 460px) {
+      .main-container .page-container .user-register-form .fieldgroup .panel-heading,
+      .main-container .page-container .user-register-form .form-group .panel-heading {
+        width: 100%;
+        margin-bottom: 5px; } }
+  @media (min-width: 320px) and (max-width: 460px) {
+    .main-container .page-container .user-register-form .fieldgroup .panel-body,
+    .main-container .page-container .user-register-form .form-group .panel-body {
+      width: 100%; } }
+  .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
+  .main-container .page-container .user-register-form .form-group .panel-body .form-item {
+    display: inline-block;
+    margin-bottom: 3px;
+    vertical-align: top;
+    width: 30% !important; }
+    @media (min-width: 541px) and (max-width: 840px) {
+      .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
+      .main-container .page-container .user-register-form .form-group .panel-body .form-item {
+        width: 49% !important; } }
+    @media (min-width: 461px) and (max-width: 540px) {
+      .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
+      .main-container .page-container .user-register-form .form-group .panel-body .form-item {
+        width: 100% !important; } }
+    @media (min-width: 320px) and (max-width: 460px) {
+      .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
+      .main-container .page-container .user-register-form .form-group .panel-body .form-item {
+        width: 49% !important; } }
+    .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item label input[type="radio"],
+    .main-container .page-container .user-register-form .form-group .panel-body .form-item label input[type="radio"] {
+      margin-left: -27px; }
+  @media (min-width: 320px) and (max-width: 460px) {
+    .main-container .page-container .user-register-form .fieldgroup .select-wrapper,
+    .main-container .page-container .user-register-form .form-group .select-wrapper {
+      width: 100%; } }
+  .main-container .page-container .user-register-form .captcha .img-responsive {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    margin-left: 30.4%;
+    padding: 5px; }
 
-.main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
-.main-container .page-container .user-register-form .form-group .panel-body .form-item {
-  display: inline-block;
-  margin-bottom: 3px;
-  width: 30% !important; }
-  .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item label input[type="radio"],
-  .main-container .page-container .user-register-form .form-group .panel-body .form-item label input[type="radio"] {
-    margin-left: -27px; }
+.path-user {
+  background-attachment: fixed;
+  background-image: url(../images/drupalman.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .path-user .main-container {
+    background-image: none; }
+    .path-user .main-container .region-content article {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px; }
+      .path-user .main-container .region-content article .field {
+        display: inline-block;
+        margin: 0 10px 15px 0;
+        vertical-align: top;
+        width: 48%; }
+        @media screen and (max-width: 640px) {
+          .path-user .main-container .region-content article .field {
+            display: block;
+            margin: 0 0 15px 0;
+            width: 100%; } }
+        .path-user .main-container .region-content article .field.field--name-user-picture {
+          display: block;
+          position: relative;
+          width: 100%; }
+          .path-user .main-container .region-content article .field.field--name-user-picture:before {
+            background-color: #0676c0;
+            bottom: 27px;
+            content: "";
+            height: 2px;
+            position: absolute;
+            width: 46.50%;
+            z-index: 1; }
+            @media screen and (max-width: 960px) {
+              .path-user .main-container .region-content article .field.field--name-user-picture:before {
+                display: none; } }
+          .path-user .main-container .region-content article .field.field--name-user-picture:after {
+            background-color: #0676c0;
+            bottom: 27px;
+            content: "";
+            height: 2px;
+            position: absolute;
+            right: 0;
+            width: 46%;
+            z-index: 1; }
+            @media screen and (max-width: 960px) {
+              .path-user .main-container .region-content article .field.field--name-user-picture:after {
+                display: none; } }
+          .path-user .main-container .region-content article .field.field--name-user-picture img {
+            border: 2px solid;
+            border-radius: 50%;
+            height: 100px;
+            margin: 0 0 0 46%;
+            padding: 2px;
+            width: 100px; }
+            @media screen and (max-width: 960px) {
+              .path-user .main-container .region-content article .field.field--name-user-picture img {
+                margin: 0 auto; } }
+        .path-user .main-container .region-content article .field .field--label {
+          border-bottom: 1px dashed #ddd;
+          margin: 0 0 5px;
+          padding: 0 0 2px; }
 
-.main-container .page-container .user-register-form .captcha .img-responsive {
-  border: 1px solid #ccc;
-  margin-bottom: 5px;
-  margin-left: 30.4%;
-  padding: 5px; }
+.tooltip.right {
+  margin-top: 0;
+  padding: 0 5px;
+  left: 10% !important; }
+  .tooltip.right .tooltip-arrow {
+    display: none; }
+  .tooltip.right .tooltip-inner {
+    max-width: 280px; }
 
+/*End Login*/
+/*End User page*/
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 .view-attendees .view-content {
   align-items: stretch;
@@ -7944,12 +8080,26 @@ body.maintenance-page {
   justify-content: flex-start; }
   .view-attendees .view-content .slideanim {
     display: inline-block;
-    margin-bottom: 55px;
-    margin-right: 40px;
+    margin: 0 auto 50px;
     vertical-align: top;
     width: 31%; }
+    @media screen and (max-width: 1200px) {
+      .view-attendees .view-content .slideanim {
+        max-width: 340px;
+        width: 41%; } }
+    @media screen and (max-width: 767px) {
+      .view-attendees .view-content .slideanim {
+        margin: 0 auto 30px;
+        width: 100%; } }
+    @media screen and (max-width: 400px) {
+      .view-attendees .view-content .slideanim {
+        max-width: 240px;
+        min-width: 250px; } }
     .view-attendees .view-content .slideanim:nth-child(3n) {
       margin-right: 0; }
+      @media screen and (max-width: 1200px) {
+        .view-attendees .view-content .slideanim:nth-child(3n) {
+          margin-right: auto; } }
     .view-attendees .view-content .slideanim .attendees-page .team-attendees {
       align-items: flex-start;
       background-color: #337ab7;
@@ -7962,15 +8112,18 @@ body.maintenance-page {
       padding: 40px 20px 37px;
       position: relative;
       transition: box-shadow .3s ease; }
+      @media screen and (max-width: 400px) {
+        .view-attendees .view-content .slideanim .attendees-page .team-attendees {
+          padding: 40px 15px 37px; } }
       .view-attendees .view-content .slideanim .attendees-page .team-attendees:before {
-        bottom: -1px;
+        bottom: -1px !important;
         background-color: inherit;
         bottom: -18px;
         content: "";
         display: block;
         left: -100px;
         position: absolute;
-        right: 0;
+        right: -10px;
         top: -20px;
         transform: rotate(-1.2deg);
         z-index: 0;
@@ -7990,8 +8143,17 @@ body.maintenance-page {
         -ms-flex-pack: center;
         height: 121px;
         justify-content: center;
+        margin-right: 10px;
         overflow: hidden;
         width: 121px; }
+        @media screen and (max-width: 1010px) {
+          .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
+            height: 100px;
+            width: 100px; } }
+        @media screen and (max-width: 400px) {
+          .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
+            height: 74px;
+            width: 74px; } }
       .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name {
         color: #fff;
         font-size: 16px;
@@ -8002,6 +8164,10 @@ body.maintenance-page {
           font-size: 24px;
           line-height: 27px;
           margin-bottom: 5px; }
+          @media screen and (max-width: 1010px) {
+            .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name {
+              font-size: 20px;
+              line-height: 24px; } }
           .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name a {
             color: #fff;
             text-decoration: none; }
@@ -8009,6 +8175,10 @@ body.maintenance-page {
           font-size: 16px;
           line-height: 20px;
           margin-bottom: 0; }
+          @media screen and (max-width: 1010px) {
+            .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
+              font-size: 15px;
+              line-height: 19px; } }
         .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .user-profession a {
           color: #fff;
           font-size: 12px;

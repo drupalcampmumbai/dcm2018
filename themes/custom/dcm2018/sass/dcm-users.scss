@@ -3,24 +3,71 @@
 
 // Note: !important used to override other css file.
 
-// Register form page
+
 .main-container {
   .page-container {
+    // Register form page
     .user-register-form {
+      background-color: rgba(255, 255, 255, .8);
+      padding: 20px;
       .form-item {
+        input,
+        label {
+          @media (min-width: 320px) and (max-width: 460px) {
+            width: 100%;
+            margin-bottom: 5px;
+          }
+        }
         .form-managed-file {
+          @media (min-width: 320px) and (max-width: 460px) {
+            width: 100%;
+          }
+          .form-file {
+            height: 40px;
+            margin-right: 0;
+          }
           .preview {
             padding: 0;
+          }
+          .data {
+            padding: 0;
+            @media (min-width: 960px) and (max-width: 1400px) {
+              margin-left: 10px;
+              width: 81.6%;
+            }
+            @media (min-width: 320px) and (max-width: 959px) {
+              margin-top: 10px;
+            }
           }
         }
       }
       .fieldgroup,
       .form-group {
+        .panel-heading {
+          background-color: transparent;
+          @media (min-width: 320px) and (max-width: 460px) {
+            width: 100%;
+            margin-bottom: 5px;
+          }
+        }
         .panel-body {
+          @media (min-width: 320px) and (max-width: 460px) {
+            width: 100%;
+          }
           .form-item {
             display: inline-block;
             margin-bottom: 3px;
+            vertical-align: top;
             width: 30% !important;
+            @media (min-width: 541px) and (max-width: 840px) {
+              width: 49% !important;
+            }
+            @media (min-width: 461px) and (max-width: 540px) {
+              width: 100% !important;
+            }
+            @media (min-width: 320px) and (max-width: 460px) {
+              width: 49% !important;
+            }
             label {
               input {
                 &[type="radio"] {
@@ -28,6 +75,11 @@
                 }
               }
             }
+          }
+        }
+        .select-wrapper {
+        	@media (min-width: 320px) and (max-width: 460px) {
+            width: 100%;
           }
         }
       }
@@ -42,3 +94,101 @@
     }
   }
 }
+// Login
+.path-user {
+  background-attachment: fixed;
+  background-image: url(../images/drupalman.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .main-container {
+    background-image: none;
+
+    .region-content {
+      article {
+        background-color: rgba(255, 255, 255, .8);
+        padding: 20px;
+        .field {
+          display: inline-block;
+          margin: 0 10px 15px 0;
+          vertical-align: top;
+          width: 48%;
+
+          @media screen and (max-width: 640px) {
+            display: block;
+            margin: 0 0 15px 0;
+            width: 100%;
+          }
+
+          &.field--name-user-picture {
+            display: block;
+            position: relative;
+            width: 100%;
+
+            &:before {
+              background-color: $link-color;
+              bottom: 27px;
+              content: "";
+              height: 2px;
+              position: absolute;
+              width: 46.50%;
+              z-index: 1;
+
+              @media screen and (max-width: 960px) {
+                display: none;
+              }
+            }
+
+            &:after {
+              background-color: $link-color;
+              bottom: 27px;
+              content: "";
+              height: 2px;
+              position: absolute;
+              right: 0;
+              width: 46%;
+              z-index: 1;
+
+              @media screen and (max-width: 960px) {
+                display: none;
+              }
+            }
+
+            img {
+              border: 2px solid;
+              border-radius: 50%;
+              height: 100px;
+              margin: 0 0 0 46%;
+              padding: 2px;
+              width: 100px;
+
+              @media screen and (max-width: 960px) {
+                margin: 0 auto;
+              }
+            }
+          }
+
+          .field--label {
+            border-bottom: 1px dashed #ddd;
+            margin: 0 0 5px;
+            padding: 0 0 2px;
+          }
+        }
+      }
+    }
+  }
+}
+.tooltip.right {
+	margin-top: 0;
+	padding: 0 5px;
+	left: 10% !important;
+	.tooltip-arrow {
+		display: none;
+	}
+	.tooltip-inner {
+    max-width: 280px;
+	}
+}
+/*End Login*/
+/*End User page*/

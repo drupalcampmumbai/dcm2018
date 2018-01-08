@@ -53,6 +53,10 @@
           line-height: 100px;
           margin-bottom: 10px;
           margin-top: 10px;
+          @media (min-width: 320px) and (max-width: 767px) {
+                font-size: 60px;
+    line-height: 70px;
+          }
         }
         .underline {
           background-color: $white-color;
@@ -64,6 +68,10 @@
           font-style: italic;
           line-height: 32px;
           margin-bottom: 10px;
+          @media (min-width: 320px) and (max-width: 767px) {
+                font-size: 21px;
+    line-height: 25px;
+          }
         }
       }
     }
@@ -346,6 +354,8 @@
 
   .drupal-apprentice {
     margin: 0 auto;
+    max-width: 100%;
+    min-width: 320px;
     width: $page-width;
 
     .image-wrapper {
@@ -364,6 +374,8 @@
 
   .join-drup-assoc {
     margin: 0 auto;
+    max-width: 100%;
+    min-width: 320px;
     width: $page-width;
 
     .image-wrapper {

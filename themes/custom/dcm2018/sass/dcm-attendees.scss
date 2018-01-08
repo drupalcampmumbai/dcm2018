@@ -18,12 +18,26 @@
     justify-content: flex-start;
     .slideanim {
       display: inline-block;
-      margin-bottom: 55px;
-      margin-right: 40px;
+      margin: 0 auto 50px;
       vertical-align: top;
       width: 31%;
+      @media screen and (max-width: 1200px) {
+        max-width: 340px;
+        width: 41%;
+      }
+      @media screen and (max-width: 767px) {
+        margin: 0 auto 30px;
+        width: 100%;
+      }
+      @media screen and (max-width: 400px) {
+        max-width: 240px;
+        min-width: 250px;
+      }
       &:nth-child(3n) {
         margin-right: 0;
+        @media screen and (max-width: 1200px) {
+          margin-right: auto;
+        }
       }
       .attendees-page {
         .team-attendees {
@@ -39,8 +53,11 @@
           position: relative;
           -webkit-transition: box-shadow .3s ease;
           transition: box-shadow .3s ease;
+          @media screen and (max-width: 400px) {
+            padding: 40px 15px 37px;
+          }
           &:before {
-            bottom: -1px;
+            bottom: -1px !important;
             @include cross;
             left: 0;
             top: 0;
@@ -61,8 +78,17 @@
               -ms-flex-pack: center;
               height: 121px;
               justify-content: center;
+              margin-right: 10px;
               overflow: hidden;
               width: 121px;
+              @media screen and (max-width: 1010px) {
+                height: 100px;
+                width: 100px;
+              }
+              @media screen and (max-width: 400px) {
+                height: 74px;
+                width: 74px;
+              }
             }
           }
           .user-name {
@@ -75,6 +101,10 @@
               font-size: 24px;
               line-height: 27px;
               margin-bottom: 5px;
+              @media screen and (max-width: 1010px) {
+                font-size: 20px;
+                line-height: 24px;
+              }
               a {
                 color: $white-color;
                 text-decoration: none;
@@ -84,6 +114,10 @@
               font-size: 16px;
               line-height: 20px;
               margin-bottom: 0;
+              @media screen and (max-width: 1010px) {
+                font-size: 15px;
+                line-height: 19px;
+              }
             }
             .user-profession {
               a {
