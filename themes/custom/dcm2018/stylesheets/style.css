@@ -7770,11 +7770,11 @@ body.maintenance-page {
     #block-connectwithus .social-icon.icon-drupalorg a:before {
       content: "\f1a9"; }
 
-#middle-content {
+.path-frontpage #middle-content {
   background-color: #bce8f1;
   padding: 50px 0 50px;
   position: relative; }
-  #middle-content:before {
+  .path-frontpage #middle-content:before {
     background-color: inherit;
     bottom: -18px;
     content: "";
@@ -7785,36 +7785,36 @@ body.maintenance-page {
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0; }
-  #middle-content .region {
+  .path-frontpage #middle-content .region {
     margin: 0 auto;
     max-width: 1200px;
     min-width: 320px;
     width: 100%; }
-    #middle-content .region .drupal-recent-news .block-title {
+    .path-frontpage #middle-content .region .drupal-recent-news .block-title {
       color: #337ab7;
       font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
       font-size: 35px;
       margin-bottom: 40px; }
-    #middle-content .region .drupal-recent-news .view-drupal-camp-news {
+    .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news {
       margin: 0 auto;
       max-width: 1200px;
       position: relative; }
-      #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row {
+      .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row {
         border-bottom: 0;
         float: left;
         margin: 0 0 40px;
         padding: 0 0 5px 15px;
         width: 100%; }
-        #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field {
+        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field {
           margin: 5px 0 0; }
-          #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner {
+          .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner {
             background-color: #337ab7;
             float: left;
             height: 78px;
             position: relative;
             text-align: center;
             width: 78px; }
-            #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:before {
+            .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:before {
               background-color: #fff;
               content: "";
               height: 5px;
@@ -7822,7 +7822,7 @@ body.maintenance-page {
               position: absolute;
               top: 0;
               width: 5px; }
-            #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:after {
+            .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:after {
               background-color: #fff;
               content: "";
               height: 5px;
@@ -7830,24 +7830,24 @@ body.maintenance-page {
               right: 10px;
               top: 0;
               width: 5px; }
-            #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h1 {
+            .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h1 {
               color: #fff;
               font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
               font-size: 32px;
               margin-bottom: 0;
               padding-bottom: 5px !important;
               padding-top: 5px !important; }
-            #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h4 {
+            .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h4 {
               color: #fff;
               font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
               font-size: 18px;
               text-transform: uppercase !important; }
-          #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+          .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
             padding-right: 25px; }
             @media screen and (max-width: 991px) {
-              #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+              .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
                 padding-right: 0; } }
-            #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-title a {
+            .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-title a {
               color: #337ab7;
               display: inline-block;
               font-size: 27px;
@@ -7856,17 +7856,17 @@ body.maintenance-page {
               margin-bottom: 10px;
               margin-top: 0;
               text-decoration: initial; }
-        #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link {
+        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link {
           margin: 10px 12px;
           text-align: right; }
-          #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link a {
+          .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link a {
             border-left: 2px solid #0676c0;
             padding-left: 5px; }
-            #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link a:after {
+            .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link a:after {
               content: " >>"; }
-    #middle-content .region .gold-sponsors {
+    .path-frontpage #middle-content .region .gold-sponsors {
       text-align: center; }
-      #middle-content .region .gold-sponsors .form-group .view-content .views-row {
+      .path-frontpage #middle-content .region .gold-sponsors .form-group .view-content .views-row {
         display: table;
         margin: 0 auto 15px; }
 

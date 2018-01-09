@@ -245,124 +245,126 @@
 }
 
 // Recent News
-#middle-content {
-  background-color: $blue-color1;
-  padding: 50px 0 50px;
-  position: relative;
-  &:before {
-    @include cross;
-  }
-  .region {
-    margin: 0 auto;
-    max-width: $page-width;
-    min-width: 320px;
-    width: 100%;
-    .drupal-recent-news {
-      .block-title {
-        color: $blue-color;
-        font-family: $raleway-extrabold;
-        font-size: 35px;
-        margin-bottom: 40px;
-      }
-      .view-drupal-camp-news {
-        margin: 0 auto;
-        max-width: $page-width;
-        position: relative;
-        .views-row {
-          border-bottom: 0;
-          float: left;
-          margin: 0 0 40px;
-          padding: 0 0 5px 15px;
-          width: 100%;
-          .views-field {
-            margin: 5px 0 0;
-            .homepage-new {
-              .date-mnth {
-                .inner {
-                  background-color: $blue-color;
-                  float: left;
-                  height: 78px;
-                  position: relative;
-                  text-align: center;
-                  width: 78px;
-                  &:before {
-                    background-color: $white-color;
-                    content: "";
-                    height: 5px;
-                    left: 10px;
-                    position: absolute;
-                    top: 0;
-                    width: 5px;
-                  }
-                  &:after {
-                    background-color: $white-color;
-                    content: "";
-                    height: 5px;
-                    position: absolute;
-                    right: 10px;
-                    top: 0;
-                    width: 5px;
-                  }
-                  h1 {
-                    color: $white-color;
-                    font-family: $raleway-extrabold;
-                    font-size: 32px;
-                    margin-bottom: 0;
-                    padding-bottom: 5px !important;
-                    padding-top: 5px !important;
-                  }
-                  h4 {
-                    color: $white-color;
-                    font-family: $raleway-extrabold;
-                    font-size: 18px;
-                    text-transform: uppercase !important;
+.path-frontpage {
+  #middle-content {
+    background-color: $blue-color1;
+    padding: 50px 0 50px;
+    position: relative;
+    &:before {
+      @include cross;
+    }
+    .region {
+      margin: 0 auto;
+      max-width: $page-width;
+      min-width: 320px;
+      width: 100%;
+      .drupal-recent-news {
+        .block-title {
+          color: $blue-color;
+          font-family: $raleway-extrabold;
+          font-size: 35px;
+          margin-bottom: 40px;
+        }
+        .view-drupal-camp-news {
+          margin: 0 auto;
+          max-width: $page-width;
+          position: relative;
+          .views-row {
+            border-bottom: 0;
+            float: left;
+            margin: 0 0 40px;
+            padding: 0 0 5px 15px;
+            width: 100%;
+            .views-field {
+              margin: 5px 0 0;
+              .homepage-new {
+                .date-mnth {
+                  .inner {
+                    background-color: $blue-color;
+                    float: left;
+                    height: 78px;
+                    position: relative;
+                    text-align: center;
+                    width: 78px;
+                    &:before {
+                      background-color: $white-color;
+                      content: "";
+                      height: 5px;
+                      left: 10px;
+                      position: absolute;
+                      top: 0;
+                      width: 5px;
+                    }
+                    &:after {
+                      background-color: $white-color;
+                      content: "";
+                      height: 5px;
+                      position: absolute;
+                      right: 10px;
+                      top: 0;
+                      width: 5px;
+                    }
+                    h1 {
+                      color: $white-color;
+                      font-family: $raleway-extrabold;
+                      font-size: 32px;
+                      margin-bottom: 0;
+                      padding-bottom: 5px !important;
+                      padding-top: 5px !important;
+                    }
+                    h4 {
+                      color: $white-color;
+                      font-family: $raleway-extrabold;
+                      font-size: 18px;
+                      text-transform: uppercase !important;
+                    }
                   }
                 }
-              }
-              .data-wrapper {
-                padding-right: 25px;
-                @media screen and (max-width: 991px) {
-                  padding-right: 0;
-                }
-                .news-title {
-                  a {
-                    color: $blue-color;
-                    display: inline-block;
-                    font-size: 27px;
-                    font-weight: bold;
-                    line-height: 32px;
-                    margin-bottom: 10px;
-                    margin-top: 0;
-                    text-decoration: initial;
+                .data-wrapper {
+                  padding-right: 25px;
+                  @media screen and (max-width: 991px) {
+                    padding-right: 0;
+                  }
+                  .news-title {
+                    a {
+                      color: $blue-color;
+                      display: inline-block;
+                      font-size: 27px;
+                      font-weight: bold;
+                      line-height: 32px;
+                      margin-bottom: 10px;
+                      margin-top: 0;
+                      text-decoration: initial;
+                    }
                   }
                 }
               }
             }
-          }
 
-          .views-more-link {
-            margin: 10px 12px;
-            text-align: right;
+            .views-more-link {
+              margin: 10px 12px;
+              text-align: right;
 
-            a {
-              border-left: 2px solid $link-color;
-              padding-left: 5px;
-              &:after {
-                content: " >>";
+              a {
+                border-left: 2px solid $link-color;
+                padding-left: 5px;
+                &:after {
+                  content: " >>";
+                }
               }
             }
           }
         }
       }
-    }
-    .gold-sponsors {
-      text-align: center;
+      .gold-sponsors {
+        text-align: center;
 
-      .form-group {
-        .view-content {
-          .views-row {
-            display: table;
-            margin: 0 auto 15px;
+        .form-group {
+          .view-content {
+            .views-row {
+              display: table;
+              margin: 0 auto 15px;
+            }
           }
         }
       }
