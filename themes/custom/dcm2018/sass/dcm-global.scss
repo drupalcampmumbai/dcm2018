@@ -349,6 +349,10 @@ img {
     float: right;
     padding: 0;
     width: 80%;
+    @media screen and (max-width: 960px) {
+      margin-top: 60px;
+      width: 92%;
+    }
     #dcm-sticky-menu {
       padding: 0;
       .menu.nav {
@@ -379,14 +383,16 @@ img {
             display: block;
             font-size: 16px;
             font-weight: 600;
-            padding: 20px 11px 5px;
+            padding: 15px 11px 5px;
             position: relative;
             text-decoration: none;
             text-transform: capitalize !important;
             transition: all .3s linear 0s;
 
             &:hover {
+              background-color: #ccc;
               color: $base-color;
+              padding: 15px 11px 5px;
             }
 
             .caret {

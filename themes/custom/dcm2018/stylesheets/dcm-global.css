@@ -286,6 +286,10 @@ img {
     float: right;
     padding: 0;
     width: 80%; }
+    @media screen and (max-width: 960px) {
+      .navbar.container .navbar-collapse {
+        margin-top: 60px;
+        width: 92%; } }
     .navbar.container .navbar-collapse #dcm-sticky-menu {
       padding: 0; }
       .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav {
@@ -308,13 +312,15 @@ img {
             display: block;
             font-size: 16px;
             font-weight: 600;
-            padding: 20px 11px 5px;
+            padding: 15px 11px 5px;
             position: relative;
             text-decoration: none;
             text-transform: capitalize !important;
             transition: all .3s linear 0s; }
             .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li a:hover {
-              color: #333; }
+              background-color: #ccc;
+              color: #333;
+              padding: 15px 11px 5px; }
             @media screen and (max-width: 960px) {
               .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li a .caret {
                 float: right;
