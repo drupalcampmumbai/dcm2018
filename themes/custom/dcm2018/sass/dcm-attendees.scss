@@ -9,8 +9,8 @@
 .view-attendees {
   .view-content {
     align-items: stretch;
-    display: -ms-flexbox;
     display: flex;
+    display: -ms-flexbox;
     -ms-flex-align: stretch;
     -ms-flex-flow: wrap row;
     flex-flow: wrap row;
@@ -43,8 +43,8 @@
         .team-attendees {
           align-items: flex-start;
           background-color: $blue-color;
-          display: -ms-flexbox;
           display: flex;
+          display: -ms-flexbox;
           -ms-flex-align: start;
           -ms-flex-pack: justify;
           justify-content: space-between;
@@ -73,8 +73,8 @@
               align-items: center;
               border-radius: 50%;
               box-shadow: 0 5px 20px rgba(0, 0, 0, .4);
-              display: -ms-flexbox;
               display: flex;
+              display: -ms-flexbox;
               -ms-flex-align: center;
               -ms-flex-pack: center;
               height: 121px;

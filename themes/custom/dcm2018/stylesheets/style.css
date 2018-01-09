@@ -6216,8 +6216,8 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed {
 .ui-autocomplete {
   background: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
   border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   color: inherit;
@@ -6290,21 +6290,21 @@ p:last-child,
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.woff");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.woff"); }
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
 body {
   border: 0 none;
@@ -7535,21 +7535,21 @@ body.maintenance-page {
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.woff");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.woff"); }
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
 .path-frontpage .navbar.container {
   background-color: #337ab7; }
@@ -7717,8 +7717,8 @@ body.maintenance-page {
   .block-views-blocksponsors-gold-sponsor-slideshow .view-sponsors {
     margin: 0 auto;
     max-width: 1200px;
-    text-align: center;
-    position: relative; }
+    position: relative;
+    text-align: center; }
     .block-views-blocksponsors-platinum-sponsors .view-sponsors .views-row,
     .block-views-blocksponsors-silver-sponsor-slideshow .view-sponsors .views-row,
     .block-views-blocksponsors-partners-slideshow .view-sponsors .views-row,
@@ -7770,11 +7770,11 @@ body.maintenance-page {
     #block-connectwithus .social-icon.icon-drupalorg a:before {
       content: "\f1a9"; }
 
-.drupal-recent-news {
+#middle-content {
   background-color: #bce8f1;
   padding: 50px 0 50px;
   position: relative; }
-  .drupal-recent-news:before {
+  #middle-content:before {
     background-color: inherit;
     bottom: -18px;
     content: "";
@@ -7785,76 +7785,90 @@ body.maintenance-page {
     top: -20px;
     transform: rotate(-1.2deg);
     z-index: 0; }
-  .drupal-recent-news .block-title {
-    color: #337ab7;
-    font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
-    font-size: 35px;
-    margin-bottom: 40px; }
-
-.view-drupal-camp-news {
-  margin: 0 auto;
-  max-width: 1200px;
-  position: relative; }
-  .view-drupal-camp-news .views-row {
-    border-bottom: 0;
-    float: left;
-    margin: 0 0 40px;
-    padding: 0 0 5px 15px;
+  #middle-content .region {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 320px;
     width: 100%; }
-    .view-drupal-camp-news .views-row .views-field {
-      margin: 5px 0 0; }
-      .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner {
-        background-color: #337ab7;
+    #middle-content .region .drupal-recent-news .block-title {
+      color: #337ab7;
+      font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
+      font-size: 35px;
+      margin-bottom: 40px; }
+    #middle-content .region .drupal-recent-news .view-drupal-camp-news {
+      margin: 0 auto;
+      max-width: 1200px;
+      position: relative; }
+      #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row {
+        border-bottom: 0;
         float: left;
-        height: 78px;
-        position: relative;
-        text-align: center;
-        width: 78px; }
-        .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:before {
-          background-color: #fff;
-          content: "";
-          height: 5px;
-          left: 10px;
-          position: absolute;
-          top: 0;
-          width: 5px; }
-        .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:after {
-          background-color: #fff;
-          content: "";
-          height: 5px;
-          position: absolute;
-          right: 10px;
-          top: 0;
-          width: 5px; }
-        .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h1 {
-          color: #fff;
-          font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
-          font-size: 32px;
-          margin-bottom: 0;
-          padding-bottom: 5px !important;
-          padding-top: 5px !important; }
-        .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h4 {
-          color: #fff;
-          font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
-          font-size: 18px;
-          text-transform: uppercase !important; }
-      .view-drupal-camp-news .views-row .views-field .homepage-new .news-title a {
-        color: #337ab7;
-        display: inline-block;
-        font-size: 27px;
-        font-weight: bold;
-        line-height: 32px;
-        margin-bottom: 10px;
-        margin-top: 0;
-        text-decoration: initial; }
-    .view-drupal-camp-news .views-row .views-more-link {
-      margin: 10px 12px;
-      text-align: right; }
-      .view-drupal-camp-news .views-row .views-more-link a {
-        border-left: 2px solid #0676c0;
-        padding-left: 5px; }
-        .view-drupal-camp-news .views-row .views-more-link a:after {
-          content: " >>"; }
+        margin: 0 0 40px;
+        padding: 0 0 5px 15px;
+        width: 100%; }
+        #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field {
+          margin: 5px 0 0; }
+          #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner {
+            background-color: #337ab7;
+            float: left;
+            height: 78px;
+            position: relative;
+            text-align: center;
+            width: 78px; }
+            #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:before {
+              background-color: #fff;
+              content: "";
+              height: 5px;
+              left: 10px;
+              position: absolute;
+              top: 0;
+              width: 5px; }
+            #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:after {
+              background-color: #fff;
+              content: "";
+              height: 5px;
+              position: absolute;
+              right: 10px;
+              top: 0;
+              width: 5px; }
+            #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h1 {
+              color: #fff;
+              font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
+              font-size: 32px;
+              margin-bottom: 0;
+              padding-bottom: 5px !important;
+              padding-top: 5px !important; }
+            #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h4 {
+              color: #fff;
+              font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
+              font-size: 18px;
+              text-transform: uppercase !important; }
+          #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+            padding-right: 25px; }
+            @media screen and (max-width: 991px) {
+              #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+                padding-right: 0; } }
+            #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-title a {
+              color: #337ab7;
+              display: inline-block;
+              font-size: 27px;
+              font-weight: bold;
+              line-height: 32px;
+              margin-bottom: 10px;
+              margin-top: 0;
+              text-decoration: initial; }
+        #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link {
+          margin: 10px 12px;
+          text-align: right; }
+          #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link a {
+            border-left: 2px solid #0676c0;
+            padding-left: 5px; }
+            #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link a:after {
+              content: " >>"; }
+    #middle-content .region .gold-sponsors {
+      text-align: center; }
+      #middle-content .region .gold-sponsors .form-group .view-content .views-row {
+        display: table;
+        margin: 0 auto 15px; }
 
 #block-dcm2018-drupalapprenctices {
   background-color: #bce8f1;
@@ -7904,21 +7918,21 @@ body.maintenance-page {
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.woff");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.woff"); }
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
 .main-container .page-container .user-register-form {
   background-color: rgba(255, 255, 255, 0.8);
@@ -8064,26 +8078,26 @@ body.maintenance-page {
 /*End User page*/
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.woff");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.woff"); }
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
 .view-attendees .view-content {
   align-items: stretch;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: stretch;
   -ms-flex-flow: wrap row;
   flex-flow: wrap row;
@@ -8114,8 +8128,8 @@ body.maintenance-page {
     .view-attendees .view-content .slideanim .attendees-page .team-attendees {
       align-items: flex-start;
       background-color: #337ab7;
-      display: -ms-flexbox;
       display: flex;
+      display: -ms-flexbox;
       -ms-flex-align: start;
       -ms-flex-pack: justify;
       justify-content: space-between;
@@ -8149,8 +8163,8 @@ body.maintenance-page {
         align-items: center;
         border-radius: 50%;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-        display: -ms-flexbox;
         display: flex;
+        display: -ms-flexbox;
         -ms-flex-align: center;
         -ms-flex-pack: center;
         height: 121px;
