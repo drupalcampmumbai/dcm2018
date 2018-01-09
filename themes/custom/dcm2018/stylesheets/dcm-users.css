@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.woff");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.woff"); }
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
 .main-container .page-container .user-register-form {
   background-color: rgba(255, 255, 255, 0.8);
@@ -22,8 +22,8 @@
   @media (min-width: 320px) and (max-width: 460px) {
     .main-container .page-container .user-register-form .form-item input,
     .main-container .page-container .user-register-form .form-item label {
-      width: 100%;
-      margin-bottom: 5px; } }
+      margin-bottom: 5px;
+      width: 100%; } }
   @media (min-width: 320px) and (max-width: 460px) {
     .main-container .page-container .user-register-form .form-item .form-managed-file {
       width: 100%; } }
@@ -47,8 +47,8 @@
     @media (min-width: 320px) and (max-width: 460px) {
       .main-container .page-container .user-register-form .fieldgroup .panel-heading,
       .main-container .page-container .user-register-form .form-group .panel-heading {
-        width: 100%;
-        margin-bottom: 5px; } }
+        margin-bottom: 5px;
+        width: 100%; } }
   @media (min-width: 320px) and (max-width: 460px) {
     .main-container .page-container .user-register-form .fieldgroup .panel-body,
     .main-container .page-container .user-register-form .form-group .panel-body {
@@ -148,9 +148,9 @@
           padding: 0 0 2px; }
 
 .tooltip.right {
+  left: 10% !important;
   margin-top: 0;
-  padding: 0 5px;
-  left: 10% !important; }
+  padding: 0 5px; }
   .tooltip.right .tooltip-arrow {
     display: none; }
   .tooltip.right .tooltip-inner {

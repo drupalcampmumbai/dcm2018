@@ -1226,9 +1226,9 @@ body.maintenance-page {
         right: 10px; }
         @media screen and (max-width: 960px) {
           .footer.container .region-footer .dcm2017-footer .powered-by {
+            margin-top: 10px;
             position: static;
-            text-align: center;
-            margin-top: 10px; } }
+            text-align: center; } }
         @media screen and (max-width: 960px) {
           .footer.container .region-footer .dcm2017-footer .powered-by img {
             width: 120px; } }
