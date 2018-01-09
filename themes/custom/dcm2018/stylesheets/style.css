@@ -7717,7 +7717,8 @@ body.maintenance-page {
   .block-views-blocksponsors-gold-sponsor-slideshow .view-sponsors {
     margin: 0 auto;
     max-width: 1200px;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     .block-views-blocksponsors-platinum-sponsors .view-sponsors .views-row,
     .block-views-blocksponsors-silver-sponsor-slideshow .view-sponsors .views-row,
     .block-views-blocksponsors-partners-slideshow .view-sponsors .views-row,
