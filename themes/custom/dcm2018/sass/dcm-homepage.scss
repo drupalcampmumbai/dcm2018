@@ -250,6 +250,7 @@
     background-color: $blue-color1;
     padding: 50px 0 50px;
     position: relative;
+    overflow: hidden;
     &:before {
       @include cross;
     }
@@ -364,6 +365,10 @@
             .views-row {
               display: table;
               margin: 0 auto 15px;
+              @media screen and (max-width: 991px) {
+                display: inline-block;
+                margin: 10px;
+              }
             }
           }
         }
