@@ -80,7 +80,7 @@
     }
   }
   // Facebook and Twitter
-  .content_bottom {
+  .social {
     background-color: $gray-color5;
     float: left;
     padding: 40px 0 80px;
@@ -89,7 +89,7 @@
     &:before {
       @include cross;
     }
-    .region-content-bottom {
+    .region-social {
       margin: 0 auto;
       max-width: $page-width;
     }
@@ -140,30 +140,32 @@
 .block-views-blocksponsors-platinum-sponsors,
 .block-views-blocksponsors-silver-sponsor-slideshow,
 .block-views-blocksponsors-partners-slideshow,
-.block-views-blocksponsors-gold-sponsor-slideshow {
+.block-views-blocksponsors-gold-sponsors {
   background-color: $white-color;
-  padding: 50px 0 60px;
+  clear: both;
+  padding: 30px 0 60px;
   position: relative;
   &:before {
     @include cross;
     top: -40px;
   }
   .block-title {
+    font-size: 24px;
     margin-bottom: 22px;
-    padding-bottom: 8px;
+    padding-bottom: 18px;
     position: relative;
     text-align: center;
-    &:after {
-      background-color: $blue-color;
-      bottom: 0;
-      content: "";
-      height: 3px;
-      left: 50%;
-      position: absolute;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-      width: 60px;
-    }
+    // &:after {
+    //   background-color: $blue-color;
+    //   bottom: 0;
+    //   content: "";
+    //   height: 3px;
+    //   left: 50%;
+    //   position: absolute;
+    //   -webkit-transform: translateX(-50%);
+    //   transform: translateX(-50%);
+    //   width: 60px;
+    // }
   }
   .view-sponsors {
     margin: 0 auto;
@@ -189,7 +191,49 @@
           transform: scale(1.1);
         }
       }
+      .views-field-title {
+        display: none;
+      }
     }
+  }
+}
+
+.block-views-blocksponsors-platinum-sponsors {
+  .block-title {
+    background-image: url(../images/platinum_ribbon_01.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    color: $white-color;
+  }
+}
+
+.block-views-blocksponsors-gold-sponsors {
+  .block-title {
+    background-image: url(../images/gold_ribbon_01.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    color: $base-color;
+    line-height: 34px;
+  }
+}
+
+.block-views-blocksponsors-silver-sponsor-slideshow {
+  .block-title {
+    background-image: url(../images/silver_ribbon_01.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    color: $base-color;
+    line-height: 34px;
+  }
+}
+
+.block-views-blocksponsors-partners-slideshow {
+  .block-title {
+    background-image: url(../images/red_ribbon_01.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    color: $white-color;
+    line-height: 34px;
   }
 }
 
@@ -250,7 +294,6 @@
     background-color: $blue-color1;
     padding: 50px 0 50px;
     position: relative;
-    overflow: hidden;
     &:before {
       @include cross;
     }
@@ -381,7 +424,7 @@
 // Apprentice and Join DA
 #block-dcm2018-drupalapprenctices {
   background-color: $blue-color1;
-  padding: 50px 0 50px;
+  padding: 50px 0 80px;
   position: relative;
   &:before {
     @include cross;

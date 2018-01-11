@@ -4,8 +4,6 @@
 // Note: !important used to override other css file.
 
 //attendees
-
-
 .view-attendees {
   .view-content {
     align-items: stretch;
@@ -18,9 +16,9 @@
     justify-content: flex-start;
     .slideanim {
       display: inline-block;
-      margin: 0 auto 50px;
+      margin: 0 0 50px;
       vertical-align: top;
-      width: 31%;
+      width: 33.33%;
       @media screen and (max-width: 1200px) {
         max-width: 340px;
         width: 41%;
@@ -47,19 +45,21 @@
           display: flex;
           -ms-flex-align: start;
           -ms-flex-pack: justify;
+          @include base-transition;
           justify-content: space-between;
           margin: 0 15px;
           max-width: 100%;
           padding: 40px 20px 37px;
           position: relative;
           -webkit-transition: box-shadow .3s ease;
-          transition: box-shadow .3s ease;
           @media screen and (max-width: 400px) {
             padding: 40px 15px 37px;
           }
           &:before {
             bottom: -1px !important;
+            box-shadow: -5px -5px 5px $gray-color6;
             @include cross;
+            @include base-transition;
             left: 0;
             top: 0;
             transform: rotate(-3.2deg);
@@ -133,8 +133,12 @@
             a {
               color: $blue-color1;
               font-size: 20px;
+              @include base-transition;
               margin-right: 5px;
               text-decoration: none;
+              &:hover {
+                color: $white-color;
+              }
             }
           }
         }

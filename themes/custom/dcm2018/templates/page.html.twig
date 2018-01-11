@@ -189,6 +189,15 @@
           </div>
         {% endblock %}
       {% endif %}
+
+      {% if page.social %}
+        {% block social %}
+          <div class="social">
+            {{ page.social }}
+          </div>
+        {% endblock %}
+      {% endif %}
+      
 	  </div>
 	  </div>
     </div>

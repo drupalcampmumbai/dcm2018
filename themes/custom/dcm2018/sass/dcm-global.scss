@@ -217,10 +217,15 @@ ul.tabs.primary {
 }
 
 .tabs--primary.nav.nav-tabs {
-  margin: 0 0 15px;
+  margin: 0;
 
   li {
     padding: 0;
+    &.active {
+      a {
+        background-color: rgba(255, 255, 255, .8);
+      }
+    }
 
     a {
       padding: 5px 10px;
@@ -309,10 +314,36 @@ img {
   .placeholder {
     font-style: normal;
   }
+  .close {
+    right: 0;
+    text-decoration: none;
+  }
 }
 // End Body & Other general elements
 
 // Header
+.user-logged-in {
+  .navbar.container {
+    .navbar-collapse {
+      #dcm-sticky-menu {
+        .menu.nav {
+          li {
+            &:last-child {
+              display: none;
+            }
+            .menu.dropdown-menu {
+              li {
+                &:last-child {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .navbar.container {
   background-color: $blue-color;
   border: 0;
@@ -390,7 +421,7 @@ img {
             transition: all .3s linear 0s;
 
             &:hover {
-              background-color: #ccc;
+              background-color: $white-color;
               color: $base-color;
               padding: 15px 11px 5px;
             }
@@ -420,7 +451,7 @@ img {
           }
 
           .menu.dropdown-menu {
-            background-color: rgba(129, 115, 131, .79);
+            background-color: rgba(255, 255, 255, .7);
             border-radius: 0;
             text-align: left;
             width: auto;
@@ -449,8 +480,8 @@ img {
               }
 
               a {
-                border-bottom: 1px dashed #eee;
-                color: $white-color;
+                border-bottom: 1px dashed $gray-color3;
+                color: $base-color;
                 padding: 10px 15px;
 
                 @media screen and (max-width: 960px) {
@@ -461,7 +492,7 @@ img {
                 &:hover,
                 &.is-active {
                   background-color: transparent;
-                  color: #fef5cc;
+                  color: $blue-color;
 
                   @media screen and (max-width: 960px) {
                     color: $link-color;
@@ -523,6 +554,10 @@ img {
     .col-sm-9 {
       padding-right: 0;
     }
+  }
+
+  .page-container {
+    clear: both;
   }
   .region-content {
     .page-header {
@@ -1484,7 +1519,7 @@ body.maintenance-page {
         text-transform: uppercase;
       }
       .powered-by {
-        bottom: 50%;
+        bottom: 35%;
         position: absolute;
         right: 10px;
 
