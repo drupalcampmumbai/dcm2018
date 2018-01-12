@@ -12,6 +12,9 @@
       .logo {
         img {
           height: 200px;
+          @media (min-width: 320px) and (max-width: 960px) {
+            height: 105px;
+          }
         }
       }
     }
@@ -28,7 +31,7 @@
   }
   // Banner
   .banner {
-    background-image: linear-gradient(180deg, rgba(43, 122, 183, .8), rgba(43, 123, 186, .8)), url(../images/camp-photo-2017.jpg);
+    background-image: linear-gradient(180deg, rgba(43, 122, 183, .8), rgba(43, 123, 186, .8)), url(../images/camp-photo-2017-without-logo.jpg);
     background-position: 0 0, 50% 50%;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -54,8 +57,8 @@
           margin-bottom: 10px;
           margin-top: 10px;
           @media (min-width: 320px) and (max-width: 767px) {
-                font-size: 60px;
-    line-height: 70px;
+            font-size: 60px;
+            line-height: 70px;
           }
         }
         .underline {
@@ -69,15 +72,15 @@
           line-height: 32px;
           margin-bottom: 10px;
           @media (min-width: 320px) and (max-width: 767px) {
-                font-size: 21px;
-    line-height: 25px;
+            font-size: 21px;
+            line-height: 25px;
           }
         }
       }
     }
   }
   // Facebook and Twitter
-  .content_bottom {
+  .social {
     background-color: $gray-color5;
     float: left;
     padding: 40px 0 80px;
@@ -86,7 +89,7 @@
     &:before {
       @include cross;
     }
-    .region-content-bottom {
+    .region-social {
       margin: 0 auto;
       max-width: $page-width;
     }
@@ -137,34 +140,37 @@
 .block-views-blocksponsors-platinum-sponsors,
 .block-views-blocksponsors-silver-sponsor-slideshow,
 .block-views-blocksponsors-partners-slideshow,
-.block-views-blocksponsors-gold-sponsor-slideshow {
+.block-views-blocksponsors-gold-sponsors {
   background-color: $white-color;
-  padding: 50px 0 60px;
+  clear: both;
+  padding: 30px 0 60px;
   position: relative;
   &:before {
     @include cross;
     top: -40px;
   }
   .block-title {
+    font-size: 24px;
     margin-bottom: 22px;
-    padding-bottom: 8px;
+    padding-bottom: 18px;
     position: relative;
     text-align: center;
-    &:after {
-      background-color: $blue-color;
-      bottom: 0;
-      content: "";
-      height: 3px;
-      left: 50%;
-      position: absolute;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-      width: 60px;
-    }
+    // &:after {
+    //   background-color: $blue-color;
+    //   bottom: 0;
+    //   content: "";
+    //   height: 3px;
+    //   left: 50%;
+    //   position: absolute;
+    //   -webkit-transform: translateX(-50%);
+    //   transform: translateX(-50%);
+    //   width: 60px;
+    // }
   }
   .view-sponsors {
     margin: 0 auto;
     max-width: $page-width;
+    position: relative;
     text-align: center;
     .views-row {
       display: inline-block;
@@ -185,7 +191,49 @@
           transform: scale(1.1);
         }
       }
+      .views-field-title {
+        display: none;
+      }
     }
+  }
+}
+
+.block-views-blocksponsors-platinum-sponsors {
+  .block-title {
+    background-image: url(../images/platinum_ribbon_01.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    color: $white-color;
+  }
+}
+
+.block-views-blocksponsors-gold-sponsors {
+  .block-title {
+    background-image: url(../images/gold_ribbon_01.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    color: $base-color;
+    line-height: 34px;
+  }
+}
+
+.block-views-blocksponsors-silver-sponsor-slideshow {
+  .block-title {
+    background-image: url(../images/silver_ribbon_01.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    color: $base-color;
+    line-height: 34px;
+  }
+}
+
+.block-views-blocksponsors-partners-slideshow {
+  .block-title {
+    background-image: url(../images/red_ribbon_01.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    color: $white-color;
+    line-height: 34px;
   }
 }
 
@@ -241,112 +289,142 @@
 }
 
 // Recent News
-.drupal-recent-news {
-  background-color: $blue-color1;
-  padding: 50px 0 50px;
-  position: relative;
-  &:before {
-    @include cross;
-  }
-  .block-title {
-    color: $blue-color;
-    font-family: $raleway-extrabold;
-    font-size: 35px;
-    margin-bottom: 40px;
-  }
-}
-
-.view-drupal-camp-news {
-  margin: 0 auto;
-  max-width: $page-width;
-  position: relative;
-  .views-row {
-    border-bottom: 0;
-    float: left;
-    margin: 0 0 40px;
-    padding: 0 0 5px 15px;
-    width: 100%;
-    .views-field {
-      margin: 5px 0 0;
-      .homepage-new {
-        .date-mnth {
-          .inner {
-            background-color: $blue-color;
+.path-frontpage {
+  #middle-content {
+    background-color: $blue-color1;
+    padding: 50px 0 50px;
+    position: relative;
+    &:before {
+      @include cross;
+    }
+    .region {
+      margin: 0 auto;
+      max-width: $page-width;
+      min-width: 320px;
+      width: 100%;
+      .drupal-recent-news {
+        .block-title {
+          color: $blue-color;
+          font-family: $raleway-extrabold;
+          font-size: 35px;
+          margin-bottom: 40px;
+        }
+        .view-drupal-camp-news {
+          margin: 0 auto;
+          max-width: $page-width;
+          position: relative;
+          .views-row {
+            border-bottom: 0;
             float: left;
-            height: 78px;
-            position: relative;
-            text-align: center;
-            width: 78px;
-            &:before {
-              background-color: $white-color;
-              content: "";
-              height: 5px;
-              left: 10px;
-              position: absolute;
-              top: 0;
-              width: 5px;
+            margin: 0 0 40px;
+            padding: 0 0 5px 15px;
+            width: 100%;
+            .views-field {
+              margin: 5px 0 0;
+              .homepage-new {
+                .date-mnth {
+                  .inner {
+                    background-color: $blue-color;
+                    float: left;
+                    height: 78px;
+                    position: relative;
+                    text-align: center;
+                    width: 78px;
+                    &:before {
+                      background-color: $white-color;
+                      content: "";
+                      height: 5px;
+                      left: 10px;
+                      position: absolute;
+                      top: 0;
+                      width: 5px;
+                    }
+                    &:after {
+                      background-color: $white-color;
+                      content: "";
+                      height: 5px;
+                      position: absolute;
+                      right: 10px;
+                      top: 0;
+                      width: 5px;
+                    }
+                    h1 {
+                      color: $white-color;
+                      font-family: $raleway-extrabold;
+                      font-size: 32px;
+                      margin-bottom: 0;
+                      padding-bottom: 5px !important;
+                      padding-top: 5px !important;
+                    }
+                    h4 {
+                      color: $white-color;
+                      font-family: $raleway-extrabold;
+                      font-size: 18px;
+                      text-transform: uppercase !important;
+                    }
+                  }
+                }
+                .data-wrapper {
+                  padding-right: 25px;
+                  @media screen and (max-width: 991px) {
+                    padding-right: 0;
+                  }
+                  .news-title {
+                    a {
+                      color: $blue-color;
+                      display: inline-block;
+                      font-size: 27px;
+                      font-weight: bold;
+                      line-height: 32px;
+                      margin-bottom: 10px;
+                      margin-top: 0;
+                      text-decoration: initial;
+                    }
+                  }
+                }
+              }
             }
-            &:after {
-              background-color: $white-color;
-              content: "";
-              height: 5px;
-              position: absolute;
-              right: 10px;
-              top: 0;
-              width: 5px;
+
+            .views-more-link {
+              margin: 10px 12px;
+              text-align: right;
+
+              a {
+                border-left: 2px solid $link-color;
+                padding-left: 5px;
+                &:after {
+                  content: " >>";
+                }
+              }
             }
-            h1 {
-              color: $white-color;
-              font-family: $raleway-extrabold;
-              font-size: 32px;
-              margin-bottom: 0;
-              padding-bottom: 5px !important;
-              padding-top: 5px !important;
-            }
-            h4 {
-              color: $white-color;
-              font-family: $raleway-extrabold;
-              font-size: 18px;
-              text-transform: uppercase !important;
-            }
-          }
-        }
-        .news-title {
-          a {
-            color: $blue-color;
-            display: inline-block;
-            font-size: 27px;
-            font-weight: bold;
-            line-height: 32px;
-            margin-bottom: 10px;
-            margin-top: 0;
-            text-decoration: initial;
           }
         }
       }
-    }
+      .gold-sponsors {
+        text-align: center;
 
-    .views-more-link {
-      margin: 10px 12px;
-      text-align: right;
-
-      a {
-        border-left: 2px solid $link-color;
-        padding-left: 5px;
-        &:after {
-          content: " >>";
+        .form-group {
+          .view-content {
+            .views-row {
+              display: table;
+              margin: 0 auto 15px;
+              @media screen and (max-width: 991px) {
+                display: inline-block;
+                margin: 10px;
+              }
+            }
+          }
         }
       }
     }
   }
 }
-
 // End Recent News
 
 // Apprentice and Join DA
 #block-dcm2018-drupalapprenctices {
   background-color: $blue-color1;
-  padding: 50px 0 50px;
+  padding: 50px 0 80px;
   position: relative;
   &:before {
     @include cross;

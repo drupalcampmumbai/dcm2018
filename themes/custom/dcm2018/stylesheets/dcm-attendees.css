@@ -18,8 +18,8 @@
 
 .view-attendees .view-content {
   align-items: stretch;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: stretch;
   -ms-flex-flow: wrap row;
   flex-flow: wrap row;
@@ -27,9 +27,9 @@
   justify-content: flex-start; }
   .view-attendees .view-content .slideanim {
     display: inline-block;
-    margin: 0 auto 50px;
+    margin: 0 0 50px;
     vertical-align: top;
-    width: 31%; }
+    width: 33.33%; }
     @media screen and (max-width: 1200px) {
       .view-attendees .view-content .slideanim {
         max-width: 340px;
@@ -50,20 +50,24 @@
     .view-attendees .view-content .slideanim .attendees-page .team-attendees {
       align-items: flex-start;
       background-color: #337ab7;
-      display: -ms-flexbox;
       display: flex;
+      display: -ms-flexbox;
       -ms-flex-align: start;
       -ms-flex-pack: justify;
+      transition: all .5s ease-in-out 0s;
       justify-content: space-between;
+      margin: 0 15px;
       max-width: 100%;
       padding: 40px 20px 37px;
       position: relative;
-      transition: box-shadow .3s ease; }
+      -webkit-transition: box-shadow .3s ease; }
       @media screen and (max-width: 400px) {
         .view-attendees .view-content .slideanim .attendees-page .team-attendees {
           padding: 40px 15px 37px; } }
       .view-attendees .view-content .slideanim .attendees-page .team-attendees:before {
         bottom: -1px !important;
+        box-shadow: -5px -5px 5px #bbb;
+        transition: all .5s ease-in-out 0s;
         background-color: inherit;
         bottom: -18px;
         content: "";
@@ -84,8 +88,8 @@
         align-items: center;
         border-radius: 50%;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-        display: -ms-flexbox;
         display: flex;
+        display: -ms-flexbox;
         -ms-flex-align: center;
         -ms-flex-pack: center;
         height: 121px;
@@ -135,7 +139,10 @@
         .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link a {
           color: #bce8f1;
           font-size: 20px;
+          transition: all .5s ease-in-out 0s;
           margin-right: 5px;
           text-decoration: none; }
+          .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link a:hover {
+            color: #fff; }
 
 /*# sourceMappingURL=css-maps/dcm-attendees.css.map */
