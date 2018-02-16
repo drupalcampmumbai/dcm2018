@@ -18,43 +18,43 @@
 
 .view-volunteers h3 {
   border-bottom: 0;
+  clear: both;
   color: rgba(51, 51, 51, 0.81);
   margin: 15px 0 30px;
   padding: 20px 0 10px 10px;
-  clear: both;
   position: relative; }
   .view-volunteers h3:before {
-    content: '';
-    height: 42px;
-    width: 4px;
     background-color: #635f5f;
-    display: inline-block;
-    position: absolute;
     bottom: 0;
-    left: 0; }
+    content: "";
+    display: inline-block;
+    height: 42px;
+    left: 0;
+    position: absolute;
+    width: 4px; }
 
 @media screen and (max-width: 960px) {
   .view-volunteers .view-content {
     text-align: center; } }
 
 .view-volunteers .view-content .views-row {
-  width: 24.5%;
-  margin-bottom: 30px;
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 30px;
   background: #eee;
-  padding: 20px;
+  border-bottom: 2px solid #3379b7;
   border-top: 2px solid #3379b7;
-  border-bottom: 2px solid #3379b7; }
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  vertical-align: top;
+  width: 24.5%; }
   .view-volunteers .view-content .views-row .team-card .card-photo img {
-    border-radius: 50%;
-    padding: 10px;
-    width: 200px;
-    margin: auto;
     border-left: 5px solid #337ab7;
+    border-radius: 50%;
     border-right: 5px solid #337ab7;
-    transition: all .5s ease-in-out 0s; }
+    transition: all .5s ease-in-out 0s;
+    margin: auto;
+    padding: 10px;
+    width: 200px; }
   .view-volunteers .view-content .views-row .team-card .card-info {
     text-align: center; }
     .view-volunteers .view-content .views-row .team-card .card-info h2 {
