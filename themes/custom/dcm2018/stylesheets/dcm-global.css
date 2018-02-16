@@ -253,12 +253,6 @@ img {
   right: 0;
   text-decoration: none; }
 
-.user-logged-in .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li:last-child {
-  display: none; }
-
-.user-logged-in .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li .menu.dropdown-menu li:last-child {
-  display: block; }
-
 .navbar.container {
   background-color: #337ab7;
   border: 0;

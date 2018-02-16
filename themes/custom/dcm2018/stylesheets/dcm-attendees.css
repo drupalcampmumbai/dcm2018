@@ -26,10 +26,12 @@
   -ms-flex-pack: start;
   justify-content: flex-start; }
   .view-attendees .view-content .slideanim {
+    background-color: #337ab7;
     display: inline-block;
-    margin: 0 0 50px;
+    margin: 0 10px 30px;
+    text-align: center;
     vertical-align: top;
-    width: 33.33%; }
+    width: 23.33%; }
     @media screen and (max-width: 1200px) {
       .view-attendees .view-content .slideanim {
         max-width: 340px;
@@ -42,107 +44,111 @@
       .view-attendees .view-content .slideanim {
         max-width: 240px;
         min-width: 250px; } }
-    .view-attendees .view-content .slideanim:nth-child(3n) {
+    .view-attendees .view-content .slideanim:nth-child(4n) {
       margin-right: 0; }
       @media screen and (max-width: 1200px) {
-        .view-attendees .view-content .slideanim:nth-child(3n) {
+        .view-attendees .view-content .slideanim:nth-child(4n) {
           margin-right: auto; } }
-    .view-attendees .view-content .slideanim .attendees-page .team-attendees {
-      align-items: flex-start;
-      background-color: #337ab7;
-      display: flex;
-      display: -ms-flexbox;
-      -ms-flex-align: start;
-      -ms-flex-pack: justify;
-      transition: all .5s ease-in-out 0s;
-      justify-content: space-between;
-      margin: 0 15px;
-      max-width: 100%;
-      padding: 40px 20px 37px;
-      position: relative;
-      -webkit-transition: box-shadow .3s ease; }
-      @media screen and (max-width: 400px) {
-        .view-attendees .view-content .slideanim .attendees-page .team-attendees {
-          padding: 40px 15px 37px; } }
-      .view-attendees .view-content .slideanim .attendees-page .team-attendees:before {
-        bottom: -1px !important;
-        box-shadow: -5px -5px 5px #bbb;
-        transition: all .5s ease-in-out 0s;
-        background-color: inherit;
-        bottom: -18px;
+    .view-attendees .view-content .slideanim .attendees-page {
+      position: relative; }
+      .view-attendees .view-content .slideanim .attendees-page:before {
+        border-left: 2px solid #fff;
         content: "";
         display: block;
-        left: -100px;
+        height: 100%;
+        left: 10px;
         position: absolute;
-        right: -10px;
-        top: -20px;
-        transform: rotate(-1.2deg);
-        z-index: 0;
-        left: 0;
-        top: 0;
-        transform: rotate(-3.2deg);
-        z-index: -1; }
-      .view-attendees .view-content .slideanim .attendees-page .team-attendees:hover {
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
-      .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
-        align-items: center;
-        border-radius: 50%;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-        display: flex;
-        display: -ms-flexbox;
-        -ms-flex-align: center;
-        -ms-flex-pack: center;
-        height: 121px;
-        justify-content: center;
-        margin-right: 10px;
-        overflow: hidden;
-        width: 121px; }
-        @media screen and (max-width: 1010px) {
-          .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
-            height: 100px;
-            width: 100px; } }
+        top: 0; }
+      .view-attendees .view-content .slideanim .attendees-page:after {
+        border-right: 2px solid #fff;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        right: 10px;
+        top: 0; }
+      .view-attendees .view-content .slideanim .attendees-page .team-attendees {
+        margin: 0;
+        max-width: 100%;
+        padding: 40px 20px;
+        position: relative;
+        -webkit-transition: box-shadow .3s ease; }
+        .view-attendees .view-content .slideanim .attendees-page .team-attendees:before {
+          border-bottom: 2px solid #fff;
+          content: "";
+          display: block;
+          left: 0;
+          position: absolute;
+          top: 10px;
+          width: 100%; }
+        .view-attendees .view-content .slideanim .attendees-page .team-attendees:after {
+          border-bottom: 2px solid #fff;
+          bottom: 10px;
+          content: "";
+          display: block;
+          left: 0;
+          position: absolute;
+          width: 100%; }
         @media screen and (max-width: 400px) {
-          .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
-            height: 74px;
-            width: 74px; } }
-      .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name {
-        color: #fff;
-        font-size: 16px;
-        line-height: 22px;
-        padding-right: 0;
-        width: 185px; }
-        .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name {
-          font-size: 24px;
-          line-height: 27px;
-          margin-bottom: 5px; }
+          .view-attendees .view-content .slideanim .attendees-page .team-attendees {
+            padding: 40px 15px 37px; } }
+        .view-attendees .view-content .slideanim .attendees-page .team-attendees:hover {
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
+        .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
+          -ms-flex-align: center;
+              align-items: center;
+          border-radius: 50%;
+          box-shadow: 0 5px 20px rgba(255, 255, 255, 0.4);
+          display: block;
+          height: 121px;
+          margin: 0 auto 20px;
+          overflow: hidden;
+          width: 121px; }
           @media screen and (max-width: 1010px) {
-            .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name {
-              font-size: 20px;
-              line-height: 24px; } }
-          .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name a {
-            color: #fff;
-            text-decoration: none; }
-        .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
-          font-size: 16px;
-          line-height: 20px;
-          margin-bottom: 0; }
-          @media screen and (max-width: 1010px) {
-            .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
-              font-size: 15px;
-              line-height: 19px; } }
-        .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .user-profession a {
+            .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
+              height: 100px;
+              width: 100px; } }
+          @media screen and (max-width: 400px) {
+            .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
+              height: 74px;
+              width: 74px; } }
+        .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name {
           color: #fff;
-          font-size: 12px;
-          text-decoration: none; }
-      .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link {
-        margin-top: 10px; }
-        .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link a {
-          color: #bce8f1;
-          font-size: 20px;
-          transition: all .5s ease-in-out 0s;
-          margin-right: 5px;
-          text-decoration: none; }
-          .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link a:hover {
-            color: #fff; }
+          font-size: 16px;
+          line-height: 22px;
+          padding-right: 0; }
+          .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name {
+            font-size: 24px;
+            line-height: 27px;
+            margin-bottom: 5px; }
+            @media screen and (max-width: 1010px) {
+              .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name {
+                font-size: 20px;
+                line-height: 24px; } }
+            .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name a {
+              color: #fff;
+              text-decoration: none; }
+          .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 0; }
+            @media screen and (max-width: 1010px) {
+              .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
+                font-size: 15px;
+                line-height: 19px; } }
+          .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .user-profession a {
+            color: #fff;
+            font-size: 12px;
+            text-decoration: none; }
+        .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link {
+          margin-top: 10px; }
+          .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link a {
+            color: #bce8f1;
+            font-size: 20px;
+            transition: all .5s ease-in-out 0s;
+            margin-right: 5px;
+            text-decoration: none; }
+            .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link a:hover {
+              color: #fff; }
 
 /*# sourceMappingURL=css-maps/dcm-attendees.css.map */
