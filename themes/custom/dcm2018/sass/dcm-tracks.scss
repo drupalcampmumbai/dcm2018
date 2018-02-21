@@ -1,0 +1,42 @@
+@import "component/dcm-variables";
+@import "component/dcm-mixins";
+
+// Note: !important used to override other css file.
+
+.track-content {
+  .track-row {
+    border-left: 2px solid $blue-color;
+    margin: 0 0 30px;
+    padding: 10px;
+    position: relative;
+    > h2 {
+      background-color: $blue-color;
+      color: $white-color;
+      padding: 10px;
+      position: relative;
+      &:before {
+        background-color: $white-color;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: 3px;
+        width: 100%;
+      }
+      &:after {
+        background-color: $white-color;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 5px;
+        position: absolute;
+        top: 0;
+        width: 2px;
+      }
+    }
+    .session-data {
+      padding: 10px;
+    }
+  }
+}

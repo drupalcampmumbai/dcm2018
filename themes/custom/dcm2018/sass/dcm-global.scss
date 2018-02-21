@@ -322,28 +322,6 @@ img {
 // End Body & Other general elements
 
 // Header
-.user-logged-in {
-  .navbar.container {
-    .navbar-collapse {
-      #dcm-sticky-menu {
-        .menu.nav {
-          li {
-            &:last-child {
-              display: none;
-            }
-            .menu.dropdown-menu {
-              li {
-                &:last-child {
-                  display: block;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
 .navbar.container {
   background-color: $blue-color;
   border: 0;

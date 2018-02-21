@@ -161,11 +161,11 @@
   .block-views-blocksponsors-silver-sponsor-slideshow .block-title,
   .block-views-blocksponsors-partners-slideshow .block-title,
   .block-views-blocksponsors-gold-sponsors .block-title {
+    font-size: 24px;
     margin-bottom: 22px;
     padding-bottom: 18px;
     position: relative;
-    text-align: center;
-    font-size: 24px; }
+    text-align: center; }
   .block-views-blocksponsors-platinum-sponsors .view-sponsors,
   .block-views-blocksponsors-silver-sponsor-slideshow .view-sponsors,
   .block-views-blocksponsors-partners-slideshow .view-sponsors,
@@ -207,28 +207,28 @@
 
 .block-views-blocksponsors-platinum-sponsors .block-title {
   background-image: url(../images/platinum_ribbon_01.png);
-  background-repeat: no-repeat;
   background-position: center 0;
+  background-repeat: no-repeat;
   color: #fff; }
 
 .block-views-blocksponsors-gold-sponsors .block-title {
   background-image: url(../images/gold_ribbon_01.png);
-  background-repeat: no-repeat;
   background-position: center 0;
+  background-repeat: no-repeat;
   color: #333;
   line-height: 34px; }
 
 .block-views-blocksponsors-silver-sponsor-slideshow .block-title {
   background-image: url(../images/silver_ribbon_01.png);
-  background-repeat: no-repeat;
   background-position: center 0;
+  background-repeat: no-repeat;
   color: #333;
   line-height: 34px; }
 
 .block-views-blocksponsors-partners-slideshow .block-title {
   background-image: url(../images/red_ribbon_01.png);
-  background-repeat: no-repeat;
   background-position: center 0;
+  background-repeat: no-repeat;
   color: #fff;
   line-height: 34px; }
 

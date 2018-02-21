@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.eot");
+  src: url("../fonts/Muli.woff"); }
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.woff"); }
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
+
+.view-drupal-camp-news {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative; }
+  .view-drupal-camp-news .views-row {
+    border-bottom: 0;
+    float: left;
+    margin: 0 0 40px;
+    padding: 0 0 5px 15px;
+    width: 100%; }
+    .view-drupal-camp-news .views-row .views-field {
+      margin: 5px 0 0; }
+      .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner {
+        background-color: #337ab7;
+        float: left;
+        height: 78px;
+        position: relative;
+        text-align: center;
+        width: 78px; }
+        .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:before {
+          background-color: #fff;
+          content: "";
+          height: 5px;
+          left: 10px;
+          position: absolute;
+          top: 0;
+          width: 5px; }
+        .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:after {
+          background-color: #fff;
+          content: "";
+          height: 5px;
+          position: absolute;
+          right: 10px;
+          top: 0;
+          width: 5px; }
+        .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h1 {
+          color: #fff;
+          font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
+          font-size: 32px;
+          margin-bottom: 0;
+          padding-bottom: 5px !important;
+          padding-top: 5px !important; }
+        .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h4 {
+          color: #fff;
+          font-family: "Raleway-ExtraBold", tahoma, Sans-Serif;
+          font-size: 18px;
+          text-transform: uppercase !important; }
+      .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+        padding-right: 25px; }
+        @media screen and (max-width: 991px) {
+          .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+            padding-right: 0; } }
+        .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-title a {
+          color: #337ab7;
+          display: inline-block;
+          font-size: 27px;
+          font-weight: bold;
+          line-height: 32px;
+          margin-bottom: 10px;
+          margin-top: 0;
+          text-decoration: initial; }
+    .view-drupal-camp-news .views-row .views-more-link {
+      margin: 10px 12px;
+      text-align: right; }
+      .view-drupal-camp-news .views-row .views-more-link a {
+        border-left: 2px solid #0676c0;
+        padding-left: 5px; }
+        .view-drupal-camp-news .views-row .views-more-link a:after {
+          content: " >>"; }
+
+/*# sourceMappingURL=css-maps/dcm-newspage.css.map */
