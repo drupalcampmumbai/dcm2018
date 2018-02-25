@@ -41,3 +41,17 @@ sites/simpletest
 # Ignore core phpcs.xml and phpunit.xml.
 core/phpcs.xml
 core/phpunit.xml
+/nbproject
+/nbproject/private/
+.DS_Store
+**/.DS_Store
+/.docs
+/.idea
+*.scssc
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
