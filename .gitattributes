@@ -52,3 +52,6 @@
 *.phar    -text diff
 *.exe     -text diff
 *.ttf     -text diff
+*.woff binary
+*.ttf binary
+*.eot binary
