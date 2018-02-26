@@ -1,25 +1,25 @@
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.woff");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.woff"); }
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
 .view-attendees .view-content {
   align-items: stretch;
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   -ms-flex-align: stretch;
   -ms-flex-flow: wrap row;
   flex-flow: wrap row;
@@ -31,7 +31,10 @@
     margin: 0 10px 30px;
     text-align: center;
     vertical-align: top;
-    width: 23.33%; }
+    width: 23.33%;
+    transition: box-shadow .3s ease; }
+    .view-attendees .view-content .slideanim:hover {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
     @media screen and (max-width: 1200px) {
       .view-attendees .view-content .slideanim {
         max-width: 340px;
@@ -71,8 +74,7 @@
         margin: 0;
         max-width: 100%;
         padding: 40px 20px;
-        position: relative;
-        -webkit-transition: box-shadow .3s ease; }
+        position: relative; }
         .view-attendees .view-content .slideanim .attendees-page .team-attendees:before {
           border-bottom: 2px solid #fff;
           content: "";
@@ -92,8 +94,6 @@
         @media screen and (max-width: 400px) {
           .view-attendees .view-content .slideanim .attendees-page .team-attendees {
             padding: 40px 15px 37px; } }
-        .view-attendees .view-content .slideanim .attendees-page .team-attendees:hover {
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
         .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-image a {
           -ms-flex-align: center;
               align-items: center;
@@ -120,7 +120,10 @@
           .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name {
             font-size: 24px;
             line-height: 27px;
-            margin-bottom: 5px; }
+            margin-bottom: 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap; }
             @media screen and (max-width: 1010px) {
               .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name {
                 font-size: 20px;
@@ -131,7 +134,11 @@
           .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
             font-size: 16px;
             line-height: 20px;
-            margin-bottom: 0; }
+            margin-bottom: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            height: 20px; }
             @media screen and (max-width: 1010px) {
               .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
                 font-size: 15px;
@@ -141,7 +148,8 @@
             font-size: 12px;
             text-decoration: none; }
         .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link {
-          margin-top: 10px; }
+          margin-top: 10px;
+          height: 22px; }
           .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link a {
             color: #bce8f1;
             font-size: 20px;
