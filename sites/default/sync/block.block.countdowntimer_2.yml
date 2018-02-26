@@ -10,7 +10,7 @@ dependencies:
 id: countdowntimer_2
 theme: dcm2017
 region: content
-weight: -21
+weight: -16
 provider: null
 plugin: jquery_countdown_timer
 settings:

@@ -6,4 +6,7 @@ id: organiser
 label: Organiser
 weight: 7
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create sessions content'
+  - 'delete own sessions content'
+  - 'edit own sessions content'

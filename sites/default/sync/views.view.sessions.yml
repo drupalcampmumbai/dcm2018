@@ -17,7 +17,6 @@ dependencies:
     - user.role.administrator
   content:
     - 'taxonomy_term:session_status:25eb7b02-5917-4af6-b205-b9ca3271541b'
-    - 'taxonomy_term:session_status:e477d88b-cd42-4828-8829-5ca081b6f55e'
   module:
     - image
     - image_url_formatter
@@ -2855,7 +2854,6 @@ display:
         style: false
         row: false
         relationships: false
-        cache: false
       fields:
         tid:
           id: tid
@@ -3253,9 +3251,6 @@ display:
           admin_label: 'field_session_track: Taxonomy term'
           required: false
           plugin_id: standard
-      cache:
-        type: none
-        options: {  }
     cache_metadata:
       max-age: -1
       contexts:

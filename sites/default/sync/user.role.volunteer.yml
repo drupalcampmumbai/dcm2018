@@ -6,4 +6,7 @@ id: volunteer
 label: Volunteer
 weight: 6
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create sessions content'
+  - 'delete own sessions content'
+  - 'edit own sessions content'

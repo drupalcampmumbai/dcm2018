@@ -12,7 +12,7 @@ dependencies:
 id: views_block__sponsors_silver_sponsor
 theme: dcm2017
 region: '-1'
-weight: -11
+weight: -4
 provider: null
 plugin: 'views_block:sponsors-silver_sponsor'
 settings:

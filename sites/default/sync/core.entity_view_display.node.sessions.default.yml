@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.sessions.field_status
     - node.type.sessions
   module:
+    - file
     - text
     - user
 id: node.sessions.default
@@ -24,9 +25,15 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
+  field_slides:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
   links:
     weight: 0
     settings: {  }

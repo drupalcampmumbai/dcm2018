@@ -27,6 +27,7 @@ module:
   editor: 0
   email_registration: 0
   features: 0
+  features_ui: 0
   field: 0
   field_permissions: 0
   field_ui: 0
@@ -34,6 +35,8 @@ module:
   filter: 0
   fontawesome: 0
   google_analytics: 0
+  help: 0
+  history: 0
   image: 0
   image_captcha: 0
   image_url_formatter: 0
@@ -70,6 +73,8 @@ module:
   text: 0
   token: 0
   toolbar: 0
+  tour: 0
+  update: 0
   user: 0
   views_slideshow: 0
   views_slideshow_cycle: 0
