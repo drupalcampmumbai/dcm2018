@@ -7,8 +7,8 @@
 .view-attendees {
   .view-content {
     align-items: stretch;
-    display: -ms-flexbox;
     display: flex;
+    display: -ms-flexbox;
     -ms-flex-align: stretch;
     -ms-flex-flow: wrap row;
     flex-flow: wrap row;
@@ -19,9 +19,9 @@
       display: inline-block;
       margin: 0 10px 30px;
       text-align: center;
+      transition: box-shadow .3s ease;
       vertical-align: top;
       width: 23.33%;
-      transition: box-shadow .3s ease;
       &:hover {
         box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
       }
@@ -118,8 +118,8 @@
               font-size: 24px;
               line-height: 27px;
               margin-bottom: 5px;
-              text-overflow: ellipsis;
               overflow: hidden;
+              text-overflow: ellipsis;
               white-space: nowrap;
               @media screen and (max-width: 1010px) {
                 font-size: 20px;
@@ -132,12 +132,12 @@
             }
             h3 {
               font-size: 16px;
+              height: 20px;
               line-height: 20px;
               margin-bottom: 0;
-              text-overflow: ellipsis;
               overflow: hidden;
+              text-overflow: ellipsis;
               white-space: nowrap;
-              height: 20px;
               @media screen and (max-width: 1010px) {
                 font-size: 15px;
                 line-height: 19px;
@@ -152,8 +152,8 @@
             }
           }
           .social-link {
-            margin-top: 10px;
             height: 22px;
+            margin-top: 10px;
             a {
               color: $blue-color1;
               font-size: 20px;

@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.eot");
+  src: url("../fonts/Muli.woff"); }
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.woff"); }
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
+
+.page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-speaker .views-row .views-field a:before {
+  color: #337ab7;
+  content: "\f028";
+  font-size: inherit;
+  display: inline-block;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+  line-height: 100%;
+  padding: 0 8px; }
+
+.page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-details .views-row .views-field .field-content:before {
+  color: #337ab7;
+  content: "\f05a";
+  font-size: inherit;
+  display: inline-block;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+  line-height: 100%;
+  padding: 0 8px; }
+
+.page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-track .views-row .views-field-field-session-track .field-content:before {
+  color: #337ab7;
+  content: "\f15c";
+  font-size: inherit;
+  display: inline-block;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+  line-height: 100%;
+  padding: 0 8px; }
+
+.page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-track .views-row .views-field-field-session-time .field-content:before {
+  color: #337ab7;
+  content: "\f073";
+  font-size: inherit;
+  display: inline-block;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+  line-height: 100%;
+  padding: 0 8px; }
+
+.page-node-type-sessions .main-container aside.col-sm-3 .block-views .block-title {
+  background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
+  color: #fff;
+  padding: 10px;
+  position: relative; }
+  .page-node-type-sessions .main-container aside.col-sm-3 .block-views .block-title:before {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 100%; }
+  .page-node-type-sessions .main-container aside.col-sm-3 .block-views .block-title:after {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 5px;
+    position: absolute;
+    top: 0;
+    width: 2px; }
+
+.page-node-type-sessions .main-container aside.col-sm-3 .block-views .form-group {
+  padding: 10px; }
+  .page-node-type-sessions .main-container aside.col-sm-3 .block-views .form-group a {
+    text-decoration: none; }
+
+/*# sourceMappingURL=css-maps/dcm-session-detail.css.map */

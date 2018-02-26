@@ -1,29 +1,65 @@
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 .track-content .track-row {
-  border-left: 2px solid #337ab7;
-  border-right: 2px solid #337ab7;
   margin: 0 0 30px;
-  padding: 10px;
+  padding: 10px 0 10px 80px;
   position: relative; }
+  .track-content .track-row:before {
+    color: #337ab7;
+    display: block;
+    display: inline-block;
+    font-family: FontAwesome;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    left: 0;
+    line-height: 100%;
+    position: absolute;
+    top: 7px; }
+  .track-content .track-row#back-end-developement:before {
+    content: "\f1c9";
+    font-size: 60px; }
+  .track-content .track-row#business:before {
+    content: "\f0b1";
+    font-size: 60px; }
+  .track-content .track-row#dev-ops:before {
+    content: "\f085";
+    font-size: 60px; }
+  .track-content .track-row#frontend:before {
+    content: "\f1fc";
+    font-size: 60px; }
+  .track-content .track-row#building-community:before {
+    content: "\f0c0";
+    font-size: 60px; }
+  .track-content .track-row#project-management:before {
+    content: "\f0ae";
+    font-size: 60px; }
+  .track-content .track-row#site-building:before {
+    content: "\f0e8";
+    font-size: 60px; }
+  .track-content .track-row#case-studies:before {
+    content: "\f19d";
+    font-size: 60px; }
   .track-content .track-row > h2 {
-    background-color: #337ab7;
+    background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
     color: #fff;
     padding: 10px;
     position: relative; }
