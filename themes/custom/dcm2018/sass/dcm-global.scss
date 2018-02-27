@@ -319,6 +319,10 @@ img {
     text-decoration: none;
   }
 }
+
+#backtotop {
+  bottom: 130px;
+}
 // End Body & Other general elements
 
 // Header
@@ -525,14 +529,6 @@ img {
     padding-left: 0;
     padding-right: 0;
   }
-  @media screen and (min-width: 1099px) {
-    .col-sm-3 {
-      padding-left: 0;
-    }
-    .col-sm-9 {
-      padding-right: 0;
-    }
-  }
 
   .page-container {
     clear: both;
@@ -551,10 +547,6 @@ img {
   max-width: $page-width;
   padding: 20px 0;
   width: 100%;
-  @media screen and (max-width: 1099px) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 
 .margin-padding-border-top-bottom {
@@ -600,11 +592,9 @@ aside,
   h2.block-title {
     background: transparent none repeat scroll 0 0;
     font-size: 21px;
-    letter-spacing: 2px;
     line-height: $baseline-height - 1;
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
   }
 
   .block {

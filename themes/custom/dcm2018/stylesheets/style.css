@@ -6216,8 +6216,8 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed {
 .ui-autocomplete {
   background: #fff;
   background-clip: padding-box;
-  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   color: inherit;
@@ -6290,21 +6290,21 @@ p:last-child,
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 body {
   border: 0 none;
@@ -6543,6 +6543,9 @@ img {
   right: 0;
   text-decoration: none; }
 
+#backtotop {
+  bottom: 130px; }
+
 .navbar.container {
   background-color: #337ab7;
   border: 0;
@@ -6695,11 +6698,6 @@ img {
   .main-container .col-sm-12 {
     padding-left: 0;
     padding-right: 0; }
-  @media screen and (min-width: 1099px) {
-    .main-container .col-sm-3 {
-      padding-left: 0; }
-    .main-container .col-sm-9 {
-      padding-right: 0; } }
   .main-container .page-container {
     clear: both; }
   .main-container .region-content .page-header {
@@ -6712,11 +6710,6 @@ img {
   max-width: 1200px;
   padding: 20px 0;
   width: 100%; }
-  @media screen and (max-width: 1099px) {
-    .main-container,
-    .container {
-      padding-left: 15px;
-      padding-right: 15px; } }
 
 .margin-padding-border-top-bottom {
   border-bottom: 1px solid #eee;
@@ -6753,11 +6746,9 @@ aside,
   .sidebar h2.block-title {
     background: transparent none repeat scroll 0 0;
     font-size: 21px;
-    letter-spacing: 2px;
     line-height: 24px;
     margin: 0;
-    padding: 0;
-    text-transform: uppercase; }
+    padding: 0; }
   aside .block,
   .sidebar .block {
     margin: 0 0 40px; }
@@ -7543,21 +7534,21 @@ body.maintenance-page {
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 .path-frontpage .navbar.container {
   background-color: #337ab7; }
@@ -7952,21 +7943,21 @@ body.maintenance-page {
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 .main-container .page-container .user-register-form,
 .main-container .page-container .user-login-form,
@@ -8173,26 +8164,26 @@ body.maintenance-page {
 /*End User page*/
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 .view-attendees .view-content {
   align-items: stretch;
-  display: -ms-flexbox;
   display: flex;
+  display: -ms-flexbox;
   -ms-flex-align: stretch;
   -ms-flex-flow: wrap row;
   flex-flow: wrap row;
@@ -8203,9 +8194,9 @@ body.maintenance-page {
     display: inline-block;
     margin: 0 10px 30px;
     text-align: center;
+    transition: box-shadow .3s ease;
     vertical-align: top;
-    width: 23.33%;
-    transition: box-shadow .3s ease; }
+    width: 23.33%; }
     .view-attendees .view-content .slideanim:hover {
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
     @media screen and (max-width: 1200px) {
@@ -8294,8 +8285,8 @@ body.maintenance-page {
             font-size: 24px;
             line-height: 27px;
             margin-bottom: 5px;
-            text-overflow: ellipsis;
             overflow: hidden;
+            text-overflow: ellipsis;
             white-space: nowrap; }
             @media screen and (max-width: 1010px) {
               .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name {
@@ -8306,12 +8297,12 @@ body.maintenance-page {
               text-decoration: none; }
           .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
             font-size: 16px;
+            height: 20px;
             line-height: 20px;
             margin-bottom: 0;
-            text-overflow: ellipsis;
             overflow: hidden;
-            white-space: nowrap;
-            height: 20px; }
+            text-overflow: ellipsis;
+            white-space: nowrap; }
             @media screen and (max-width: 1010px) {
               .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
                 font-size: 15px;
@@ -8321,8 +8312,8 @@ body.maintenance-page {
             font-size: 12px;
             text-decoration: none; }
         .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link {
-          margin-top: 10px;
-          height: 22px; }
+          height: 22px;
+          margin-top: 10px; }
           .view-attendees .view-content .slideanim .attendees-page .team-attendees .social-link a {
             color: #bce8f1;
             font-size: 20px;
@@ -8334,21 +8325,21 @@ body.maintenance-page {
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 .view-volunteers h3 {
   border-bottom: 0;
@@ -8401,30 +8392,66 @@ body.maintenance-page {
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 .track-content .track-row {
-  border-left: 2px solid #337ab7;
-  border-right: 2px solid #337ab7;
   margin: 0 0 30px;
-  padding: 10px;
+  padding: 10px 0 10px 80px;
   position: relative; }
+  .track-content .track-row:before {
+    color: #337ab7;
+    display: block;
+    display: inline-block;
+    font-family: FontAwesome;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    left: 0;
+    line-height: 100%;
+    position: absolute;
+    top: 7px; }
+  .track-content .track-row#back-end-developement:before {
+    content: "\f1c9";
+    font-size: 60px; }
+  .track-content .track-row#business:before {
+    content: "\f0b1";
+    font-size: 60px; }
+  .track-content .track-row#dev-ops:before {
+    content: "\f085";
+    font-size: 60px; }
+  .track-content .track-row#frontend:before {
+    content: "\f1fc";
+    font-size: 60px; }
+  .track-content .track-row#building-community:before {
+    content: "\f0c0";
+    font-size: 60px; }
+  .track-content .track-row#project-management:before {
+    content: "\f0ae";
+    font-size: 60px; }
+  .track-content .track-row#site-building:before {
+    content: "\f0e8";
+    font-size: 60px; }
+  .track-content .track-row#case-studies:before {
+    content: "\f19d";
+    font-size: 60px; }
   .track-content .track-row > h2 {
-    background-color: #337ab7;
+    background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
     color: #fff;
     padding: 10px;
     position: relative; }
@@ -8451,21 +8478,21 @@ body.maintenance-page {
 
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 .view-drupal-camp-news {
   margin: 0 auto;
@@ -8536,5 +8563,204 @@ body.maintenance-page {
         padding-left: 5px; }
         .view-drupal-camp-news .views-row .views-more-link a:after {
           content: " >>"; }
+
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.eot");
+  src: url("../fonts/Muli.woff"); }
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.woff"); }
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
+
+.view-sessions .item {
+  margin-bottom: 20px; }
+  .view-sessions .item .dcm-special-title {
+    background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
+    color: #fff;
+    padding: 10px;
+    position: relative; }
+    .view-sessions .item .dcm-special-title img {
+      display: none; }
+    .view-sessions .item .dcm-special-title:before {
+      background-color: #fff;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 0;
+      position: absolute;
+      top: 3px;
+      width: 100%; }
+    .view-sessions .item .dcm-special-title:after {
+      background-color: #fff;
+      content: "";
+      display: block;
+      height: 100%;
+      left: 5px;
+      position: absolute;
+      top: 0;
+      width: 2px; }
+  .view-sessions .item ul {
+    margin: 0;
+    padding: 0;
+    padding: 10px; }
+    .view-sessions .item ul li {
+      font-size: 17px;
+      list-style-type: none;
+      margin-bottom: 10px; }
+      .view-sessions .item ul li:after {
+        background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
+        content: "";
+        display: block;
+        height: 1px;
+        margin-top: 10px; }
+      .view-sessions .item ul li .views-field-title:before {
+        color: #337ab7;
+        content: "\f15c";
+        font-size: inherit;
+        display: inline-block;
+        font-family: FontAwesome;
+        -webkit-font-smoothing: antialiased;
+        font-style: normal;
+        font-weight: normal;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: auto;
+        line-height: 100%;
+        padding: 0 8px; }
+      .view-sessions .item ul li .views-field-title a {
+        color: #333;
+        text-decoration: none; }
+        .view-sessions .item ul li .views-field-title a:hover {
+          color: #337ab7; }
+      .view-sessions .item ul li .views-field-field-speakers .field-content:before {
+        color: #337ab7;
+        content: "\f028";
+        font-size: inherit;
+        display: inline-block;
+        font-family: FontAwesome;
+        -webkit-font-smoothing: antialiased;
+        font-style: normal;
+        font-weight: normal;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: auto;
+        line-height: 100%;
+        padding: 0 8px; }
+      .view-sessions .item ul li .views-field-field-speakers .field-content a {
+        color: #333;
+        text-decoration: none; }
+        .view-sessions .item ul li .views-field-field-speakers .field-content a:hover {
+          color: #337ab7; }
+
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
+  src: url("../fonts/Muli.eot");
+  src: url("../fonts/Muli.woff"); }
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.woff"); }
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
+
+.page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-speaker .views-row .views-field a:before {
+  color: #337ab7;
+  content: "\f028";
+  font-size: inherit;
+  display: inline-block;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+  line-height: 100%;
+  padding: 0 8px; }
+
+.page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-details .views-row .views-field .field-content:before {
+  color: #337ab7;
+  content: "\f05a";
+  font-size: inherit;
+  display: inline-block;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+  line-height: 100%;
+  padding: 0 8px; }
+
+.page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-track .views-row .views-field-field-session-track .field-content:before {
+  color: #337ab7;
+  content: "\f15c";
+  font-size: inherit;
+  display: inline-block;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+  line-height: 100%;
+  padding: 0 8px; }
+
+.page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-track .views-row .views-field-field-session-time .field-content:before {
+  color: #337ab7;
+  content: "\f073";
+  font-size: inherit;
+  display: inline-block;
+  font-family: FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+  line-height: 100%;
+  padding: 0 8px; }
+
+.page-node-type-sessions .main-container aside.col-sm-3 .block-views .block-title {
+  background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
+  color: #fff;
+  padding: 10px;
+  position: relative; }
+  .page-node-type-sessions .main-container aside.col-sm-3 .block-views .block-title:before {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 100%; }
+  .page-node-type-sessions .main-container aside.col-sm-3 .block-views .block-title:after {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 5px;
+    position: absolute;
+    top: 0;
+    width: 2px; }
+
+.page-node-type-sessions .main-container aside.col-sm-3 .block-views .form-group {
+  padding: 10px; }
+  .page-node-type-sessions .main-container aside.col-sm-3 .block-views .form-group a {
+    text-decoration: none; }
 
 /*# sourceMappingURL=css-maps/style.css.map */

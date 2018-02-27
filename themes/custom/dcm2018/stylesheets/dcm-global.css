@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Muli";
-  src: url("../fonts/Muli.woff");
+  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
   src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg"); }
+  src: url("../fonts/Muli.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 body {
   border: 0 none;
@@ -253,6 +253,9 @@ img {
   right: 0;
   text-decoration: none; }
 
+#backtotop {
+  bottom: 130px; }
+
 .navbar.container {
   background-color: #337ab7;
   border: 0;
@@ -405,11 +408,6 @@ img {
   .main-container .col-sm-12 {
     padding-left: 0;
     padding-right: 0; }
-  @media screen and (min-width: 1099px) {
-    .main-container .col-sm-3 {
-      padding-left: 0; }
-    .main-container .col-sm-9 {
-      padding-right: 0; } }
   .main-container .page-container {
     clear: both; }
   .main-container .region-content .page-header {
@@ -422,11 +420,6 @@ img {
   max-width: 1200px;
   padding: 20px 0;
   width: 100%; }
-  @media screen and (max-width: 1099px) {
-    .main-container,
-    .container {
-      padding-left: 15px;
-      padding-right: 15px; } }
 
 .margin-padding-border-top-bottom {
   border-bottom: 1px solid #eee;
@@ -463,11 +456,9 @@ aside,
   .sidebar h2.block-title {
     background: transparent none repeat scroll 0 0;
     font-size: 21px;
-    letter-spacing: 2px;
     line-height: 24px;
     margin: 0;
-    padding: 0;
-    text-transform: uppercase; }
+    padding: 0; }
   aside .block,
   .sidebar .block {
     margin: 0 0 40px; }

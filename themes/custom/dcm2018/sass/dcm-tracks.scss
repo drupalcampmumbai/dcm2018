@@ -5,13 +5,52 @@
 
 .track-content {
   .track-row {
-    border-left: 2px solid $blue-color;
-    border-right: 2px solid $blue-color;
     margin: 0 0 30px;
-    padding: 10px;
+    padding: 10px 0 10px 80px;
     position: relative;
+    &:before {
+      color: $blue-color;
+      display: block;
+      @include base-fa;
+      left: 0;
+      line-height: 100%;
+      position: absolute;
+      top: 7px;
+    }
+    &#back-end-developement:before {
+      content: "\f1c9";
+      font-size: 60px;
+    }
+    &#business:before {
+      content: "\f0b1";
+      font-size: 60px;
+    }
+    &#dev-ops:before {
+      content: "\f085";
+      font-size: 60px;
+    }
+    &#frontend:before {
+      content: "\f1fc";
+      font-size: 60px;
+    }
+    &#building-community:before {
+      content: "\f0c0";
+      font-size: 60px;
+    }
+    &#project-management:before {
+      content: "\f0ae";
+      font-size: 60px;
+    }
+    &#site-building:before {
+      content: "\f0e8";
+      font-size: 60px;
+    }
+    &#case-studies:before {
+      content: "\f19d";
+      font-size: 60px;
+    }
     > h2 {
-      background-color: $blue-color;
+      background: linear-gradient(to left, rgba(255,0,0,0), rgba(51,122,183,1));
       color: $white-color;
       padding: 10px;
       position: relative;
