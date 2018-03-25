@@ -9,7 +9,7 @@
 body {
   border: 0 none;
   color: $base-color;
-  font-family: $muli;
+  font-family: $open-sans;
   font-size: $basefont-size;
   -webkit-font-smoothing: antialiased;
   line-height: $baseline-height;
@@ -383,6 +383,12 @@ img {
 
           &.open {
             a {
+              color: $link-color;
+            }
+          }
+          &.active {
+            a {
+              background-color: $white-color;
               color: $link-color;
             }
           }

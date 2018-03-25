@@ -1,97 +1,174 @@
 @font-face {
-  font-family: "Muli";
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
-  src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.woff"); }
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
-.view-sessions .item {
-  margin-bottom: 20px; }
-  .view-sessions .item .dcm-special-title {
-    background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
-    color: #fff;
-    padding: 10px;
-    position: relative; }
-    .view-sessions .item .dcm-special-title img {
-      display: none; }
-    .view-sessions .item .dcm-special-title:before {
-      background-color: #fff;
-      content: "";
+.view-all-sessions .views-row {
+  margin: 0 0 30px;
+  padding: 10px 0 10px 80px;
+  position: relative; }
+  .view-all-sessions .views-row:before {
+    color: #337ab7;
+    display: block;
+    display: inline-block;
+    font-family: FontAwesome;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    left: 0;
+    line-height: 100%;
+    position: absolute;
+    top: 7px; }
+  .view-all-sessions .views-row.backend-development:before {
+    content: "\f1c9";
+    font-size: 60px; }
+  .view-all-sessions .views-row.business:before {
+    content: "\f0b1";
+    font-size: 60px; }
+  .view-all-sessions .views-row.dev-ops:before {
+    content: "\f085";
+    font-size: 60px; }
+  .view-all-sessions .views-row.frontend-development:before {
+    content: "\f1fc";
+    font-size: 60px; }
+  .view-all-sessions .views-row.building-community:before {
+    content: "\f0c0";
+    font-size: 60px; }
+  .view-all-sessions .views-row.project-management:before {
+    content: "\f0ae";
+    font-size: 60px; }
+  .view-all-sessions .views-row.site-building:before {
+    content: "\f0e8";
+    font-size: 60px; }
+  .view-all-sessions .views-row.case-studies:before {
+    content: "\f19d";
+    font-size: 60px; }
+  .view-all-sessions .views-row .views-field-name {
+    margin-bottom: 20px; }
+    .view-all-sessions .views-row .views-field-name a {
+      background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
+      color: #fff;
       display: block;
-      height: 2px;
-      left: 0;
-      position: absolute;
-      top: 3px;
-      width: 100%; }
-    .view-sessions .item .dcm-special-title:after {
-      background-color: #fff;
-      content: "";
-      display: block;
-      height: 100%;
-      left: 5px;
-      position: absolute;
-      top: 0;
-      width: 2px; }
-  .view-sessions .item ul {
+      font-size: 27px;
+      line-height: 30px;
+      padding: 10px;
+      position: relative;
+      text-decoration: none; }
+      .view-all-sessions .views-row .views-field-name a:before {
+        background-color: #fff;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: 3px;
+        width: 100%; }
+      .view-all-sessions .views-row .views-field-name a:after {
+        background-color: #fff;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 5px;
+        position: absolute;
+        top: 0;
+        width: 2px; }
+  .view-all-sessions .views-row .view-sessions ul {
     margin: 0;
     padding: 0;
-    padding: 10px; }
-    .view-sessions .item ul li {
-      font-size: 17px;
+    padding: 0 12px; }
+    .view-all-sessions .views-row .view-sessions ul li {
       list-style-type: none;
-      margin-bottom: 10px; }
-      .view-sessions .item ul li:after {
+      margin: 0 20px 20px 0;
+      vertical-align: top;
+      display: inline-block;
+      box-shadow: 0 0 5px #ddd;
+      padding: 15px;
+      width: 31.33%;
+      vertical-align: top;
+      border-radius: 5px;
+      transition: all .5s ease-in-out 0s; }
+      .view-all-sessions .views-row .view-sessions ul li:hover {
+        box-shadow: 0 0 5px 3px #ddd; }
+      .view-all-sessions .views-row .view-sessions ul li:nth-child(3n) {
+        margin-right: 0; }
+      .view-all-sessions .views-row .view-sessions ul li:before {
         background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
         content: "";
         display: block;
         height: 1px;
-        margin-top: 10px; }
-      .view-sessions .item ul li .views-field-title:before {
-        color: #337ab7;
-        content: "\f15c";
-        font-size: inherit;
-        display: inline-block;
-        font-family: FontAwesome;
-        -webkit-font-smoothing: antialiased;
-        font-style: normal;
-        font-weight: normal;
-        -moz-osx-font-smoothing: grayscale;
-        text-rendering: auto;
-        line-height: 100%;
-        padding: 0 8px; }
-      .view-sessions .item ul li .views-field-title a {
-        color: #333;
-        text-decoration: none; }
-        .view-sessions .item ul li .views-field-title a:hover {
-          color: #337ab7; }
-      .view-sessions .item ul li .views-field-field-speakers .field-content:before {
-        color: #337ab7;
-        content: "\f028";
-        font-size: inherit;
-        display: inline-block;
-        font-family: FontAwesome;
-        -webkit-font-smoothing: antialiased;
-        font-style: normal;
-        font-weight: normal;
-        -moz-osx-font-smoothing: grayscale;
-        text-rendering: auto;
-        line-height: 100%;
-        padding: 0 8px; }
-      .view-sessions .item ul li .views-field-field-speakers .field-content a {
-        color: #333;
-        text-decoration: none; }
-        .view-sessions .item ul li .views-field-field-speakers .field-content a:hover {
-          color: #337ab7; }
+        margin: 0 0 20px; }
+      .view-all-sessions .views-row .view-sessions ul li:after {
+        background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
+        content: "";
+        display: block;
+        height: 1px;
+        margin: 20px 0 0; }
+      .view-all-sessions .views-row .view-sessions ul li .views-field-title a {
+        display: block;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 8px;
+        text-decoration: none;
+        height: 45px;
+        overflow: hidden;
+        position: relative;
+        padding-left: 25px; }
+        .view-all-sessions .views-row .view-sessions ul li .views-field-title a:before {
+          color: #337ab7;
+          content: "\f15c";
+          display: inline-block;
+          font-family: FontAwesome;
+          -webkit-font-smoothing: antialiased;
+          font-style: normal;
+          font-weight: normal;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: auto;
+          margin: 0 10px 0 0;
+          position: absolute;
+          left: 0;
+          top: 1px; }
+      .view-all-sessions .views-row .view-sessions ul li .views-field-field-organisation {
+        display: none; }
+      .view-all-sessions .views-row .view-sessions ul li .speaker-name {
+        padding-left: 25px; }
+        .view-all-sessions .views-row .view-sessions ul li .speaker-name:before {
+          color: #337ab7;
+          content: "\f007";
+          display: inline-block;
+          font-family: FontAwesome;
+          -webkit-font-smoothing: antialiased;
+          font-style: normal;
+          font-weight: normal;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: auto;
+          margin: 0 10px 0 0; }
+      .view-all-sessions .views-row .view-sessions ul li .speaker-org {
+        padding-left: 25px; }
+        .view-all-sessions .views-row .view-sessions ul li .speaker-org:before {
+          color: #337ab7;
+          content: "\f1ad";
+          display: inline-block;
+          font-family: FontAwesome;
+          -webkit-font-smoothing: antialiased;
+          font-style: normal;
+          font-weight: normal;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: auto;
+          margin: 0 10px 0 0; }
 
 /*# sourceMappingURL=css-maps/dcm-session.css.map */

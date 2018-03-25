@@ -3,85 +3,161 @@
 
 // Note: !important used to override other css file.
 
-.view-sessions {
-  .item {
-    margin-bottom: 20px;
-    .dcm-special-title {
-      background: linear-gradient(to left, rgba(255,0,0,0), rgba(51,122,183,1));
-      color: $white-color;
-      padding: 10px;
-      position: relative;
-      img {
-        display: none;
-      }
-      &:before {
-        background-color: $white-color;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 0;
-        position: absolute;
-        top: 3px;
-        width: 100%;
-      }
-      &:after {
-        background-color: $white-color;
-        content: "";
-        display: block;
-        height: 100%;
-        left: 5px;
-        position: absolute;
-        top: 0;
-        width: 2px;
-      }
+.view-all-sessions {
+  .views-row {
+    margin: 0 0 30px;
+    padding: 10px 0 10px 80px;
+    position: relative;
+    &:before {
+      color: $blue-color;
+      display: block;
+      @include base-fa;
+      left: 0;
+      line-height: 100%;
+      position: absolute;
+      top: 7px;
     }
-    ul {
-      @include no-margin-padding;
-      padding: 10px;
-      li {
-        font-size: 17px;
-        list-style-type: none;
-        margin-bottom: 10px;
-        &:after {
-          background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
+    &.backend-development:before {
+      content: "\f1c9";
+      font-size: 60px;
+    }
+    &.business:before {
+      content: "\f0b1";
+      font-size: 60px;
+    }
+    &.dev-ops:before {
+      content: "\f085";
+      font-size: 60px;
+    }
+    &.frontend-development:before {
+      content: "\f1fc";
+      font-size: 60px;
+    }
+    &.building-community:before {
+      content: "\f0c0";
+      font-size: 60px;
+    }
+    &.project-management:before {
+      content: "\f0ae";
+      font-size: 60px;
+    }
+    &.site-building:before {
+      content: "\f0e8";
+      font-size: 60px;
+    }
+    &.case-studies:before {
+      content: "\f19d";
+      font-size: 60px;
+    }
+    .views-field-name {
+      margin-bottom: 20px;
+      a {
+        background: linear-gradient(to left, rgba(255,0,0,0), rgba(51,122,183,1));
+        color: $white-color;
+        display: block;
+        font-size: 27px;
+        line-height: 30px;
+        padding: 10px;
+        position: relative;
+        text-decoration: none;
+        &:before {
+          background-color: $white-color;
           content: "";
           display: block;
-          height: 1px;
-          margin-top: 10px;
+          height: 2px;
+          left: 0;
+          position: absolute;
+          top: 3px;
+          width: 100%;
         }
-        .views-field-title {
-          &:before {
-            color: $blue-color;
-            content: "\f15c";
-            font-size: inherit;
-            @include base-fa;
-            line-height: 100%;
-            padding: 0 8px;
+        &:after {
+          background-color: $white-color;
+          content: "";
+          display: block;
+          height: 100%;
+          left: 5px;
+          position: absolute;
+          top: 0;
+          width: 2px;
+        }
+      }
+    }
+    .view-sessions {
+      ul {
+        @include no-margin-padding;
+        padding: 0 12px;
+        li {
+          list-style-type: none;
+          margin: 0 20px 20px 0;
+          vertical-align: top;
+          display: inline-block;
+          box-shadow: 0 0 5px $gray-color1;
+          padding: 15px;
+          width: 31.33%;
+          vertical-align: top;
+          border-radius: 5px;
+          @include base-transition;
+          &:hover {
+            box-shadow: 0 0 5px 3px $gray-color1;
           }
-          a {
-            color: $base-color;
-            text-decoration: none;
-            &:hover {
-              color: $blue-color;
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+          &:before {
+            background: linear-gradient(to left, rgba(255,0,0,0), rgba(51,122,183,1));
+            content: "";
+            display: block;
+            height: 1px;
+            margin: 0 0 20px;
+          }
+          &:after {
+            background: linear-gradient(to left, rgba(255,0,0,0), rgba(51,122,183,1));
+            content: "";
+            display: block;
+            height: 1px;
+            margin: 20px 0 0;
+          }
+          .views-field-title {
+            a {
+              display: block;
+              font-size: 18px;
+              line-height: 22px;
+              margin-bottom: 8px;
+              text-decoration: none;
+              height: 45px;
+              overflow: hidden;
+              position: relative;
+              padding-left: 25px;
+              &:before {
+                color: $blue-color;
+                content: "\f15c";
+                @include base-fa;
+                margin: 0 10px 0 0;
+                position: absolute;
+                left: 0;
+                top: 1px;
+              }
             }
           }
-        }
-        .views-field-field-speakers {
-          .field-content {
+          .views-field-field-organisation {
+            display: none;
+          }
+          .speaker-name {
+            padding-left: 25px;
             &:before {
               color: $blue-color;
-              content: "\f028";
-              font-size: inherit;
+              content: "\f007";
               @include base-fa;
-              line-height: 100%;
-              padding: 0 8px;
+              margin: 0 10px 0 0;
             }
-            a {
-              color: $base-color;
-              text-decoration: none;
-              &:hover {
-                color: $blue-color;
-              }
+          }
+          .speaker-org {
+            padding-left: 25px;
+            &:before {
+              color: $blue-color;
+              content: "\f1ad";
+              @include base-fa;
+              margin: 0 10px 0 0;
             }
           }
         }

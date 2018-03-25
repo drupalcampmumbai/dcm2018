@@ -1,25 +1,25 @@
 @font-face {
-  font-family: "Muli";
-  src: url("../fonts/Muli.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli.ttf") format("truetype"), url("../fonts/Muli.woff") format("woff"), url("../fonts/Muli.svg") format("svg");
-  src: url("../fonts/Muli.eot");
-  src: url("../fonts/Muli.woff"); }
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
 body {
   border: 0 none;
   color: #333;
-  font-family: "Muli", tahoma, Sans-Serif;
+  font-family: "Open Sans", tahoma, Sans-Serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   line-height: 25px;
@@ -312,6 +312,9 @@ img {
           .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li:last-child, .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li:nth-last-child(2) {
             float: right; }
           .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li.open a {
+            color: #0676c0; }
+          .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li.active a {
+            background-color: #fff;
             color: #0676c0; }
           @media screen and (max-width: 960px) {
             .navbar.container .navbar-collapse #dcm-sticky-menu .menu.nav li {

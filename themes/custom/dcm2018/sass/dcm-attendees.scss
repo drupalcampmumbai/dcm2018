@@ -3,12 +3,70 @@
 
 // Note: !important used to override other css file.
 
+// Page specifice
+.path-attendees {
+  .main-container {
+    padding-top: 30px !important;
+    .block-views-blocksponsors-platinum-sponsors {
+      padding: 30px 0;
+      &:before {
+        display: none;
+      }
+      .views-row {
+        margin-bottom: 10px;
+      }
+      .view-footer {
+        display: none;
+      }
+    }
+  }
+}
+// End Page specifice
+
 //attendees
 .view-attendees {
+  .view-filters {
+    form {
+      .form-item {
+        display: inline-block;
+        vertical-align: top;
+        width: 27.5% !important;
+        label {
+          font-size: 15px;
+        }
+      }
+      .form-actions {
+        .btn {
+          margin-left: 15px;
+          margin-right: 0;
+          margin-top: 0;
+          min-width: inherit;
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+          &#edit-reset {
+            background-color: transparent;
+            border-radius: 0;
+            color: $blue-color;
+            padding: 3px 0;
+            &:before {
+              color: $blue-color;
+              content: "\f021";
+              font-size: 18px;
+              @include base-fa;
+              margin: 0 10px 0 0;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
   .view-content {
     align-items: stretch;
-    display: flex;
     display: -ms-flexbox;
+    display: flex;
     -ms-flex-align: stretch;
     -ms-flex-flow: wrap row;
     flex-flow: wrap row;
@@ -116,7 +174,7 @@
             padding-right: 0;
             .attendees-name {
               font-size: 24px;
-              line-height: 27px;
+              line-height: 30px;
               margin-bottom: 5px;
               overflow: hidden;
               text-overflow: ellipsis;

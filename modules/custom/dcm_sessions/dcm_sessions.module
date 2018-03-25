@@ -101,25 +101,26 @@ function dcm_sessions_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $f
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function dcm_sessions_form_node_sessions_form_alter(&$form, FormStateInterface &$form_state, $form_id) {
+/*function dcm_sessions_form_node_sessions_form_alter(&$form, FormStateInterface &$form_state, $form_id) {
   $form['#title'] = t('Submit Session');
   $form['actions']['submit']['#name'] = t('Submit Session');
   $form['actions']['submit']['#value'] = t('Submit Session');
-}
+}*/
 /**
  * Implements hook_field_widget_form_alter().
  */
-function dcm_sessions_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+/*function dcm_sessions_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
   if ($form_state->getBuildInfo()['form_id'] == 'node_sessions_form' &&
     $context['widget'] instanceof \Drupal\text\Plugin\Field\FieldWidget\TextareaWidget
   ) {
     $element['#after_build'][] = '_custom_allowed_formats_remove_textarea_help';
   }
-}
+}*/
 
 /**
  * #after_build callback.
  */
+/*
 function _custom_allowed_formats_remove_textarea_help($form_element, FormStateInterface $form_state) {
   if (isset($form_element['format'])) {
     // All this stuff is needed to hide the help text.
@@ -128,4 +129,4 @@ function _custom_allowed_formats_remove_textarea_help($form_element, FormStateIn
     unset($form_element['format']['#theme_wrappers']);
   }
   return $form_element;
-}
+}*/
