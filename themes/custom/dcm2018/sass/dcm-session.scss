@@ -9,7 +9,7 @@
     padding: 10px 0 10px 80px;
     position: relative;
     &:before {
-      color: $blue-color;
+      color: $base-color;
       display: block;
       @include base-fa;
       left: 0;
@@ -87,16 +87,16 @@
         @include no-margin-padding;
         padding: 0 12px;
         li {
+          border-radius: 5px;
+          box-shadow: 0 0 5px $gray-color1;
+          display: inline-block;
+          @include base-transition;
           list-style-type: none;
           margin: 0 20px 20px 0;
-          vertical-align: top;
-          display: inline-block;
-          box-shadow: 0 0 5px $gray-color1;
           padding: 15px;
-          width: 31.33%;
           vertical-align: top;
-          border-radius: 5px;
-          @include base-transition;
+          vertical-align: top;
+          width: 31.33%;
           &:hover {
             box-shadow: 0 0 5px 3px $gray-color1;
           }
@@ -121,20 +121,20 @@
             a {
               display: block;
               font-size: 18px;
+              height: 45px;
               line-height: 22px;
               margin-bottom: 8px;
-              text-decoration: none;
-              height: 45px;
               overflow: hidden;
-              position: relative;
               padding-left: 25px;
+              position: relative;
+              text-decoration: none;
               &:before {
                 color: $blue-color;
                 content: "\f15c";
                 @include base-fa;
+                left: 0;
                 margin: 0 10px 0 0;
                 position: absolute;
-                left: 0;
                 top: 1px;
               }
             }

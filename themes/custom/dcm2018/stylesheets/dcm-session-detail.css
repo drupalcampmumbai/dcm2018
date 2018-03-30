@@ -16,8 +16,20 @@
   src: url("../fonts/Raleway-ExtraBold.eot");
   src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+
 .page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-speaker .views-row .views-field a:before {
-  color: #337ab7;
+  color: #207dcc;
   content: "\f028";
   font-size: inherit;
   display: inline-block;
@@ -31,7 +43,7 @@
   padding: 0 8px; }
 
 .page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-details .views-row .views-field .field-content:before {
-  color: #337ab7;
+  color: #207dcc;
   content: "\f05a";
   font-size: inherit;
   display: inline-block;
@@ -45,7 +57,7 @@
   padding: 0 8px; }
 
 .page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-track .views-row .views-field-field-session-track .field-content:before {
-  color: #337ab7;
+  color: #207dcc;
   content: "\f15c";
   font-size: inherit;
   display: inline-block;
@@ -59,7 +71,7 @@
   padding: 0 8px; }
 
 .page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-track .views-row .views-field-field-session-time .field-content:before {
-  color: #337ab7;
+  color: #207dcc;
   content: "\f073";
   font-size: inherit;
   display: inline-block;

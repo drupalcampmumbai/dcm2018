@@ -16,12 +16,24 @@
   src: url("../fonts/Raleway-ExtraBold.eot");
   src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+
 .view-all-sessions .views-row {
   margin: 0 0 30px;
   padding: 10px 0 10px 80px;
   position: relative; }
   .view-all-sessions .views-row:before {
-    color: #337ab7;
+    color: #fff;
     display: block;
     display: inline-block;
     font-family: FontAwesome;
@@ -92,16 +104,16 @@
     padding: 0;
     padding: 0 12px; }
     .view-all-sessions .views-row .view-sessions ul li {
+      border-radius: 5px;
+      box-shadow: 0 0 5px #ddd;
+      display: inline-block;
+      transition: all .5s ease-in-out 0s;
       list-style-type: none;
       margin: 0 20px 20px 0;
-      vertical-align: top;
-      display: inline-block;
-      box-shadow: 0 0 5px #ddd;
       padding: 15px;
-      width: 31.33%;
       vertical-align: top;
-      border-radius: 5px;
-      transition: all .5s ease-in-out 0s; }
+      vertical-align: top;
+      width: 31.33%; }
       .view-all-sessions .views-row .view-sessions ul li:hover {
         box-shadow: 0 0 5px 3px #ddd; }
       .view-all-sessions .views-row .view-sessions ul li:nth-child(3n) {
@@ -121,15 +133,15 @@
       .view-all-sessions .views-row .view-sessions ul li .views-field-title a {
         display: block;
         font-size: 18px;
+        height: 45px;
         line-height: 22px;
         margin-bottom: 8px;
-        text-decoration: none;
-        height: 45px;
         overflow: hidden;
+        padding-left: 25px;
         position: relative;
-        padding-left: 25px; }
+        text-decoration: none; }
         .view-all-sessions .views-row .view-sessions ul li .views-field-title a:before {
-          color: #337ab7;
+          color: #207dcc;
           content: "\f15c";
           display: inline-block;
           font-family: FontAwesome;
@@ -138,16 +150,16 @@
           font-weight: normal;
           -moz-osx-font-smoothing: grayscale;
           text-rendering: auto;
+          left: 0;
           margin: 0 10px 0 0;
           position: absolute;
-          left: 0;
           top: 1px; }
       .view-all-sessions .views-row .view-sessions ul li .views-field-field-organisation {
         display: none; }
       .view-all-sessions .views-row .view-sessions ul li .speaker-name {
         padding-left: 25px; }
         .view-all-sessions .views-row .view-sessions ul li .speaker-name:before {
-          color: #337ab7;
+          color: #207dcc;
           content: "\f007";
           display: inline-block;
           font-family: FontAwesome;
@@ -160,7 +172,7 @@
       .view-all-sessions .views-row .view-sessions ul li .speaker-org {
         padding-left: 25px; }
         .view-all-sessions .views-row .view-sessions ul li .speaker-org:before {
-          color: #337ab7;
+          color: #207dcc;
           content: "\f1ad";
           display: inline-block;
           font-family: FontAwesome;

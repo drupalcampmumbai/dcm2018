@@ -4,136 +4,22 @@
 // Note: !important used to override other css file.
 
 .path-frontpage {
-  // Main menu
-  .navbar.container {
-    background-color: $blue-color;
-    // Logo
-    .navbar-header {
-      .logo {
-        img {
-          height: 200px;
-          @media (min-width: 320px) and (max-width: 960px) {
-            height: 105px;
-          }
-        }
-      }
-    }
-  }
-  .main-container,
-  .container {
+  .main-container {
     max-width: inherit;
     min-height: inherit;
-    padding: 0 !important;
     width: 100%;
-    .page-header {
+    > .row {
+      background-image: none;
+      max-width: inherit;
+      min-height: inherit;
+      padding-top: 0;
+      width: 100%;
+    }
+    .page-header,
+    nav.tabs {
       display: none;
     }
   }
-  // Banner
-  .banner {
-    background-image: linear-gradient(180deg, rgba(43, 122, 183, .8), rgba(43, 123, 186, .8)), url(../images/camp-photo-2017-without-logo.jpg);
-    background-position: 0 0, 50% 50%;
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-    display: block;
-    padding-bottom: 8%;
-    padding-top: 8%;
-    position: relative;
-    width: 100%;
-    .region-banner {
-      margin: 0 auto;
-      max-width: $page-width;
-      .slogan {
-        position: relative;
-        text-align: center;
-        .mini-title {
-          color: $white-color;
-        }
-        h1 {
-          color: $white-color;
-          font-family: $raleway-extrabold;
-          font-size: 90px;
-          line-height: 100px;
-          margin-bottom: 10px;
-          margin-top: 10px;
-          @media (min-width: 320px) and (max-width: 767px) {
-            font-size: 60px;
-            line-height: 70px;
-          }
-        }
-        .underline {
-          background-color: $white-color;
-        }
-        .cursive-text {
-          color: $white-color;
-          font-family: Georgia;
-          font-size: 24px;
-          font-style: italic;
-          line-height: 32px;
-          margin-bottom: 10px;
-          @media (min-width: 320px) and (max-width: 767px) {
-            font-size: 21px;
-            line-height: 25px;
-          }
-        }
-      }
-    }
-  }
-  // Facebook and Twitter
-  .social {
-    background-color: $gray-color5;
-    float: left;
-    padding: 40px 0 80px;
-    position: relative;
-    width: 100%;
-    &:before {
-      @include cross;
-    }
-    .region-social {
-      margin: 0 auto;
-      max-width: $page-width;
-    }
-    .fb-block {
-      background-color: $gray-color5;
-      height: 600px;
-      overflow-y: auto;
-      padding: 15px;
-      width: 30%;
-    }
-    .twtr-block {
-      background-color: $gray-color5;
-      height: 600px;
-      overflow-y: auto;
-      padding: 15px;
-      width: 70%;
-    }
-  }
-  // Footer copyright
-  .footer-copyright {
-    height: auto !important;
-  }
-}
-
-.mini-title {
-  color: $base-color;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 3.3px;
-  line-height: 10px;
-  position: relative;
-  text-transform: uppercase;
-  z-index: 1;
-}
-.underline {
-  background-color: $base-color;
-  border-radius: 3px;
-  display: inline-block;
-  height: 5px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  position: relative;
-  width: 95px;
-  z-index: 1;
 }
 
 // Sponsers block
@@ -143,29 +29,21 @@
 .block-views-blocksponsors-gold-sponsors {
   background-color: $white-color;
   clear: both;
-  padding: 30px 0 60px;
+  padding: 75px 0 50px;
   position: relative;
-  &:before {
-    @include cross;
-    top: -40px;
-  }
   .block-title {
-    font-size: 24px;
-    margin-bottom: 22px;
-    padding-bottom: 18px;
-    position: relative;
+    background-color: $blue-color2;
+    color: $white-color;
+    font-size: 2.125em;
+    left: 0;
+    line-height: 40px;
+    margin: auto;
+    padding: 5px 20px;
+    position: absolute;
+    right: 0;
     text-align: center;
-    // &:after {
-    //   background-color: $blue-color;
-    //   bottom: 0;
-    //   content: "";
-    //   height: 3px;
-    //   left: 50%;
-    //   position: absolute;
-    //   -webkit-transform: translateX(-50%);
-    //   transform: translateX(-50%);
-    //   width: 60px;
-    // }
+    top: -24px;
+    width: 358px;
   }
   .view-sponsors {
     margin: 0 auto;
@@ -200,89 +78,85 @@
 
 .block-views-blocksponsors-platinum-sponsors {
   .block-title {
-    background-image: url(../images/platinum_ribbon_01.png);
-    background-position: center 0;
-    background-repeat: no-repeat;
-    color: $white-color;
+    &:before {
+      background-image: url(../images/platinum.png);
+      background-position: left 0;
+      background-repeat: no-repeat;
+      content: "";
+      height: 85px;
+      left: -86px;
+      position: absolute;
+      top: -16px;
+      width: 86px;
+    }
   }
 }
 
 .block-views-blocksponsors-gold-sponsors {
   .block-title {
-    background-image: url(../images/gold_ribbon_01.png);
-    background-position: center 0;
-    background-repeat: no-repeat;
-    color: $base-color;
-    line-height: 34px;
+    &:before {
+      background-image: url(../images/gold.png);
+      background-position: left 0;
+      background-repeat: no-repeat;
+      content: "";
+      height: 85px;
+      left: -86px;
+      position: absolute;
+      top: -16px;
+      width: 86px;
+    }
   }
 }
 
 .block-views-blocksponsors-silver-sponsor-slideshow {
   .block-title {
-    background-image: url(../images/silver_ribbon_01.png);
-    background-position: center 0;
-    background-repeat: no-repeat;
-    color: $base-color;
-    line-height: 34px;
-  }
-}
-
-.block-views-blocksponsors-partners-slideshow {
-  .block-title {
-    background-image: url(../images/red_ribbon_01.png);
-    background-position: center 0;
-    background-repeat: no-repeat;
-    color: $white-color;
-    line-height: 34px;
+    &:before {
+      background-image: url(../images/silver.png);
+      background-position: left 0;
+      background-repeat: no-repeat;
+      content: "";
+      height: 85px;
+      left: -86px;
+      position: absolute;
+      top: -16px;
+      width: 86px;
+    }
   }
 }
 
 // Connect us block
-#block-connectwithus {
-  text-align: center;
+.socialConnect-block {
+  a {
+    color: $base-color;
+    font-size: 0;
+    margin-right: 5px;
 
-  .social-icon {
-    display: inline-block;
-    margin: 0 5px;
-
-    a {
-      font-size: 0;
-
-      &:before {
-        font-size: 20px;
-        @include base-fa;
-      }
+    &:before {
+      font-size: 33px;
+      @include base-fa;
     }
 
     &.icon-twitter {
-      a {
-        &:before {
-          content: "\f099";
-        }
+      &:before {
+        content: "\f081";
       }
     }
 
     &.icon-facebook {
-      a {
-        &:before {
-          content: "\f09a";
-        }
+      &:before {
+        content: "\f082";
       }
     }
 
-    &.icon-googleplus {
-      a {
-        &:before {
-          content: "\f0d5";
-        }
+    &.icon-linkedin {
+      &:before {
+        content: "\f08c";
       }
     }
 
-    &.icon-drupalorg {
-      a {
-        &:before {
-          content: "\f1a9";
-        }
+    &.icon-youtube {
+      &:before {
+        content: "\f167";
       }
     }
   }
@@ -291,47 +165,46 @@
 // Recent News
 .path-frontpage {
   #middle-content {
-    background-color: $blue-color1;
-    padding: 50px 0 50px;
-    position: relative;
-    &:before {
-      @include cross;
-    }
     .region {
-      margin: 0 auto;
-      max-width: $page-width;
-      min-width: 320px;
-      width: 100%;
       .drupal-recent-news {
         .block-title {
-          color: $blue-color;
-          font-family: $raleway-extrabold;
-          font-size: 35px;
+          color: $white-color;
+          font-size: 2.429em;
           margin-bottom: 40px;
         }
         .view-drupal-camp-news {
+          background-image: url(../images/droper.png);
+          background-position: top right -11px;
+          background-repeat: no-repeat;
           margin: 0 auto;
           max-width: $page-width;
+          overflow: hidden;
+          padding: 135px 0 145px;
           position: relative;
           .views-row {
             border-bottom: 0;
             float: left;
             margin: 0 0 40px;
-            padding: 0 0 5px 15px;
+            padding: 0;
             width: 100%;
+            &:last-child {
+              margin-bottom: 0;
+            }
             .views-field {
               margin: 5px 0 0;
               .homepage-new {
                 .date-mnth {
                   .inner {
-                    background-color: $blue-color;
+                    background-color: $white-color;
+                    color: $blue-color;
                     float: left;
-                    height: 78px;
+                    height: 85px;
+                    padding: 10px;
                     position: relative;
-                    text-align: center;
-                    width: 78px;
+                    text-align: left;
+                    width: 85px;
                     &:before {
-                      background-color: $white-color;
+                      background-color: $blue-color;
                       content: "";
                       height: 5px;
                       left: 10px;
@@ -340,7 +213,7 @@
                       width: 5px;
                     }
                     &:after {
-                      background-color: $white-color;
+                      background-color: $blue-color;
                       content: "";
                       height: 5px;
                       position: absolute;
@@ -349,17 +222,15 @@
                       width: 5px;
                     }
                     h1 {
-                      color: $white-color;
-                      font-family: $raleway-extrabold;
-                      font-size: 32px;
+                      font-family: $roboto-slab-bold;
+                      font-size: 2.429em;
                       margin-bottom: 0;
                       padding-bottom: 5px !important;
                       padding-top: 5px !important;
                     }
                     h4 {
-                      color: $white-color;
-                      font-family: $raleway-extrabold;
-                      font-size: 18px;
+                      font-family: $roboto-slab-bold;
+                      font-size: 2em;
                       text-transform: uppercase !important;
                     }
                   }
@@ -371,15 +242,17 @@
                   }
                   .news-title {
                     a {
-                      color: $blue-color;
+                      color: $white-color;
                       display: inline-block;
-                      font-size: 27px;
-                      font-weight: bold;
-                      line-height: 32px;
+                      font-family: $roboto-slab-bold;
+                      font-size: 1em;
                       margin-bottom: 10px;
                       margin-top: 0;
                       text-decoration: initial;
                     }
+                  }
+                  .news-body {
+                    color: $white-color;
                   }
                 }
               }
@@ -422,42 +295,70 @@
 // End Recent News
 
 // Apprentice and Join DA
-#block-dcm2018-drupalapprenctices {
-  background-color: $blue-color1;
-  padding: 50px 0 80px;
+#block-dcm2018-drupalapprenctices,
+#block-dcm2018-joinda {
+  background-color: $blue-color;
+  color: $white-color;
+  padding: 150px 0 180px;
   position: relative;
-  &:before {
-    @include cross;
-  }
 
-  .drupal-apprentice {
+  .drupal-apprentice,
+  .join-drup-assoc {
     margin: 0 auto;
     max-width: 100%;
-    min-width: 320px;
+    overflow: hidden;
     width: $page-width;
-
+    h2 {
+      font-size: 2.125em;
+      line-height: 40px;
+    }
+    .btn {
+      background-color: transparent;
+      border: 1px solid $white-color;
+      padding: 12px 10px;
+    }
     .image-wrapper {
       text-align: right;
     }
   }
 }
 
-#block-dcm2018-joinda {
-  background-color: $gray-color5;
-  padding: 50px 0 50px;
+// Map
+.location-info-block {
+  height: 566px;
+}
+.location-info {
   position: relative;
-  &:before {
-    @include cross;
-  }
-
-  .join-drup-assoc {
-    margin: 0 auto;
-    max-width: 100%;
-    min-width: 320px;
-    width: $page-width;
-
-    .image-wrapper {
-      text-align: right;
+  .footer-copy {
+    background-color: rgba(0, 0, 0, .5);
+    color: $white-color;
+    font-size: 1.214em;
+    left: 26%;
+    margin: auto;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 20px;
+    width: 310px;
+    z-index: 1;
+    &:before {
+      border-bottom: 15px solid transparent;
+      border-right: 15px solid rgba(0, 0, 0, .5);
+      border-top: 15px solid transparent;
+      bottom: 25px;
+      content: "";
+      display: inline-block;
+      height: 0;
+      left: -15px;
+      position: absolute;
+      width: 0;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    .margin-bottom {
+      margin: 0 0 25px;
     }
   }
 }

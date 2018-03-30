@@ -16,12 +16,24 @@
   src: url("../fonts/Raleway-ExtraBold.eot");
   src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+
 .track-content .track-row {
   margin: 0 0 30px;
   padding: 10px 0 10px 80px;
   position: relative; }
   .track-content .track-row:before {
-    color: #337ab7;
+    color: #207dcc;
     display: block;
     display: inline-block;
     font-family: FontAwesome;

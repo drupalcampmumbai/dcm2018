@@ -16,6 +16,18 @@
   src: url("../fonts/Raleway-ExtraBold.eot");
   src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+
 .view-volunteers h3 {
   border-bottom: 0;
   clear: both;
@@ -48,9 +60,9 @@
   vertical-align: top;
   width: 24.5%; }
   .view-volunteers .view-content .views-row .team-card .card-photo img {
-    border-left: 5px solid #337ab7;
+    border-left: 5px solid #207dcc;
     border-radius: 50%;
-    border-right: 5px solid #337ab7;
+    border-right: 5px solid #207dcc;
     transition: all .5s ease-in-out 0s;
     margin: auto;
     padding: 10px;

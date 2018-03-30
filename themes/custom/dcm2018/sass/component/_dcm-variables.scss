@@ -1,8 +1,7 @@
 // Variables
-$basefont-size: 16px;
-$small-font-size: 14px;
-$baseline-height: 25px;
-$base-color: #333;
+$basefont-size: 14px;
+$baseline-height: 20px;
+$base-color: #fff;
 $link-color: #0676c0;
 $hover-color: $base-color;
 $page-width: 1200px;
@@ -11,10 +10,11 @@ $header-bg: #61cae7;
 $table-th: #626d83;
 $btn-color: $link-color;
 $btn-hover-color: $base-color;
-$footer-bg: #337ab7;
+$footer-bg: #207dcc;
 $white-color: #fff;
-$blue-color: #337ab7;
+$blue-color: #207dcc;
 $blue-color1: #bce8f1;
+$blue-color2: #78b2dd;
 $gray-color: #ccc;
 $red-color: #f00;
 $light-gray-color: #eee;
@@ -29,28 +29,46 @@ $gray-color6: #bbb;
 // Fonts
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
-  src: url("../fonts/OpenSans-Regular.eot");
   src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.woff");
 }
 
 $open-sans: "Open Sans", tahoma, Sans-Serif;
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
-  src: url("../fonts/Raleway-Regular.eot");
   src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.woff");
 }
 
 $raleway-regular: "Raleway-Regular", tahoma, Sans-Serif;
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
-  src: url("../fonts/Raleway-ExtraBold.eot");
   src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  src: url("../fonts/Raleway-ExtraBold.woff");
 }
 
 $raleway-extrabold: "Raleway-ExtraBold", tahoma, Sans-Serif;
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
+  src: url("../fonts/roboto-slab-regular.eot");
+  src: url("../fonts/roboto-slab-regular.woff");
+}
+
+$roboto-slab-regular: "Roboto Slab", tahoma, Sans-Serif;
+
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
+  src: url("../fonts/roboto-slab-bold.eot");
+  src: url("../fonts/roboto-slab-bold.woff");
+}
+
+$roboto-slab-bold: "Roboto Slab Bold", tahoma, Sans-Serif;
 // End Fonts

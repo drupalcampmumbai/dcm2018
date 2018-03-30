@@ -16,129 +16,160 @@
   src: url("../fonts/Raleway-ExtraBold.eot");
   src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
-.main-container .page-container .user-register-form,
-.main-container .page-container .user-login-form,
-.main-container .page-container .user-pass {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px; }
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+
+@media (min-width: 320px) and (max-width: 460px) {
+  .main-container .page-container .user-register-form .form-item input,
+  .main-container .page-container .user-register-form .form-item label,
+  .main-container .page-container .user-login-form .form-item input,
+  .main-container .page-container .user-login-form .form-item label,
+  .main-container .page-container .user-pass .form-item input,
+  .main-container .page-container .user-pass .form-item label {
+    margin-bottom: 5px;
+    width: 100%; } }
+
+@media (min-width: 320px) and (max-width: 460px) {
+  .main-container .page-container .user-register-form .form-item .form-managed-file,
+  .main-container .page-container .user-login-form .form-item .form-managed-file,
+  .main-container .page-container .user-pass .form-item .form-managed-file {
+    width: 100%; } }
+
+.main-container .page-container .user-register-form .form-item .form-managed-file .form-file,
+.main-container .page-container .user-login-form .form-item .form-managed-file .form-file,
+.main-container .page-container .user-pass .form-item .form-managed-file .form-file {
+  height: 40px;
+  margin-right: 0; }
+
+.main-container .page-container .user-register-form .form-item .form-managed-file .preview,
+.main-container .page-container .user-login-form .form-item .form-managed-file .preview,
+.main-container .page-container .user-pass .form-item .form-managed-file .preview {
+  padding: 0; }
+
+.main-container .page-container .user-register-form .form-item .form-managed-file .data,
+.main-container .page-container .user-login-form .form-item .form-managed-file .data,
+.main-container .page-container .user-pass .form-item .form-managed-file .data {
+  padding: 0; }
+  @media (min-width: 960px) and (max-width: 1400px) {
+    .main-container .page-container .user-register-form .form-item .form-managed-file .data,
+    .main-container .page-container .user-login-form .form-item .form-managed-file .data,
+    .main-container .page-container .user-pass .form-item .form-managed-file .data {
+      margin-left: 10px;
+      width: 81.6%; } }
+  @media (min-width: 320px) and (max-width: 959px) {
+    .main-container .page-container .user-register-form .form-item .form-managed-file .data,
+    .main-container .page-container .user-login-form .form-item .form-managed-file .data,
+    .main-container .page-container .user-pass .form-item .form-managed-file .data {
+      margin-top: 10px; } }
+
+.main-container .page-container .user-register-form .form-actions .btn,
+.main-container .page-container .user-login-form .form-actions .btn,
+.main-container .page-container .user-pass .form-actions .btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 12px 10px; }
+
+.main-container .page-container .user-register-form .fieldgroup .panel-heading,
+.main-container .page-container .user-register-form .form-group .panel-heading,
+.main-container .page-container .user-login-form .fieldgroup .panel-heading,
+.main-container .page-container .user-login-form .form-group .panel-heading,
+.main-container .page-container .user-pass .fieldgroup .panel-heading,
+.main-container .page-container .user-pass .form-group .panel-heading {
+  background-color: transparent;
+  color: #fff; }
   @media (min-width: 320px) and (max-width: 460px) {
-    .main-container .page-container .user-register-form .form-item input,
-    .main-container .page-container .user-register-form .form-item label,
-    .main-container .page-container .user-login-form .form-item input,
-    .main-container .page-container .user-login-form .form-item label,
-    .main-container .page-container .user-pass .form-item input,
-    .main-container .page-container .user-pass .form-item label {
+    .main-container .page-container .user-register-form .fieldgroup .panel-heading,
+    .main-container .page-container .user-register-form .form-group .panel-heading,
+    .main-container .page-container .user-login-form .fieldgroup .panel-heading,
+    .main-container .page-container .user-login-form .form-group .panel-heading,
+    .main-container .page-container .user-pass .fieldgroup .panel-heading,
+    .main-container .page-container .user-pass .form-group .panel-heading {
       margin-bottom: 5px;
       width: 100%; } }
+  .main-container .page-container .user-register-form .fieldgroup .panel-heading .panel-title,
+  .main-container .page-container .user-register-form .form-group .panel-heading .panel-title,
+  .main-container .page-container .user-login-form .fieldgroup .panel-heading .panel-title,
+  .main-container .page-container .user-login-form .form-group .panel-heading .panel-title,
+  .main-container .page-container .user-pass .fieldgroup .panel-heading .panel-title,
+  .main-container .page-container .user-pass .form-group .panel-heading .panel-title {
+    font-size: 14px; }
+
+@media (min-width: 320px) and (max-width: 460px) {
+  .main-container .page-container .user-register-form .fieldgroup .panel-body,
+  .main-container .page-container .user-register-form .form-group .panel-body,
+  .main-container .page-container .user-login-form .fieldgroup .panel-body,
+  .main-container .page-container .user-login-form .form-group .panel-body,
+  .main-container .page-container .user-pass .fieldgroup .panel-body,
+  .main-container .page-container .user-pass .form-group .panel-body {
+    width: 100%; } }
+
+.main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
+.main-container .page-container .user-register-form .form-group .panel-body .form-item,
+.main-container .page-container .user-login-form .fieldgroup .panel-body .form-item,
+.main-container .page-container .user-login-form .form-group .panel-body .form-item,
+.main-container .page-container .user-pass .fieldgroup .panel-body .form-item,
+.main-container .page-container .user-pass .form-group .panel-body .form-item {
+  display: inline-block;
+  margin-bottom: 3px;
+  vertical-align: top;
+  width: 30% !important; }
+  @media (min-width: 541px) and (max-width: 840px) {
+    .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
+    .main-container .page-container .user-register-form .form-group .panel-body .form-item,
+    .main-container .page-container .user-login-form .fieldgroup .panel-body .form-item,
+    .main-container .page-container .user-login-form .form-group .panel-body .form-item,
+    .main-container .page-container .user-pass .fieldgroup .panel-body .form-item,
+    .main-container .page-container .user-pass .form-group .panel-body .form-item {
+      width: 49% !important; } }
+  @media (min-width: 461px) and (max-width: 540px) {
+    .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
+    .main-container .page-container .user-register-form .form-group .panel-body .form-item,
+    .main-container .page-container .user-login-form .fieldgroup .panel-body .form-item,
+    .main-container .page-container .user-login-form .form-group .panel-body .form-item,
+    .main-container .page-container .user-pass .fieldgroup .panel-body .form-item,
+    .main-container .page-container .user-pass .form-group .panel-body .form-item {
+      width: 100% !important; } }
   @media (min-width: 320px) and (max-width: 460px) {
-    .main-container .page-container .user-register-form .form-item .form-managed-file,
-    .main-container .page-container .user-login-form .form-item .form-managed-file,
-    .main-container .page-container .user-pass .form-item .form-managed-file {
-      width: 100%; } }
-  .main-container .page-container .user-register-form .form-item .form-managed-file .form-file,
-  .main-container .page-container .user-login-form .form-item .form-managed-file .form-file,
-  .main-container .page-container .user-pass .form-item .form-managed-file .form-file {
-    height: 40px;
-    margin-right: 0; }
-  .main-container .page-container .user-register-form .form-item .form-managed-file .preview,
-  .main-container .page-container .user-login-form .form-item .form-managed-file .preview,
-  .main-container .page-container .user-pass .form-item .form-managed-file .preview {
-    padding: 0; }
-  .main-container .page-container .user-register-form .form-item .form-managed-file .data,
-  .main-container .page-container .user-login-form .form-item .form-managed-file .data,
-  .main-container .page-container .user-pass .form-item .form-managed-file .data {
-    padding: 0; }
-    @media (min-width: 960px) and (max-width: 1400px) {
-      .main-container .page-container .user-register-form .form-item .form-managed-file .data,
-      .main-container .page-container .user-login-form .form-item .form-managed-file .data,
-      .main-container .page-container .user-pass .form-item .form-managed-file .data {
-        margin-left: 10px;
-        width: 81.6%; } }
-    @media (min-width: 320px) and (max-width: 959px) {
-      .main-container .page-container .user-register-form .form-item .form-managed-file .data,
-      .main-container .page-container .user-login-form .form-item .form-managed-file .data,
-      .main-container .page-container .user-pass .form-item .form-managed-file .data {
-        margin-top: 10px; } }
-  .main-container .page-container .user-register-form .fieldgroup .panel-heading,
-  .main-container .page-container .user-register-form .form-group .panel-heading,
-  .main-container .page-container .user-login-form .fieldgroup .panel-heading,
-  .main-container .page-container .user-login-form .form-group .panel-heading,
-  .main-container .page-container .user-pass .fieldgroup .panel-heading,
-  .main-container .page-container .user-pass .form-group .panel-heading {
-    background-color: transparent; }
-    @media (min-width: 320px) and (max-width: 460px) {
-      .main-container .page-container .user-register-form .fieldgroup .panel-heading,
-      .main-container .page-container .user-register-form .form-group .panel-heading,
-      .main-container .page-container .user-login-form .fieldgroup .panel-heading,
-      .main-container .page-container .user-login-form .form-group .panel-heading,
-      .main-container .page-container .user-pass .fieldgroup .panel-heading,
-      .main-container .page-container .user-pass .form-group .panel-heading {
-        margin-bottom: 5px;
-        width: 100%; } }
-  @media (min-width: 320px) and (max-width: 460px) {
-    .main-container .page-container .user-register-form .fieldgroup .panel-body,
-    .main-container .page-container .user-register-form .form-group .panel-body,
-    .main-container .page-container .user-login-form .fieldgroup .panel-body,
-    .main-container .page-container .user-login-form .form-group .panel-body,
-    .main-container .page-container .user-pass .fieldgroup .panel-body,
-    .main-container .page-container .user-pass .form-group .panel-body {
-      width: 100%; } }
-  .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
-  .main-container .page-container .user-register-form .form-group .panel-body .form-item,
-  .main-container .page-container .user-login-form .fieldgroup .panel-body .form-item,
-  .main-container .page-container .user-login-form .form-group .panel-body .form-item,
-  .main-container .page-container .user-pass .fieldgroup .panel-body .form-item,
-  .main-container .page-container .user-pass .form-group .panel-body .form-item {
-    display: inline-block;
-    margin-bottom: 3px;
-    vertical-align: top;
-    width: 30% !important; }
-    @media (min-width: 541px) and (max-width: 840px) {
-      .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
-      .main-container .page-container .user-register-form .form-group .panel-body .form-item,
-      .main-container .page-container .user-login-form .fieldgroup .panel-body .form-item,
-      .main-container .page-container .user-login-form .form-group .panel-body .form-item,
-      .main-container .page-container .user-pass .fieldgroup .panel-body .form-item,
-      .main-container .page-container .user-pass .form-group .panel-body .form-item {
-        width: 49% !important; } }
-    @media (min-width: 461px) and (max-width: 540px) {
-      .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
-      .main-container .page-container .user-register-form .form-group .panel-body .form-item,
-      .main-container .page-container .user-login-form .fieldgroup .panel-body .form-item,
-      .main-container .page-container .user-login-form .form-group .panel-body .form-item,
-      .main-container .page-container .user-pass .fieldgroup .panel-body .form-item,
-      .main-container .page-container .user-pass .form-group .panel-body .form-item {
-        width: 100% !important; } }
-    @media (min-width: 320px) and (max-width: 460px) {
-      .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
-      .main-container .page-container .user-register-form .form-group .panel-body .form-item,
-      .main-container .page-container .user-login-form .fieldgroup .panel-body .form-item,
-      .main-container .page-container .user-login-form .form-group .panel-body .form-item,
-      .main-container .page-container .user-pass .fieldgroup .panel-body .form-item,
-      .main-container .page-container .user-pass .form-group .panel-body .form-item {
-        width: 49% !important; } }
-    .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item label input[type="radio"],
-    .main-container .page-container .user-register-form .form-group .panel-body .form-item label input[type="radio"],
-    .main-container .page-container .user-login-form .fieldgroup .panel-body .form-item label input[type="radio"],
-    .main-container .page-container .user-login-form .form-group .panel-body .form-item label input[type="radio"],
-    .main-container .page-container .user-pass .fieldgroup .panel-body .form-item label input[type="radio"],
-    .main-container .page-container .user-pass .form-group .panel-body .form-item label input[type="radio"] {
-      margin-left: -27px; }
-  @media (min-width: 320px) and (max-width: 460px) {
-    .main-container .page-container .user-register-form .fieldgroup .select-wrapper,
-    .main-container .page-container .user-register-form .form-group .select-wrapper,
-    .main-container .page-container .user-login-form .fieldgroup .select-wrapper,
-    .main-container .page-container .user-login-form .form-group .select-wrapper,
-    .main-container .page-container .user-pass .fieldgroup .select-wrapper,
-    .main-container .page-container .user-pass .form-group .select-wrapper {
-      width: 100%; } }
-  .main-container .page-container .user-register-form .captcha .img-responsive,
-  .main-container .page-container .user-login-form .captcha .img-responsive,
-  .main-container .page-container .user-pass .captcha .img-responsive {
-    border: 1px solid #ccc;
-    margin-bottom: 5px;
-    margin-left: 30.4%;
-    padding: 5px; }
+    .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item,
+    .main-container .page-container .user-register-form .form-group .panel-body .form-item,
+    .main-container .page-container .user-login-form .fieldgroup .panel-body .form-item,
+    .main-container .page-container .user-login-form .form-group .panel-body .form-item,
+    .main-container .page-container .user-pass .fieldgroup .panel-body .form-item,
+    .main-container .page-container .user-pass .form-group .panel-body .form-item {
+      width: 49% !important; } }
+  .main-container .page-container .user-register-form .fieldgroup .panel-body .form-item label input[type="radio"],
+  .main-container .page-container .user-register-form .form-group .panel-body .form-item label input[type="radio"],
+  .main-container .page-container .user-login-form .fieldgroup .panel-body .form-item label input[type="radio"],
+  .main-container .page-container .user-login-form .form-group .panel-body .form-item label input[type="radio"],
+  .main-container .page-container .user-pass .fieldgroup .panel-body .form-item label input[type="radio"],
+  .main-container .page-container .user-pass .form-group .panel-body .form-item label input[type="radio"] {
+    margin-left: -27px; }
+
+@media (min-width: 320px) and (max-width: 460px) {
+  .main-container .page-container .user-register-form .fieldgroup .select-wrapper,
+  .main-container .page-container .user-register-form .form-group .select-wrapper,
+  .main-container .page-container .user-login-form .fieldgroup .select-wrapper,
+  .main-container .page-container .user-login-form .form-group .select-wrapper,
+  .main-container .page-container .user-pass .fieldgroup .select-wrapper,
+  .main-container .page-container .user-pass .form-group .select-wrapper {
+    width: 100%; } }
+
+.main-container .page-container .user-register-form .captcha .img-responsive,
+.main-container .page-container .user-login-form .captcha .img-responsive,
+.main-container .page-container .user-pass .captcha .img-responsive {
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  margin-left: 30.4%;
+  padding: 5px; }
 
 .user-logged-in.path-user .page-header {
   border-bottom: 0;
@@ -153,60 +184,57 @@
   background-size: cover; }
   .path-user .main-container {
     background-image: none; }
-    .path-user .main-container .region-content article {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 20px; }
-      .path-user .main-container .region-content article .field {
-        display: inline-block;
-        margin: 0 20px 20px 0;
-        vertical-align: top;
-        width: 48%; }
-        @media screen and (max-width: 640px) {
-          .path-user .main-container .region-content article .field {
-            display: block;
-            margin: 0 0 15px 0;
-            width: 100%; } }
-        .path-user .main-container .region-content article .field.field--name-user-picture {
+    .path-user .main-container .region-content article .field {
+      display: inline-block;
+      margin: 0 20px 20px 0;
+      vertical-align: top;
+      width: 48%; }
+      @media screen and (max-width: 640px) {
+        .path-user .main-container .region-content article .field {
           display: block;
-          position: relative;
-          width: 100%; }
-          .path-user .main-container .region-content article .field.field--name-user-picture:before {
-            background-color: #0676c0;
-            bottom: 27px;
-            content: "";
-            height: 2px;
-            position: absolute;
-            width: 46.50%;
-            z-index: 1; }
-            @media screen and (max-width: 960px) {
-              .path-user .main-container .region-content article .field.field--name-user-picture:before {
-                display: none; } }
-          .path-user .main-container .region-content article .field.field--name-user-picture:after {
-            background-color: #0676c0;
-            bottom: 27px;
-            content: "";
-            height: 2px;
-            position: absolute;
-            right: 0;
-            width: 46%;
-            z-index: 1; }
-            @media screen and (max-width: 960px) {
-              .path-user .main-container .region-content article .field.field--name-user-picture:after {
-                display: none; } }
-          .path-user .main-container .region-content article .field.field--name-user-picture img {
-            border: 2px solid;
-            border-radius: 50%;
-            height: 100px;
-            margin: 0 0 0 46%;
-            padding: 2px;
-            width: 100px; }
-            @media screen and (max-width: 960px) {
-              .path-user .main-container .region-content article .field.field--name-user-picture img {
-                margin: 0 auto; } }
-        .path-user .main-container .region-content article .field .field--label {
-          border-bottom: 1px dashed #ddd;
-          margin: 0 0 5px;
-          padding: 0 0 2px; }
+          margin: 0 0 15px 0;
+          width: 100%; } }
+      .path-user .main-container .region-content article .field.field--name-user-picture {
+        display: block;
+        position: relative;
+        width: 100%; }
+        .path-user .main-container .region-content article .field.field--name-user-picture:before {
+          background-color: #0676c0;
+          bottom: 27px;
+          content: "";
+          height: 2px;
+          position: absolute;
+          width: 46.50%;
+          z-index: 1; }
+          @media screen and (max-width: 960px) {
+            .path-user .main-container .region-content article .field.field--name-user-picture:before {
+              display: none; } }
+        .path-user .main-container .region-content article .field.field--name-user-picture:after {
+          background-color: #0676c0;
+          bottom: 27px;
+          content: "";
+          height: 2px;
+          position: absolute;
+          right: 0;
+          width: 46%;
+          z-index: 1; }
+          @media screen and (max-width: 960px) {
+            .path-user .main-container .region-content article .field.field--name-user-picture:after {
+              display: none; } }
+        .path-user .main-container .region-content article .field.field--name-user-picture img {
+          border: 2px solid;
+          border-radius: 50%;
+          height: 100px;
+          margin: 0 0 0 46%;
+          padding: 2px;
+          width: 100px; }
+          @media screen and (max-width: 960px) {
+            .path-user .main-container .region-content article .field.field--name-user-picture img {
+              margin: 0 auto; } }
+      .path-user .main-container .region-content article .field .field--label {
+        border-bottom: 1px dashed #ddd;
+        margin: 0 0 5px;
+        padding: 0 0 2px; }
 
 .tooltip.right {
   left: 10% !important;

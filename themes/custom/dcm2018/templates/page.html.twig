@@ -80,25 +80,25 @@
             <span class="icon-bar"></span>
           </button>
         {% endif %}
+
+        {# Navigation (collapsible) #}
+        {% if page.navigation_collapsible %}
+          <div class="navbar-collapse collapse">
+            {{ page.navigation_collapsible }}
+          </div>
+        {% endif %}
       </div>
 
-      {# Navigation (collapsible) #}
-      {% if page.navigation_collapsible %}
-        <div class="navbar-collapse collapse">
-          {{ page.navigation_collapsible }}
-        </div>
+      {# Banner #}
+      {% if page.banner %}
+        {% block banner %}
+          <div class="banner" role="banner">
+            {{ page.banner }}
+          </div>
+        {% endblock %}
       {% endif %}
     </div>
     </header>
-  {% endblock %}
-{% endif %}
-
-{# Banner #}
-{% if page.banner %}
-  {% block banner %}
-    <div class="banner" role="banner">
-      {{ page.banner }}
-    </div>
   {% endblock %}
 {% endif %}
 
@@ -204,17 +204,16 @@
   </div>
 {% endblock %}
 
-{% if page.top_footer %}
-  {% block top_footer %}
-    <div class="top-footer {{ container }}" role="contentinfo">
-      {{ page.top_footer }}
-    </div>
-  {% endblock %}
-{% endif %}
-
 {% if page.footer %}
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
+      {% if page.top_footer %}
+        {% block top_footer %}
+          <div class="top-footer {{ container }}" role="contentinfo">
+            {{ page.top_footer }}
+          </div>
+        {% endblock %}
+      {% endif %}
       {{ page.footer }}
     </footer>
   {% endblock %}

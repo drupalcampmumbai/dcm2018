@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+
+.footer.container {
+  background-color: #207dcc;
+  border: 0;
+  clear: both;
+  margin: 30px 0 0;
+  max-width: inherit;
+  overflow: hidden;
+  padding: 85px 0 20px;
+  position: relative; }
+  .footer.container .top-footer {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 25px; }
+    .footer.container .top-footer .col-lg-3 h2 {
+      font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
+      font-size: 1.3em;
+      margin-bottom: 40px; }
+    .footer.container .top-footer .col-lg-3 .nav {
+      margin: 0;
+      padding: 0; }
+      .footer.container .top-footer .col-lg-3 .nav li {
+        list-style-type: none;
+        margin: 0 0 15px;
+        padding: 0; }
+        .footer.container .top-footer .col-lg-3 .nav li:last-child {
+          margin-bottom: 0; }
+        .footer.container .top-footer .col-lg-3 .nav li a {
+          color: #fff;
+          padding: 0;
+          text-decoration: none;
+          display: inline-block; }
+          .footer.container .top-footer .col-lg-3 .nav li a:before {
+            background: #fff none repeat scroll 0 0;
+            bottom: 0;
+            content: "";
+            height: 1px;
+            left: 0;
+            position: absolute;
+            right: 100%;
+            transition: all .5s ease-in-out 0s; }
+          .footer.container .top-footer .col-lg-3 .nav li a:hover:before {
+            right: 0; }
+    .footer.container .top-footer .connect-block .powered-by {
+      margin-top: 40px; }
+      .footer.container .top-footer .connect-block .powered-by h2 {
+        margin-bottom: 15px; }
+  .footer.container .region-footer {
+    border-top: 0;
+    clear: both;
+    margin: 0;
+    padding: 0; }
+    .footer.container .region-footer .dcm2017-footer {
+      border-top: 1px solid #fff;
+      color: #fff;
+      margin-bottom: 0;
+      padding: 20px 0 0;
+      text-align: center;
+      width: 100%;
+      z-index: 1; }
+      .footer.container .region-footer .dcm2017-footer .container {
+        max-width: inherit;
+        padding: 0; }
+      .footer.container .region-footer .dcm2017-footer a {
+        color: #fff;
+        text-decoration: none; }
+      .footer.container .region-footer .dcm2017-footer .dcm2017-footer-author-name {
+        letter-spacing: 3.3px;
+        text-transform: uppercase; }
+      .footer.container .region-footer .dcm2017-footer p {
+        margin: 0 0 10px; }
+        .footer.container .region-footer .dcm2017-footer p:last-child {
+          margin-bottom: 0; }
+
+/*# sourceMappingURL=css-maps/dcm-footer.css.map */

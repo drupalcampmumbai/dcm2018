@@ -9,8 +9,6 @@
     .user-register-form,
     .user-login-form,
     .user-pass {
-      background-color: rgba(255, 255, 255, .8);
-      padding: 20px;
       .form-item {
         input,
         label {
@@ -42,13 +40,24 @@
           }
         }
       }
+      .form-actions {
+        .btn {
+          background-color: transparent;
+          border: 1px solid $white-color;
+          padding: 12px 10px;
+        }
+      }
       .fieldgroup,
       .form-group {
         .panel-heading {
           background-color: transparent;
+          color: $base-color;
           @media (min-width: 320px) and (max-width: 460px) {
             margin-bottom: 5px;
             width: 100%;
+          }
+          .panel-title {
+            font-size: $basefont-size;
           }
         }
         .panel-body {
@@ -117,8 +126,6 @@
 
     .region-content {
       article {
-        background-color: rgba(255, 255, 255, .8);
-        padding: 20px;
         .field {
           display: inline-block;
           margin: 0 20px 20px 0;

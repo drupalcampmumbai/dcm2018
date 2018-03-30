@@ -16,25 +16,36 @@
   src: url("../fonts/Raleway-ExtraBold.eot");
   src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
-.path-attendees .main-container {
-  padding-top: 30px !important; }
-  .path-attendees .main-container .block-views-blocksponsors-platinum-sponsors {
-    padding: 30px 0; }
-    .path-attendees .main-container .block-views-blocksponsors-platinum-sponsors:before {
-      display: none; }
-    .path-attendees .main-container .block-views-blocksponsors-platinum-sponsors .views-row {
-      margin-bottom: 10px; }
-    .path-attendees .main-container .block-views-blocksponsors-platinum-sponsors .view-footer {
-      display: none; }
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+
+.path-attendees .main-container .block-views-blocksponsors-platinum-sponsors {
+  padding: 30px 0; }
+  .path-attendees .main-container .block-views-blocksponsors-platinum-sponsors:before {
+    display: none; }
+  .path-attendees .main-container .block-views-blocksponsors-platinum-sponsors .views-row {
+    margin-bottom: 10px; }
+  .path-attendees .main-container .block-views-blocksponsors-platinum-sponsors .view-footer {
+    display: none; }
 
 .view-attendees .view-filters form .form-item {
   display: inline-block;
   vertical-align: top;
-  width: 27.5% !important; }
+  width: 26.5% !important; }
   .view-attendees .view-filters form .form-item label {
     font-size: 15px; }
 
 .view-attendees .view-filters form .form-actions .btn {
+  background: none;
   margin-left: 15px;
   margin-right: 0;
   margin-top: 0;
@@ -45,10 +56,10 @@
   .view-attendees .view-filters form .form-actions .btn#edit-reset {
     background-color: transparent;
     border-radius: 0;
-    color: #337ab7;
+    color: #fff;
     padding: 3px 0; }
     .view-attendees .view-filters form .form-actions .btn#edit-reset:before {
-      color: #337ab7;
+      color: #fff;
       content: "\f021";
       font-size: 18px;
       display: inline-block;
@@ -71,15 +82,13 @@
   -ms-flex-pack: start;
   justify-content: flex-start; }
   .view-attendees .view-content .slideanim {
-    background-color: #337ab7;
+    background-color: #207dcc;
     display: inline-block;
     margin: 0 10px 30px;
     text-align: center;
     transition: box-shadow .3s ease;
     vertical-align: top;
     width: 23.33%; }
-    .view-attendees .view-content .slideanim:hover {
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
     @media screen and (max-width: 1200px) {
       .view-attendees .view-content .slideanim {
         max-width: 340px;

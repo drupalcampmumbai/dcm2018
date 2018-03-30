@@ -9,7 +9,7 @@
 body {
   border: 0 none;
   color: $base-color;
-  font-family: $open-sans;
+  font-family: $roboto-slab-regular;
   font-size: $basefont-size;
   -webkit-font-smoothing: antialiased;
   line-height: $baseline-height;
@@ -44,62 +44,37 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 30px;
+  font-size: 2.143em;
   line-height: 32px;
-
-  @media screen and (max-width: 960px) {
-    font-size: 25px;
-    line-height: 32px;
-  }
 }
 
 h2,
 .h2 {
-  font-size: 27px;
+  font-size: 1.929em;
   line-height: 30px;
-
-  @media screen and (max-width: 960px) {
-    font-size: 20px;
-    line-height: 26px;
-  }
 }
 
 h3,
 .h3 {
-  font-size: 25px;
+  font-size: 1.786em;
   line-height: 28px;
-
-  @media screen and (max-width: 960px) {
-    font-size: 18px;
-    line-height: 24px;
-  }
 }
 
 h4,
 .h4 {
-  font-size: 22px;
+  font-size: 1.571em;
   line-height: 25px;
-
-  @media screen and (max-width: 960px) {
-    font-size: 16px;
-    line-height: 22px;
-  }
 }
 
 h5,
 .h5 {
-  font-size: 20px;
+  font-size: 1.429em;
   line-height: 22px;
-
-  @media screen and (max-width: 960px) {
-    font-size: $small-font-size;
-    line-height: 16px;
-  }
 }
 
 h6,
 .h6 {
-  font-size: $small-font-size;
+  font-size: 1.286em;
   line-height: 16px;
 }
 
@@ -217,18 +192,25 @@ ul.tabs.primary {
 }
 
 .tabs--primary.nav.nav-tabs {
-  margin: 0;
+  margin: 0 0 30px;
 
   li {
     padding: 0;
     &.active {
       a {
-        background-color: rgba(255, 255, 255, .8);
+        background-color: $white-color;
+        color: $blue-color;
       }
     }
 
     a {
-      padding: 5px 10px;
+      border: 1px solid $white-color;
+      border-radius: 5px 5px 0 0;
+      color: $white-color;
+      padding: 5px 20px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
     }
   }
 }
@@ -323,183 +305,11 @@ img {
 #backtotop {
   bottom: 130px;
 }
-// End Body & Other general elements
 
-// Header
-.navbar.container {
-  background-color: $blue-color;
-  border: 0;
-  margin: 0 auto;
-  max-width: inherit;
-  padding: 0;
-  position: relative;
-  z-index: 2;
-  &:before {
-    @include cross;
-    right: -10px;
-    transform: rotate(1.2deg);
-  }
-  .header-inner {
-    margin: 0 auto;
-    max-width: $page-width;
-  }
-  // Logo
-  .navbar-header {
-    margin: 0 15px 0 0;
-    padding: 0;
-    .logo {
-      @include no-margin-padding;
-      position: absolute;
-      z-index: 1;
-      img {
-        height: 150px;
-        max-width: inherit;
-      }
-    }
-  }
-  // Menu
-  .navbar-collapse {
-    float: right;
-    padding: 0;
-    width: 80%;
-    @media screen and (max-width: 960px) {
-      margin-top: 60px;
-      width: 92%;
-    }
-    #dcm-sticky-menu {
-      padding: 0;
-      .menu.nav {
-        margin: 0;
-        padding: 0;
-        transition: all .5s linear 0s;
-        li {
-          display: inline-block;
-          margin: 0;
-          padding: 0;
-          &:last-child,
-          &:nth-last-child(2) {
-            float: right;
-          }
-
-          &.open {
-            a {
-              color: $link-color;
-            }
-          }
-          &.active {
-            a {
-              background-color: $white-color;
-              color: $link-color;
-            }
-          }
-
-          @media screen and (max-width: 960px) {
-            display: block;
-          }
-
-          a {
-            color: $white-color;
-            display: block;
-            font-size: 16px;
-            font-weight: 600;
-            padding: 15px 11px 5px;
-            position: relative;
-            text-decoration: none;
-            text-transform: capitalize !important;
-            transition: all .3s linear 0s;
-
-            &:hover {
-              background-color: $white-color;
-              color: $base-color;
-              padding: 15px 11px 5px;
-            }
-
-            .caret {
-              @media screen and (max-width: 960px) {
-                float: right;
-                margin-top: 6px;
-              }
-            }
-
-            .caret-up {
-              border-bottom: 4px solid;
-              border-left: 4px solid rgba(0, 0, 0, 0);
-              border-right: 4px solid rgba(0, 0, 0, 0);
-              display: inline-block;
-              height: 0;
-              margin-left: 2px;
-              vertical-align: middle;
-              width: 0;
-
-              @media screen and (max-width: 960px) {
-                float: right;
-                margin-top: 6px;
-              }
-            }
-          }
-
-          .menu.dropdown-menu {
-            background-color: rgba(255, 255, 255, .7);
-            border-radius: 0;
-            text-align: left;
-            width: auto;
-
-            @media screen and (max-width: 960px) {
-              background-color: rgb(255, 255, 255);
-              border: 0;
-              box-shadow: none;
-              float: none;
-              margin: 0;
-              position: static;
-              width: 100%;
-            }
-
-            li {
-              display: block;
-
-              &:last-child {
-                float: none;
-                a {
-                  border-bottom: 0;
-                }
-              }
-              &:nth-last-child(2) {
-                float: none;
-              }
-
-              a {
-                border-bottom: 1px dashed $gray-color3;
-                color: $base-color;
-                padding: 10px 15px;
-
-                @media screen and (max-width: 960px) {
-                  color: $base-color;
-                  padding: 10px 20px;
-                }
-
-                &:hover,
-                &.is-active {
-                  background-color: transparent;
-                  color: $blue-color;
-
-                  @media screen and (max-width: 960px) {
-                    color: $link-color;
-                  }
-
-                  &:before {
-                    display: none;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+.help-block {
+  color: $base-color;
 }
-
-// End Header
+// End Body & Other general elements
 
 // Main content
 .breadcrum {
@@ -527,21 +337,30 @@ img {
 }
 
 .main-container {
+  background-color: $blue-color;
   clear: both;
+  max-width: inherit;
   min-height: 550px;
-  padding: 110px 0 20px !important;
-
+  padding: 0;
+  width: 100%;
+  > .row {
+    background-image: url(../images/droper.png);
+    background-position: top right -11px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: $page-width;
+    padding: 135px 0 0;
+  }
   .col-sm-12 {
     padding-left: 0;
     padding-right: 0;
   }
-
   .page-container {
     clear: both;
   }
   .region-content {
     .page-header {
-      border-bottom: 1px solid $border-color;
+      border-bottom: 0;
       padding-bottom: 15px;
       text-transform: capitalize;
     }
@@ -550,8 +369,8 @@ img {
 
 .main-container,
 .container {
-  max-width: $page-width;
-  padding: 20px 0;
+  max-width: inherit;
+  padding: 0;
   width: 100%;
 }
 
@@ -651,24 +470,27 @@ label {
   box-shadow: none;
   color: $white-color;
   display: inline-block;
-  font-weight: bold;
-  @include border-radius(0);
+  font-family: $roboto-slab-bold;
+  @include border-radius(8px);
   margin: 10px 20px 10px 0;
   min-width: 140px;
-  padding: 7px 15px;
+  padding: 10px 15px;
   position: relative;
   text-align: center;
   text-decoration: none !important;
   text-transform: uppercase;
   transition: all .5s linear 0s;
   z-index: 1;
+  &:last-child {
+    margin-right: 0;
+  }
 
   &:hover,
   &:focus,
   &:active,
   &.active,
   .open .dropdown-toggle.btn-default {
-    background-color: $btn-hover-color;
+    background-color: $btn-color;
     color: $white-color;
   }
 }
@@ -686,7 +508,7 @@ a.btn {
 
 a.btn:focus,
 a.btn:hover {
-  background: $btn-hover-color;
+  background: $btn-color;
   transition: all .5s linear 0s;
 }
 
@@ -838,6 +660,8 @@ table tr.error {
 
       select,
       input {
+        background-color: #7daad4;
+        border: 0;
         color: $base-color;
         padding: 8px 20px;
       }
@@ -979,7 +803,6 @@ table tr.error {
           }
 
           @media screen and (max-width: 960px) {
-            font-size: $small-font-size;
             font-weight: normal;
             margin: 0;
           }
@@ -991,6 +814,7 @@ table tr.error {
             position: relative;
 
             &:checked {
+              background: transparent;
               border: solid $blue-color;
               border-width: 0 0 3px 3px;
               display: block;
@@ -999,7 +823,7 @@ table tr.error {
               margin: 0 !important;
               padding: 0;
               position: absolute;
-              top: 9px;
+              top: 5px;
               transform: rotate(-45deg);
               width: 12px !important;
             }
@@ -1202,7 +1026,6 @@ input {
   }
 
   .modal-body {
-    font-size: $small-font-size;
     height: auto;
     max-height: inherit;
     overflow-y: auto;
@@ -1381,143 +1204,3 @@ body.maintenance-page {
     }
   }
 }
-
-// Footer
-.footer.container {
-  border: 0;
-  clear: both;
-  margin: 0;
-  max-width: inherit;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
-
-  .region-footer {
-    border-top: 0;
-    clear: both;
-    margin: 0;
-    padding: 0;
-
-    // Location info
-    .location-info {
-      .footer-copy {
-        background-color: rgba(246, 246, 242, .8);
-        color: $base-color;
-        font-size: 16px;
-        height: 100%;
-        line-height: 22px;
-        padding: 20px;
-        position: absolute;
-        right: 5%;
-        top: 0;
-        width: 25%;
-        z-index: 1;
-
-        @media screen and (max-width: 960px) {
-          bottom: 0;
-          font-size: 14px;
-          height: 50%;
-          line-height: 16px;
-          padding: 15px;
-          position: absolute;
-          right: inherit;
-          top: inherit;
-          width: 100%;
-        }
-
-        a {
-          color: $base-color;
-          text-decoration: underline;
-          transition: all .3s linear 0s;
-
-          &:hover {
-            color: $base-color;
-          }
-        }
-        h2 {
-          color: $base-color;
-          font-family: $raleway-extrabold;
-          font-size: 50px;
-          line-height: 55px;
-          margin-bottom: 0;
-          margin-top: 0;
-        }
-        .underline {
-          background-color: $blue-color;
-        }
-        .paragraph-box {
-          margin-bottom: 15px;
-        }
-        .venue-details-item {
-          .more-info-box {
-            margin-bottom: 15px;
-            margin-top: 10px;
-          }
-        }
-      }
-      .google-maps {
-        padding: 0;
-      }
-    }
-
-    // Footer copyright
-    .footer-copyright {
-      height: 200px;
-    }
-    .dcm2017-footer {
-      background: $footer-bg;
-      bottom: 0;
-      color: $white-color;
-      left: 0;
-      line-height: 22px;
-      margin-bottom: 0;
-      padding: 20px 0;
-      position: absolute;
-      text-align: center;
-      width: 100%;
-      z-index: 1;
-      &:before {
-        @include cross;
-        z-index: -1;
-      }
-      .container {
-        max-width: inherit;
-        padding: 0;
-      }
-      a {
-        color: $white-color;
-        text-decoration: none;
-      }
-      .dcm2017-footer-author-name {
-        letter-spacing: 3.3px;
-        text-transform: uppercase;
-      }
-      .powered-by {
-        bottom: 35%;
-        position: absolute;
-        right: 10px;
-
-        @media screen and (max-width: 960px) {
-          margin-top: 10px;
-          position: static;
-          text-align: center;
-        }
-
-        img {
-          @media screen and (max-width: 960px) {
-            width: 120px;
-          }
-        }
-      }
-      p {
-        margin: 0 0 10px;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
-}
-
-// End Footer
