@@ -1,32 +1,32 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
 
 body {
   border: 0 none;
@@ -107,7 +107,7 @@ a:focus {
     max-width: 100%; } }
 
 a {
-  color: #0676c0;
+  color: #fff;
   cursor: pointer;
   outline: 0;
   text-decoration: underline;
@@ -282,6 +282,12 @@ img {
     margin: 0 auto;
     max-width: 1200px;
     padding: 135px 0 0; }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .main-container > .row {
+        padding: 135px 15px 20px; } }
+    @media screen and (max-width: 768px) {
+      .main-container > .row {
+        padding: 135px 15px 20px; } }
   .main-container .col-sm-12 {
     padding-left: 0;
     padding-right: 0; }
@@ -366,21 +372,22 @@ label {
 
 .btn,
 .btn-default {
-  background: none repeat scroll 0 0 #0676c0;
+  background: none repeat scroll 0 0 #fff;
   border: 0 none;
   box-shadow: none;
-  color: #fff;
+  color: #207dcc;
   display: inline-block;
   font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
   border-radius: 8px;
   margin: 10px 20px 10px 0;
   min-width: 140px;
-  padding: 10px 15px;
+  padding: 8px 15px;
   position: relative;
   text-align: center;
   text-decoration: none !important;
   text-transform: uppercase;
   transition: all .5s linear 0s;
+  white-space: normal;
   z-index: 1; }
   .btn:last-child,
   .btn-default:last-child {
@@ -392,8 +399,8 @@ label {
   .btn-default:active,
   .btn-default.active,
   .btn-default .open .dropdown-toggle.btn-default {
-    background-color: #0676c0;
-    color: #fff; }
+    background-color: #fff;
+    color: #207dcc; }
 
 .btn-default:focus,
 .btn-default.focus {
@@ -401,12 +408,12 @@ label {
   transition: all .5s linear 0s; }
 
 a.btn {
-  color: #fff !important;
-  text-decoration: none !important; }
+  color: #207dcc;
+  text-decoration: none; }
 
 a.btn:focus,
 a.btn:hover {
-  background: #0676c0;
+  background: #fff;
   transition: all .5s linear 0s; }
 
 div.error,
@@ -517,8 +524,8 @@ table tr.error {
   .main-container form .form-item,
   #drupal-modal form .form-item {
     margin: 0 0 20px;
-    padding: 0 !important;
-    width: 100% !important; }
+    padding: 0;
+    width: 100%; }
     .main-container form .form-item label,
     #drupal-modal form .form-item label {
       display: inline-block;
@@ -572,8 +579,11 @@ table tr.error {
       #drupal-modal form .form-item select textarea,
       #drupal-modal form .form-item .form-textarea-wrapper textarea,
       #drupal-modal form .form-item .select-wrapper textarea {
+        background-color: #7daad4;
+        border: 0;
         border-radius: 0;
         box-shadow: none;
+        color: #fff;
         float: none;
         padding: 8px 20px;
         width: 100%; }
@@ -915,102 +925,5 @@ body.maintenance-page {
       display: none; }
   body.maintenance-page main h1 {
     margin: 20px 0; }
-
-#block-dcm2018-socialblock {
-  position: fixed;
-  right: 0;
-  top: 30%;
-  width: 5%;
-  z-index: 999; }
-  @media screen and (max-width: 960px) {
-    #block-dcm2018-socialblock {
-      display: none; } }
-  #block-dcm2018-socialblock .social-media-list > span {
-    color: #fff;
-    display: block;
-    margin: 0 0 1px;
-    text-align: right; }
-    #block-dcm2018-socialblock .social-media-list > span .stButton {
-      margin: 0; }
-      #block-dcm2018-socialblock .social-media-list > span .stButton .stButton_gradient {
-        border: 0;
-        border-radius: 0;
-        height: auto;
-        padding: 0; }
-      #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices,
-      #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets {
-        background-color: #000;
-        /*Added important: to override default css which is added by module using js*/
-        background-image: none !important;
-        color: #fff;
-        float: none;
-        font-size: 0;
-        height: auto;
-        display: inline-block;
-        font-family: FontAwesome;
-        -webkit-font-smoothing: antialiased;
-        font-style: normal;
-        font-weight: normal;
-        -moz-osx-font-smoothing: grayscale;
-        text-rendering: auto;
-        padding: 8px;
-        text-align: center;
-        text-indent: 0;
-        transition: all .5s linear 0s;
-        width: 40px; }
-        @media screen and (max-width: 960px) {
-          #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices,
-          #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets {
-            width: 30px; } }
-        #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices:hover,
-        #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets:hover {
-          background-color: #0676c0;
-          opacity: 1;
-          text-align: left;
-          width: 50px; }
-          @media screen and (max-width: 960px) {
-            #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices:hover,
-            #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets:hover {
-              width: 40px; } }
-        #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.st-facebook-counter:before,
-        #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.st-facebook-counter:before {
-          content: "\f09a";
-          font-size: 19px; }
-          @media screen and (max-width: 960px) {
-            #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.st-facebook-counter:before,
-            #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.st-facebook-counter:before {
-              font-size: 15px; } }
-        #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.googleplus,
-        #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.googleplus {
-          width: 56px; }
-          #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.googleplus:before,
-          #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.googleplus:before {
-            content: "\f0d5";
-            font-size: 19px; }
-            @media screen and (max-width: 960px) {
-              #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.googleplus:before,
-              #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.googleplus:before {
-                font-size: 15px; } }
-          #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.googleplus:hover,
-          #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.googleplus:hover {
-            width: 66px; }
-        #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.st-linkedin-counter:before,
-        #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.st-linkedin-counter:before {
-          content: "\f0e1";
-          font-size: 19px; }
-          @media screen and (max-width: 960px) {
-            #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.st-linkedin-counter:before,
-            #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.st-linkedin-counter:before {
-              font-size: 15px; } }
-        #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.st-twitter-counter:before,
-        #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.st-twitter-counter:before {
-          content: "\f099";
-          font-size: 19px; }
-          @media screen and (max-width: 960px) {
-            #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.st-twitter-counter:before,
-            #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.st-twitter-counter:before {
-              font-size: 15px; } }
-      #block-dcm2018-socialblock .social-media-list > span .stButton .stArrow {
-        display: none; }
 
 /*# sourceMappingURL=css-maps/dcm-global.css.map */

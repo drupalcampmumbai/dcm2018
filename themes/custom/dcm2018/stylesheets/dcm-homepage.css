@@ -1,32 +1,32 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
 
 .path-frontpage .main-container {
   max-width: inherit;
@@ -38,6 +38,10 @@
     min-height: inherit;
     padding-top: 0;
     width: 100%; }
+    @media screen and (max-width: 768px) {
+      .path-frontpage .main-container > .row {
+        padding-left: 0;
+        padding-right: 0; } }
   .path-frontpage .main-container .page-header,
   .path-frontpage .main-container nav.tabs {
     display: none; }
@@ -66,6 +70,12 @@
     text-align: center;
     top: -24px;
     width: 358px; }
+    @media screen and (max-width: 768px) {
+      .block-views-blocksponsors-platinum-sponsors .block-title,
+      .block-views-blocksponsors-silver-sponsor-slideshow .block-title,
+      .block-views-blocksponsors-partners-slideshow .block-title,
+      .block-views-blocksponsors-gold-sponsors .block-title {
+        width: 100%; } }
   .block-views-blocksponsors-platinum-sponsors .view-sponsors,
   .block-views-blocksponsors-silver-sponsor-slideshow .view-sponsors,
   .block-views-blocksponsors-partners-slideshow .view-sponsors,
@@ -83,6 +93,20 @@
       text-align: center;
       vertical-align: middle;
       width: 22.5%; }
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .block-views-blocksponsors-platinum-sponsors .view-sponsors .views-row,
+        .block-views-blocksponsors-silver-sponsor-slideshow .view-sponsors .views-row,
+        .block-views-blocksponsors-partners-slideshow .view-sponsors .views-row,
+        .block-views-blocksponsors-gold-sponsors .view-sponsors .views-row {
+          margin: 0 0 20px 0;
+          width: 95%; } }
+      @media screen and (max-width: 768px) {
+        .block-views-blocksponsors-platinum-sponsors .view-sponsors .views-row,
+        .block-views-blocksponsors-silver-sponsor-slideshow .view-sponsors .views-row,
+        .block-views-blocksponsors-partners-slideshow .view-sponsors .views-row,
+        .block-views-blocksponsors-gold-sponsors .view-sponsors .views-row {
+          margin: 0 0 20px 0;
+          width: 90%; } }
       .block-views-blocksponsors-platinum-sponsors .view-sponsors .views-row:nth-child(4n),
       .block-views-blocksponsors-silver-sponsor-slideshow .view-sponsors .views-row:nth-child(4n),
       .block-views-blocksponsors-partners-slideshow .view-sponsors .views-row:nth-child(4n),
@@ -104,6 +128,12 @@
       .block-views-blocksponsors-partners-slideshow .view-sponsors .views-row .views-field-title,
       .block-views-blocksponsors-gold-sponsors .view-sponsors .views-row .views-field-title {
         display: none; }
+  .block-views-blocksponsors-platinum-sponsors .view-footer .btn,
+  .block-views-blocksponsors-silver-sponsor-slideshow .view-footer .btn,
+  .block-views-blocksponsors-partners-slideshow .view-footer .btn,
+  .block-views-blocksponsors-gold-sponsors .view-footer .btn {
+    background-color: #207dcc;
+    color: #fff; }
 
 .block-views-blocksponsors-platinum-sponsors .block-title:before {
   background-image: url(../images/platinum.png);
@@ -115,6 +145,9 @@
   position: absolute;
   top: -16px;
   width: 86px; }
+  @media screen and (max-width: 768px) {
+    .block-views-blocksponsors-platinum-sponsors .block-title:before {
+      display: none; } }
 
 .block-views-blocksponsors-gold-sponsors .block-title:before {
   background-image: url(../images/gold.png);
@@ -126,6 +159,9 @@
   position: absolute;
   top: -16px;
   width: 86px; }
+  @media screen and (max-width: 768px) {
+    .block-views-blocksponsors-gold-sponsors .block-title:before {
+      display: none; } }
 
 .block-views-blocksponsors-silver-sponsor-slideshow .block-title:before {
   background-image: url(../images/silver.png);
@@ -137,6 +173,9 @@
   position: absolute;
   top: -16px;
   width: 86px; }
+  @media screen and (max-width: 768px) {
+    .block-views-blocksponsors-silver-sponsor-slideshow .block-title:before {
+      display: none; } }
 
 .socialConnect-block a {
   color: #fff;
@@ -160,12 +199,14 @@
   .socialConnect-block a.icon-youtube:before {
     content: "\f167"; }
 
-.path-frontpage #middle-content .region .drupal-recent-news .block-title {
+.path-frontpage #middle-content .region .drupal-recent-news .block-title,
+.path-news #middle-content .region .drupal-recent-news .block-title {
   color: #fff;
   font-size: 2.429em;
   margin-bottom: 40px; }
 
-.path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news {
+.path-frontpage #middle-content .region .view-drupal-camp-news,
+.path-news #middle-content .region .view-drupal-camp-news {
   background-image: url(../images/droper.png);
   background-position: top right -11px;
   background-repeat: no-repeat;
@@ -174,17 +215,30 @@
   overflow: hidden;
   padding: 135px 0 145px;
   position: relative; }
-  .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row {
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .path-frontpage #middle-content .region .view-drupal-camp-news,
+    .path-news #middle-content .region .view-drupal-camp-news {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  @media screen and (max-width: 768px) {
+    .path-frontpage #middle-content .region .view-drupal-camp-news,
+    .path-news #middle-content .region .view-drupal-camp-news {
+      padding: 135px 15px 100px; } }
+  .path-frontpage #middle-content .region .view-drupal-camp-news .views-row,
+  .path-news #middle-content .region .view-drupal-camp-news .views-row {
     border-bottom: 0;
     float: left;
     margin: 0 0 40px;
     padding: 0;
     width: 100%; }
-    .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row:last-child {
+    .path-frontpage #middle-content .region .view-drupal-camp-news .views-row:last-child,
+    .path-news #middle-content .region .view-drupal-camp-news .views-row:last-child {
       margin-bottom: 0; }
-    .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field {
+    .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field,
+    .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field {
       margin: 5px 0 0; }
-      .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner {
+      .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner,
+      .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner {
         background-color: #fff;
         color: #207dcc;
         float: left;
@@ -193,7 +247,8 @@
         position: relative;
         text-align: left;
         width: 85px; }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:before {
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:before,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:before {
           background-color: #207dcc;
           content: "";
           height: 5px;
@@ -201,7 +256,8 @@
           position: absolute;
           top: 0;
           width: 5px; }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:after {
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:after,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:after {
           background-color: #207dcc;
           content: "";
           height: 5px;
@@ -209,22 +265,35 @@
           right: 10px;
           top: 0;
           width: 5px; }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h1 {
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h1,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h1 {
           font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
           font-size: 2.429em;
           margin-bottom: 0;
           padding-bottom: 5px !important;
           padding-top: 5px !important; }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h4 {
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h4,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h4 {
           font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
           font-size: 2em;
           text-transform: uppercase !important; }
-      .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+      .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper,
+      .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
         padding-right: 25px; }
         @media screen and (max-width: 991px) {
-          .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+          .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper,
+          .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
             padding-right: 0; } }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-title a {
+        @media (min-width: 769px) and (max-width: 1024px) {
+          .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper,
+          .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+            margin-top: 10px; } }
+        @media screen and (max-width: 768px) {
+          .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper,
+          .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+            margin-top: 10px; } }
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-title a,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-title a {
           color: #fff;
           display: inline-block;
           font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
@@ -232,26 +301,39 @@
           margin-bottom: 10px;
           margin-top: 0;
           text-decoration: initial; }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-body {
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-body,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-body {
           color: #fff; }
-    .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link {
+    .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-more-link,
+    .path-news #middle-content .region .view-drupal-camp-news .views-row .views-more-link {
       margin: 10px 12px;
       text-align: right; }
-      .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link a {
-        border-left: 2px solid #0676c0;
+      .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-more-link a,
+      .path-news #middle-content .region .view-drupal-camp-news .views-row .views-more-link a {
+        border-left: 2px solid #fff;
         padding-left: 5px; }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link a:after {
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-more-link a:after,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-more-link a:after {
           content: " >>"; }
 
-.path-frontpage #middle-content .region .gold-sponsors {
+.path-frontpage #middle-content .region .gold-sponsors,
+.path-news #middle-content .region .gold-sponsors {
   text-align: center; }
-  .path-frontpage #middle-content .region .gold-sponsors .form-group .view-content .views-row {
+  .path-frontpage #middle-content .region .gold-sponsors .form-group .view-content .views-row,
+  .path-news #middle-content .region .gold-sponsors .form-group .view-content .views-row {
     display: table;
     margin: 0 auto 15px; }
     @media screen and (max-width: 991px) {
-      .path-frontpage #middle-content .region .gold-sponsors .form-group .view-content .views-row {
+      .path-frontpage #middle-content .region .gold-sponsors .form-group .view-content .views-row,
+      .path-news #middle-content .region .gold-sponsors .form-group .view-content .views-row {
         display: inline-block;
         margin: 10px; } }
+
+.path-news #middle-content .region .view-drupal-camp-news {
+  background-image: none;
+  margin: auto;
+  max-width: inherit;
+  padding: 0; }
 
 #block-dcm2018-drupalapprenctices,
 #block-dcm2018-joinda {
@@ -259,6 +341,15 @@
   color: #fff;
   padding: 150px 0 180px;
   position: relative; }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #block-dcm2018-drupalapprenctices,
+    #block-dcm2018-joinda {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  @media screen and (max-width: 768px) {
+    #block-dcm2018-drupalapprenctices,
+    #block-dcm2018-joinda {
+      padding: 100px 15px; } }
   #block-dcm2018-drupalapprenctices .drupal-apprentice,
   #block-dcm2018-drupalapprenctices .join-drup-assoc,
   #block-dcm2018-joinda .drupal-apprentice,
@@ -279,14 +370,21 @@
     #block-dcm2018-joinda .join-drup-assoc .btn {
       background-color: transparent;
       border: 1px solid #fff;
+      color: #fff;
       padding: 12px 10px; }
     #block-dcm2018-drupalapprenctices .drupal-apprentice .image-wrapper,
     #block-dcm2018-drupalapprenctices .join-drup-assoc .image-wrapper,
     #block-dcm2018-joinda .drupal-apprentice .image-wrapper,
     #block-dcm2018-joinda .join-drup-assoc .image-wrapper {
       text-align: right; }
+      @media screen and (max-width: 768px) {
+        #block-dcm2018-drupalapprenctices .drupal-apprentice .image-wrapper,
+        #block-dcm2018-drupalapprenctices .join-drup-assoc .image-wrapper,
+        #block-dcm2018-joinda .drupal-apprentice .image-wrapper,
+        #block-dcm2018-joinda .join-drup-assoc .image-wrapper {
+          text-align: center; } }
 
-.location-info-block {
+.location-info {
   height: 566px; }
 
 .location-info {
@@ -304,6 +402,9 @@
     top: 20px;
     width: 310px;
     z-index: 1; }
+    @media screen and (max-width: 768px) {
+      .location-info .footer-copy {
+        display: none; } }
     .location-info .footer-copy:before {
       border-bottom: 15px solid transparent;
       border-right: 15px solid rgba(0, 0, 0, 0.5);

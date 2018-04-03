@@ -4,79 +4,67 @@
 // Note: !important used to override other css file.
 
 .track-content {
+  margin-bottom: 20px;
   .track-row {
-    margin: 0 0 30px;
-    padding: 10px 0 10px 80px;
+    border-bottom: 1px solid currentColor;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     position: relative;
-    &:before {
-      color: $blue-color;
-      display: block;
-      @include base-fa;
-      left: 0;
-      line-height: 100%;
-      position: absolute;
-      top: 7px;
+    &:last-child {
+      border-bottom: 0;
+      @include no-margin-padding;
     }
-    &#back-end-developement:before {
+    &.back-end-developement h2:before {
       content: "\f1c9";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &#business:before {
+    &.business h2:before {
       content: "\f0b1";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &#dev-ops:before {
+    &.dev-ops h2:before {
       content: "\f085";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &#frontend:before {
+    &.frontend h2:before {
       content: "\f1fc";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &#building-community:before {
+    &.building-community h2:before {
       content: "\f0c0";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &#project-management:before {
+    &.project-management h2:before {
       content: "\f0ae";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &#site-building:before {
+    &.site-building h2:before {
       content: "\f0e8";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &#case-studies:before {
+    &.case-studies h2:before {
       content: "\f19d";
-      font-size: 60px;
+      font-size: 50px;
     }
     > h2 {
-      background: linear-gradient(to left, rgba(255,0,0,0), rgba(51,122,183,1));
+      align-items: center;
       color: $white-color;
-      padding: 10px;
+      display: flex;
+      font-family: $roboto-slab-bold;
+      font-size: 1.429em;
+      line-height: 24px;
+      margin-bottom: 15px;
+      padding: 10px 10px 10px 0;
       position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
       &:before {
-        background-color: $white-color;
-        content: "";
+        color: $base-color;
         display: block;
-        height: 2px;
-        left: 0;
-        position: absolute;
-        top: 3px;
-        width: 100%;
+        @include base-fa;
+        line-height: 100%;
+        margin-right: 20px;
       }
-      &:after {
-        background-color: $white-color;
-        content: "";
-        display: block;
-        height: 100%;
-        left: 5px;
-        position: absolute;
-        top: 0;
-        width: 2px;
-      }
-    }
-    .session-data {
-      padding: 10px;
     }
   }
 }

@@ -6216,8 +6216,8 @@ body.toolbar-fixed.toolbar-vertical.toolbar-tray-open.toolbar-fixed {
 .ui-autocomplete {
   background: #fff;
   background-clip: padding-box;
-  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   color: inherit;
@@ -6290,33 +6290,33 @@ p:last-child,
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
 
 body {
   border: 0 none;
@@ -6397,7 +6397,7 @@ a:focus {
     max-width: 100%; } }
 
 a {
-  color: #0676c0;
+  color: #fff;
   cursor: pointer;
   outline: 0;
   text-decoration: underline;
@@ -6572,6 +6572,12 @@ img {
     margin: 0 auto;
     max-width: 1200px;
     padding: 135px 0 0; }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .main-container > .row {
+        padding: 135px 15px 20px; } }
+    @media screen and (max-width: 768px) {
+      .main-container > .row {
+        padding: 135px 15px 20px; } }
   .main-container .col-sm-12 {
     padding-left: 0;
     padding-right: 0; }
@@ -6656,21 +6662,22 @@ label {
 
 .btn,
 .btn-default {
-  background: none repeat scroll 0 0 #0676c0;
+  background: none repeat scroll 0 0 #fff;
   border: 0 none;
   box-shadow: none;
-  color: #fff;
+  color: #207dcc;
   display: inline-block;
   font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
   border-radius: 8px;
   margin: 10px 20px 10px 0;
   min-width: 140px;
-  padding: 10px 15px;
+  padding: 8px 15px;
   position: relative;
   text-align: center;
   text-decoration: none !important;
   text-transform: uppercase;
   transition: all .5s linear 0s;
+  white-space: normal;
   z-index: 1; }
   .btn:last-child,
   .btn-default:last-child {
@@ -6682,8 +6689,8 @@ label {
   .btn-default:active,
   .btn-default.active,
   .btn-default .open .dropdown-toggle.btn-default {
-    background-color: #0676c0;
-    color: #fff; }
+    background-color: #fff;
+    color: #207dcc; }
 
 .btn-default:focus,
 .btn-default.focus {
@@ -6691,12 +6698,12 @@ label {
   transition: all .5s linear 0s; }
 
 a.btn {
-  color: #fff !important;
-  text-decoration: none !important; }
+  color: #207dcc;
+  text-decoration: none; }
 
 a.btn:focus,
 a.btn:hover {
-  background: #0676c0;
+  background: #fff;
   transition: all .5s linear 0s; }
 
 div.error,
@@ -6807,8 +6814,8 @@ table tr.error {
   .main-container form .form-item,
   #drupal-modal form .form-item {
     margin: 0 0 20px;
-    padding: 0 !important;
-    width: 100% !important; }
+    padding: 0;
+    width: 100%; }
     .main-container form .form-item label,
     #drupal-modal form .form-item label {
       display: inline-block;
@@ -6862,8 +6869,11 @@ table tr.error {
       #drupal-modal form .form-item select textarea,
       #drupal-modal form .form-item .form-textarea-wrapper textarea,
       #drupal-modal form .form-item .select-wrapper textarea {
+        background-color: #7daad4;
+        border: 0;
         border-radius: 0;
         box-shadow: none;
+        color: #fff;
         float: none;
         padding: 8px 20px;
         width: 100%; }
@@ -7206,132 +7216,35 @@ body.maintenance-page {
   body.maintenance-page main h1 {
     margin: 20px 0; }
 
-#block-dcm2018-socialblock {
-  position: fixed;
-  right: 0;
-  top: 30%;
-  width: 5%;
-  z-index: 999; }
-  @media screen and (max-width: 960px) {
-    #block-dcm2018-socialblock {
-      display: none; } }
-  #block-dcm2018-socialblock .social-media-list > span {
-    color: #fff;
-    display: block;
-    margin: 0 0 1px;
-    text-align: right; }
-    #block-dcm2018-socialblock .social-media-list > span .stButton {
-      margin: 0; }
-      #block-dcm2018-socialblock .social-media-list > span .stButton .stButton_gradient {
-        border: 0;
-        border-radius: 0;
-        height: auto;
-        padding: 0; }
-      #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices,
-      #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets {
-        background-color: #000;
-        /*Added important: to override default css which is added by module using js*/
-        background-image: none !important;
-        color: #fff;
-        float: none;
-        font-size: 0;
-        height: auto;
-        display: inline-block;
-        font-family: FontAwesome;
-        -webkit-font-smoothing: antialiased;
-        font-style: normal;
-        font-weight: normal;
-        -moz-osx-font-smoothing: grayscale;
-        text-rendering: auto;
-        padding: 8px;
-        text-align: center;
-        text-indent: 0;
-        transition: all .5s linear 0s;
-        width: 40px; }
-        @media screen and (max-width: 960px) {
-          #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices,
-          #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets {
-            width: 30px; } }
-        #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices:hover,
-        #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets:hover {
-          background-color: #0676c0;
-          opacity: 1;
-          text-align: left;
-          width: 50px; }
-          @media screen and (max-width: 960px) {
-            #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices:hover,
-            #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets:hover {
-              width: 40px; } }
-        #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.st-facebook-counter:before,
-        #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.st-facebook-counter:before {
-          content: "\f09a";
-          font-size: 19px; }
-          @media screen and (max-width: 960px) {
-            #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.st-facebook-counter:before,
-            #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.st-facebook-counter:before {
-              font-size: 15px; } }
-        #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.googleplus,
-        #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.googleplus {
-          width: 56px; }
-          #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.googleplus:before,
-          #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.googleplus:before {
-            content: "\f0d5";
-            font-size: 19px; }
-            @media screen and (max-width: 960px) {
-              #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.googleplus:before,
-              #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.googleplus:before {
-                font-size: 15px; } }
-          #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.googleplus:hover,
-          #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.googleplus:hover {
-            width: 66px; }
-        #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.st-linkedin-counter:before,
-        #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.st-linkedin-counter:before {
-          content: "\f0e1";
-          font-size: 19px; }
-          @media screen and (max-width: 960px) {
-            #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.st-linkedin-counter:before,
-            #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.st-linkedin-counter:before {
-              font-size: 15px; } }
-        #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.st-twitter-counter:before,
-        #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.st-twitter-counter:before {
-          content: "\f099";
-          font-size: 19px; }
-          @media screen and (max-width: 960px) {
-            #block-dcm2018-socialblock .social-media-list > span .stButton .stMainServices.st-twitter-counter:before,
-            #block-dcm2018-socialblock .social-media-list > span .stButton .chicklets.st-twitter-counter:before {
-              font-size: 15px; } }
-      #block-dcm2018-socialblock .social-media-list > span .stButton .stArrow {
-        display: none; }
-
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
 
 .navbar-header {
   float: none; }
@@ -7354,13 +7267,20 @@ body.maintenance-page {
 .navbar.container {
   background-color: #fff;
   background-image: url(../images/top-banner.png);
-  background-position: right;
+  background-position: right bottom;
   background-repeat: no-repeat;
   border: 0;
   margin: 0 auto;
   max-width: inherit;
   min-height: 562px;
   padding-top: 20px; }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .navbar.container {
+      background-size: 60%; } }
+  @media screen and (max-width: 768px) {
+    .navbar.container {
+      background-size: 50%;
+      min-height: 525px; } }
   .navbar.container .header-inner {
     margin: 0 auto; }
   .navbar.container .navbar-header {
@@ -7371,15 +7291,24 @@ body.maintenance-page {
       position: absolute;
       right: 6%;
       top: 0; }
-      .navbar.container .navbar-header .region-navigation #block-useraccountmenu ul li a {
-        background-color: #207dcc;
-        border-radius: 34px;
-        color: #fff;
-        min-width: 125px;
-        padding: 5px 20px;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase; }
+      .navbar.container .navbar-header .region-navigation #block-useraccountmenu {
+        margin-top: -7px; }
+        .navbar.container .navbar-header .region-navigation #block-useraccountmenu ul {
+          margin: 0;
+          padding: 0; }
+          .navbar.container .navbar-header .region-navigation #block-useraccountmenu ul li a {
+            background-color: #207dcc;
+            border-radius: 34px;
+            color: #fff;
+            min-width: 125px;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase; }
+            @media screen and (max-width: 768px) {
+              .navbar.container .navbar-header .region-navigation #block-useraccountmenu ul li a {
+                min-width: inherit;
+                padding: 5px 15px; } }
     .navbar.container .navbar-header .navbar-toggle {
       border: 0;
       float: none;
@@ -7412,6 +7341,7 @@ body.maintenance-page {
       .navbar.container .navbar-header.menu-open .region-navigation {
         display: none; }
   .navbar.container .navbar-collapse {
+    border: 0;
     left: 0;
     margin: auto;
     padding: 0;
@@ -7419,6 +7349,9 @@ body.maintenance-page {
     right: 0;
     text-align: center;
     width: 370px; }
+    @media screen and (max-width: 768px) {
+      .navbar.container .navbar-collapse {
+        width: 100%; } }
     .navbar.container .navbar-collapse #dcm-sticky-menu .nav > li {
       margin-bottom: 10px !important; }
     .navbar.container .navbar-collapse #dcm-sticky-menu .nav li {
@@ -7427,6 +7360,12 @@ body.maintenance-page {
       padding: 0;
       list-style-type: none;
       width: 100%; }
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .navbar.container .navbar-collapse #dcm-sticky-menu .nav li .dropdown-backdrop {
+          display: none; } }
+      @media screen and (max-width: 768px) {
+        .navbar.container .navbar-collapse #dcm-sticky-menu .nav li .dropdown-backdrop {
+          display: none; } }
       .navbar.container .navbar-collapse #dcm-sticky-menu .nav li.open, .navbar.container .navbar-collapse #dcm-sticky-menu .nav li.active {
         background-color: #207dcc; }
         .navbar.container .navbar-collapse #dcm-sticky-menu .nav li.open a, .navbar.container .navbar-collapse #dcm-sticky-menu .nav li.active a {
@@ -7434,11 +7373,16 @@ body.maintenance-page {
           color: #fff; }
           .navbar.container .navbar-collapse #dcm-sticky-menu .nav li.open a.dropdown-toggle, .navbar.container .navbar-collapse #dcm-sticky-menu .nav li.active a.dropdown-toggle {
             border-bottom: 2px solid #78b2dd; }
-      .navbar.container .navbar-collapse #dcm-sticky-menu .nav li.active a.is-active {
+      .navbar.container .navbar-collapse #dcm-sticky-menu .nav li a.is-active {
         background-color: #193d5b;
         font-size: 2.5em;
         line-height: 40px;
         padding: 15px 20px; }
+        @media screen and (max-width: 768px) {
+          .navbar.container .navbar-collapse #dcm-sticky-menu .nav li a.is-active {
+            font-size: 2em;
+            line-height: 35px;
+            padding: 10px 20px; } }
       .navbar.container .navbar-collapse #dcm-sticky-menu .nav li.active .dropdown-menu {
         display: block; }
       .navbar.container .navbar-collapse #dcm-sticky-menu .nav li a {
@@ -7448,6 +7392,9 @@ body.maintenance-page {
         text-align: center;
         text-decoration: none;
         transition: none; }
+        @media screen and (max-width: 768px) {
+          .navbar.container .navbar-collapse #dcm-sticky-menu .nav li a {
+            font-size: 1.5em; } }
         .navbar.container .navbar-collapse #dcm-sticky-menu .nav li a.dropdown-toggle {
           margin: 0 15px; }
       .navbar.container .navbar-collapse #dcm-sticky-menu .nav li .dropdown-menu {
@@ -7466,19 +7413,34 @@ body.maintenance-page {
     left: 16.5%;
     position: absolute;
     z-index: 2; }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .navbar.container .logo {
+        left: 19.5%; } }
+    @media screen and (max-width: 768px) {
+      .navbar.container .logo {
+        display: inline-block;
+        float: none !important;
+        margin: 0 auto;
+        position: static; } }
     .navbar.container .logo img {
       height: 180px;
       max-width: inherit; }
   .navbar.container .top-container {
     align-items: center;
-    display: flex;
     display: -ms-flexbox;
+    display: flex;
     -ms-flex-align: center;
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 2em;
     margin-top: 2em;
     position: relative; }
+    @media screen and (max-width: 768px) {
+      .navbar.container .top-container {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-bottom: 1em;
+        margin-top: 1em; } }
     .navbar.container .top-container .column-1 {
       color: #207dcc;
       display: -ms-flexbox;
@@ -7492,8 +7454,24 @@ body.maintenance-page {
       margin-left: 0;
       text-align: right;
       transform: rotate(270deg); }
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .navbar.container .top-container .column-1 {
+          -ms-flex-preferred-size: 23%;
+              flex-basis: 23%;
+          margin-left: -2%; } }
+      @media screen and (max-width: 768px) {
+        .navbar.container .top-container .column-1 {
+          flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+          margin: 0 auto;
+          max-width: 300px;
+          text-align: center;
+          transform: none; } }
       .navbar.container .top-container .column-1 span:last-child {
         position: relative; }
+        @media screen and (max-width: 768px) {
+          .navbar.container .top-container .column-1 span:last-child {
+            display: none; } }
         .navbar.container .top-container .column-1 span:last-child:after {
           background-color: #207dcc;
           content: "";
@@ -7511,15 +7489,29 @@ body.maintenance-page {
       -ms-flex-preferred-size: 100%;
       justify-content: center;
       margin-top: 150px; }
+      @media screen and (max-width: 768px) {
+        .navbar.container .top-container .column-2 {
+          flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+          margin-top: 0; } }
       .navbar.container .top-container .column-2 .inner {
         text-align: center;
         width: 30%; }
+        @media (min-width: 769px) and (max-width: 1024px) {
+          .navbar.container .top-container .column-2 .inner {
+            width: 42%; } }
+        @media screen and (max-width: 768px) {
+          .navbar.container .top-container .column-2 .inner {
+            width: 100%; } }
       .navbar.container .top-container .column-2 .header-text {
-        display: flex;
         display: -ms-flexbox;
+        display: flex;
         -ms-flex-direction: column;
         flex-direction: column;
         margin-top: 1em; }
+        @media screen and (max-width: 768px) {
+          .navbar.container .top-container .column-2 .header-text {
+            margin-top: 0; } }
         .navbar.container .top-container .column-2 .header-text h2 {
           color: #78b2dd;
           font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
@@ -7549,6 +7541,9 @@ body.maintenance-page {
       -ms-flex-preferred-size: 10%;
       justify-content: center;
       margin-bottom: -16%; }
+      @media screen and (max-width: 768px) {
+        .navbar.container .top-container .column-3 {
+          display: none; } }
       .navbar.container .top-container .column-3 a {
         background-size: cover;
         cursor: pointer;
@@ -7577,49 +7572,70 @@ body.maintenance-page {
       background: url("../images/twitter.svg") no-repeat scroll 0 0 transparent; }
     .navbar.container .top-container .linkedin {
       background: url("../images/linkedin.svg") no-repeat scroll 0 0 transparent; }
+  @media screen and (max-width: 768px) {
+    .navbar.container .banner {
+      text-align: center; } }
   @media only screen and (max-width: 768px) {
     .navbar.container .top-container .column-3 {
       display: none; } }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .path-frontpage .footer.container {
+    border-top: 0;
+    padding-top: 0; } }
+
+@media screen and (max-width: 768px) {
+  .path-frontpage .footer.container {
+    border-top: 0;
+    padding-top: 0; } }
 
 .footer.container {
   background-color: #207dcc;
   border: 0;
   clear: both;
-  margin: 30px 0 0;
+  margin: 0;
   max-width: inherit;
   overflow: hidden;
   padding: 85px 0 20px;
   position: relative; }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .footer.container {
+      border-top: 1px solid currentColor;
+      padding-top: 20px; } }
+  @media screen and (max-width: 768px) {
+    .footer.container {
+      border-top: 1px solid currentColor;
+      padding-top: 20px; } }
   .footer.container .top-footer {
     margin: 0 auto;
     max-width: 1200px;
@@ -7628,9 +7644,21 @@ body.maintenance-page {
       font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
       font-size: 1.3em;
       margin-bottom: 40px; }
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .footer.container .top-footer .col-lg-3 h2 {
+          margin-bottom: 10px; } }
+      @media screen and (max-width: 768px) {
+        .footer.container .top-footer .col-lg-3 h2 {
+          margin-bottom: 10px; } }
     .footer.container .top-footer .col-lg-3 .nav {
       margin: 0;
       padding: 0; }
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .footer.container .top-footer .col-lg-3 .nav {
+          margin-bottom: 20px; } }
+      @media screen and (max-width: 768px) {
+        .footer.container .top-footer .col-lg-3 .nav {
+          margin-bottom: 20px; } }
       .footer.container .top-footer .col-lg-3 .nav li {
         list-style-type: none;
         margin: 0 0 15px;
@@ -7639,22 +7667,28 @@ body.maintenance-page {
           margin-bottom: 0; }
         .footer.container .top-footer .col-lg-3 .nav li a {
           color: #fff;
+          display: inline-block;
           padding: 0;
-          text-decoration: none;
-          display: inline-block; }
+          text-decoration: none; }
           .footer.container .top-footer .col-lg-3 .nav li a:before {
             background: #fff none repeat scroll 0 0;
             bottom: 0;
             content: "";
             height: 1px;
+            transition: all .5s ease-in-out 0s;
             left: 0;
             position: absolute;
-            right: 100%;
-            transition: all .5s ease-in-out 0s; }
+            right: 100%; }
           .footer.container .top-footer .col-lg-3 .nav li a:hover:before {
             right: 0; }
     .footer.container .top-footer .connect-block .powered-by {
       margin-top: 40px; }
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .footer.container .top-footer .connect-block .powered-by {
+          margin-top: 20px; } }
+      @media screen and (max-width: 768px) {
+        .footer.container .top-footer .connect-block .powered-by {
+          margin-top: 20px; } }
       .footer.container .top-footer .connect-block .powered-by h2 {
         margin-bottom: 15px; }
   .footer.container .region-footer {
@@ -7686,33 +7720,33 @@ body.maintenance-page {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
 
 .path-frontpage .main-container {
   max-width: inherit;
@@ -7724,6 +7758,10 @@ body.maintenance-page {
     min-height: inherit;
     padding-top: 0;
     width: 100%; }
+    @media screen and (max-width: 768px) {
+      .path-frontpage .main-container > .row {
+        padding-left: 0;
+        padding-right: 0; } }
   .path-frontpage .main-container .page-header,
   .path-frontpage .main-container nav.tabs {
     display: none; }
@@ -7752,6 +7790,12 @@ body.maintenance-page {
     text-align: center;
     top: -24px;
     width: 358px; }
+    @media screen and (max-width: 768px) {
+      .block-views-blocksponsors-platinum-sponsors .block-title,
+      .block-views-blocksponsors-silver-sponsor-slideshow .block-title,
+      .block-views-blocksponsors-partners-slideshow .block-title,
+      .block-views-blocksponsors-gold-sponsors .block-title {
+        width: 100%; } }
   .block-views-blocksponsors-platinum-sponsors .view-sponsors,
   .block-views-blocksponsors-silver-sponsor-slideshow .view-sponsors,
   .block-views-blocksponsors-partners-slideshow .view-sponsors,
@@ -7769,6 +7813,20 @@ body.maintenance-page {
       text-align: center;
       vertical-align: middle;
       width: 22.5%; }
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .block-views-blocksponsors-platinum-sponsors .view-sponsors .views-row,
+        .block-views-blocksponsors-silver-sponsor-slideshow .view-sponsors .views-row,
+        .block-views-blocksponsors-partners-slideshow .view-sponsors .views-row,
+        .block-views-blocksponsors-gold-sponsors .view-sponsors .views-row {
+          margin: 0 0 20px 0;
+          width: 95%; } }
+      @media screen and (max-width: 768px) {
+        .block-views-blocksponsors-platinum-sponsors .view-sponsors .views-row,
+        .block-views-blocksponsors-silver-sponsor-slideshow .view-sponsors .views-row,
+        .block-views-blocksponsors-partners-slideshow .view-sponsors .views-row,
+        .block-views-blocksponsors-gold-sponsors .view-sponsors .views-row {
+          margin: 0 0 20px 0;
+          width: 90%; } }
       .block-views-blocksponsors-platinum-sponsors .view-sponsors .views-row:nth-child(4n),
       .block-views-blocksponsors-silver-sponsor-slideshow .view-sponsors .views-row:nth-child(4n),
       .block-views-blocksponsors-partners-slideshow .view-sponsors .views-row:nth-child(4n),
@@ -7790,6 +7848,12 @@ body.maintenance-page {
       .block-views-blocksponsors-partners-slideshow .view-sponsors .views-row .views-field-title,
       .block-views-blocksponsors-gold-sponsors .view-sponsors .views-row .views-field-title {
         display: none; }
+  .block-views-blocksponsors-platinum-sponsors .view-footer .btn,
+  .block-views-blocksponsors-silver-sponsor-slideshow .view-footer .btn,
+  .block-views-blocksponsors-partners-slideshow .view-footer .btn,
+  .block-views-blocksponsors-gold-sponsors .view-footer .btn {
+    background-color: #207dcc;
+    color: #fff; }
 
 .block-views-blocksponsors-platinum-sponsors .block-title:before {
   background-image: url(../images/platinum.png);
@@ -7801,6 +7865,9 @@ body.maintenance-page {
   position: absolute;
   top: -16px;
   width: 86px; }
+  @media screen and (max-width: 768px) {
+    .block-views-blocksponsors-platinum-sponsors .block-title:before {
+      display: none; } }
 
 .block-views-blocksponsors-gold-sponsors .block-title:before {
   background-image: url(../images/gold.png);
@@ -7812,6 +7879,9 @@ body.maintenance-page {
   position: absolute;
   top: -16px;
   width: 86px; }
+  @media screen and (max-width: 768px) {
+    .block-views-blocksponsors-gold-sponsors .block-title:before {
+      display: none; } }
 
 .block-views-blocksponsors-silver-sponsor-slideshow .block-title:before {
   background-image: url(../images/silver.png);
@@ -7823,6 +7893,9 @@ body.maintenance-page {
   position: absolute;
   top: -16px;
   width: 86px; }
+  @media screen and (max-width: 768px) {
+    .block-views-blocksponsors-silver-sponsor-slideshow .block-title:before {
+      display: none; } }
 
 .socialConnect-block a {
   color: #fff;
@@ -7846,12 +7919,14 @@ body.maintenance-page {
   .socialConnect-block a.icon-youtube:before {
     content: "\f167"; }
 
-.path-frontpage #middle-content .region .drupal-recent-news .block-title {
+.path-frontpage #middle-content .region .drupal-recent-news .block-title,
+.path-news #middle-content .region .drupal-recent-news .block-title {
   color: #fff;
   font-size: 2.429em;
   margin-bottom: 40px; }
 
-.path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news {
+.path-frontpage #middle-content .region .view-drupal-camp-news,
+.path-news #middle-content .region .view-drupal-camp-news {
   background-image: url(../images/droper.png);
   background-position: top right -11px;
   background-repeat: no-repeat;
@@ -7860,17 +7935,30 @@ body.maintenance-page {
   overflow: hidden;
   padding: 135px 0 145px;
   position: relative; }
-  .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row {
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .path-frontpage #middle-content .region .view-drupal-camp-news,
+    .path-news #middle-content .region .view-drupal-camp-news {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  @media screen and (max-width: 768px) {
+    .path-frontpage #middle-content .region .view-drupal-camp-news,
+    .path-news #middle-content .region .view-drupal-camp-news {
+      padding: 135px 15px 100px; } }
+  .path-frontpage #middle-content .region .view-drupal-camp-news .views-row,
+  .path-news #middle-content .region .view-drupal-camp-news .views-row {
     border-bottom: 0;
     float: left;
     margin: 0 0 40px;
     padding: 0;
     width: 100%; }
-    .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row:last-child {
+    .path-frontpage #middle-content .region .view-drupal-camp-news .views-row:last-child,
+    .path-news #middle-content .region .view-drupal-camp-news .views-row:last-child {
       margin-bottom: 0; }
-    .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field {
+    .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field,
+    .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field {
       margin: 5px 0 0; }
-      .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner {
+      .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner,
+      .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner {
         background-color: #fff;
         color: #207dcc;
         float: left;
@@ -7879,7 +7967,8 @@ body.maintenance-page {
         position: relative;
         text-align: left;
         width: 85px; }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:before {
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:before,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:before {
           background-color: #207dcc;
           content: "";
           height: 5px;
@@ -7887,7 +7976,8 @@ body.maintenance-page {
           position: absolute;
           top: 0;
           width: 5px; }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:after {
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:after,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner:after {
           background-color: #207dcc;
           content: "";
           height: 5px;
@@ -7895,22 +7985,35 @@ body.maintenance-page {
           right: 10px;
           top: 0;
           width: 5px; }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h1 {
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h1,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h1 {
           font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
           font-size: 2.429em;
           margin-bottom: 0;
           padding-bottom: 5px !important;
           padding-top: 5px !important; }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h4 {
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h4,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .date-mnth .inner h4 {
           font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
           font-size: 2em;
           text-transform: uppercase !important; }
-      .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+      .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper,
+      .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
         padding-right: 25px; }
         @media screen and (max-width: 991px) {
-          .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+          .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper,
+          .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
             padding-right: 0; } }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-title a {
+        @media (min-width: 769px) and (max-width: 1024px) {
+          .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper,
+          .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+            margin-top: 10px; } }
+        @media screen and (max-width: 768px) {
+          .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper,
+          .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper {
+            margin-top: 10px; } }
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-title a,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-title a {
           color: #fff;
           display: inline-block;
           font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
@@ -7918,26 +8021,39 @@ body.maintenance-page {
           margin-bottom: 10px;
           margin-top: 0;
           text-decoration: initial; }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-body {
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-body,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-field .homepage-new .data-wrapper .news-body {
           color: #fff; }
-    .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link {
+    .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-more-link,
+    .path-news #middle-content .region .view-drupal-camp-news .views-row .views-more-link {
       margin: 10px 12px;
       text-align: right; }
-      .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link a {
-        border-left: 2px solid #0676c0;
+      .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-more-link a,
+      .path-news #middle-content .region .view-drupal-camp-news .views-row .views-more-link a {
+        border-left: 2px solid #fff;
         padding-left: 5px; }
-        .path-frontpage #middle-content .region .drupal-recent-news .view-drupal-camp-news .views-row .views-more-link a:after {
+        .path-frontpage #middle-content .region .view-drupal-camp-news .views-row .views-more-link a:after,
+        .path-news #middle-content .region .view-drupal-camp-news .views-row .views-more-link a:after {
           content: " >>"; }
 
-.path-frontpage #middle-content .region .gold-sponsors {
+.path-frontpage #middle-content .region .gold-sponsors,
+.path-news #middle-content .region .gold-sponsors {
   text-align: center; }
-  .path-frontpage #middle-content .region .gold-sponsors .form-group .view-content .views-row {
+  .path-frontpage #middle-content .region .gold-sponsors .form-group .view-content .views-row,
+  .path-news #middle-content .region .gold-sponsors .form-group .view-content .views-row {
     display: table;
     margin: 0 auto 15px; }
     @media screen and (max-width: 991px) {
-      .path-frontpage #middle-content .region .gold-sponsors .form-group .view-content .views-row {
+      .path-frontpage #middle-content .region .gold-sponsors .form-group .view-content .views-row,
+      .path-news #middle-content .region .gold-sponsors .form-group .view-content .views-row {
         display: inline-block;
         margin: 10px; } }
+
+.path-news #middle-content .region .view-drupal-camp-news {
+  background-image: none;
+  margin: auto;
+  max-width: inherit;
+  padding: 0; }
 
 #block-dcm2018-drupalapprenctices,
 #block-dcm2018-joinda {
@@ -7945,6 +8061,15 @@ body.maintenance-page {
   color: #fff;
   padding: 150px 0 180px;
   position: relative; }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #block-dcm2018-drupalapprenctices,
+    #block-dcm2018-joinda {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  @media screen and (max-width: 768px) {
+    #block-dcm2018-drupalapprenctices,
+    #block-dcm2018-joinda {
+      padding: 100px 15px; } }
   #block-dcm2018-drupalapprenctices .drupal-apprentice,
   #block-dcm2018-drupalapprenctices .join-drup-assoc,
   #block-dcm2018-joinda .drupal-apprentice,
@@ -7965,14 +8090,21 @@ body.maintenance-page {
     #block-dcm2018-joinda .join-drup-assoc .btn {
       background-color: transparent;
       border: 1px solid #fff;
+      color: #fff;
       padding: 12px 10px; }
     #block-dcm2018-drupalapprenctices .drupal-apprentice .image-wrapper,
     #block-dcm2018-drupalapprenctices .join-drup-assoc .image-wrapper,
     #block-dcm2018-joinda .drupal-apprentice .image-wrapper,
     #block-dcm2018-joinda .join-drup-assoc .image-wrapper {
       text-align: right; }
+      @media screen and (max-width: 768px) {
+        #block-dcm2018-drupalapprenctices .drupal-apprentice .image-wrapper,
+        #block-dcm2018-drupalapprenctices .join-drup-assoc .image-wrapper,
+        #block-dcm2018-joinda .drupal-apprentice .image-wrapper,
+        #block-dcm2018-joinda .join-drup-assoc .image-wrapper {
+          text-align: center; } }
 
-.location-info-block {
+.location-info {
   height: 566px; }
 
 .location-info {
@@ -7990,6 +8122,9 @@ body.maintenance-page {
     top: 20px;
     width: 310px;
     z-index: 1; }
+    @media screen and (max-width: 768px) {
+      .location-info .footer-copy {
+        display: none; } }
     .location-info .footer-copy:before {
       border-bottom: 15px solid transparent;
       border-right: 15px solid rgba(0, 0, 0, 0.5);
@@ -8008,33 +8143,33 @@ body.maintenance-page {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
 
 @media (min-width: 320px) and (max-width: 460px) {
   .main-container .page-container .user-register-form .form-item input,
@@ -8084,6 +8219,7 @@ body.maintenance-page {
 .main-container .page-container .user-pass .form-actions .btn {
   background-color: transparent;
   border: 1px solid #fff;
+  color: #fff;
   padding: 12px 10px; }
 
 .main-container .page-container .user-register-form .fieldgroup .panel-heading,
@@ -8184,65 +8320,57 @@ body.maintenance-page {
   margin-bottom: 0;
   text-align: center; }
 
-.path-user {
-  background-attachment: fixed;
-  background-image: url(../images/drupalman.png);
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .path-user .main-container {
-    background-image: none; }
+.path-user .main-container .region-content article .field {
+  display: inline-block;
+  margin: 0 20px 20px 0;
+  vertical-align: top;
+  width: 48%; }
+  @media screen and (max-width: 640px) {
     .path-user .main-container .region-content article .field {
-      display: inline-block;
-      margin: 0 20px 20px 0;
-      vertical-align: top;
-      width: 48%; }
-      @media screen and (max-width: 640px) {
-        .path-user .main-container .region-content article .field {
-          display: block;
-          margin: 0 0 15px 0;
-          width: 100%; } }
-      .path-user .main-container .region-content article .field.field--name-user-picture {
-        display: block;
-        position: relative;
-        width: 100%; }
+      display: block;
+      margin: 0 0 15px 0;
+      width: 100%; } }
+  .path-user .main-container .region-content article .field.field--name-user-picture {
+    display: block;
+    position: relative;
+    width: 100%; }
+    .path-user .main-container .region-content article .field.field--name-user-picture:before {
+      background-color: #fff;
+      bottom: 27px;
+      content: "";
+      height: 2px;
+      position: absolute;
+      width: 46.50%;
+      z-index: 1; }
+      @media screen and (max-width: 960px) {
         .path-user .main-container .region-content article .field.field--name-user-picture:before {
-          background-color: #0676c0;
-          bottom: 27px;
-          content: "";
-          height: 2px;
-          position: absolute;
-          width: 46.50%;
-          z-index: 1; }
-          @media screen and (max-width: 960px) {
-            .path-user .main-container .region-content article .field.field--name-user-picture:before {
-              display: none; } }
+          display: none; } }
+    .path-user .main-container .region-content article .field.field--name-user-picture:after {
+      background-color: #fff;
+      bottom: 27px;
+      content: "";
+      height: 2px;
+      position: absolute;
+      right: 0;
+      width: 46%;
+      z-index: 1; }
+      @media screen and (max-width: 960px) {
         .path-user .main-container .region-content article .field.field--name-user-picture:after {
-          background-color: #0676c0;
-          bottom: 27px;
-          content: "";
-          height: 2px;
-          position: absolute;
-          right: 0;
-          width: 46%;
-          z-index: 1; }
-          @media screen and (max-width: 960px) {
-            .path-user .main-container .region-content article .field.field--name-user-picture:after {
-              display: none; } }
+          display: none; } }
+    .path-user .main-container .region-content article .field.field--name-user-picture img {
+      border: 2px solid;
+      border-radius: 50%;
+      height: 100px;
+      margin: 0 0 0 46%;
+      padding: 2px;
+      width: 100px; }
+      @media screen and (max-width: 960px) {
         .path-user .main-container .region-content article .field.field--name-user-picture img {
-          border: 2px solid;
-          border-radius: 50%;
-          height: 100px;
-          margin: 0 0 0 46%;
-          padding: 2px;
-          width: 100px; }
-          @media screen and (max-width: 960px) {
-            .path-user .main-container .region-content article .field.field--name-user-picture img {
-              margin: 0 auto; } }
-      .path-user .main-container .region-content article .field .field--label {
-        border-bottom: 1px dashed #ddd;
-        margin: 0 0 5px;
-        padding: 0 0 2px; }
+          margin: 0 auto; } }
+  .path-user .main-container .region-content article .field .field--label {
+    border-bottom: 1px dashed #ddd;
+    margin: 0 0 5px;
+    padding: 0 0 2px; }
 
 .tooltip.right {
   left: 10% !important;
@@ -8257,33 +8385,33 @@ body.maintenance-page {
 /*End User page*/
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
 
 .path-attendees .main-container .block-views-blocksponsors-platinum-sponsors {
   padding: 30px 0; }
@@ -8297,16 +8425,29 @@ body.maintenance-page {
 .view-attendees .view-filters form .form-item {
   display: inline-block;
   vertical-align: top;
-  width: 26.5% !important; }
+  width: 26.5%; }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .view-attendees .view-filters form .form-item {
+      width: 45.5%; } }
+  @media screen and (max-width: 768px) {
+    .view-attendees .view-filters form .form-item {
+      width: 100%; } }
   .view-attendees .view-filters form .form-item label {
     font-size: 15px; }
 
 .view-attendees .view-filters form .form-actions .btn {
-  background: none;
   margin-left: 15px;
   margin-right: 0;
   margin-top: 0;
   min-width: inherit; }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .view-attendees .view-filters form .form-actions .btn {
+      margin-left: 0;
+      margin-right: 10px; } }
+  @media screen and (max-width: 768px) {
+    .view-attendees .view-filters form .form-actions .btn {
+      margin-left: 0;
+      margin-right: 10px; } }
   .view-attendees .view-filters form .form-actions .btn:focus {
     box-shadow: none;
     outline: none; }
@@ -8348,16 +8489,20 @@ body.maintenance-page {
     width: 23.33%; }
     @media screen and (max-width: 1200px) {
       .view-attendees .view-content .slideanim {
-        max-width: 340px;
-        width: 41%; } }
-    @media screen and (max-width: 767px) {
+        margin: 0 20px 30px 0;
+        width: 48%; }
+        .view-attendees .view-content .slideanim:nth-child(2n) {
+          margin-left: 0;
+          margin-right: 0; } }
+    @media screen and (max-width: 768px) {
       .view-attendees .view-content .slideanim {
         margin: 0 auto 30px;
-        width: 100%; } }
-    @media screen and (max-width: 400px) {
+        width: 47%; } }
+    @media screen and (max-width: 480px) {
       .view-attendees .view-content .slideanim {
         max-width: 240px;
-        min-width: 250px; } }
+        min-width: 250px;
+        width: 100%; } }
     .view-attendees .view-content .slideanim:nth-child(4n) {
       margin-right: 0; }
       @media screen and (max-width: 1200px) {
@@ -8430,11 +8575,12 @@ body.maintenance-page {
           padding-right: 0; }
           .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name {
             font-size: 24px;
-            line-height: 30px;
-            margin-bottom: 5px;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap; }
+            white-space: nowrap;
+            width: 100%;
+            line-height: 30px;
+            margin-bottom: 5px; }
             @media screen and (max-width: 1010px) {
               .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name .attendees-name {
                 font-size: 20px;
@@ -8445,11 +8591,12 @@ body.maintenance-page {
           .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
             font-size: 16px;
             height: 20px;
-            line-height: 20px;
-            margin-bottom: 0;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap; }
+            white-space: nowrap;
+            width: 100%;
+            line-height: 20px;
+            margin-bottom: 0; }
             @media screen and (max-width: 1010px) {
               .view-attendees .view-content .slideanim .attendees-page .team-attendees .user-name h3 {
                 font-size: 15px;
@@ -8472,240 +8619,305 @@ body.maintenance-page {
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
 
-.track-content .track-row {
-  margin: 0 0 30px;
-  padding: 10px 0 10px 80px;
+.view-volunteers h3 {
+  border-bottom: 0;
+  clear: both;
+  color: rgba(51, 51, 51, 0.81);
+  margin: 15px 0 30px;
+  padding: 20px 0 10px 10px;
   position: relative; }
-  .track-content .track-row:before {
-    color: #207dcc;
-    display: block;
+  .view-volunteers h3:before {
+    background-color: #635f5f;
+    bottom: 0;
+    content: "";
     display: inline-block;
-    font-family: FontAwesome;
-    -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    font-weight: normal;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: auto;
+    height: 42px;
     left: 0;
-    line-height: 100%;
     position: absolute;
-    top: 7px; }
-  .track-content .track-row#back-end-developement:before {
-    content: "\f1c9";
-    font-size: 60px; }
-  .track-content .track-row#business:before {
-    content: "\f0b1";
-    font-size: 60px; }
-  .track-content .track-row#dev-ops:before {
-    content: "\f085";
-    font-size: 60px; }
-  .track-content .track-row#frontend:before {
-    content: "\f1fc";
-    font-size: 60px; }
-  .track-content .track-row#building-community:before {
-    content: "\f0c0";
-    font-size: 60px; }
-  .track-content .track-row#project-management:before {
-    content: "\f0ae";
-    font-size: 60px; }
-  .track-content .track-row#site-building:before {
-    content: "\f0e8";
-    font-size: 60px; }
-  .track-content .track-row#case-studies:before {
-    content: "\f19d";
-    font-size: 60px; }
-  .track-content .track-row > h2 {
-    background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
-    color: #fff;
+    width: 4px; }
+
+@media screen and (max-width: 960px) {
+  .view-volunteers .view-content {
+    text-align: center; } }
+
+.view-volunteers .view-content .views-row {
+  background: #eee;
+  border-bottom: 2px solid #3379b7;
+  border-top: 2px solid #3379b7;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  vertical-align: top;
+  width: 24.5%; }
+  .view-volunteers .view-content .views-row .team-card .card-photo img {
+    border-left: 5px solid #207dcc;
+    border-radius: 50%;
+    border-right: 5px solid #207dcc;
+    transition: all .5s ease-in-out 0s;
+    margin: auto;
     padding: 10px;
+    width: 200px; }
+  .view-volunteers .view-content .views-row .team-card .card-info {
+    text-align: center; }
+    .view-volunteers .view-content .views-row .team-card .card-info h2 {
+      font-size: 25px;
+      margin-bottom: 0; }
+      .view-volunteers .view-content .views-row .team-card .card-info h2 a {
+        text-decoration: none; }
+    .view-volunteers .view-content .views-row .team-card .card-info h4 {
+      font-size: 16px; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.woff"); }
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.woff"); }
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
+  src: url("../fonts/roboto-slab-regular.eot");
+  src: url("../fonts/roboto-slab-regular.woff"); }
+
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
+  src: url("../fonts/roboto-slab-bold.eot");
+  src: url("../fonts/roboto-slab-bold.woff"); }
+
+.track-content {
+  margin-bottom: 20px; }
+  .track-content .track-row {
+    border-bottom: 1px solid currentColor;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     position: relative; }
-    .track-content .track-row > h2:before {
-      background-color: #fff;
-      content: "";
-      display: block;
-      height: 2px;
-      left: 0;
-      position: absolute;
-      top: 3px;
-      width: 100%; }
-    .track-content .track-row > h2:after {
-      background-color: #fff;
-      content: "";
-      display: block;
-      height: 100%;
-      left: 5px;
-      position: absolute;
-      top: 0;
-      width: 2px; }
-  .track-content .track-row .session-data {
-    padding: 10px; }
+    .track-content .track-row:last-child {
+      border-bottom: 0;
+      margin: 0;
+      padding: 0; }
+    .track-content .track-row.back-end-developement h2:before {
+      content: "\f1c9";
+      font-size: 50px; }
+    .track-content .track-row.business h2:before {
+      content: "\f0b1";
+      font-size: 50px; }
+    .track-content .track-row.dev-ops h2:before {
+      content: "\f085";
+      font-size: 50px; }
+    .track-content .track-row.frontend h2:before {
+      content: "\f1fc";
+      font-size: 50px; }
+    .track-content .track-row.building-community h2:before {
+      content: "\f0c0";
+      font-size: 50px; }
+    .track-content .track-row.project-management h2:before {
+      content: "\f0ae";
+      font-size: 50px; }
+    .track-content .track-row.site-building h2:before {
+      content: "\f0e8";
+      font-size: 50px; }
+    .track-content .track-row.case-studies h2:before {
+      content: "\f19d";
+      font-size: 50px; }
+    .track-content .track-row > h2 {
+      -ms-flex-align: center;
+          align-items: center;
+      color: #fff;
+      display: -ms-flexbox;
+      display: flex;
+      font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
+      font-size: 1.429em;
+      line-height: 24px;
+      margin-bottom: 15px;
+      padding: 10px 10px 10px 0;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase; }
+      .track-content .track-row > h2:before {
+        color: #fff;
+        display: block;
+        display: inline-block;
+        font-family: FontAwesome;
+        -webkit-font-smoothing: antialiased;
+        font-style: normal;
+        font-weight: normal;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: auto;
+        line-height: 100%;
+        margin-right: 20px; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
 
 .view-all-sessions .views-row {
+  border-bottom: 1px solid currentColor;
   margin: 0 0 30px;
-  padding: 10px 0 10px 80px;
+  padding: 0 0 30px;
   position: relative; }
-  .view-all-sessions .views-row:before {
-    color: #fff;
-    display: block;
-    display: inline-block;
-    font-family: FontAwesome;
-    -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    font-weight: normal;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: auto;
-    left: 0;
-    line-height: 100%;
-    position: absolute;
-    top: 7px; }
-  .view-all-sessions .views-row.backend-development:before {
+  .view-all-sessions .views-row:last-child {
+    border-bottom: 0;
+    margin: 0;
+    padding: 0; }
+  .view-all-sessions .views-row.backend-development .views-field-name:before {
     content: "\f1c9";
-    font-size: 60px; }
-  .view-all-sessions .views-row.business:before {
+    font-size: 50px; }
+  .view-all-sessions .views-row.business .views-field-name:before {
     content: "\f0b1";
-    font-size: 60px; }
-  .view-all-sessions .views-row.dev-ops:before {
+    font-size: 50px; }
+  .view-all-sessions .views-row.dev-ops .views-field-name:before {
     content: "\f085";
-    font-size: 60px; }
-  .view-all-sessions .views-row.frontend-development:before {
+    font-size: 50px; }
+  .view-all-sessions .views-row.frontend-development .views-field-name:before {
     content: "\f1fc";
-    font-size: 60px; }
-  .view-all-sessions .views-row.building-community:before {
+    font-size: 50px; }
+  .view-all-sessions .views-row.building-community .views-field-name:before {
     content: "\f0c0";
-    font-size: 60px; }
-  .view-all-sessions .views-row.project-management:before {
+    font-size: 50px; }
+  .view-all-sessions .views-row.project-management .views-field-name:before {
     content: "\f0ae";
-    font-size: 60px; }
-  .view-all-sessions .views-row.site-building:before {
+    font-size: 50px; }
+  .view-all-sessions .views-row.site-building .views-field-name:before {
     content: "\f0e8";
-    font-size: 60px; }
-  .view-all-sessions .views-row.case-studies:before {
+    font-size: 50px; }
+  .view-all-sessions .views-row.case-studies .views-field-name:before {
     content: "\f19d";
-    font-size: 60px; }
+    font-size: 50px; }
   .view-all-sessions .views-row .views-field-name {
-    margin-bottom: 20px; }
-    .view-all-sessions .views-row .views-field-name a {
-      background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0; }
+    .view-all-sessions .views-row .views-field-name:before {
       color: #fff;
       display: block;
-      font-size: 27px;
-      line-height: 30px;
-      padding: 10px;
+      display: inline-block;
+      font-family: FontAwesome;
+      -webkit-font-smoothing: antialiased;
+      font-style: normal;
+      font-weight: normal;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: auto;
+      line-height: 100%;
+      margin-right: 20px; }
+    .view-all-sessions .views-row .views-field-name a {
+      color: #fff;
+      display: block;
+      font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
+      font-size: 1.429em;
+      line-height: 22px;
+      padding: 10px 10px 10px 0;
       position: relative;
-      text-decoration: none; }
-      .view-all-sessions .views-row .views-field-name a:before {
-        background-color: #fff;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 0;
-        position: absolute;
-        top: 3px;
-        width: 100%; }
-      .view-all-sessions .views-row .views-field-name a:after {
-        background-color: #fff;
-        content: "";
-        display: block;
-        height: 100%;
-        left: 5px;
-        position: absolute;
-        top: 0;
-        width: 2px; }
+      text-decoration: none;
+      text-transform: uppercase; }
   .view-all-sessions .views-row .view-sessions ul {
     margin: 0;
-    padding: 0;
-    padding: 0 12px; }
+    padding: 0; }
     .view-all-sessions .views-row .view-sessions ul li {
+      background-color: #fff;
       border-radius: 5px;
       box-shadow: 0 0 5px #ddd;
+      color: #207dcc;
       display: inline-block;
       transition: all .5s ease-in-out 0s;
       list-style-type: none;
@@ -8713,33 +8925,36 @@ body.maintenance-page {
       padding: 15px;
       vertical-align: top;
       vertical-align: top;
-      width: 31.33%; }
+      width: 23.33%; }
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .view-all-sessions .views-row .view-sessions ul li {
+          width: 48%; }
+          .view-all-sessions .views-row .view-sessions ul li:nth-child(2n) {
+            margin-right: 0; } }
+      @media screen and (max-width: 768px) {
+        .view-all-sessions .views-row .view-sessions ul li {
+          margin-right: 0;
+          width: 100%; } }
       .view-all-sessions .views-row .view-sessions ul li:hover {
-        box-shadow: 0 0 5px 3px #ddd; }
-      .view-all-sessions .views-row .view-sessions ul li:nth-child(3n) {
+        background-color: #e2ecf7; }
+      .view-all-sessions .views-row .view-sessions ul li:nth-child(4n) {
         margin-right: 0; }
-      .view-all-sessions .views-row .view-sessions ul li:before {
-        background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
-        content: "";
-        display: block;
-        height: 1px;
-        margin: 0 0 20px; }
-      .view-all-sessions .views-row .view-sessions ul li:after {
-        background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
-        content: "";
-        display: block;
-        height: 1px;
-        margin: 20px 0 0; }
       .view-all-sessions .views-row .view-sessions ul li .views-field-title a {
+        color: #207dcc;
         display: block;
-        font-size: 18px;
-        height: 45px;
-        line-height: 22px;
+        font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
+        font-size: 1.071em;
+        height: 61px;
+        line-height: 19px;
         margin-bottom: 8px;
         overflow: hidden;
         padding-left: 25px;
         position: relative;
         text-decoration: none; }
+        @media screen and (max-width: 768px) {
+          .view-all-sessions .views-row .view-sessions ul li .views-field-title a {
+            height: auto;
+            overflow: visible; } }
         .view-all-sessions .views-row .view-sessions ul li .views-field-title a:before {
           color: #207dcc;
           content: "\f15c";
@@ -8756,8 +8971,20 @@ body.maintenance-page {
           top: 1px; }
       .view-all-sessions .views-row .view-sessions ul li .views-field-field-organisation {
         display: none; }
+      .view-all-sessions .views-row .view-sessions ul li .views-field-nothing {
+        position: relative; }
+        .view-all-sessions .views-row .view-sessions ul li .views-field-nothing:before {
+          background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
+          content: "";
+          display: block;
+          height: 1px;
+          margin: 0 0 8px; }
       .view-all-sessions .views-row .view-sessions ul li .speaker-name {
-        padding-left: 25px; }
+        color: #207dcc;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%; }
         .view-all-sessions .views-row .view-sessions ul li .speaker-name:before {
           color: #207dcc;
           content: "\f007";
@@ -8768,9 +8995,13 @@ body.maintenance-page {
           font-weight: normal;
           -moz-osx-font-smoothing: grayscale;
           text-rendering: auto;
-          margin: 0 10px 0 0; }
+          margin: 0 15px 0 0; }
       .view-all-sessions .views-row .view-sessions ul li .speaker-org {
-        padding-left: 25px; }
+        color: #207dcc;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%; }
         .view-all-sessions .views-row .view-sessions ul li .speaker-org:before {
           color: #207dcc;
           content: "\f1ad";
@@ -8781,37 +9012,37 @@ body.maintenance-page {
           font-weight: normal;
           -moz-osx-font-smoothing: grayscale;
           text-rendering: auto;
-          margin: 0 10px 0 0; }
+          margin: 0 15px 0 0; }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
 
 .page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-speaker .views-row .views-field a:before {
   color: #207dcc;

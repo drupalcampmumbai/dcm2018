@@ -350,6 +350,12 @@ img {
     margin: 0 auto;
     max-width: $page-width;
     padding: 135px 0 0;
+    @media (min-width: 769px) and (max-width: 1024px) {
+      padding: 135px 15px 20px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 135px 15px 20px;
+    }
   }
   .col-sm-12 {
     padding-left: 0;
@@ -468,18 +474,19 @@ label {
   background: none repeat scroll 0 0 $btn-color;
   border: 0 none;
   box-shadow: none;
-  color: $white-color;
+  color: $blue-color;
   display: inline-block;
   font-family: $roboto-slab-bold;
   @include border-radius(8px);
   margin: 10px 20px 10px 0;
   min-width: 140px;
-  padding: 10px 15px;
+  padding: 8px 15px;
   position: relative;
   text-align: center;
   text-decoration: none !important;
   text-transform: uppercase;
   transition: all .5s linear 0s;
+  white-space: normal;
   z-index: 1;
   &:last-child {
     margin-right: 0;
@@ -491,7 +498,7 @@ label {
   &.active,
   .open .dropdown-toggle.btn-default {
     background-color: $btn-color;
-    color: $white-color;
+    color: $blue-color;
   }
 }
 
@@ -502,8 +509,8 @@ label {
 }
 
 a.btn {
-  color: $white-color !important;
-  text-decoration: none !important;
+  color: $blue-color;
+  text-decoration: none;
 }
 
 a.btn:focus,
@@ -630,8 +637,8 @@ table tr.error {
     // Form items
     .form-item {
       margin: 0 0 20px;
-      padding: 0 !important;
-      width: 100% !important;
+      padding: 0;
+      width: 100%;
 
       label {
         display: inline-block;
@@ -679,8 +686,11 @@ table tr.error {
         width: 65%;
 
         textarea {
+          background-color: #7daad4;
+          border: 0;
           border-radius: 0;
           box-shadow: none;
+          color: $base-color;
           float: none;
           padding: 8px 20px;
           width: 100%;
@@ -1085,122 +1095,3 @@ body.maintenance-page {
 }
 
 // end maintainace page
-
-// Social media
-#block-dcm2018-socialblock {
-  position: fixed;
-  right: 0;
-  top: 30%;
-  width: 5%;
-  z-index: 999;
-
-  @media screen and (max-width: 960px) {
-    display: none;
-  }
-
-  .social-media-list {
-    > span {
-      color: $white-color;
-      display: block;
-      margin: 0 0 1px;
-      text-align: right;
-
-      .stButton {
-        margin: 0;
-
-        .stButton_gradient {
-          border: 0;
-          border-radius: 0;
-          height: auto;
-          padding: 0;
-        }
-
-        .stMainServices,
-        .chicklets {
-          background-color: #000;
-          /*Added important: to override default css which is added by module using js*/
-          background-image: none !important;
-          color: $white-color;
-          float: none;
-          font-size: 0;
-          height: auto;
-          @include base-fa;
-          padding: 8px;
-          text-align: center;
-          text-indent: 0;
-          transition: all .5s linear 0s;
-          width: 40px;
-
-          @media screen and (max-width: 960px) {
-            width: 30px;
-          }
-
-          &:hover {
-            background-color: $link-color;
-            opacity: 1;
-            text-align: left;
-            width: 50px;
-
-            @media screen and (max-width: 960px) {
-              width: 40px;
-            }
-          }
-
-          &.st-facebook-counter {
-            &:before {
-              content: "\f09a";
-              font-size: 19px;
-
-              @media screen and (max-width: 960px) {
-                font-size: 15px;
-              }
-            }
-          }
-
-          &.googleplus {
-            width: 56px;
-
-            &:before {
-              content: "\f0d5";
-              font-size: 19px;
-
-              @media screen and (max-width: 960px) {
-                font-size: 15px;
-              }
-            }
-
-            &:hover {
-              width: 66px;
-            }
-          }
-
-          &.st-linkedin-counter {
-            &:before {
-              content: "\f0e1";
-              font-size: 19px;
-
-              @media screen and (max-width: 960px) {
-                font-size: 15px;
-              }
-            }
-          }
-
-          &.st-twitter-counter {
-            &:before {
-              content: "\f099";
-              font-size: 19px;
-
-              @media screen and (max-width: 960px) {
-                font-size: 15px;
-              }
-            }
-          }
-        }
-
-        .stArrow {
-          display: none;
-        }
-      }
-    }
-  }
-}

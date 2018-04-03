@@ -1,32 +1,32 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
 
 @media (min-width: 320px) and (max-width: 460px) {
   .main-container .page-container .user-register-form .form-item input,
@@ -76,6 +76,7 @@
 .main-container .page-container .user-pass .form-actions .btn {
   background-color: transparent;
   border: 1px solid #fff;
+  color: #fff;
   padding: 12px 10px; }
 
 .main-container .page-container .user-register-form .fieldgroup .panel-heading,
@@ -176,65 +177,57 @@
   margin-bottom: 0;
   text-align: center; }
 
-.path-user {
-  background-attachment: fixed;
-  background-image: url(../images/drupalman.png);
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .path-user .main-container {
-    background-image: none; }
+.path-user .main-container .region-content article .field {
+  display: inline-block;
+  margin: 0 20px 20px 0;
+  vertical-align: top;
+  width: 48%; }
+  @media screen and (max-width: 640px) {
     .path-user .main-container .region-content article .field {
-      display: inline-block;
-      margin: 0 20px 20px 0;
-      vertical-align: top;
-      width: 48%; }
-      @media screen and (max-width: 640px) {
-        .path-user .main-container .region-content article .field {
-          display: block;
-          margin: 0 0 15px 0;
-          width: 100%; } }
-      .path-user .main-container .region-content article .field.field--name-user-picture {
-        display: block;
-        position: relative;
-        width: 100%; }
+      display: block;
+      margin: 0 0 15px 0;
+      width: 100%; } }
+  .path-user .main-container .region-content article .field.field--name-user-picture {
+    display: block;
+    position: relative;
+    width: 100%; }
+    .path-user .main-container .region-content article .field.field--name-user-picture:before {
+      background-color: #fff;
+      bottom: 27px;
+      content: "";
+      height: 2px;
+      position: absolute;
+      width: 46.50%;
+      z-index: 1; }
+      @media screen and (max-width: 960px) {
         .path-user .main-container .region-content article .field.field--name-user-picture:before {
-          background-color: #0676c0;
-          bottom: 27px;
-          content: "";
-          height: 2px;
-          position: absolute;
-          width: 46.50%;
-          z-index: 1; }
-          @media screen and (max-width: 960px) {
-            .path-user .main-container .region-content article .field.field--name-user-picture:before {
-              display: none; } }
+          display: none; } }
+    .path-user .main-container .region-content article .field.field--name-user-picture:after {
+      background-color: #fff;
+      bottom: 27px;
+      content: "";
+      height: 2px;
+      position: absolute;
+      right: 0;
+      width: 46%;
+      z-index: 1; }
+      @media screen and (max-width: 960px) {
         .path-user .main-container .region-content article .field.field--name-user-picture:after {
-          background-color: #0676c0;
-          bottom: 27px;
-          content: "";
-          height: 2px;
-          position: absolute;
-          right: 0;
-          width: 46%;
-          z-index: 1; }
-          @media screen and (max-width: 960px) {
-            .path-user .main-container .region-content article .field.field--name-user-picture:after {
-              display: none; } }
+          display: none; } }
+    .path-user .main-container .region-content article .field.field--name-user-picture img {
+      border: 2px solid;
+      border-radius: 50%;
+      height: 100px;
+      margin: 0 0 0 46%;
+      padding: 2px;
+      width: 100px; }
+      @media screen and (max-width: 960px) {
         .path-user .main-container .region-content article .field.field--name-user-picture img {
-          border: 2px solid;
-          border-radius: 50%;
-          height: 100px;
-          margin: 0 0 0 46%;
-          padding: 2px;
-          width: 100px; }
-          @media screen and (max-width: 960px) {
-            .path-user .main-container .region-content article .field.field--name-user-picture img {
-              margin: 0 auto; } }
-      .path-user .main-container .region-content article .field .field--label {
-        border-bottom: 1px dashed #ddd;
-        margin: 0 0 5px;
-        padding: 0 0 2px; }
+          margin: 0 auto; } }
+  .path-user .main-container .region-content article .field .field--label {
+    border-bottom: 1px dashed #ddd;
+    margin: 0 0 5px;
+    padding: 0 0 2px; }
 
 .tooltip.right {
   left: 10% !important;

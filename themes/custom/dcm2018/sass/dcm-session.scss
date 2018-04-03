@@ -5,90 +5,78 @@
 
 .view-all-sessions {
   .views-row {
+    border-bottom: 1px solid currentColor;
     margin: 0 0 30px;
-    padding: 10px 0 10px 80px;
+    padding: 0 0 30px;
     position: relative;
-    &:before {
-      color: $base-color;
-      display: block;
-      @include base-fa;
-      left: 0;
-      line-height: 100%;
-      position: absolute;
-      top: 7px;
+    &:last-child {
+      border-bottom: 0;
+      @include no-margin-padding;
     }
-    &.backend-development:before {
+    &.backend-development .views-field-name:before {
       content: "\f1c9";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &.business:before {
+    &.business .views-field-name:before {
       content: "\f0b1";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &.dev-ops:before {
+    &.dev-ops .views-field-name:before {
       content: "\f085";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &.frontend-development:before {
+    &.frontend-development .views-field-name:before {
       content: "\f1fc";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &.building-community:before {
+    &.building-community .views-field-name:before {
       content: "\f0c0";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &.project-management:before {
+    &.project-management .views-field-name:before {
       content: "\f0ae";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &.site-building:before {
+    &.site-building .views-field-name:before {
       content: "\f0e8";
-      font-size: 60px;
+      font-size: 50px;
     }
-    &.case-studies:before {
+    &.case-studies .views-field-name:before {
       content: "\f19d";
-      font-size: 60px;
+      font-size: 50px;
     }
     .views-field-name {
+      align-items: center;
+      display: flex;
       margin-bottom: 20px;
+      padding: 10px 0 10px 0;
+      &:before {
+        color: $base-color;
+        display: block;
+        @include base-fa;
+        line-height: 100%;
+        margin-right: 20px;
+      }
       a {
-        background: linear-gradient(to left, rgba(255,0,0,0), rgba(51,122,183,1));
         color: $white-color;
         display: block;
-        font-size: 27px;
-        line-height: 30px;
-        padding: 10px;
+        font-family: $roboto-slab-bold;
+        font-size: 1.429em;
+        line-height: 22px;
+        padding: 10px 10px 10px 0;
         position: relative;
         text-decoration: none;
-        &:before {
-          background-color: $white-color;
-          content: "";
-          display: block;
-          height: 2px;
-          left: 0;
-          position: absolute;
-          top: 3px;
-          width: 100%;
-        }
-        &:after {
-          background-color: $white-color;
-          content: "";
-          display: block;
-          height: 100%;
-          left: 5px;
-          position: absolute;
-          top: 0;
-          width: 2px;
-        }
+        text-transform: uppercase;
       }
     }
     .view-sessions {
       ul {
         @include no-margin-padding;
-        padding: 0 12px;
         li {
+          background-color: $white-color;
           border-radius: 5px;
           box-shadow: 0 0 5px $gray-color1;
+          color: $blue-color;
           display: inline-block;
           @include base-transition;
           list-style-type: none;
@@ -96,38 +84,40 @@
           padding: 15px;
           vertical-align: top;
           vertical-align: top;
-          width: 31.33%;
-          &:hover {
-            box-shadow: 0 0 5px 3px $gray-color1;
+          width: 23.33%;
+          @media (min-width: 769px) and (max-width: 1024px) {
+            width: 48%;
+            &:nth-child(2n) {
+              margin-right: 0;
+            }
           }
-          &:nth-child(3n) {
+          @media screen and (max-width: 768px) {
             margin-right: 0;
+            width: 100%;
           }
-          &:before {
-            background: linear-gradient(to left, rgba(255,0,0,0), rgba(51,122,183,1));
-            content: "";
-            display: block;
-            height: 1px;
-            margin: 0 0 20px;
+          &:hover {
+            background-color: #e2ecf7;
           }
-          &:after {
-            background: linear-gradient(to left, rgba(255,0,0,0), rgba(51,122,183,1));
-            content: "";
-            display: block;
-            height: 1px;
-            margin: 20px 0 0;
+          &:nth-child(4n) {
+            margin-right: 0;
           }
           .views-field-title {
             a {
+              color: $blue-color;
               display: block;
-              font-size: 18px;
-              height: 45px;
-              line-height: 22px;
+              font-family: $roboto-slab-bold;
+              font-size: 1.071em;
+              height: 61px;
+              line-height: 19px;
               margin-bottom: 8px;
               overflow: hidden;
               padding-left: 25px;
               position: relative;
               text-decoration: none;
+              @media screen and (max-width: 768px) {
+                height: auto;
+                overflow: visible;
+              }
               &:before {
                 color: $blue-color;
                 content: "\f15c";
@@ -142,22 +132,34 @@
           .views-field-field-organisation {
             display: none;
           }
+          .views-field-nothing {
+            position: relative;
+            &:before {
+              background: linear-gradient(to left,rgba(255,0,0,0),#337ab7);
+              content: "";
+              display: block;
+              height: 1px;
+              margin: 0 0 8px;
+            }
+          }
           .speaker-name {
-            padding-left: 25px;
+            color: $blue-color;
+            @include text-overflow;
             &:before {
               color: $blue-color;
               content: "\f007";
               @include base-fa;
-              margin: 0 10px 0 0;
+              margin: 0 15px 0 0;
             }
           }
           .speaker-org {
-            padding-left: 25px;
+            color: $blue-color;
+            @include text-overflow;
             &:before {
               color: $blue-color;
               content: "\f1ad";
               @include base-fa;
-              margin: 0 10px 0 0;
+              margin: 0 15px 0 0;
             }
           }
         }

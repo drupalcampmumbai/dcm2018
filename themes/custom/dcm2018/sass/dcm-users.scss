@@ -44,6 +44,7 @@
         .btn {
           background-color: transparent;
           border: 1px solid $white-color;
+          color: $white-color;
           padding: 12px 10px;
         }
       }
@@ -115,15 +116,7 @@
   }
 }
 .path-user {
-  background-attachment: fixed;
-  background-image: url(../images/drupalman.png);
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-
   .main-container {
-    background-image: none;
-
     .region-content {
       article {
         .field {

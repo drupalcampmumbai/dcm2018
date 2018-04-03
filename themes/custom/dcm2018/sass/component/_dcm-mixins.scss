@@ -87,6 +87,15 @@
 
 // End Flex strech & align item
 
+// Text overflow ellipsis
+@mixin text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+// End Text overflow ellipsis
+
 // Table
 @mixin table-no-odd-even-row {
   tr {

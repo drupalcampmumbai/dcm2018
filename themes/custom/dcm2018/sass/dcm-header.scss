@@ -25,13 +25,20 @@
 .navbar.container {
   background-color: $white-color;
   background-image: url(../images/top-banner.png);
-  background-position: right;
+  background-position: right bottom;
   background-repeat: no-repeat;
   border: 0;
   margin: 0 auto;
   max-width: inherit;
   min-height: 562px;
   padding-top: 20px;
+  @media (min-width: 769px) and (max-width: 1024px) {
+    background-size: 60%;
+  }
+  @media screen and (max-width: 768px) {
+    background-size: 50%;
+    min-height: 525px;
+  }
   .header-inner {
     margin: 0 auto;
   }
@@ -45,7 +52,9 @@
       right: 6%;
       top: 0;
       #block-useraccountmenu {
+        margin-top: -7px;
         ul {
+          @include no-margin-padding;
           li {
             a {
               background-color: $blue-color;
@@ -56,6 +65,10 @@
               text-align: center;
               text-decoration: none;
               text-transform: uppercase;
+              @media screen and (max-width: 768px) {
+                min-width: inherit;
+                padding: 5px 15px;
+              }
             }
           }
         }
@@ -112,6 +125,7 @@
   }
   // Main Menu
   .navbar-collapse {
+    border: 0;
     left: 0;
     margin: auto;
     padding: 0;
@@ -119,6 +133,9 @@
     right: 0;
     text-align: center;
     width: 370px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
     #dcm-sticky-menu {
       .nav {
         > li {
@@ -129,6 +146,14 @@
           @include no-margin-padding;
           list-style-type: none;
           width: 100%;
+          .dropdown-backdrop {
+            @media (min-width: 769px) and (max-width: 1024px) {
+              display: none;
+            }
+            @media screen and (max-width: 768px) {
+              display: none;
+            }
+          }
           &.open,
           &.active {
             background-color: $blue-color;
@@ -140,13 +165,18 @@
               }
             }
           }
-          &.active {
-            a.is-active {
-              background-color: #193d5b;
-              font-size: 2.5em;
-              line-height: 40px;
-              padding: 15px 20px;
+          a.is-active {
+            background-color: #193d5b;
+            font-size: 2.5em;
+            line-height: 40px;
+            padding: 15px 20px;
+            @media screen and (max-width: 768px) {
+              font-size: 2em;
+              line-height: 35px;
+              padding: 10px 20px;
             }
+          }
+          &.active {
             .dropdown-menu {
               display: block;
             }
@@ -158,6 +188,9 @@
             text-align: center;
             text-decoration: none;
             transition: none;
+            @media screen and (max-width: 768px) {
+              font-size: 1.5em;
+            }
             &.dropdown-toggle {
               margin: 0 15px;
             }
@@ -186,6 +219,15 @@
     left: 16.5%;
     position: absolute;
     z-index: 2;
+    @media (min-width: 769px) and (max-width: 1024px) {
+      left: 19.5%;
+    }
+    @media screen and (max-width: 768px) {
+      display: inline-block;
+      float: none !important;
+      margin: 0 auto;
+      position: static;
+    }
     img {
       height: 180px;
       max-width: inherit;
@@ -203,6 +245,12 @@
     margin-bottom: 2em;
     margin-top: 2em;
     position: relative;
+    @media screen and (max-width: 768px) {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
     .column-1 {
       color: $blue-color;
       display: -ms-flexbox;
@@ -216,8 +264,24 @@
       text-align: right;
       -ms-transform: rotate(270deg);
       transform: rotate(270deg);
+      @media (min-width: 769px) and (max-width: 1024px) {
+        flex-basis: 23%;
+        margin-left: -2%;
+      }
+      @media screen and (max-width: 768px) {
+        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        margin: 0 auto;
+        max-width: 300px;
+        text-align: center;
+        -ms-transform: none;
+        transform: none;
+      }
       span:last-child {
         position: relative;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
         &:after {
           background-color: $blue-color;
           content: "";
@@ -238,9 +302,20 @@
       -ms-flex-preferred-size: 100%;
       justify-content: center;
       margin-top: 150px;
+      @media screen and (max-width: 768px) {
+        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        margin-top: 0;
+      }
       .inner {
         text-align: center;
         width: 30%;
+        @media (min-width: 769px) and (max-width: 1024px) {
+          width: 42%;
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
       }
       .header-text {
         display: -ms-flexbox;
@@ -248,6 +323,9 @@
         -ms-flex-direction: column;
         flex-direction: column;
         margin-top: 1em;
+        @media screen and (max-width: 768px) {
+          margin-top: 0;
+        }
         h2 {
           color: $blue-color2;
           font-family: $roboto-slab-bold;
@@ -282,6 +360,9 @@
       -ms-flex-preferred-size: 10%;
       justify-content: center;
       margin-bottom: -16%;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
       a {
         background-size: cover;
         cursor: pointer;
@@ -319,6 +400,12 @@
     }
     .linkedin {
       background: url("../images/linkedin.svg") no-repeat scroll 0 0 transparent;
+    }
+  }
+
+  .banner {
+    @media screen and (max-width: 768px) {
+      text-align: center;
     }
   }
 

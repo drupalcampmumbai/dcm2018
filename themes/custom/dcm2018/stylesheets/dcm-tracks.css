@@ -1,99 +1,93 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
+  src: url("../fonts/OpenSans-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.woff");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
+  src: url("../fonts/Raleway-Regular.woff"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.woff");
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
+  src: url("../fonts/Raleway-ExtraBold.woff"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.woff");
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-regular.woff"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.woff");
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
+  src: url("../fonts/roboto-slab-bold.woff"); }
 
-.track-content .track-row {
-  margin: 0 0 30px;
-  padding: 10px 0 10px 80px;
-  position: relative; }
-  .track-content .track-row:before {
-    color: #207dcc;
-    display: block;
-    display: inline-block;
-    font-family: FontAwesome;
-    -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    font-weight: normal;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: auto;
-    left: 0;
-    line-height: 100%;
-    position: absolute;
-    top: 7px; }
-  .track-content .track-row#back-end-developement:before {
-    content: "\f1c9";
-    font-size: 60px; }
-  .track-content .track-row#business:before {
-    content: "\f0b1";
-    font-size: 60px; }
-  .track-content .track-row#dev-ops:before {
-    content: "\f085";
-    font-size: 60px; }
-  .track-content .track-row#frontend:before {
-    content: "\f1fc";
-    font-size: 60px; }
-  .track-content .track-row#building-community:before {
-    content: "\f0c0";
-    font-size: 60px; }
-  .track-content .track-row#project-management:before {
-    content: "\f0ae";
-    font-size: 60px; }
-  .track-content .track-row#site-building:before {
-    content: "\f0e8";
-    font-size: 60px; }
-  .track-content .track-row#case-studies:before {
-    content: "\f19d";
-    font-size: 60px; }
-  .track-content .track-row > h2 {
-    background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
-    color: #fff;
-    padding: 10px;
+.track-content {
+  margin-bottom: 20px; }
+  .track-content .track-row {
+    border-bottom: 1px solid currentColor;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     position: relative; }
-    .track-content .track-row > h2:before {
-      background-color: #fff;
-      content: "";
-      display: block;
-      height: 2px;
-      left: 0;
-      position: absolute;
-      top: 3px;
-      width: 100%; }
-    .track-content .track-row > h2:after {
-      background-color: #fff;
-      content: "";
-      display: block;
-      height: 100%;
-      left: 5px;
-      position: absolute;
-      top: 0;
-      width: 2px; }
-  .track-content .track-row .session-data {
-    padding: 10px; }
+    .track-content .track-row:last-child {
+      border-bottom: 0;
+      margin: 0;
+      padding: 0; }
+    .track-content .track-row.back-end-developement h2:before {
+      content: "\f1c9";
+      font-size: 50px; }
+    .track-content .track-row.business h2:before {
+      content: "\f0b1";
+      font-size: 50px; }
+    .track-content .track-row.dev-ops h2:before {
+      content: "\f085";
+      font-size: 50px; }
+    .track-content .track-row.frontend h2:before {
+      content: "\f1fc";
+      font-size: 50px; }
+    .track-content .track-row.building-community h2:before {
+      content: "\f0c0";
+      font-size: 50px; }
+    .track-content .track-row.project-management h2:before {
+      content: "\f0ae";
+      font-size: 50px; }
+    .track-content .track-row.site-building h2:before {
+      content: "\f0e8";
+      font-size: 50px; }
+    .track-content .track-row.case-studies h2:before {
+      content: "\f19d";
+      font-size: 50px; }
+    .track-content .track-row > h2 {
+      -ms-flex-align: center;
+          align-items: center;
+      color: #fff;
+      display: -ms-flexbox;
+      display: flex;
+      font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
+      font-size: 1.429em;
+      line-height: 24px;
+      margin-bottom: 15px;
+      padding: 10px 10px 10px 0;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase; }
+      .track-content .track-row > h2:before {
+        color: #fff;
+        display: block;
+        display: inline-block;
+        font-family: FontAwesome;
+        -webkit-font-smoothing: antialiased;
+        font-style: normal;
+        font-weight: normal;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: auto;
+        line-height: 100%;
+        margin-right: 20px; }
 
 /*# sourceMappingURL=css-maps/dcm-tracks.css.map */

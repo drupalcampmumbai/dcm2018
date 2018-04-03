@@ -14,6 +14,10 @@
       min-height: inherit;
       padding-top: 0;
       width: 100%;
+      @media screen and (max-width: 768px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
     .page-header,
     nav.tabs {
@@ -44,6 +48,9 @@
     text-align: center;
     top: -24px;
     width: 358px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
   .view-sponsors {
     margin: 0 auto;
@@ -56,6 +63,14 @@
       text-align: center;
       vertical-align: middle;
       width: 22.5%;
+      @media (min-width: 769px) and (max-width: 1024px) {
+        margin: 0 0 20px 0;
+        width: 95%;
+      }
+      @media screen and (max-width: 768px) {
+        margin: 0 0 20px 0;
+        width: 90%;
+      }
       &:nth-child(4n) {
         margin-right: 0;
       }
@@ -74,6 +89,12 @@
       }
     }
   }
+  .view-footer {
+    .btn {
+      background-color: $blue-color;
+      color: $white-color;
+    }
+  }
 }
 
 .block-views-blocksponsors-platinum-sponsors {
@@ -88,6 +109,9 @@
       position: absolute;
       top: -16px;
       width: 86px;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 }
@@ -104,6 +128,9 @@
       position: absolute;
       top: -16px;
       width: 86px;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 }
@@ -120,6 +147,9 @@
       position: absolute;
       top: -16px;
       width: 86px;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 }
@@ -163,7 +193,8 @@
 }
 
 // Recent News
-.path-frontpage {
+.path-frontpage,
+.path-news {
   #middle-content {
     .region {
       .drupal-recent-news {
@@ -172,102 +203,115 @@
           font-size: 2.429em;
           margin-bottom: 40px;
         }
-        .view-drupal-camp-news {
-          background-image: url(../images/droper.png);
-          background-position: top right -11px;
-          background-repeat: no-repeat;
-          margin: 0 auto;
-          max-width: $page-width;
-          overflow: hidden;
-          padding: 135px 0 145px;
-          position: relative;
-          .views-row {
-            border-bottom: 0;
-            float: left;
-            margin: 0 0 40px;
-            padding: 0;
-            width: 100%;
-            &:last-child {
-              margin-bottom: 0;
-            }
-            .views-field {
-              margin: 5px 0 0;
-              .homepage-new {
-                .date-mnth {
-                  .inner {
-                    background-color: $white-color;
-                    color: $blue-color;
-                    float: left;
-                    height: 85px;
-                    padding: 10px;
-                    position: relative;
-                    text-align: left;
-                    width: 85px;
-                    &:before {
-                      background-color: $blue-color;
-                      content: "";
-                      height: 5px;
-                      left: 10px;
-                      position: absolute;
-                      top: 0;
-                      width: 5px;
-                    }
-                    &:after {
-                      background-color: $blue-color;
-                      content: "";
-                      height: 5px;
-                      position: absolute;
-                      right: 10px;
-                      top: 0;
-                      width: 5px;
-                    }
-                    h1 {
-                      font-family: $roboto-slab-bold;
-                      font-size: 2.429em;
-                      margin-bottom: 0;
-                      padding-bottom: 5px !important;
-                      padding-top: 5px !important;
-                    }
-                    h4 {
-                      font-family: $roboto-slab-bold;
-                      font-size: 2em;
-                      text-transform: uppercase !important;
-                    }
+      }
+      .view-drupal-camp-news {
+        background-image: url(../images/droper.png);
+        background-position: top right -11px;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        max-width: $page-width;
+        overflow: hidden;
+        padding: 135px 0 145px;
+        position: relative;
+        @media (min-width: 769px) and (max-width: 1024px) {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        @media screen and (max-width: 768px) {
+          padding: 135px 15px 100px;
+        }
+        .views-row {
+          border-bottom: 0;
+          float: left;
+          margin: 0 0 40px;
+          padding: 0;
+          width: 100%;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .views-field {
+            margin: 5px 0 0;
+            .homepage-new {
+              .date-mnth {
+                .inner {
+                  background-color: $white-color;
+                  color: $blue-color;
+                  float: left;
+                  height: 85px;
+                  padding: 10px;
+                  position: relative;
+                  text-align: left;
+                  width: 85px;
+                  &:before {
+                    background-color: $blue-color;
+                    content: "";
+                    height: 5px;
+                    left: 10px;
+                    position: absolute;
+                    top: 0;
+                    width: 5px;
                   }
-                }
-                .data-wrapper {
-                  padding-right: 25px;
-                  @media screen and (max-width: 991px) {
-                    padding-right: 0;
+                  &:after {
+                    background-color: $blue-color;
+                    content: "";
+                    height: 5px;
+                    position: absolute;
+                    right: 10px;
+                    top: 0;
+                    width: 5px;
                   }
-                  .news-title {
-                    a {
-                      color: $white-color;
-                      display: inline-block;
-                      font-family: $roboto-slab-bold;
-                      font-size: 1em;
-                      margin-bottom: 10px;
-                      margin-top: 0;
-                      text-decoration: initial;
-                    }
+                  h1 {
+                    font-family: $roboto-slab-bold;
+                    font-size: 2.429em;
+                    margin-bottom: 0;
+                    padding-bottom: 5px !important;
+                    padding-top: 5px !important;
                   }
-                  .news-body {
-                    color: $white-color;
+                  h4 {
+                    font-family: $roboto-slab-bold;
+                    font-size: 2em;
+                    text-transform: uppercase !important;
                   }
                 }
               }
-            }
-
-            .views-more-link {
-              margin: 10px 12px;
-              text-align: right;
-
-              a {
-                border-left: 2px solid $link-color;
-                padding-left: 5px;
-                &:after {
-                  content: " >>";
+              .data-wrapper {
+                padding-right: 25px;
+                @media screen and (max-width: 991px) {
+                  padding-right: 0;
                 }
+                @media (min-width: 769px) and (max-width: 1024px) {
+                  margin-top: 10px;
+                }
+                @media screen and (max-width: 768px) {
+                  margin-top: 10px;
+                }
+                .news-title {
+                  a {
+                    color: $white-color;
+                    display: inline-block;
+                    font-family: $roboto-slab-bold;
+                    font-size: 1em;
+                    margin-bottom: 10px;
+                    margin-top: 0;
+                    text-decoration: initial;
+                  }
+                }
+                .news-body {
+                  color: $white-color;
+                }
+              }
+            }
+          }
+
+          .views-more-link {
+            margin: 10px 12px;
+            text-align: right;
+
+            a {
+              border-left: 2px solid $link-color;
+              padding-left: 5px;
+              &:after {
+                content: " >>";
               }
             }
           }
@@ -292,6 +336,19 @@
     }
   }
 }
+
+.path-news {
+  #middle-content {
+    .region {
+      .view-drupal-camp-news {
+        background-image: none;
+        margin: auto;
+        max-width: inherit;
+        padding: 0;
+      }
+    }
+  }
+}
 // End Recent News
 
 // Apprentice and Join DA
@@ -301,6 +358,13 @@
   color: $white-color;
   padding: 150px 0 180px;
   position: relative;
+  @media (min-width: 769px) and (max-width: 1024px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 100px 15px;
+  }
 
   .drupal-apprentice,
   .join-drup-assoc {
@@ -315,16 +379,20 @@
     .btn {
       background-color: transparent;
       border: 1px solid $white-color;
+      color: $white-color;
       padding: 12px 10px;
     }
     .image-wrapper {
       text-align: right;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
     }
   }
 }
 
 // Map
-.location-info-block {
+.location-info {
   height: 566px;
 }
 .location-info {
@@ -342,6 +410,9 @@
     top: 20px;
     width: 310px;
     z-index: 1;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
     &:before {
       border-bottom: 15px solid transparent;
       border-right: 15px solid rgba(0, 0, 0, .5);

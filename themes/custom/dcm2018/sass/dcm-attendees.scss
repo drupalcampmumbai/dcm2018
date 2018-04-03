@@ -29,18 +29,31 @@
       .form-item {
         display: inline-block;
         vertical-align: top;
-        width: 26.5% !important;
+        width: 26.5%;
+        @media (min-width: 769px) and (max-width: 1024px) {
+          width: 45.5%;
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
         label {
           font-size: 15px;
         }
       }
       .form-actions {
         .btn {
-          background: none;
           margin-left: 15px;
           margin-right: 0;
           margin-top: 0;
           min-width: inherit;
+          @media (min-width: 769px) and (max-width: 1024px) {
+            margin-left: 0;
+            margin-right: 10px;
+          }
+          @media screen and (max-width: 768px) {
+            margin-left: 0;
+            margin-right: 10px;
+          }
           &:focus {
             box-shadow: none;
             outline: none;
@@ -81,16 +94,21 @@
       vertical-align: top;
       width: 23.33%;
       @media screen and (max-width: 1200px) {
-        max-width: 340px;
-        width: 41%;
+        margin: 0 20px 30px 0;
+        width: 48%;
+        &:nth-child(2n) {
+          margin-left: 0;
+          margin-right: 0;
+        }
       }
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 768px) {
         margin: 0 auto 30px;
-        width: 100%;
+        width: 47%;
       }
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 480px) {
         max-width: 240px;
         min-width: 250px;
+        width: 100%;
       }
       &:nth-child(4n) {
         margin-right: 0;
@@ -171,11 +189,9 @@
             padding-right: 0;
             .attendees-name {
               font-size: 24px;
+              @include text-overflow;
               line-height: 30px;
               margin-bottom: 5px;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
               @media screen and (max-width: 1010px) {
                 font-size: 20px;
                 line-height: 24px;
@@ -188,11 +204,9 @@
             h3 {
               font-size: 16px;
               height: 20px;
+              @include text-overflow;
               line-height: 20px;
               margin-bottom: 0;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
               @media screen and (max-width: 1010px) {
                 font-size: 15px;
                 line-height: 19px;

@@ -33,30 +33,7 @@ jQuery(document).ready(function($){
 
     /*For screen size*/
     if ($(window).width() < 960) {
-        /*Responsive menu*/       
-        $('#navbar .navbar-toggle').on('click', function (e) {
-            $('body').addClass('sliderO');
-            $('header#navbar').append('<div class="menuSlideOverlay"></div>');
-            $('.welcomeUserMenu').append('<div class="menuSlideClose">X</div>');
-            if ($('.menuSlideOverlay').length > 0) {
-                $('.menuSlideOverlay').on('click', function (e) {
-                    $('header#navbar .navbar-toggle').trigger('click');
-                    $('body').removeClass('sliderO');
-                    $('.menuSlideOverlay, .menuSlideClose').remove();
-                });
-            }
-        });
-        $('body').on('click', '.menuSlideClose', function() {
-            $('header#navbar .navbar-toggle').trigger('click');
-            $('body').removeClass('sliderO');
-            $('.menuSlideOverlay, .menuSlideClose').remove();
-        });         
-        //var userNametxt = $('.login-user h1').text();
-        //$('header#navbar #dcm-sticky-menu .menu.nav').prepend('<h2 class="welcomeUserMenu"><span>Hello</span> <span class="uName">Drupalite</span></h2>');
-        //$('.user-logged-in .uName').text(userNametxt);                    
-        /*End Responsive menu*/
     } else {
-        $('.welcomeUserMenu').remove();
     }
     /*End For screen size*/
 });
