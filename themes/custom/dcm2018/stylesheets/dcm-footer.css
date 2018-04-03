@@ -1,42 +1,56 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
+  src: url("../fonts/OpenSans-Regular.woff");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.woff"); }
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
+  src: url("../fonts/roboto-slab-regular.woff");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.woff"); }
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
+  src: url("../fonts/roboto-slab-bold.woff");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.woff"); }
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .path-frontpage .footer.container {
-    border-top: 0;
-    padding-top: 0; } }
+.path-frontpage .footer.container {
+  padding-top: 0; }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .path-frontpage .footer.container {
+      border-top: 0;
+      padding-top: 0; } }
+  @media screen and (max-width: 768px) {
+    .path-frontpage .footer.container {
+      border-top: 0;
+      padding-top: 0; } }
+  .path-frontpage .footer.container .top-footer {
+    background-color: #207dcc; }
+    .path-frontpage .footer.container .top-footer .col-lg-3 h2 {
+      color: #fff; }
+    .path-frontpage .footer.container .top-footer .col-lg-3 .nav li a {
+      color: #fff; }
+      .path-frontpage .footer.container .top-footer .col-lg-3 .nav li a:before {
+        background: #fff none repeat scroll 0 0; }
+  .path-frontpage .footer.container .region-footer .dcm2017-footer {
+    border-top: 1px solid #fff; }
 
-@media screen and (max-width: 768px) {
-  .path-frontpage .footer.container {
-    border-top: 0;
-    padding-top: 0; } }
+.path-frontpage .socialConnect-block a {
+  color: #fff; }
 
 .footer.container {
   background-color: #207dcc;
@@ -45,21 +59,28 @@
   margin: 0;
   max-width: inherit;
   overflow: hidden;
-  padding: 85px 0 20px;
+  padding: 30px 0 20px;
   position: relative; }
   @media (min-width: 769px) and (max-width: 1024px) {
     .footer.container {
-      border-top: 1px solid currentColor;
       padding-top: 20px; } }
   @media screen and (max-width: 768px) {
     .footer.container {
-      border-top: 1px solid currentColor;
       padding-top: 20px; } }
   .footer.container .top-footer {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding-bottom: 25px; }
+    background-color: #fff;
+    padding: 85px 0 25px; }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .footer.container .top-footer {
+        padding: 20px 0; } }
+    @media screen and (max-width: 768px) {
+      .footer.container .top-footer {
+        padding: 20px 0; } }
+    .footer.container .top-footer .region-top-footer {
+      margin: 0 auto;
+      max-width: 1200px; }
     .footer.container .top-footer .col-lg-3 h2 {
+      color: #207dcc;
       font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
       font-size: 1.3em;
       margin-bottom: 40px; }
@@ -85,12 +106,12 @@
         .footer.container .top-footer .col-lg-3 .nav li:last-child {
           margin-bottom: 0; }
         .footer.container .top-footer .col-lg-3 .nav li a {
-          color: #fff;
+          color: #207dcc;
           display: inline-block;
           padding: 0;
           text-decoration: none; }
           .footer.container .top-footer .col-lg-3 .nav li a:before {
-            background: #fff none repeat scroll 0 0;
+            background: #207dcc none repeat scroll 0 0;
             bottom: 0;
             content: "";
             height: 1px;
@@ -116,7 +137,7 @@
     margin: 0;
     padding: 0; }
     .footer.container .region-footer .dcm2017-footer {
-      border-top: 1px solid #fff;
+      border-top: 0;
       color: #fff;
       margin-bottom: 0;
       padding: 20px 0 0;

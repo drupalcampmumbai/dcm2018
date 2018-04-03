@@ -4,6 +4,7 @@
 // Note: !important used to override other css file.
 .path-frontpage {
   .footer.container {
+    padding-top: 0;
     @media (min-width: 769px) and (max-width: 1024px) {
       border-top: 0;
       padding-top: 0;
@@ -11,6 +12,37 @@
     @media screen and (max-width: 768px) {
       border-top: 0;
       padding-top: 0;
+    }
+    // Top footer
+    .top-footer {
+      background-color: $blue-color;
+      .col-lg-3 {
+        h2 {
+          color: $white-color;
+        }
+        .nav {
+          li {
+            a {
+              color: $white-color;
+              &:before {
+                background: $white-color none repeat scroll 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .region-footer {
+      // Footer copyright
+      .dcm2017-footer {
+        border-top: 1px solid $white-color;
+      }
+    }
+  }
+  // Connect us block
+  .socialConnect-block {
+    a {
+      color: $white-color;
     }
   }
 }
@@ -22,24 +54,32 @@
   margin: 0;
   max-width: inherit;
   overflow: hidden;
-  padding: 85px 0 20px;
+  padding: 30px 0 20px;
   position: relative;
   @media (min-width: 769px) and (max-width: 1024px) {
-    border-top: 1px solid currentColor;
     padding-top: 20px;
   }
   @media screen and (max-width: 768px) {
-    border-top: 1px solid currentColor;
     padding-top: 20px;
   }
 
   // Top footer
   .top-footer {
-    margin: 0 auto;
-    max-width: $page-width;
-    padding-bottom: 25px;
+    background-color: $white-color;
+    padding: 85px 0 25px;
+    @media (min-width: 769px) and (max-width: 1024px) {
+      padding: 20px 0;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 20px 0;
+    }
+    .region-top-footer {
+      margin: 0 auto;
+      max-width: $page-width;
+    }
     .col-lg-3 {
       h2 {
+        color: $blue-color;
         font-family: $roboto-slab-bold;
         font-size: 1.3em;
         margin-bottom: 40px;
@@ -66,12 +106,12 @@
             margin-bottom: 0;
           }
           a {
-            color: $base-color;
+            color: $blue-color;
             display: inline-block;
             padding: 0;
             text-decoration: none;
             &:before {
-              background: $base-color none repeat scroll 0 0;
+              background: $blue-color none repeat scroll 0 0;
               bottom: 0;
               content: "";
               height: 1px;
@@ -113,7 +153,7 @@
 
     // Footer copyright
     .dcm2017-footer {
-      border-top: 1px solid $white-color;
+      border-top: 0;
       color: $white-color;
       margin-bottom: 0;
       padding: 20px 0 0;

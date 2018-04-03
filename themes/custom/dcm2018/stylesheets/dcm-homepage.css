@@ -1,32 +1,32 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
+  src: url("../fonts/OpenSans-Regular.woff");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.woff"); }
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
+  src: url("../fonts/roboto-slab-regular.woff");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.woff"); }
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
+  src: url("../fonts/roboto-slab-bold.woff");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.woff"); }
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
 
 .path-frontpage .main-container {
   max-width: inherit;
@@ -38,10 +38,16 @@
     min-height: inherit;
     padding-top: 0;
     width: 100%; }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .path-frontpage .main-container > .row {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0; } }
     @media screen and (max-width: 768px) {
       .path-frontpage .main-container > .row {
         padding-left: 0;
-        padding-right: 0; } }
+        padding-right: 0;
+        padding-bottom: 0; } }
   .path-frontpage .main-container .page-header,
   .path-frontpage .main-container nav.tabs {
     display: none; }
@@ -178,7 +184,7 @@
       display: none; } }
 
 .socialConnect-block a {
-  color: #fff;
+  color: #207dcc;
   font-size: 0;
   margin-right: 5px; }
   .socialConnect-block a:before {
@@ -316,19 +322,6 @@
         .path-news #middle-content .region .view-drupal-camp-news .views-row .views-more-link a:after {
           content: " >>"; }
 
-.path-frontpage #middle-content .region .gold-sponsors,
-.path-news #middle-content .region .gold-sponsors {
-  text-align: center; }
-  .path-frontpage #middle-content .region .gold-sponsors .form-group .view-content .views-row,
-  .path-news #middle-content .region .gold-sponsors .form-group .view-content .views-row {
-    display: table;
-    margin: 0 auto 15px; }
-    @media screen and (max-width: 991px) {
-      .path-frontpage #middle-content .region .gold-sponsors .form-group .view-content .views-row,
-      .path-news #middle-content .region .gold-sponsors .form-group .view-content .views-row {
-        display: inline-block;
-        margin: 10px; } }
-
 .path-news #middle-content .region .view-drupal-camp-news {
   background-image: none;
   margin: auto;
@@ -402,6 +395,9 @@
     top: 20px;
     width: 310px;
     z-index: 1; }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .location-info .footer-copy {
+        display: none; } }
     @media screen and (max-width: 768px) {
       .location-info .footer-copy {
         display: none; } }

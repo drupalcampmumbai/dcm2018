@@ -14,7 +14,13 @@
       min-height: inherit;
       padding-top: 0;
       width: 100%;
+      @media (min-width: 769px) and (max-width: 1024px) {
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
       @media screen and (max-width: 768px) {
+        padding-bottom: 0;
         padding-left: 0;
         padding-right: 0;
       }
@@ -157,7 +163,7 @@
 // Connect us block
 .socialConnect-block {
   a {
-    color: $base-color;
+    color: $blue-color;
     font-size: 0;
     margin-right: 5px;
 
@@ -317,22 +323,6 @@
           }
         }
       }
-      .gold-sponsors {
-        text-align: center;
-
-        .form-group {
-          .view-content {
-            .views-row {
-              display: table;
-              margin: 0 auto 15px;
-              @media screen and (max-width: 991px) {
-                display: inline-block;
-                margin: 10px;
-              }
-            }
-          }
-        }
-      }
     }
   }
 }
@@ -410,6 +400,9 @@
     top: 20px;
     width: 310px;
     z-index: 1;
+    @media (min-width: 769px) and (max-width: 1024px) {
+      display: none;
+    }
     @media screen and (max-width: 768px) {
       display: none;
     }
