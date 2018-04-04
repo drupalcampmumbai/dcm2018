@@ -9060,7 +9060,7 @@ body.maintenance-page {
   src: url("../fonts/roboto-slab-bold.woff"); }
 
 .page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-speaker .views-row .views-field a:before {
-  color: #207dcc;
+  color: #fff;
   content: "\f028";
   font-size: inherit;
   display: inline-block;
@@ -9074,7 +9074,7 @@ body.maintenance-page {
   padding: 0 8px; }
 
 .page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-details .views-row .views-field .field-content:before {
-  color: #207dcc;
+  color: #fff;
   content: "\f05a";
   font-size: inherit;
   display: inline-block;
@@ -9088,7 +9088,7 @@ body.maintenance-page {
   padding: 0 8px; }
 
 .page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-track .views-row .views-field-field-session-track .field-content:before {
-  color: #207dcc;
+  color: #fff;
   content: "\f15c";
   font-size: inherit;
   display: inline-block;
@@ -9102,7 +9102,7 @@ body.maintenance-page {
   padding: 0 8px; }
 
 .page-node-type-sessions .main-container aside.col-sm-3 .block-views.session-track .views-row .views-field-field-session-time .field-content:before {
-  color: #207dcc;
+  color: #fff;
   content: "\f073";
   font-size: inherit;
   display: inline-block;
@@ -9116,12 +9116,12 @@ body.maintenance-page {
   padding: 0 8px; }
 
 .page-node-type-sessions .main-container aside.col-sm-3 .block-views .block-title {
-  background: linear-gradient(to left, rgba(255, 0, 0, 0), #337ab7);
-  color: #fff;
+  background: linear-gradient(to left, rgba(255, 0, 0, 0), white);
+  color: #207dcc;
   padding: 10px;
   position: relative; }
   .page-node-type-sessions .main-container aside.col-sm-3 .block-views .block-title:before {
-    background-color: #fff;
+    background-color: #207dcc;
     content: "";
     display: block;
     height: 2px;
@@ -9130,7 +9130,7 @@ body.maintenance-page {
     top: 3px;
     width: 100%; }
   .page-node-type-sessions .main-container aside.col-sm-3 .block-views .block-title:after {
-    background-color: #fff;
+    background-color: #207dcc;
     content: "";
     display: block;
     height: 100%;
