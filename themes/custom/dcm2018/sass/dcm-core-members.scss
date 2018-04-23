@@ -5,39 +5,48 @@
 
 .view-volunteers {
   h3 {
-    border-bottom: 0;
-    clear: both;
-    color: rgba(51, 51, 51, .81);
+    border-top: 1px solid $white-color;
+    display: block;
+    font-family: $roboto-slab-bold;
+    font-size: 1.429em;
+    line-height: 22px;
     margin: 15px 0 30px;
-    padding: 20px 0 10px 10px;
+    padding: 30px 0 0;
     position: relative;
-    &:before {
-      background-color: #635f5f;
-      bottom: 0;
-      content: "";
-      display: inline-block;
-      height: 42px;
-      left: 0;
-      position: absolute;
-      width: 4px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    &:first-child {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    @media screen and (max-width: 460px) {
+      text-align: center;
     }
   }
 
   .view-content {
-    @media screen and (max-width: 960px) {
-      text-align: center;
-    }
+    display: flex;
+    flex-wrap: wrap;
 
     .views-row {
-      background: #eee;
-      border-bottom: 2px solid #3379b7;
-      border-top: 2px solid #3379b7;
-      display: inline-block;
-      margin-bottom: 30px;
-      margin-bottom: 30px;
+      background: $white-color;
+      border-radius: 5px;
+      box-shadow: 0 0 5px $gray-color1;
+      margin: 0 10px 20px 10px;
       padding: 20px;
       vertical-align: top;
-      width: 24.5%;
+      width: 23%;
+      @media screen and (max-width: 768px) {
+        width: 45%;
+      }
+      @media screen and (max-width: 460px) {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+      }
       .team-card {
         .card-photo {
           img {
@@ -51,15 +60,20 @@
           }
         }
         .card-info {
+          margin-top: 20px;
           text-align: center;
           h2 {
-            font-size: 25px;
+            color: $blue-color;
+            font-family: $roboto-slab-bold;
+            font-size: 1.5em;
             margin-bottom: 0;
             a {
+              color: $blue-color;
               text-decoration: none;
             }
           }
           h4 {
+            color: $blue-color;
             font-size: 16px;
           }
         }

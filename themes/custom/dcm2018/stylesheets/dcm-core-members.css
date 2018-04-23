@@ -29,52 +29,68 @@
   src: url("../fonts/roboto-slab-bold.woff"); }
 
 .view-volunteers h3 {
-  border-bottom: 0;
-  clear: both;
-  color: rgba(51, 51, 51, 0.81);
+  border-top: 1px solid #fff;
+  display: block;
+  width: 100%;
   margin: 15px 0 30px;
-  padding: 20px 0 10px 10px;
-  position: relative; }
-  .view-volunteers h3:before {
-    background-color: #635f5f;
-    bottom: 0;
-    content: "";
-    display: inline-block;
-    height: 42px;
-    left: 0;
-    position: absolute;
-    width: 4px; }
+  font-size: 1.429em;
+  line-height: 22px;
+  padding: 30px 0 0;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  font-family: "Roboto Slab Bold", tahoma, Sans-Serif; }
+  .view-volunteers h3:first-child {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0; }
+  @media screen and (max-width: 460px) {
+    .view-volunteers h3 {
+      text-align: center; } }
 
-@media screen and (max-width: 960px) {
-  .view-volunteers .view-content {
-    text-align: center; } }
-
-.view-volunteers .view-content .views-row {
-  background: #eee;
-  border-bottom: 2px solid #3379b7;
-  border-top: 2px solid #3379b7;
-  display: inline-block;
-  margin-bottom: 30px;
-  margin-bottom: 30px;
-  padding: 20px;
-  vertical-align: top;
-  width: 24.5%; }
-  .view-volunteers .view-content .views-row .team-card .card-photo img {
-    border-left: 5px solid #207dcc;
-    border-radius: 50%;
-    border-right: 5px solid #207dcc;
-    transition: all .5s ease-in-out 0s;
-    margin: auto;
-    padding: 10px;
-    width: 200px; }
-  .view-volunteers .view-content .views-row .team-card .card-info {
-    text-align: center; }
-    .view-volunteers .view-content .views-row .team-card .card-info h2 {
-      font-size: 25px;
-      margin-bottom: 0; }
-      .view-volunteers .view-content .views-row .team-card .card-info h2 a {
-        text-decoration: none; }
-    .view-volunteers .view-content .views-row .team-card .card-info h4 {
-      font-size: 16px; }
+.view-volunteers .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .view-volunteers .view-content .views-row {
+    background: #fff;
+    margin: 0 10px 20px 10px;
+    padding: 20px;
+    vertical-align: top;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ddd;
+    width: 23%; }
+    @media screen and (max-width: 768px) {
+      .view-volunteers .view-content .views-row {
+        width: 45%; } }
+    @media screen and (max-width: 460px) {
+      .view-volunteers .view-content .views-row {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0; } }
+    .view-volunteers .view-content .views-row .team-card .card-photo img {
+      border-left: 5px solid #207dcc;
+      border-radius: 50%;
+      border-right: 5px solid #207dcc;
+      transition: all .5s ease-in-out 0s;
+      margin: auto;
+      padding: 10px;
+      width: 200px; }
+    .view-volunteers .view-content .views-row .team-card .card-info {
+      text-align: center;
+      margin-top: 20px; }
+      .view-volunteers .view-content .views-row .team-card .card-info h2 {
+        font-size: 1.5em;
+        margin-bottom: 0;
+        color: #207dcc;
+        font-family: "Roboto Slab Bold", tahoma, Sans-Serif; }
+        .view-volunteers .view-content .views-row .team-card .card-info h2 a {
+          text-decoration: none;
+          color: #207dcc; }
+      .view-volunteers .view-content .views-row .team-card .card-info h4 {
+        font-size: 16px;
+        color: #207dcc; }
 
 /*# sourceMappingURL=css-maps/dcm-core-members.css.map */

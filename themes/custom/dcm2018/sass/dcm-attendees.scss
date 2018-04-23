@@ -78,8 +78,8 @@
   }
   .view-content {
     align-items: stretch;
-    display: flex;
     display: -ms-flexbox;
+    display: flex;
     -ms-flex-align: stretch;
     -ms-flex-flow: wrap row;
     flex-flow: wrap row;

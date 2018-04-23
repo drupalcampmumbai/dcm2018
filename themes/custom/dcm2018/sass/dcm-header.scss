@@ -237,8 +237,8 @@
   // Top container
   .top-container {
     align-items: center;
-    display: -ms-flexbox;
     display: flex;
+    display: -ms-flexbox;
     -ms-flex-align: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -318,8 +318,8 @@
         }
       }
       .header-text {
-        display: -ms-flexbox;
         display: flex;
+        display: -ms-flexbox;
         -ms-flex-direction: column;
         flex-direction: column;
         margin-top: 1em;
