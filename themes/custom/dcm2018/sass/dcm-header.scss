@@ -21,6 +21,9 @@
 .navbar-collapse.collapse.in {
   display: block !important;
 }
+.menu-toggle {
+  overflow: hidden;
+}
 
 .navbar.container {
   background-color: $white-color;
@@ -98,6 +101,7 @@
       background-color: $white-color;
       height: 100%;
       left: 0;
+      overflow-y: auto;
       padding: 20px;
       position: fixed;
       top: 0;
@@ -237,8 +241,8 @@
   // Top container
   .top-container {
     align-items: center;
-    display: flex;
     display: -ms-flexbox;
+    display: flex;
     -ms-flex-align: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -318,8 +322,8 @@
         }
       }
       .header-text {
-        display: flex;
         display: -ms-flexbox;
+        display: flex;
         -ms-flex-direction: column;
         flex-direction: column;
         margin-top: 1em;

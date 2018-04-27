@@ -15,6 +15,7 @@ jQuery(document).ready(function($){
 
     $('#navbar .navbar-toggle').on('click', function (e) {
         $('.navbar-header').toggleClass('menu-open');
+        $('body').toggleClass('menu-toggle');
     });
 
     /*Propose session get heighest session height and apply to all session block*/

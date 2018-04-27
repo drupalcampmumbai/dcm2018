@@ -17,6 +17,9 @@
     .top-footer {
       background-color: $blue-color;
       .col-lg-3 {
+        @media screen and (max-width: 767px) {
+          width: 48%;
+        }
         h2 {
           color: $white-color;
         }

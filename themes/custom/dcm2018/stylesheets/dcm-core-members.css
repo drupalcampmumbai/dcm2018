@@ -1,53 +1,53 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg");
+  src: url("../fonts/OpenSans-Regular.woff");
   src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.woff"); }
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-Regular";
-  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg");
+  src: url("../fonts/Raleway-Regular.woff");
   src: url("../fonts/Raleway-Regular.eot");
-  src: url("../fonts/Raleway-Regular.woff"); }
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg");
+  src: url("../fonts/Raleway-ExtraBold.woff");
   src: url("../fonts/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway-ExtraBold.woff"); }
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.svg") format("svg"); }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg");
+  src: url("../fonts/roboto-slab-regular.woff");
   src: url("../fonts/roboto-slab-regular.eot");
-  src: url("../fonts/roboto-slab-regular.woff"); }
+  src: url("../fonts/roboto-slab-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-regular.ttf") format("truetype"), url("../fonts/roboto-slab-regular.woff") format("woff"), url("../fonts/roboto-slab-regular.svg") format("svg"); }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg");
+  src: url("../fonts/roboto-slab-bold.woff");
   src: url("../fonts/roboto-slab-bold.eot");
-  src: url("../fonts/roboto-slab-bold.woff"); }
+  src: url("../fonts/roboto-slab-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-bold.ttf") format("truetype"), url("../fonts/roboto-slab-bold.woff") format("woff"), url("../fonts/roboto-slab-bold.svg") format("svg"); }
 
 .view-volunteers h3 {
   border-top: 1px solid #fff;
   display: block;
-  width: 100%;
-  margin: 15px 0 30px;
+  font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
   font-size: 1.429em;
   line-height: 22px;
-  padding: 30px 0 0;
+  margin: 15px 0 30px;
+  padding: 30px 0 0 10px;
   position: relative;
+  text-align: left;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: left;
-  font-family: "Roboto Slab Bold", tahoma, Sans-Serif; }
+  width: 100%; }
   .view-volunteers h3:first-child {
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
   @media screen and (max-width: 460px) {
     .view-volunteers h3 {
-      text-align: center; } }
+      text-align: left; } }
 
 .view-volunteers .view-content {
   display: -ms-flexbox;
@@ -56,20 +56,20 @@
       flex-wrap: wrap; }
   .view-volunteers .view-content .views-row {
     background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ddd;
     margin: 0 10px 20px 10px;
     padding: 20px;
     vertical-align: top;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #ddd;
     width: 23%; }
     @media screen and (max-width: 768px) {
       .view-volunteers .view-content .views-row {
         width: 45%; } }
     @media screen and (max-width: 460px) {
       .view-volunteers .view-content .views-row {
-        width: 100%;
         margin-left: 0;
-        margin-right: 0; } }
+        margin-right: 0;
+        width: 100%; } }
     .view-volunteers .view-content .views-row .team-card .card-photo img {
       border-left: 5px solid #207dcc;
       border-radius: 50%;
@@ -79,18 +79,18 @@
       padding: 10px;
       width: 200px; }
     .view-volunteers .view-content .views-row .team-card .card-info {
-      text-align: center;
-      margin-top: 20px; }
+      margin-top: 20px;
+      text-align: center; }
       .view-volunteers .view-content .views-row .team-card .card-info h2 {
-        font-size: 1.5em;
-        margin-bottom: 0;
         color: #207dcc;
-        font-family: "Roboto Slab Bold", tahoma, Sans-Serif; }
+        font-family: "Roboto Slab Bold", tahoma, Sans-Serif;
+        font-size: 1.5em;
+        margin-bottom: 0; }
         .view-volunteers .view-content .views-row .team-card .card-info h2 a {
-          text-decoration: none;
-          color: #207dcc; }
+          color: #207dcc;
+          text-decoration: none; }
       .view-volunteers .view-content .views-row .team-card .card-info h4 {
-        font-size: 16px;
-        color: #207dcc; }
+        color: #207dcc;
+        font-size: 16px; }
 
 /*# sourceMappingURL=css-maps/dcm-core-members.css.map */

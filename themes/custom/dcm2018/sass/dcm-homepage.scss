@@ -166,6 +166,10 @@
     color: $blue-color;
     font-size: 0;
     margin-right: 5px;
+    @media screen and (max-width: 767px) {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
 
     &:before {
       font-size: 33px;
@@ -375,7 +379,8 @@
     .image-wrapper {
       text-align: right;
       @media screen and (max-width: 768px) {
-        text-align: center;
+        margin-top: 20px;
+        text-align: left;
       }
     }
   }
